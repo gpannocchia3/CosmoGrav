@@ -1,0 +1,10 @@
+\vspace {-\cftbeforepartskip }
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}{Basis of Differential Geometry}}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}{Hamiltonian Approach}}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}{Black Holes}}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {4}{Cosmology}}{7}{chapter.4}%
+\contentsline {part}{\numberline {i}{Appendix}}{9}{part.1}%
+\contentsline {chapter}{\numberline {5}{Appendix}}{11}{chapter.5}%
+\contentsline {chapter}{Bibliography}{19}{section*.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
