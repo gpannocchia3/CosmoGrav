@@ -1,4 +1,440 @@
 %============================= HEADER =================================
 \chapter{Cosmology}\label{ch:iv}
 
+\section*{Pre-Relativistic Cosmology and Its Problems}
+
+Long before GR as we know it today was a thing, Cosmology was already an open field of study. Of course, in this first age of Cosmology, studies were based on Newtonian mechanics and the Newtonian theory of gravity.
+\par Newtonian Cosmology assumed an infinite, homogeneous, and static Universe, which was also eternal and responded to Euclidean geometry. Not surprisingly, under this set of un-reasonable hypothesis\footnote{The only reasonable assumption was for the Universe to be homogeneous and, only at times, static. The rest of the hypothesis were arguable at best.}, problems began to sprout overnight.
+\par Consider for example the so called \href{https://en.wikipedia.org/wiki/Olbers%27_paradox}{Olber's paradox} (1826). Under the assumptions of Newtonian Cosmology, Olber's paradox would implicate an always-bright sky, while we have empirical evidence it isn't. In fact, the total luminosity of a set of stars with solar luminosity $L_{\odot}$ within a sphere of radius $R$
+\begin{equation*}
+    \phi_{s} = \int_{0}^{R} \frac{L_{\odot}}{4\pi r^{2}}n_{s}4\pi r^{2}\diff{r}
+\end{equation*}
+will tend to infinity once $R\to \infty$. That is because, under the hypothesis of homogeneity, the surface density of stars $n_{s}$ cannot depened on the spatial coordinates.
+\par Olber will then try to solve his own paradox, claiming it to be solved by dust in the ISM (read: Interstellar Medium). But, if you think about it, it really doesn't solve anything: Sooner or later, the dust itself will get into thermodynamical equilibrium with the radiation, and at that point dust will begin to emit on its own.
+\par A second solution was given in 1872 from Zolbnev, who assumed that the Universe is \emph{closed} with a \emph{positive curvature}. The Universe would then be finite, and the assumption of homogeneity wouldn't let the integral above diverge.
+\par However, solved a problem, there's always another one\footnote{"Always two there are."} peeking around the corner. In this particular case it's the problem of gravitational stability. In fact, it's evident that local instabilities in the gravitational potential must have occurred at some point in time through fluctuations of density, leading to collapses and star formation epochs. As I said, the problem is mainly local, and instabilities are generally balanced on the larger scales.
+\par Bentley then showed that perturbations on spatial scale $r$ have, under the assumption of homogeneity, an associated potential $\propto r^{2}$ and an associated acceleration $\propto r$, which leads to unstable equilibrium.
+\par This problem is however partially mitigated by Seelinger (1895), who assumes gravity to be \emph{shielded} on the large scales
+\begin{equation*}
+    \phi = G\int \frac{\rho}{r}\,\text{d}^{3}x \to \phi = G\int \frac{\rho}{r}e^{-\lambda r}\,\text{d}^{3}x
+\end{equation*}
+where the exponential term is an absorption/shielding factor. This correction will thus bring about a modification of Poisson's equation
+\begin{equation*}
+    \nabla^{2}\phi = 4\pi G \rho \to \nabla^{2}\phi -\lambda\phi = 4\pi G\rho
+\end{equation*}
+Much expectedly, quite a lot changed since 1917, when relativistic cosmology was officially born \cite{1917SPAW.......142E}. Einstein's GR was based on three main principles:
+\begin{enumerate}
+    \item (Weak) Equivalence Principle: Inertial acceleration and gravitational acceleration are proportional to each other. Hence all free-falling systems are locally equivalent to an inertial system;
+    \item General Covariance Principle: When written in covariant form, the laws of Physics are the same in all reference frame;
+    \item Mach's Principle\footnote{This one is a bit "philosophical", but it's interesteing to at least mention it.} The momentum of all bodies is determined by all the masses in the Universe. Alternatively, the only things with physical sense are those that are measurable.
+\end{enumerate}
+Only a year prior to Einstein's 1917 article, Schwarzschild had already found a solution to Einstein's celebrated equation under the assumption of a single spherical body in an otherwise empty space. Such solution, that is nowadays known as Schwarzschild's metric, has to the perk to come down to the standard spacetime Minkowski's metric at infinite distance from the object. This, of course, felt like a big problem for Mach's philosophical principle.
+\par Einstein, perhaps conditioned from the beliefs of his time, twisted his theory so to produce a closed, static Universe. To do so, he only had to add a single term to his equation, the Cosmological Constant
+\begin{equation}
+    G_{\mu\nu} - \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}
+    \label{eq:modified_einsteineq}
+\end{equation}
+which is actually perfectly valid, even from a theoretical point of view\footnote{I assume the four readers of these notes to be at least familiar with the terms and symbols used. If not, I suggest reading \cite{carroll} or any graduate/postgraduate textbook about GR.}. That said, the interpretation of the $\Lambda$ term was somewhat...elusive.
+\par In 1918, Erwin Schrödinger suggested that the Cosmological Constant was equivalent to the energy-momentum tensor of a fluid with negative pressure, and could thus be included in the right-hand side term of the equation.
+\par But, as you perhaps know, even Einstein was prone to errors like any other human being. In 1917, Vesto Slipher observed a discrepancy in the observed emission lines of some galaxies (with respect to the expected frequencies). He, however, failed to correlate such discrepancy to the distance of the aforementioned galaxies.
+\par It was only when Hubble measured their distance \cite{1926CMWCI.324....1H} through the Cepheid-variables method that cosmologists started to realize that the Universe was expanding rather than being static; the expansion law of the Universe still carries Hubble's name, who was the first to suggest such correlation.
+\par Another viable model to describe the Universe is the so-called "Einstein-De Sitter" Universe. This model essentially assumes the Universe to be akin to a non-relativistic fluid for the sake of computing the resulting metric and the properties stemming from it. This model was however abandoned because it produced errors in the estimation of the age of the Universe\footnote{It turned out that some white dwarves, low mass stars that had reached the end of their evolution cycle, would be older than the Universe. I hope you'll agree with me that it would be at least a bit odd.}.
+
+\subsection*{Thermodynamical Considerations on the Big Bang}
+
+The Laws of Thermodynamics speak rather clearly: Energy is (globally) conserved, and Entropy either remains constant or grows. But, if entropy is not growing, the system (i.e. the Universe) doesn't evolve and will meet its end in a rather ominous-sounding way: Thermal Death.
+\par If, on the other hand, entropy is allowed to grow, then it is possible for the system to switch to more probable microscopical configurations. So, starting from a low-entropy, extremely ordered state, the Universe would then evolve through thermodynamical means into the messy Universe we see today.
+
+\section{Maximally Symmetric Universes}
+
+\textbf{Note}: Parts of this section will be eventually removed and integrated into Chapter \ref{ch:i} when I'll have it sorted out. So, for the moment, you'll have to take it at face value, which, admittedly, feels a tad random.
+
+\subsection{Isometries and Killing Vectors}
+
+Consider a metric $g_{\mu\nu}$ and a given map of coordinates $x_{\mu}$ (which roughly translates into choosing a given reference frame). The metric will thus transform according to the standard tensor tranformation rule
+\begin{equation}
+    g_{\mu\nu}'(x') = \parder{x^{\rho}}{x'^{\mu}}\parder{x^{\sigma}}{x'^{\nu}}g_{\rho\sigma}(x)
+\end{equation}
+We'll say that a particular transformation $x \to x'$ is an \emph{isometry} if 
+\begin{equation}
+    g_{\rho\sigma}'(y) = g_{\rho\sigma}(y)
+\end{equation}
+\par If we consider an infinitesimal transformation of the likes
+\begin{equation}
+    x'^{\mu} = x^{\mu} + \epsilon \xi^{\mu}
+\end{equation}
+with $|\epsilon| \ll 1$, we can substitute directly into the transformation equation for the metric. Under the request of the transformation being an isometry, we'll obtain
+\begin{equation}
+    \partial_{\rho}\xi^{\mu}g_{\mu\sigma} \partial_{\sigma}\xi^{\nu}g_{\rho\nu} + \xi^{\mu}\partial_{\mu}g_{\rho\sigma} = 0
+\end{equation}
+We can then introduce Christoffel's symbols to cast the equation in an equivalent form
+\begin{equation}
+    \partial_{\rho}\xi_{\sigma} + \partial_{\sigma}\xi_{\rho} - 2\xi_{\mu}\Gamma_{\rho\;\;\;\sigma}^{\;\;\mu} = 0
+\end{equation}
+The vector $\xi^{\mu}$ will be a \emph{Killing vector} if it satisfies Killing's equation
+\begin{equation}
+    \nabla_{\rho}\xi_{\sigma} + \nabla_{\sigma}\xi_{\rho} = 0
+\end{equation}
+\par If a given spacetime manifold has $n$ spatial dimensions, then the space can have \emph{at most} $n(n+1)/2$ Killing vectors. Such space is called \emph{maximally symmetric}.
+
+\subsection{The Bare Minimum to Begin}
+
+Contemporary cosmological models are based on the idea the the Universe is pretty much the same everywhere, a stance sometimes known as the \emph{Copernican Principle} or \emph{Cosmological principle}. If we take it at face value, such a claim seems crazy, if at all logical: There's little resemblance, say, between the center of the Sun (which is kinda hot) and the desolate cold of the ISM. The Cosmological Principle starts to make a little more sense if we take it to apply only on the very largest scales, where local variations in density are averaged over and magically disappear.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.5\textwidth]{img/isotropyhomogeneity.png}
+    \caption{The Cosmological Prinicple automatically translates in two very specific requests: Homogeneity and Isotropy.}
+    \label{fgr:homoiso}
+\end{figure}
+\par The Cosmological principle is related to two more mathematically precise properties that we can request our space-time manifold to have: \emph{Isotropy} and \emph{Homogeneity}, which are given a pictorial representation in Fig.\ref{fgr:homoiso}.
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Homogeneity,
+  boxed title style={size=small,colframe=blue!50!black}]
+  Consider a family of hypersurfaces defined by some parameter $t$ which allows us to foliate the manifold. Given any two points $p$ and $q$ in a manifold $M$, there is an isometry that takes $p$ into $q$. See \cite{carroll}.
+\end{tcolorbox}
+\par The assumption of Homogeneity essentially requires that the metric is the same throughout the manifold.
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Isotropy,
+  boxed title style={size=small,colframe=blue!50!black}]
+  A manifold $M$ is isotropic around a point $p$ if, for any two vectors $V$ and $W$ in the tangent space of $M$ to the point $p$ $T_{p}M$, there is an isometry (symmetry) of $M$ such that the \emph{pushforward} of $W$ under the isometry is parallel with $V$ (not pushed forward). See \cite{carroll}.
+\end{tcolorbox}
+\par Isotropy, instead, states that space looks exactly the same around a given point, no matter in what direction you're looking.
+\par It turns out that a manifold that is simultaneously homogeneous and isotropic is also maximally symmetric! In fact the transformations associated to isotropy are the rotations 
+\begin{equation}
+    x'^{\mu} = R^{\mu}_{\;\;\nu}x^{\nu}
+    \label{eq:rotations}
+\end{equation}
+which generate $n(n-1)/2$ Killing vectors. On the other hand, the transformations associated to homogeneity are the translations
+\begin{equation}
+    x'^{\mu} = x^{\mu} + \xi^{\mu}
+    \label{eq:translations}
+\end{equation}
+which generate $n$ Killing vectors. The total number of Killing vector is, as expected, exactly $n(n+1)/2$. A spacetime which has a maximally symmetric spatial section must have a special metric that reflects such properties. Let's start from a general metric
+\begin{equation}
+    \diff{s^{2}} = g_{\mu\nu}\diff{x^{\mu}}\diff{x^{\nu}}
+\end{equation}
+Clearly, off-diagonal terms like $g_{0i}$ must be vanishing $g_{0i} = 0$, or the request of an isotropic manifold wouldn't be met. This already leaves us with a metric with the following expression
+\begin{equation}
+    \diff{s^{2}} = -(u_{\mu}\diff{x^{\mu}})^{2} + g_{ij}(t)\diff{x^{i}}\diff{x^{j}}
+\end{equation}
+where the first term of the right-hand side represents the projection of the displacement along the tangent vector $u^{\mu}$, which is, by virtue of its own definition, perpendicular to the spatial hypersurfaces.
+\par Let's focus on the spatial metric $g_{ij}(t)$. Thanks to isotropy, the temporal dependence of the metric has to factor out, so that 
+\begin{equation}
+    g_{ij}(t) = a^{2}(t)\tilde{g}_{ij}
+\end{equation}
+where we've introduced the \emph{scale factor} $a(t)$.
+\par Taking $u_{\mu} = (1,0,0,0)$, our metric turns out to be
+\begin{equation}
+    \diff{s^{2}} = -\diff{t^{2}} + a^{2}(t)\tilde{g}_{ij}\diff{x^{i}}\diff{x^{j}}
+\end{equation}
+\par Let's now consider a $n$-dimensional geometry which we embed into a $n+1$ dimensional space.
+
+\subsubsection*{3-Dimensional Space}
+
+So let's, for example, write down the metric for a 2-dimensional sphere embedded in a 3-dimensional space. The 3-dimensional Euclidean metric is
+\begin{equation}
+    \diff{l^{2}} = \diff{x_{1}^{2}}+\diff{x_{2}^{2}}+\diff{x_{3}^{2}}
+    \label{eq:euclidean_3d}
+\end{equation}
+where we can define the radius of a given sphere $a$ as
+\begin{equation}
+    a^{2} = x_{1}^{2}+x_{2}^{2}+x_{3}^{2}
+\end{equation}
+which we can implicitly differentiate to obtain an expression for, say, $\diff{x_{3}}$ which we'll plug into (\ref{eq:euclidean_3d})
+\begin{equation}
+    \diff{x_{3}} = -\frac{x_{1}\diff{x_{1}+x_{2}\diff{x_{2}}}}{\pm (a^{2}-x_{1}^{2}-x_{2}^{2})^{1/2}}
+\end{equation}
+so that the line element induced on the 2-sphere is
+\begin{equation}
+    \diff{l^{2}} = \diff{x_{1}^{2}}+\diff{x_{2}^{2}} + \frac{(x_{1}\diff{x_{1}+x_{2}\diff{x_{2}}})^{2}}{a^{2}-x_{1}^{2}-x_{2}^{2}}
+\end{equation}
+We can define a vector $\vec{x} = (x_{1}, x_{2})$, so that the line element can be expressed in a more compact fashion
+\begin{equation}
+    \diff{l^{2}} = \diff{\vec{x}^{\,2}} + \frac{(\vec{x}\cdot\diff{\vec{x}})^{2}}{a^{2}-\vec{x}^{\,2}}
+\end{equation}
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Flat Space,
+  boxed title style={size=small,colframe=blue!50!black}]
+  The case of a flat space with vanishing curvature can be dealt with starting from the metric induced on the sphere, simply imposing $a\to \infty$. Not surprisingly, the resulting metric will be
+  $$ \diff{l^{2}} = \diff{\vec{x}^{\,2}} $$
+\end{tcolorbox}
+Similarly, we can also calculate the induced metric on a 2-dimension hyperbola
+\begin{equation}
+    a^{2} = x_{1}^{2}+x_{2}^{2}-x_{3}^{2}
+\end{equation}
+The passages are essentially identical to those for the sphere, and the resulting metric is
+\begin{equation}
+    \diff{l^{2}} = \diff{\vec{x}^{\,2}} - \frac{(\vec{x}\cdot\diff{\vec{x}})^{2}}{a^{2}+\vec{x}^{\,2}}
+\end{equation}
+For our future discussions it will be really useful to define a scaled-down $x$ vector $\tilde{x} = \vec{x}/a$, so that the expression for the line element can be conveniently expressed as
+\begin{equation}
+    \diff{l^{2}} = a^{2}\left(\diff{\tilde{x}^{\,2}} + k \frac{(\tilde{x}\cdot\diff{\tilde{x}})^{2}}{1-k\tilde{x}^{2}}\right)
+    \label{eq:usefulcompact}
+\end{equation}
+where we've introduced the parameter $k = 0, \pm 1$, which defines the topological properties of the space we're considering.
+\par Sometimes (read: almost always) it is useful to express the metric through the polar coordinates of the 2-dimensional sphere. With such purpose in mind, we're defining $x_{3}$ as the "height" of a certain circular section, $r'$ the radius of such section, and $\theta$ the azimuthal angle with respect to axis parallel to $x_{1}$. In formulas
+\begin{align*}
+    x_{3}^{2} &= a^{2}-r'^{2}\\
+    x_{1} &= r'\cos\theta\\
+    x_{2} &= r'\sin\theta
+\end{align*}
+With this new set of coordinates, the line element of the 2-dimensional sphere becomes
+\begin{equation}
+    \diff{l^{2}} = \diff{r'^{2}} + r'^{2}\diff{\theta^{2}} + \frac{(r'\diff{r'})^{2}}{a^{2}-r'^{2}} = a^{2}\left(\frac{\diff{r^{2}}}{1-r^{2}} + r^{2}\diff{\theta^{2}}\right)
+\end{equation}
+where we've also introduced the adimensional radius $r = r'/a$, which lives in the interval $r \in [0,1]$. We can repeat the calculations for the hyperbola and the flat space in a similar fashion. The final result for the three scenarios we've considered can be once again expressed in a single expression thanks to the $k$ parameter
+\begin{equation}
+    \diff{l^{2}} = a^{2}\left(\frac{\diff{r}^{2}}{1-kr^{2}}+r^{2}\diff{\theta^{2}}\right)
+\end{equation}
+
+\subsubsection*{4-Dimensional Space}
+
+Perhaps it might have occurred to you that we do not, in fact, live in a 3-dimensional space, but rather in a 4-dimensional one with 3-dimensional spatial sections. The purpose of this section is essentially to replicate the calculations we've already went through for the 3-dimensional space but with one more additional dimension to address.
+\par For this purpose, it comes somewhat in handy recalling (\ref{eq:usefulcompact}), which allows us to immediately find the expression for the line element induced on a 3-dimensional surface embedded in a 4-dimensional space. All we have to do is replacing the metric of the 1-sphere $S_{1}$ ($\diff{\theta^{2}}$), with that of the 2-sphere $S_{2}$, the solid angle $\diff{\Omega_{(2)}^{2}}$
+\begin{equation}
+    \diff{l^{2}} = a^{2}\left(\diff{\tilde{x}^{\,2}} + k \frac{(\tilde{x}\cdot\diff{\tilde{x}})^{2}}{1-k\tilde{x}^{2}}\right) = a^{2}\left(\frac{\diff{r}^{2}}{1-kr^{2}}+r^{2}\diff{\Omega_{(2)}^{2}}\right)
+\end{equation}
+\par For example, the metric induced on the sphere ($k=1$) can be obtained defining the spherical coordinates $(\chi, \theta, \phi)$ and a radial distance $a$, so that
+\begin{equation}
+    x_{1}^{2} + x_{2}^{2}+x_{3}^{2}+x_{4}^{2} = a^{2}
+\end{equation}
+and the line element is 
+\begin{equation}
+    \diff{l^{2}} = \diff{x_{1}^{2}}+\diff{x_{2}^{2}}+\diff{x_{3}^{2}} +\diff{x_{4}^{2}}
+\end{equation}
+Performing the due substitutions you'd obtain
+\begin{equation}
+    \diff{l^{2}} = a^{2}(\diff{\chi^{2}}+\sin^{2}\chi\diff{\Omega_{(2)}^{2}})
+\end{equation}
+The metric induced on the hyperboloid is obtained replacing $\sin\chi$ with $\sinh\chi$. Note that the new radial coordinate $\chi$ is adimensional, is in the range $[0,\pi]$, and is defined through
+\begin{equation}
+    \diff{\chi} = \frac{\diff{r}}{\sqrt{1-kr^{2}}}
+\end{equation}
+\par In the hyperboloid case, the radial coordinate $\chi$ will now be in the range $[0, \infty)$, and the associated Cartesian coordinates are
+\begin{align*}
+    x_{1} &= a\sinh\chi\sin\theta\cos\phi\\
+    x_{2} &= a\sinh\chi\sin\theta\sin\phi\\
+    x_{3} &= a\sin\chi\cos\theta\\
+    x_{4} &= a\cos\chi
+\end{align*}
+We can go through several boring substitutions to find the induced line element
+\begin{equation}
+    \diff{l^{2}} = a^{2}(\diff{\chi^{2}} + \sinh^{2}\chi\diff{\Omega_{(2)}^{2}})
+\end{equation}
+and the compact expression for the three surfaces we're considering is
+\begin{equation}
+    \boxed{
+        \diff{l^{2}} = a^{2}\left(\diff{\chi^{2}} + \frac{1}{k}\sin^{2}(\sqrt{k}\chi)\diff{\Omega_{(2)}^{2}}\right) \quad k=0,\pm 1
+    }
+\end{equation}
+where we've made use of the fact that the line element can be conventiently expressed as
+\begin{equation}
+    \diff{l^{2}} = a^{2}(\diff{\chi^{2}} + f_{k}^{2}\diff{\Omega_{(2)}^{2}})
+\end{equation}
+with $f_{k}$ given by
+\begin{equation}
+    f_{k} = \left\{
+    \begin{array}{ll}
+        k^{-1/2}\sin(\sqrt{k}\chi) & k = 1\\
+        \chi & k=0 \\
+        (-k)^{-1/2}\sinh(\sqrt{-k}\chi) & k = -1
+    \end{array}
+    \right.
+\end{equation}
+which can be further compressed into
+\begin{equation}
+    f_{k} = (k)^{-1/2}\sin(\sqrt{k}\chi)
+\end{equation}
+which exploits the known limit for $k=0$ for the sine and the definition of the hyperbolic sine for $k=-1$.
+
+\section{Friedmann-Robertson-Walker Metrics}
+
+\par At this point we have all the elements needed to reintroduce time back into the picture
+\begin{equation}
+    \diff{s^{2}} = -\diff{t^{2}}+a^{2}(t)\tilde{g}_{ij}\diff{x^{i}}\diff{x^{j}} = -\diff{t^{2}}+\diff{l^{2}}
+\end{equation}
+\par If the Universe is spatially homogeneous and isotropic at all times, and if distances are allowed to expand or contract as a function of time only\footnote{This is an inevitable consequence of the request of having a metric that is isotropic and homogeneous, for if all points didn't evolve at the same rate, it would be impossible for the Universe to be isotropic.}, there's only one metric possible and is the FLRW metric:
+\begin{equation}
+    \text{d}s^{2} = -\text{d}t^{2}+a(t)^{2}\left(\frac{\text{d}r^{2}}{1-kr^{2}}+r^{2}\text{d}\Omega_{(2)}^{2}\right)
+    \label{eq:FRW}
+\end{equation}
+Since $\diff{s^{2}} = g_{\mu\nu}\diff{x^{\mu}}\diff{x^{\nu}}$, the elements of the metric tensor can be read directly from (\ref{eq:FRW})
+\begin{align*}
+    g_{00} &= -1\\
+    g_{rr} &= \frac{a^{2}}{1-kr^{2}}\\
+    g_{\theta\theta} &= r^{2}a^{2}\\
+    g_{\phi\phi} &= a^{2}r^{2}\sin^{2}\theta
+\end{align*}
+while $g_{0i}$ and off-diagonal terms of $g_{ij}$ are vanishing.
+\par From the coefficient of the metric, we can also compute Christoffel's symbols
+\begin{equation}
+    \Gamma_{\mu\;\,\nu}^{\;\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
+    \label{eq:christoffel}
+\end{equation}
+which have been reported in Appendix C.
+\par Sometimes it is useful to perform a slight manipulation of the FLRW metric (\ref{eq:FRW}) and define a conformal time 
+\begin{equation}
+    a(\eta)\text{d}\eta = \text{d}t
+    \label{eq:conformaltime}
+\end{equation}
+so that the metric is, guess what, conformal.
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Conformal Metric,
+  boxed title style={size=small,colframe=blue!50!black}]
+  Two metrics are conformal if there exists a conformal transformation such that
+  $$ \tilde{g}_{\mu\nu} = \Omega(\eta)g_{\mu\nu} $$
+  and the metric $g_{\mu\nu}$ has no explicit dependence on the $\eta$ parameter.
+\end{tcolorbox}
+\par The scale factor $a$ is therefore factorized and (\ref{eq:FRW}) becomes
+\begin{equation}
+    \text{d}s^{2} = a(\eta)^{2}\left(-\text{d}\eta^{2}+\frac{\text{d}r^{2}}{1-kr^{2}}+r^{2}\text{d}\Omega_{(2)}^{2}\right)
+    \label{eq:FRW_conf}
+\end{equation}
+Note that the quantity within parentheses is independent of the conformal time. On top of that, if $k=0$ (flat space), the FLRW metric is conformal to a Minkowski metric, and the metric is said "conformally flat".
+
+\subsection{Geodesics}
+
+Consider a particle initially at rest in a FLRW metric (\ref{eq:FRW}). The geodesics equation for such a particle will be
+\begin{equation}
+    \dder{x^{i}}{\tau} = -\Gamma_{0\;\,0}^{\;i}\der{x^{0}}{\tau}\der{x^{0}}{\tau}
+\end{equation}
+since $\text{d}x^{i}/\text{d}\tau = 0$, where $\tau$ is the particle's proper time. However, since $\Gamma_{0\;\,0}^{\;i} = 0$, the particle isn't accelerated and its radial coordinate remains constant!
+\par Note that what remains constant is actually the particles \emph{comoving coordinate}, while its \emph{proper distance} calculated from some origin of the coordinate system changes because of the time-evolution of the scale factor $a$.
+\par Once a system of axis is fixed so that a given point $P_{1} = (r_{1},0,0)$, we can define its proper distance as
+\begin{equation}
+    d(r,t) = \int_{0}^{r_{1}} \diff{l(r)}
+\end{equation}
+where $\diff{l(r)}$ is the line element induced on the manifold, in our case
+\begin{equation}
+    \diff{l^{2}} = a(t)^{2}\left(\frac{\text{d}r^{2}}{1-kr^{2}}+r^{2}\text{d}\Omega_{(2)}^{2}\right)
+\end{equation}
+Ignoring the angular dependence, i.e. a point object for which $\text{d}\Omega = 0$, the proper distance is
+\begin{equation}
+    d(r,t) = \int_{0}^{r_{1}} \frac{a(t)\diff{r}}{(1-kr^{2})^{1/2}}
+\end{equation}
+which is solved by 
+\begin{equation}
+    d(r,t) = a(t)\left\{
+    \begin{array}{ll}
+        \arcsin(r_{1}), & k=1\\
+        r_{1}, & k=0\\
+        \text{arcsinh}(r_{1}), & k=-1
+    \end{array}
+    \right.
+\end{equation}
+Please note that unlike done by other textbooks, like \cite{carroll}, here the scale factor $a$ has the dimension of a length rather than being adimensional. You can think of it as the result of the product between an adimensional scale factor (which is the one really changing) and the curvature radius of the Universe at some time.
+\par Let us now consider a free particle with non-vanishing initial momentum. The general geodesics equation is
+\begin{equation}
+    \dder{x^{\sigma}}{\tau} = -\Gamma_{\mu\;\,\nu}^{\;\sigma}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau}
+    \label{eq:geodesicsequation}
+\end{equation}
+It's useful to remember the definition of the 4-momentum $p^{\mu} = mu^{\mu} = m\text{d}x^{\mu}/\text{d}\tau$ (valid for timelike paths, at least), from which we know that
+\begin{equation*}
+    |\vec{p}|^{2} = m^{2}g_{ij}\der{x^{i}}{\tau}\der{x^{j}}{\tau}
+\end{equation*}
+If we consider a system of coordinates such that at the instant considered the particles is arbitrarily close to the center of the coordinate system, the metric can thus be approximated as $\tilde{g}_{ij} = \delta_{ij} + \text{o}(x^{2})$, where we're essentially neglecting the scalar product contribution to (\ref{eq:usefulcompact}).
+\par Then the Christoffel symbol $\Gamma_{j\;\,l}^{\;i} \propto \partial_{l}g^{i}_{\;j} \propto \text{o}(x)$ is negligible, since the space is always locally flat for each point we choose arbitrarily close to the origin.
+\par The geodesics equation can be thus expanded 
+\begin{align*}
+    \dder{x^{i}}{\tau} = -\Gamma_{\mu\;\,\nu}^{\;i}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau} &= -2\Gamma_{0\;\,j}^{\;i}\der{x^{j}}{\tau}\der{x^{0}}{\tau}\\
+    & = -2\frac{\dot{a}(t)}{a(t)}\delta^{i}_{\;j}\der{x^{j}}{\tau}\der{x^{0}}{\tau}
+\end{align*}
+At this point we can multiply both terms by $\derinline{\tau}{t}$
+\begin{equation}
+    \dder{x^{i}}{\tau}\cdot \der{\tau}{t} = -2\frac{\dot{a}(t)}{a(t)}\delta^{i}_{\;j}\der{x^{j}}{\tau}\der{x^{0}}{\tau}\cdot \der{\tau}{t}
+\end{equation}
+and exploit the identity
+\begin{equation}
+    \der{x^{0}}{\tau}\cdot \der{\tau}{t} = 1
+\end{equation}
+resulting in a first-order differential equation for $\derinline{x^{i}}{\tau}$
+\begin{equation}
+    \frac{\text{d}}{\text{d}t}\left(\der{x^{i}}{\tau}\right) = -2\frac{\dot{a}(t)}{a(t)}\der{x^{i}}{\tau}
+\end{equation}
+This equation yields as a solution $\derinline{x^{i}}{\tau} \propto a^{-2}$, which means that $|\vec{p}|^{2} \propto m^{2}a^{2}\cdot a^{-4} \propto a^{-2}$. This means that a massive particle "slows down" with respect to the comoving coordinates as the Universe expands!
+\par If we instead consider a null geodesic (massless particle), we would find out that
+\begin{equation}
+    |\vec{p}| = p = \frac{\hbar}{\lambda} \implies \lambda \propto a(t)
+\end{equation}
+which means that the wavelength of a photon changes depending on the time at which it was emitted, resulting in an effect commonly known as \emph{cosmological redshift}.
+
+\subsection{A short detour on redshift}
+
+\par The purpose of this section is to show that we can obtain the same results that we've obtained in the last section using a more elegant approach that makes use of the symmetry properties of GR and the FLRW metric. Incidentally, this will also allow us to introduce a most useful quantity in Cosmology, which is the redshift $z$.
+\par Consider the four-velocity of comoving observers $U^{\mu} = (1,0,0,0)$, then the metric admits a Killing tensor of the form 
+\begin{equation}
+    K_{\mu\nu} = a^{2}(g_{\mu\nu}+U_{\mu}U_{\nu})
+    \label{eq:killingtensor}
+\end{equation}
+that you can check\footnote{Perhaps it was trivial, but it took me a long while to figure out and convince myself of the proof, which you'll find in Appendix D.} that it satisfies $\nabla_{(\sigma}K_{\mu\nu)} = 0$ where $\nabla_{\sigma}$ is the covariant derivative. By definition of Killing vector (the generalization to a K. tensor is straightforward), the quantity 
+\begin{equation}
+    K^{2} = K_{\mu\nu}V^{\mu}V^{\nu} = a^{2}\left[V_{\mu}V^{\mu}+(U_{\mu}V^{\mu})^{2}\right]
+    \label{eq:conserved_killing}
+\end{equation}
+is conserved along the geodesics. Here $V^{\mu} = \text{d}x^{\mu}/\text{d}\lambda$. For massive particles, since $V_{\mu}V^{\mu} = -1$ (note the convention on the signature of the metric), we also have
+\begin{equation*}
+    (V^{0})^{2} = 1+|\vec{V}|^{2} \quad |\vec{V}|^{2} = g_{ij}V^{i}V^{j}
+\end{equation*}
+Recalling the formula for the four-velocity of the observer, we have $U_{\mu}V^{\mu} = -V^{0}$, so (\ref{eq:conserved_killing}) implies
+\begin{equation*}
+    |\vec{V}| = \frac{K}{a}
+\end{equation*}
+Notice how this means that the particle "slows down" with respect to the comoving coordinates as the Universe expands. If we instead consider null geodesics (that is what we're actually interested in)
+\begin{equation*}
+    V_{\mu}V^{\mu} = 0 \implies U_{\mu}V^{\mu} = \frac{K}{a}
+\end{equation*}
+but for null-like particles, like photons, we can write the four-velocity as $V^{\mu} = (\omega, \vec{k})$. So the frequency of the photon as measured by a comoving observer is $\omega = -U_{\mu}V^{\mu}$ (remember that $c=1$). The frequency emitted will still be given by the same functional expression but calculated in the local inertial frame of the emitter, so $\omega_{em} = -K/a_{em}$. We then find out that 
+\begin{equation*}
+    \frac{\omega_{obs}}{\omega_{em}} = \frac{a_{em}}{a_{obs}}
+\end{equation*}
+To make things easier we then define a quantity called \emph{redshift} defined as 
+\begin{equation}
+    z_{em} = \frac{\lambda_{obs}-\lambda_{em}}{\lambda_{em}}
+    \label{eq:redshift_def}
+\end{equation}
+so that, if the observation takes place today ($a_{obs} = a_{0} = 1$), we can just write 
+\begin{equation}
+    \boxed{
+    a_{em} = \frac{1}{1+z_{em}}
+    }
+    \label{eq:scalefactor_redshift}
+\end{equation}
+and 
+\begin{equation}
+    \boxed{
+    \frac{\nu_{obs}}{\nu_{em}} = \frac{1}{1+z_{em}}
+    }
+    \label{eq:cosmological_redshift}
+\end{equation}
+\par Let's give an example. If we observe, say, a galaxy with a redshift $z = 2$, we are observing it as it was when the Universe had a scale factor $a(t_{e}) = 1/3$.
+\par The redshift we observe for a distant object thus depends only on the relative scale factors at the time of emission and the time of observation. It doesn't depend on how the transition between $a(t_{e})$ and $a(t_{0})$ was made: All that matters is the scale factors at the time of emission and the time of observation.
+\par Calculating the redshift through spectroscopic observations, it was possible to correlate the recession velocity of objects in the Universe to their proper distance, obtaining the so called \emph{Hubble's law}
+\begin{equation}
+    v = cz = H_{0}d_{P}
+    \label{eq:hubblelaw}
+\end{equation}
+Recent measurements \cite{Riess_2022} managed to estimate the present-day Hubble constant $H_{0}$ with great precision
+\begin{equation}
+    H_{0} = 72.53 \pm 0.99 \unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}
+    \label{eq:hubble_constant}
+\end{equation}
+from which we get an order-of-magnitude estimate of the age of the Universe
+\begin{equation}
+    H_{0}^{-1} = 9.78h^{-1}\unit{Gyr}
+\end{equation}
+using $H_{0} = 100h\unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}$. We can also calculate the so-called Hubble radius
+\begin{equation}
+    R_{H} = H_{0}^{-1}c = 3h^{-1}\unit{Gpc}
+\end{equation}
+The variable $h$ keeps track of the dispersion on the value of $H_{0}$ produced by the different measurement techique that was implemented.
+\par Please note that Hubble's law is only valid on relatively large scales, where the peculiar velocity of objects become much smaller than the expansion velocity at a given distance.
+\par On a concluding note, please note that although it's a useful meter of comparison to understand what we're talking about, cosmological redshift has \emph{nothing to do} with a Doppler shift.
+\par In fact, even if the Universe was in an age in which $\dot{a} = 0$ and so that $H_{0} = 0$, you wouldn't be able to interpret the shift in frequency as the effect of a Doppler shift ($v = 0$ after all), yet you'd still observe the shift, since $a(t) \neq 0$.
+
+\subsection{Hubble-Le Maître's Law}
+
 Coming soon.

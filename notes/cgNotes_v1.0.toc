@@ -4,7 +4,14 @@
 \contentsline {chapter}{\numberline {2}{Hamiltonian Approach}}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}{Black Holes}}{5}{chapter.3}%
 \contentsline {chapter}{\numberline {4}{Cosmology}}{7}{chapter.4}%
-\contentsline {part}{\numberline {i}{Appendix}}{9}{part.1}%
-\contentsline {chapter}{\numberline {5}{Appendix}}{11}{chapter.5}%
-\contentsline {chapter}{Bibliography}{19}{section*.4}%
+\contentsline {section}{\numberline {4.1}{Maximally Symmetric Universes}}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}{Isometries and Killing Vectors}}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}{The Bare Minimum to Begin}}{10}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}{Friedmann-Robertson-Walker Metrics}}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}{Geodesics}}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}{A short detour on redshift}}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}{Hubble-Le Maître's Law}}{18}{subsection.4.2.3}%
+\contentsline {part}{\numberline {i}{Appendix}}{19}{part.1}%
+\contentsline {chapter}{\numberline {5}{Appendix}}{21}{chapter.5}%
+\contentsline {chapter}{Bibliography}{29}{section*.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

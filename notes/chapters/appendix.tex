@@ -75,7 +75,7 @@ the blackbody radiation assumes the much simpler form of
 \end{equation*}
 This expression is known as Wien's Law.
 \subsection*{Characteristic Temperatures}
-Starting from the blackbody spectrum we can give various definitions of temperature, that are going to be more and less useful when dealing with stars.
+Starting from the blackbody spectrum we can give various definitions of temperature, that are going to be more and less useful when dealing with stars. The definitions are those of \cite{1986rpa..book.....R}.
 \subsubsection*{Brightness Temperature}
 One way of characterizing brightness (specific intensity) at a certain frequency is to give the temperature of the blackbody having the same brightness at that frequency. That is, for any value $I_{\nu}$ we define $T_{b}(\nu)$ by the relation
 \begin{equation*}
@@ -102,7 +102,6 @@ The effective temperature of a source $T_{eff}$ is derived from the total amount
 \par For a symmetric, metric-compatible covariant derivative $\nabla_{\mu}$, the Christoffel symbols are given by
 \begin{equation}
     \Gamma_{\mu\;\,\nu}^{\;\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
-    \label{eq:christoffel}
 \end{equation}
 \par For the FLWR metric (\ref{eq:FRW}), the Christoffel symbols are given by
 \begin{align*}
@@ -125,3 +124,40 @@ and the Ricci scalar is then
 \begin{equation*}
     R = 6\left[\frac{\ddot{a}}{a}\left(\frac{\dot{a}}{a}\right)^{2}+\frac{k}{a^{2}}\right]
 \end{equation*}
+
+\newpage
+
+\section*{Appendix D: Where the D stands for Demonstration}
+
+\subsection*{The FLRW Killing Tensor}
+
+In Chapter \ref{ch:iv} we've defined at a certain point a Killing tensor (\ref{eq:killingtensor}) but I never showed that it actually satisfies Killing's equation. Our goal is to show that the tensor
+\begin{equation}
+    K_{\mu\nu} = a^{2}(g_{\mu\nu}+u_{\mu}u_{\nu})
+\end{equation}
+satisfies $\nabla_{(\sigma}K_{\mu\nu)} = 0$.
+\par Let's start from observing that $K_{\mu\nu}$ is a spatial projector
+\begin{equation}
+    u^{\nu}K_{\mu\nu} = a^{2}(u^{\nu}g_{\mu\nu} + u_{\mu}u_{\nu}u^{\nu}) = 0
+\end{equation}
+since $u_{\nu}u^{\nu} = -1$. This means that we can define $h_{\mu\nu} = g_{\mu\nu}+u_{\mu\nu}$ so that $K_{\mu\nu} = a^{2}h_{\mu\nu}$. Note that $h_{\mu\nu}$ coincides with the spatial sections of the FLRW metric.
+\par Before calculating the covariant derivative of the alleged Killing tensor, let's first check
+\begin{align*}
+    \nabla_{\mu}u_{\nu} &= \partial_{\mu}u_{\nu} - \Gamma_{\mu\;\,\nu}^{\;\lambda}u_{\lambda}\\
+    &= +\Gamma_{\mu\;\,\nu}^{\;0} = \frac{1}{2}g^{00}\partial_{0}g_{\mu\nu}\\
+    &= -\frac{1}{2}\partial_{0}(h_{\mu\nu}-u_{\mu}u_{\nu})\\
+    &= -\frac{1}{2}\partial_{0}h_{\mu\nu} = -\frac{1}{2}\partial_{0}(a^{2}\tilde{h}_{\mu\nu}) = -a\dot{a}\tilde{h}_{\mu\nu} = -Hh_{\mu\nu}
+\end{align*}
+We can now expand the covariant derivative of $K_{\mu\nu}$
+\begin{align*}
+    \nabla_{\lambda}K_{\mu\nu} &= h_{\mu\nu}\nabla_{\lambda}a^{2}+a^{2}\nabla_{\lambda}h_{\mu\nu}\\
+    &= 2a\dot{a}u_{\lambda}h_{\mu\nu} + a^{2}\nabla_{\lambda}h_{\mu\nu}\\
+    &= 2a\dot{a}u_{\lambda}h_{\mu\nu} + a^{2}(u_{\mu\nabla_{\lambda}u_{\nu}}+u_{\nu}\nabla_{\lambda}u_{\mu})
+\end{align*}
+where we can now substitute $\nabla_{\mu}u_{\nu} = -Hh_{\mu\nu}$ to obtain
+\begin{align*}
+    \nabla_{\lambda}K_{\mu\nu} &= 2a\dot{a}u_{\lambda}h_{\mu\nu} -a\dot{a}(u_{\mu}h_{\nu\lambda}+u_{\nu}h_{\mu\lambda})\\
+    &= a\dot{a}\left[(u_{\lambda}h_{\mu\nu}-u_{\mu}h_{\lambda\nu})+(u_{\lambda}h_{\mu\nu}-u_{\nu}h_{\lambda\mu})\right]\\
+    &= 2a\dot{a}\left[u_{[\lambda}h_{\mu]\nu} +u_{[\lambda}h_{\nu]\mu} \right]
+\end{align*}
+\par At this point, we can easily see that the symmetrization $\nabla_{(\sigma}K_{\mu\nu)}$ of the previous expression yields zero, thus proving that $K_{\mu\nu}$ is indeed a Killing tensor.
