@@ -621,7 +621,7 @@ which can be immediately integrated. Behold:
     }
     \label{eq:density_scalefactor}
 \end{equation}
-Equation (\ref{eq:density_scalefactor}) implies that for (non-relativistic) matter $\rho \propto a^{-3}$, while for radiation (or relativistic matter) $\rho\propto a^{-4}$. This fact has a simple explaination: The energy density of non-relativistic matter decreases as $a$ increases because of the expanding volume of the Universe, while relativistic matter also gets redshifted. This has also another striking consequence: There had been times when different components were equivalent!
+Equation (\ref{eq:density_scalefactor}) implies that for (non-relativistic) matter $\rho \propto a^{-3}$, while for radiation (or relativistic matter) $\rho\propto a^{-4}$. This fact has a simple explanation: The energy density of non-relativistic matter decreases as $a$ increases because of the expanding volume of the Universe, while relativistic matter also gets redshifted. This has also another striking consequence: There had been times when different components were equivalent!
 \begin{align*}
     & \frac{\rho_{\Lambda}(a)}{\rho_{m}(a)}=1=\frac{\rho_{\Lambda,0}}{\rho_{m,0}}a^{3} \implies a_{\Lambda,m} = \left(\frac{\rho_{m,0}}{\rho_{\Lambda,0}}\right)^{1/3} \approx 0.766 \implies z_{\Lambda,m}= 0.31\\
     & \frac{\rho_{m}(a)}{\rho_{r}(a)}=1=\frac{\rho_{m,0}}{\rho_{r,0}}a \; \implies a_{r,m} = \frac{\rho_{r,0}}{\rho_{m,0}} \approx 2.9\cdot 10^{-4} \implies z_{r,m}= 3400
@@ -632,7 +632,7 @@ Plugging in (\ref{eq:density_scalefactor}), we find
 \begin{equation}
     \dot{a}^{2} = \frac{8\pi G \rho_{0}}{c^{2}}\frac{a^{-(1+3w)}}{a_{0}^{-(1+3w)}}
 \end{equation}
-which can be solved explicitly
+which can be solved explicitly \marginpar{Also note that $\dot{a} \propto (\rho a^{2})^{1/2}$ which is also proportional to $\propto a^{-(1+3w)/2}$.\\ Hence, a fluid with $w = -1/3$ would have constant expansion rate $\dot{a}$.}
 \begin{equation}
     \boxed{
         a(t) = a_{0}\left(\frac{t}{t_{0}}\right)^{\frac{2}{3+3w}} \quad t_{0} = \frac{2}{3H_{0}(1+w)} \quad w \neq -1
@@ -669,3 +669,267 @@ while the conformal fluid equation is
     \rho' + 3\mathcal{H}(p+\rho) = 0
     \label{eq:fluideq_conf}
 \end{equation}
+\par Assuming $w \neq 1$, we can integrate the definition of conformal time (\ref{eq:conformaltime}) to obtain the scale factor as a function of the conformal time
+\begin{equation}
+    \eta - \eta_{0} = \int_{t_{0}}^{t} a^{-1}\diff{t} \propto \int_{t_{0}}^{t} t^{-2/3(1+w)}\diff{t}
+\end{equation}
+which yields
+\begin{equation}
+    a(\eta) \propto \eta^{2/1+3w} \quad (w \neq -1)
+    \label{eq:scalefactor_ev_conf}
+\end{equation}
+\par If, on the other hand, $w = -1$, the integral is trivial and we find that
+\begin{equation}
+    a(\eta) \propto -\frac{1}{\eta - \eta_{0}} \quad (\eta - \eta_{0} < 0)
+    \label{eq:scalefactor_ev_conf_cc}
+\end{equation}
+
+\subsection{Einstein Universe}
+
+Consider a stationary Universe for which Einstein's equation is modified to include the addition of Cosmological Constant $\Lambda$
+\begin{equation}
+    R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}
+\end{equation}
+and consider the modified energy-momentum tensor $\tilde{T}_{\mu\nu}$ defined so to include the contribution of the stray Cosmological Constant
+\begin{equation}
+    R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = 8\pi G \tilde{T}_{\mu\nu} = 8\pi G\left(T_{\mu\nu}-\frac{\Lambda}{8\pi G}g_{\mu\nu}\right)
+\end{equation}
+Moreover we can compute the new energy density
+\begin{equation}
+    \tilde{T}_{00} = \rho + \frac{\Lambda}{8\pi G}
+\end{equation}
+and define an energy density for vacuum
+\begin{equation}
+    \rho_{\Lambda} =  \frac{\Lambda}{8\pi G}
+    \label{eq:vacuum_ed}
+\end{equation}
+Similarly, we can also calculate the new pressure exerted by the cosmological fluid
+\begin{equation}
+    \tilde{p} = \tilde{T}_{ii} = \left(p - \frac{\Lambda}{8\pi G}\right)g_{ii} = p - \frac{\Lambda}{8\pi G}
+\end{equation}
+and define the pressure for vacuum, which turns out to be 
+\begin{equation}
+    p_{\Lambda} =  -\frac{\Lambda}{8\pi G} = -\rho_{\Lambda}
+    \label{eq:vacuum_p}
+\end{equation}
+So the vacuum, or Cosmological Constant, would behave like a fluid with $w = -1$. We can see what that implies if we plug this last result into Freedman's equations
+\begin{align*}
+    3\ddot{a} &= -4\pi Ga(\tilde{\rho}+3\tilde{p})\\
+    a\ddot{a} + 2\dot{a}^{2} + 2k &= 4\pi G a^{2}(\tilde{\rho}-\tilde{p})
+\end{align*}
+which under Einstein's assumption of a static Universe ($\dot{a} = 0$ and $ \ddot{a} = 0$) imply 
+\begin{equation}
+    \tilde{\rho} = -3\tilde{p} \quad 2k = 4\pi G a^{2}(\tilde{\rho}-\tilde{p})
+\end{equation}
+and so
+\begin{equation}
+    \tilde{\rho} = \frac{3k}{8\pi G a^{2}} \quad \tilde{p} = -\frac{k}{8\pi G a^{2}}
+\end{equation}
+The conditions for a static Universe thus require it to be a \emph{closed Universe} ($k=1$). If we assume non-relativistic matter to be the only component of $T_{\mu\nu}$, then
+\begin{equation}
+    \tilde{p} = -\frac{\Lambda}{8\pi G} \implies  \tilde{p} = -\frac{\Lambda}{8\pi G} = -\frac{k}{8\pi G a^{2}}
+\end{equation}
+and thus
+\begin{equation}
+    \Lambda = \frac{k}{a^{2}}
+\end{equation}
+This means that the physical dimension of the Universe would be fixed and equal to $a = \Lambda^{-1/2}$ ($k=1$). This already conflicts with present observations (since $H_{0} \neq 0$), but to push worse to worst, Einstein's Universe would also be unstable.
+\par Consider in fact $\tilde{T}_{\mu\nu} = T_{\mu\nu} + T^{\Lambda}_{\mu\nu}$, so that \marginpar{You have to simply substitute (\ref{eq:vacuum_ed}) and the value we've found for $\tilde{\rho}$, using $\Lambda = a^{-1}$.}
+\begin{equation}
+    \tilde{\rho} = \rho_{M} + \rho_{\Lambda} \implies \rho_{M} = \frac{2\Lambda}{8\pi G}
+\end{equation}
+If we add a positive perturbation the scale factor $a = a_{E} + \Delta a$, then the matter energy density decreases
+\begin{equation}
+    \rho_{M} = \frac{3k}{8\pi G a^{2}} - \frac{\Lambda}{8\pi G}
+\end{equation}
+so that we could write in principle $\rho_{M} \to \rho_{M} + \Delta\rho_{M}$ with $\Delta\rho_{M} < 0$. But if we plug this into Friedmann's equation
+\begin{equation}
+    \ddot{a} = -4\pi G a (\tilde{\rho}_{0}+3\tilde{p}_{0} + \Delta\rho_{M}) = - 4\pi G a \Delta\rho_{M} = 4\pi G a |\Delta\rho_{M}| > 0
+\end{equation}
+meaning that such a Universe is unstable!
+
+\subsubsection{Einstein-De Sitter Universe}
+
+Let's try this one more time. Recall Friedmann's second equation (\ref{eq:friedmann2}) and consider a flat Universe with only the Cosmological Constant in it
+\begin{equation}
+    \left(\frac{\dot{a}}{a}\right)^{2} = \frac{\Lambda}{3} \implies a(t) \propto \exp\left(\sqrt{\frac{\Lambda}{3}}t\right)
+\end{equation}
+and so Hubble's constant $H = \sqrt{\Lambda/3}$. This implies 
+\begin{equation}
+    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho_{\Lambda}+3p_{\Lambda}) = \frac{8\pi G}{3}\rho_{\Lambda} = \frac{\Lambda}{3}
+\end{equation}
+
+\subsection{Critical Density}
+
+Let's write again Friendmann's second equation
+\begin{equation}
+    \left(\frac{\dot{a}}{a}\right)^{2} = \frac{8\pi G}{3}\rho -\frac{k}{a^{2}}
+\end{equation}
+and define the \emph{critical energy density} as the energy density the Universe should have to be flat \marginpar{At present time, the critical density $\rho_{C}(t_{0})$ is evaluated at $ 1.878\power{10}{-29}h^{2}\unit{g}\unit{cm}^{-3}$ or, equivalently, at $1.05\power{10}{4} h^{2}\unit{eV}\unit{cm}^{-3}$.}
+\begin{equation}
+    \rho_{C} = \frac{3H^{2}}{8\pi G}
+    \label{eq:criticaldensity}
+\end{equation}
+\par This quantity, that will generally change with time, is called the critical density because the Friedmann equation (\ref{eq:friedmann2}) can be written as
+\begin{equation}
+    \Omega - 1 = \frac{k}{H^{2}a^{2}}
+    \label{eq:densityparam_eq}
+\end{equation}
+that univocally determinates the sign of $k$ depending on whether $\Omega$ is greater then, equal to, or less than one.
+\begin{align*}
+    & \rho < \rho_{c} \iff \Omega < 1 \iff k < 0 \iff \text{open} \\
+    & \rho = \rho_{c} \iff \Omega = 1 \iff k = 0 \iff \text{flat} \\
+    & \rho > \rho_{c} \iff \Omega > 1 \iff k > 0 \iff \text{closed} 
+\end{align*}
+The density parameter $\Omega$, then, tells us which of the three FLRW geometries describes our Universe. Since the right-hand side of (\ref{eq:densityparam_eq}) cannot change sign as the Universe expands, neither can the left-hand side. So, $\Omega$ will have the same sign \emph{at all times}.
+\par In a realistic case, we should consider a Universe with multiple components, although perhaps not interacting. We can then think of writing a total energy density
+\begin{equation}
+    \rho = \sum_{i}\rho_{i} = \rho_{DM} + \rho_{B} + \rho_{r} + \rho_{\Lambda} + ... 
+    \label{eq:totaldensity}
+\end{equation}
+or, in terms of the density parameter(s), we could also write 
+\begin{equation}
+    \rho = \rho_{C}\sum_{i}\Omega_{i}
+\end{equation}
+\par In these variables, the Friedmann equation (\ref{eq:friedmann2}) can be written
+\begin{equation}
+    H^{2} = \frac{8\pi G}{3}\sum_{i(c)}\rho_{i}
+    \label{eq:friedmann_alt}
+\end{equation}
+where the notation $\sum_{i(c)} = \Omega_{0} + \sum_{i}\Omega_{i}$ indicates that we sum not only over all the actual components of energy density $\rho_{i}$, but also on the contribution of spatial curvature, which we define as
+\begin{equation}
+    \Omega_{0} = -\frac{k}{a^{2}H^{2}}
+    \label{eq:spatial_dp}
+\end{equation}
+\par Dividing both sides by $H^{2}$ yields a shockingly simple equation
+\begin{equation}
+    1 = \sum_{i(c)}\Omega_{i} = \Omega_{0} + \sum_{i}\Omega_{i}
+\end{equation}
+thus producing a consistency relation that must hold at \emph{any} time.
+
+\subsubsection{Acceleration Parameter}
+
+A few pages ago, back when we first proved Hubble-Le Maître's law, we've introduced, although barely, the \emph{acceleration parameter} $q$, which we now define as 
+\begin{equation}
+    q = -\frac{\ddot{a}a}{\dot{a}^{2}}
+    \label{eq:decelerationparam}
+\end{equation}
+I don't think I will surprise any of you saying that if $q < 0$, then the Universe is accelerating, and if it's $q > 0$, then it is decelerating. Not being surprised was what people back then expected when they first defined this quantity. They were so sure of their results that they even named it \emph{deceleration parameter} rather than acceleration. Shortly after, they realized they should have probably changed its name.
+\par Recall (\ref{eq:friedmann1}) with a perfect fluid EoS
+\begin{equation}
+    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3} \rho(1+3w)
+\end{equation}
+This means that the "deceleration" parameter can be written as 
+\begin{equation}
+    q = \frac{4\pi G}{3 H^{2}} \rho (1+3w)
+\end{equation}
+or, equivalently, we can plug in the critical density and density parameter to find 
+\begin{equation}
+    q = \frac{\Omega}{2}(1+3w) \implies q = \sum_{i}\frac{\Omega_{i}}{2}(1+3w_{i})
+\end{equation}
+which can be studied for all the various components our Universe could feature
+\begin{itemize}
+    \item $w < -1/3 \implies q < 0$ and hence the Universe accelerates;
+    \item $w=0 \implies q = \Omega_{M}/2 > 0$ and hence it decelerates. This was actually the underlying assumption in the Einstein-De Sitter Universe model;
+    \item $w = 1/3 \implies q \approx \Omega_{r} >0$;
+    \item $w = -1 \implies q = -\Omega_{\Lambda} < 0$ and hence the Universe accelerates. This is what a De Sitter Universe would predict.
+\end{itemize}
+
+\subsubsection{Vacuum Energy}
+
+\textbf{Achtung!} I know nothing of quantum field theory nor have any competence or background knowledge to assure you that what you'll read in this section is ontologically correct. For this, I'm merely reporting what's written in my notes.
+\vspace{0.3cm}
+\par It is the purpose of this section to briefly discuss as for why the Cosmological Constant can be considered as a vacuum energy. First of all, if we consider the Lorentz-invariant quantuum void, the energy density associated to the cosmological constant should be roughly equal to present day's critical density \marginpar{Any mismatch in units has to be attributed to the unspoken choice to use units in which $c=1$, $k_{B} = 1$, and either $h$ or $\hbar = 1$.}
+\begin{equation}
+    \rho_{\Lambda} \approx \rho_{C}(t_{0}) \approx 10^{-44}\unit{GeV}^{4}
+\end{equation}
+which, I'm told, assumes that $$\langle T_{\mu\nu}^{\text{vac}} \rangle = -\langle \rho \rangle g_{\mu\nu} \iff g_{\mu\nu}\;\text{is a Lorentz invariant}$$
+This implies that $\rho_{\text{vac}} = \langle \rho \rangle$ and $p_{\text{vac}} = \langle \rho \rangle = -\rho_{\text{vac}}$. But to go any further than this we have to somehow assume a field theory of some sort 
+\begin{equation}
+    \langle \rho \rangle_{\text{vac}} = \int_{0}^{k_{\text{max}}} \frac{\text{d}^{3}k}{(2\pi)^{3}}\frac{1}{2}\sqrt{k^{2}+m^{2}} \approx \frac{k_{\text{max}}^{4}}{16\pi^{2}}
+\end{equation}
+where $k_{\text{max}}$ is an arbitrarily-high scale at which I assume my QFT to be valid. For the sake of simplicity we can assume a system composed by a set of harmonic oscillators\footnote{This is the only thing I can gather about all this.} with Hamiltonian
+\begin{equation}
+    H_{k} = \omega_{k}\left(n_{k}+\frac{1}{2}\right)
+\end{equation}
+hence 
+\begin{equation}
+    \frac{1}{2}\omega_{k} = \frac{1}{2}\sqrt{k^{2}+m^{2}}
+\end{equation}
+\par If we assume that the highest scale possible at which our theory is valid is the Planck scale
+\begin{equation}
+    k_{\text{max}} = M_{Pl} \sim 10^{19}\unit{GeV}
+\end{equation}
+then the average energy density of the vacuum would be as high as $\langle \rho \rangle_{\text{vac}} \sim 10^{74}\unit{GeV}^{4}$, which, I'm sure you've noticed, is 120 orders of magnitude larger that the expected critical density.
+\par If we lower our upper bound for the allowed scales to the electroweak scale $\sim 200\unit{GeV}$, the average energy density of the vacuum would be $\langle \rho \rangle_{\text{vac}} \sim 10^{7}\unit{GeV}^{4}$, which is still 51 orders of magnitude too large.
+\par Researchers way more qualified than me have come up with several possible explanation for this unsettling discrepancy:
+\begin{enumerate}
+    \item A fluid with negative pressure, a.k.a. \emph{dark energy} (also, Cosmological Constant, or Quintessence);
+    \item A modification of GR on the very largest scales (possibly including massive gravitons);
+    \item Non-linear effects of GR caused by interactions over large scales, so some sort of backreaction.
+\end{enumerate}
+
+\section{Dynamic Age of the Universe}
+
+The actual model for the Universe, sometimes known as Benchmark model, is a $\Lambda$CDM model, where the $\Lambda$ obviously stands for Cosmological Constant, while CDM stands for \emph{Cold Dark Matter}.
+\par We've already seen that we can write the total energy density as
+\begin{equation}
+    \rho = \rho_{m} + \rho_{r} + \rho_{\Lambda}
+\end{equation}
+which all scale differently but according to (\ref{eq:density_scalefactor}). This is most useful, because it allows us to write the total energy density as a function of the present-day density parameters and their associates scaling with the scale factor
+\begin{equation}
+    \rho = \frac{3H_{0}^{2}}{8\pi G}\left(\Omega_{\Lambda,0} + \Omega_{r,0}\left(\frac{a_{0}}{a}\right)^{4} + \Omega_{m,0}\left(\frac{a_{0}}{a}\right)^{3}\right)
+\end{equation}
+We can plug this into (\ref{eq:friedmann2}) to obtain
+\begin{equation}
+    \frac{\dot{a}^{2}}{a_{0}^{2}H_{0}^{2}} + \frac{k}{a_{0}^{2}H_{0}^{2}} = \frac{8\pi G}{3H_{0}^{2}}\left(\frac{a}{a_{0}}\right)^{2}\rho
+\end{equation}
+It might be useful to define and introduce the parameter $x = a(t)/a_{0} = 1/(1+z(t))$ which lives in the range $0 \leq x \leq 1$ since $a(t) \leq a_{0}$ (we're only looking back). With a realistic model, such as the Benchmark, we can safely put $k=0$ and simplify the equation
+\begin{equation}
+    \frac{\dot{a}^{2}}{a_{0}^{2}}\frac{1}{H_{0}^{2}} = \left(\frac{a}{a_{0}}\right)^{2}\left(\Omega_{\Lambda,0} + \Omega_{r,0}\left(\frac{a_{0}}{a}\right)^{4} + \Omega_{m,0}\left(\frac{a_{0}}{a}\right)^{3}\right)
+\end{equation}
+which we can rewrite as 
+\begin{equation}
+    \frac{H^{2}}{H_{0}^{2}}\cdot x^{2} = x^{2}\left[\Omega_{\Lambda,0}+\Omega_{m,0}x^{-3} + \Omega_{r,0}x^{-4}\right] = x^{2}E(x)^{2}
+\end{equation}
+and further manipulate
+\begin{equation}
+    \frac{H}{H_{0}}x = xE(x) \to \frac{1}{a}\dot{a}\frac{1}{H_{0}}x = xE(x) \to \frac{1}{a_{0}}\der{a}{t}\frac{1}{H_{0}} = xE(x)
+\end{equation}
+But since, by virtue of its own definition, we have 
+\begin{equation}
+    \diff{x} = \frac{\diff{a}}{a_{0}} \to \diff{t} = \frac{\diff{x}}{xH_{0}E(x)}
+\end{equation}
+This we can easily integrate from $x=0$ ($t=0$, which corresponds to the BBN in the standard model of the Hot Big Bang)
+\begin{equation}
+    \boxed{
+    t(x) = \int_{0}^{x}\diff{t} = \int_{0}^{x} \frac{\diff{x'}}{x'H_{0}E(x')}
+    }
+    \label{eq:dynamicalage}
+\end{equation}
+which represents the \emph{dynamical age of the Universe}. Sometimes it might be useful to express it in terms of the redshift $z$ so that
+\begin{equation}
+    E^{2}(z) = \Omega_{\Lambda,0} + \Omega_{m,0}(1+z)^{3} + \Omega_{r,0}(1+z)^{4} \quad \diff{x} = \frac{-\diff{z}}{(1+z)^{2}}
+\end{equation}
+\par The dynamical age in terms of the redshift is then
+\begin{equation}
+    t(z) = \frac{1}{H_{0}}\int_{z}^{\infty} \frac{\diff{z'}}{(1+z')E(z')}
+\end{equation}
+\par For the Einstein-De Sitter Universe ($k=0$, $\Omega_{m,0}=1$), the dynamical time evaluates to 
+\begin{equation}
+    t_{0}^{E-dS} = \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x\cdot x^{-3/2}} = \frac{2}{3H_{0}} \approx 7.0h^{-1}\unit{Gyr}
+\end{equation}
+which is smaller than a Hubble time $H_{0}^{-1}$. The dynamical time produced by a E-dS Universe is way too short: It's in tension with the estimated age of some structures and/or unstable chemical elements which we can still observe (e.g., radionuclids with decay time of about $10-15\unit{Gyr}$). It is also in high tension with the estimated age of some old white dwarves and with the estimated age we've obtained from the temperature fluctuations of the CMB.
+\par For a realistic $\Lambda$CDM model ($k=0$, $\Omega_{r,0}\sim 0$, and $\Omega_{\Lambda,0}+\Omega_{m,0}\sim 1$), the dynamical time is evaluated to
+\begin{align*}
+    t_{0} &\approx \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x(\Omega_{\Lambda,0}+\Omega_{m,0}x^{-3})^{1/2}}\\
+    &= \frac{1}{H_{0}\Omega_{\Lambda,0}^{1/2}}\int_{0}^{1}\frac{\diff{x}}{x(1+\left(\frac{1}{\Omega_{\Lambda,0}}-1\right)x^{-3})^{1/2}}
+\end{align*}
+which yields
+\begin{equation}
+    t_{0} = \frac{2}{3H_{0}}\frac{1}{\Omega_{\Lambda,0}^{1/2}}\ln\left[\frac{1+\Omega_{\Lambda,0}^{1/2}}{(1-\Omega_{\Lambda,0})^{1/2}}\right] \sim 14\unit{Gyr}
+\end{equation}
+
+\section{Inflation}
+
+Coming soon.

@@ -16,7 +16,15 @@
 \contentsline {subsection}{\numberline {4.3.2}{Ricci Tensor in a FLRW Metric}}{21}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}{Friedmann's Equation}}{22}{subsection.4.3.3}%
 \contentsline {subsubsection}{{A detour on conformal time}}{24}{subsubsection*.3}%
-\contentsline {part}{\numberline {i}{Appendix}}{25}{part.1}%
-\contentsline {chapter}{\numberline {5}{Appendix}}{27}{chapter.5}%
-\contentsline {chapter}{Bibliography}{35}{section*.7}%
+\contentsline {subsection}{\numberline {4.3.4}{Einstein Universe}}{24}{subsection.4.3.4}%
+\contentsline {subsubsection}{{Einstein-De Sitter Universe}}{26}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {4.3.5}{Critical Density}}{26}{subsection.4.3.5}%
+\contentsline {subsubsection}{{Acceleration Parameter}}{27}{subsubsection*.5}%
+\contentsline {subsubsection}{{Vacuum Energy}}{28}{subsubsection*.6}%
+\contentsline {section}{\numberline {4.4}{Dynamic Age of the Universe}}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.5}{Inflation}}{30}{section.4.5}%
+\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{31}{chapter.5}%
+\contentsline {part}{\numberline {i}{Appendix}}{33}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{35}{chapter.6}%
+\contentsline {chapter}{Bibliography}{43}{section*.10}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
