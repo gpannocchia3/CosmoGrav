@@ -437,4 +437,235 @@ The variable $h$ keeps track of the dispersion on the value of $H_{0}$ produced 
 
 \subsection{Hubble-Le Maître's Law}
 
-Coming soon.
+Let's get back to the definition of redshift starting from the scale factor $a$ which we can Taylor expand for emission times $t$ "close" to the observation time
+\begin{equation}
+    a(t) = a(t_{0}) + \left(\parder{a}{t}\right)_{t_{0}}(t-t_{0}) + \text{o}\left((t-t_{0})^{2}\right)
+\end{equation}
+so that
+\begin{equation}
+    a(t) = a(t_{0})\left[1 + H_{0}(t-t_{0}) + \text{o}\left((t-t_{0})^{2}\right)\right]
+    \label{eq:a_expansion}
+\end{equation}
+The expansion won't be ill-defined only if $H_{0}^{-1} \gg (t-t_{0})$. We can now plug (\ref{eq:a_expansion}) into the definition of redshift (\ref{eq:scalefactor_redshift})
+\begin{equation}
+    z \approx H_{0}(t_{0}-t) \implies z = \frac{H_{0}d}{c}
+    \label{eq:hubblelemaitre}
+\end{equation}
+where $d = c(t_{0}-t)$ is the distance spanned by photons in the same time interval. Equation (\ref{eq:hubblelemaitre}) is the correct way to express Hubble-Le Maître's law for not too large distances. For larger distances we would have to take into account the modification brought about by the second order term in the expansion of $a$, forcing us to introduce an additional parameter, the \emph{acceleration parameter} $q$.
+
+\section{The road to Friedmann's Equations}
+
+\subsection*{Conserved current for a non-collisional fluid}
+
+For the time being, let's consider a Universe completely filled with a fluid of cosmological relevance with negligible collision rate. The number of particles that make the fluid is conserved, and since the fluid must obey the Cosmological Principle, collective motion of the fluid can't have a privileged direction, hence $\langle v^{i} \rangle = 0$. We can thus define a 4-current vector $J^{\mu}$ that we will shortly prove to be conserved \marginpar{Please note that we're walking, as usual, with units in which $c=1$.}
+\begin{equation}
+    J^{\mu} = nu^{\mu} = n\der{x^{\mu}}{\tau} \quad u^{\mu} = (u^{0}, \gamma\vec{v})
+\end{equation}
+where $n$ is the number density of particles. To see how the expansion of the Universe affects the number density $n$ we have to first compute
+\begin{equation}
+    \nabla_{\mu}J^{\mu} = \partial_{\mu}J^{\mu} + \christoffel{\mu}{\nu}{\mu}J^{\nu}
+\end{equation}
+But since the metric is the FLRW, the covariant divergence of $J^{\mu}$ is vanishing. In fact, since $J^{i}$ is zero on average, the covariant divergence is reduced to simplu
+\begin{equation}
+    \partial_{0}J^{0} + \christoffel{i}{0}{i}J^{0} = 0 \quad \christoffel{i}{0}{i} = \frac{\dot{a}}{a}\delta^{i}_{\;\;i} = 3 \frac{\dot{a}}{a}
+\end{equation}
+which means
+\begin{equation}
+    \der{n}{t} = -3\frac{\dot{a}}{a} \implies n(t)\propto a^{-3}
+\end{equation}
+
+\subsection{Energy-Momentum Tensor and Its Conservation}
+
+For the sake of simplicity, let's consider first the case of a flat-space. The energy-momentum tensor can be introduced from the minimal-action principle, imposing that the variation of a properly defined action functional is vanishing \emph{on shell}\footnote{i.e. when calculated on the equations of motion.}
+\begin{equation}
+    \delta S = \delta \left[\int \diff{t}\diff{V}\mathcal{L}\left(q^{(a)}, \parder{q^{(a)}}{x^{\mu}}\right)\right] = 0
+\end{equation}
+where $\mathcal{L}$ is a lagrangian density. Computing the variation we obtain Euler-Lagrange equations
+\begin{equation}
+    \partial^{\mu}\left(\parder{\mathcal{L}}{(\partial^{\mu}q)}\right) - \parder{\mathcal{L}}{q} = 0
+    \label{eq:EL-eq}
+\end{equation}
+Exploiting Noether's theorem and assuming translational invariance for the lagrangian density we could show that there exists a conserved quantity representing the 4-momentum flux crossing the fixed time hypersurfaces, whose normal vector is tangent to the flux itself
+\begin{equation}
+    \partial_{\nu}\left[\parder{\mathcal{L}}{(\partial_{\nu}q)}\partial_{\mu}q - \delta^{\nu}_{\;\mu}\mathcal{L}\right] = \partial_{\nu}T^{\nu}_{\;\mu} = 0
+\end{equation}
+The 4-momentum is thus simply defined as the flux of the energy-momentum tensor through the hypersurfaces
+\begin{equation}
+    p^{\mu} = \int T^{\mu\nu}\diff{S_{\nu}} \quad \diff{S_{\nu}} = \diff{V}\hat{n}_{n}
+\end{equation}
+where $\hat{n}_{\nu} = (1,0,0,0)$ is the unit vector orthogonal to the fixed-time hypersurfaces. For reasons that I'm sure won't surprise you, $T^{00}$ is the energy density, while $T^{i0}$ is the momentum density. Moreover, you can easily check that 
+\begin{equation}
+    \int_{V} \partial_{\alpha}T^{i\alpha}\diff{V} = 0 \implies \partial_{t}\int_{V} T^{i0}\diff{V} + \int_{V} \partial_{j}T^{ij}\diff{V} = 0
+\end{equation}
+Applying the divergence theorem to the second integral yields
+\begin{equation}
+    \partial_{t}\int_{V} T^{i0}\diff{V} + \int_{\partial V} T^{ij}\diff{S_{j}} = 0
+\end{equation}
+which means that forces must be evenly balanced by the pressure arising in the fluid.
+\par When a fluid is isotropic and homogeneous in a comoving reference frame, the fluid is said to be \emph{perfect}. Through long, and boring, calculations (which essentially consist in transforming $T^{00}$ and $T^{ij}$ out of the comoving frame), you can show that a perfectly valid expression for the energy-momentum tensor of a perfect fluid is \marginpar{Note that the components of $u^{\mu}$ are fixed by requiring $u_{\mu}u^{\mu} = -1$}
+\begin{equation}
+    T^{\mu\nu} = (p+\rho)u^{\mu}u^{\nu} + pg^{\mu\nu}
+    \label{eq:energymomentumtensor-cov}
+\end{equation}
+which we can also present in the form of a (1,1) tensor
+\begin{equation}
+    T^{\mu}_{\;\nu} = g_{\alpha\nu}T^{\mu\alpha} = (p+\rho)u^{\mu}u_{\nu} + p(g^{\mu\alpha}g_{\nu\alpha})
+\end{equation}
+from which we can immediately compute the trace
+\begin{equation}
+    T^{\mu}_{\;\mu} = -(p+\rho) + 4p = 3p-\rho
+\end{equation}
+What we'd like to show now is that the energy-momentum tensor (\ref{eq:energymomentumtensor-cov}) we've defined is conserved $\nabla_{\nu}T^{\mu\nu} = 0$ also if the metric is no longer that of the flat space but rather the FLRW (\ref{eq:FRW}). To do so, we have to prove that
+\begin{equation}
+    \nabla_{\nu}T^{\mu\nu} = \nabla_{\nu}\left[(p+\rho)u^{\mu\nu}\right] + \nabla_{\nu}\left[pg^{\mu\nu}\right] = 0
+\end{equation}
+After exploiting metric compatibility, and expanding the covariant derivative, we can rewrite the previous expression as
+\begin{equation}
+    \partial_{\nu}(p+\rho)u^{\mu}u^{\nu} + \partial_{\nu}p g^{\mu\nu} + (p+\rho)\left[\christoffel{\nu}{\lambda}{\mu}u^{\lambda}u^{\nu}+\christoffel{\nu}{\lambda}{\nu}u^{\mu}u^{\lambda}\right]
+\end{equation}
+At this point we can notice that, since the fluid is comoving, $u^{\mu} = (1,0,0,0)$, and thus
+\begin{equation}
+    \christoffel{\nu}{\lambda}{\mu}u^{\lambda}u^{\nu} = \christoffel{0}{0}{\mu}u^{0}u^{0} \quad \christoffel{\nu}{\lambda}{\nu}u^{\mu}u^{\lambda} = \christoffel{\nu}{0}{\nu}u^{\mu}u^{0}
+\end{equation}
+But $\christoffel{0}{0}{\mu} = 0$ for all values of $\mu$ given the FLRW metric, while the second term can be simplified as
+\begin{equation}
+    \christoffel{\nu}{0}{\nu}u^{\mu}u^{0} = \frac{1}{2}g^{\nu i}\partial_{0}g_{\nu i}u^{\mu}
+\end{equation}
+\par Let's focus on the purely spatial component $\mu = j$, which ultimately simplifies to just $\partial_{i}p g^{ij}$, which is vanishing since the pressure has to be homogeneous because of the Cosmological Principle. The only non-trivial component is the temporal one $\mu = 0$, which yields
+\begin{equation}
+    \partial_{0}(p+\rho)-\partial_{0}p +\frac{p+\rho}{2}g^{ij}\partial_{0}g_{ij}
+\end{equation}
+The last derivative can be hand-wavingly calculated expanding $g_{ij} = a^{2}\tilde{g}_{ij}$, where $\tilde{g}_{ij}$ is independent of time. This way, the temporal component ultimately yields
+\begin{equation}
+    \boxed{
+    \partial_{0}\rho + 3(p+\rho)H(t) = 0
+    }
+    \label{eq:fluidequation}
+\end{equation}
+It might be worth pointing out that $\rho$ is here an energy density rather than a matter density.
+
+\subsection{Ricci Tensor in a FLRW Metric}
+
+Honestly, I'm not in the mood to calculate all non-trivial components of the Riemann tensor first
+\begin{equation}
+    R^{\mu}_{\;\nu\alpha\beta} = \partial_{\alpha}\christoffel{\nu}{\beta}{\alpha} - \partial_{\beta}\christoffel{\nu}{\mu}{\alpha} + \christoffel{\sigma}{\alpha}{\mu}\christoffel{\nu}{\beta}{\sigma} - \christoffel{\sigma}{\beta}{\mu}\christoffel{\nu}{\alpha}{\sigma}
+    \label{eq:riemann tensor}
+\end{equation}
+to then calculate Ricci's $R_{\nu\beta} =  R^{\alpha}_{\;\nu\alpha\beta}$. You can find all non-trivial components of the Ricci tensor in Appendix C. Without doing all the troublesome calculations, I'll just say that in principle the calculation is made a little easier if we consider small deviations from flat-space for the time independent metric $\tilde{g}_{ij} = g_{ij}/a^{2}$, which helps significantly to decrease the effort.
+\par It is worth mentioning, however, that we might as well expect the components $R_{0i}$ to be vanishing because of the request of homogeneity and isotropy. An elegant way of proving it without losing your wits in the process might be considering the "inverted" version of Einstein's equation
+\begin{equation}
+    R_{\mu\nu} = 8\pi G \left(T_{\mu\nu} -\frac{1}{2}Tg_{\mu\nu}\right)
+    \label{eq:einstein_inverted}
+\end{equation}
+where $T$ is the trace of the energy-momentum tensor. From here is trivial to prove our previous claim if we assume $T_{\mu\nu}$ to be the energy momentum tensor of a perfect fluid as seen by a comoving observer.
+\par For future reference, I'm going to write the non-trivial components of the Ricci tensor down below
+\begin{equation}
+    R_{00} = -\frac{3\ddot{a}}{a} \quad R_{ij} = \frac{1}{a^{2}}(2k + a\ddot{a}+2\dot{a}^{2})g_{ij}
+\end{equation}
+
+\subsection{Friedmann's Equation}
+
+Consider the non-canonical form of Einstein's equation (\ref{eq:einstein_inverted}). The trace of the energy momentum tensor is (\ref{eq:energymomentumtensor-cov}), and its trace is $T = 3p - \rho$, so it's immediate to solve Einstein's equation.
+\par The temporal component yields
+\begin{equation}
+    \boxed{
+        \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p)
+    }
+    \label{eq:friedmann1}
+\end{equation}
+\par Since we have three independent variables and only two viable equations\footnote{The equations are actually 3: Two Friedmann equations and the equation coming from the conservation of the temporal component of the energy-momentum tensor. The three of them are not independent, since they're related through Bianchi's identity.}, we're in the need of introducing and equation of state (EoS) that relates the pressure to the energy density. Cosmology usually deals with dilute gases, for which the equation of state is simple.
+\par For substances of cosmological importance
+\begin{equation}
+    p = w\rho
+    \label{eq:eos}
+\end{equation}
+where $w$ is a dimensionless number. The behaviors of our favorite sources are summarized in the following table
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c}
+        & $w_{i}$ \\
+        \hline
+        matter & 0\\
+        radiation & $\frac{1}{3}$\\
+        curvature & $-\frac{1}{3}$\\
+        vacuum & $-1$
+    \end{tabular}
+\end{table}
+\par With our newly gained EoS in mind, we can rewrite Friedmann equation as
+\begin{equation}
+    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\rho (1+w)
+\end{equation}
+which tells us that the Universe is accelerating if and only if
+\begin{equation}
+    \frac{\ddot{a}}{a} > 0 \iff w < -\frac{1}{3}
+\end{equation}
+\par The spatial component of (\ref{eq:einstein_inverted}), on the other hand, yields
+\begin{equation}
+    \frac{2k}{a^{2}} + \frac{\ddot{a}}{a} +2\left(\frac{\dot{a}}{a}\right)^{2} = -4\pi G(p-\rho)
+\end{equation}
+where the common factor $\tilde{g}_{ij}$ was suppressed. It is customary however to subtract the 1st Friedmann equation (\ref{eq:friedmann1}) from the equation we've just derived, obtaining the 2nd Friedmann equation
+\begin{equation}
+    \boxed{
+    \left(\frac{\dot{a}}{a}\right)^{2} = \frac{8\pi G}{3}\rho -\frac{k}{a^{2}}
+    }
+    \label{eq:friedmann2}
+\end{equation}
+\par Suppose that the Universe contains $N$ different components, with the $i$-th component having an energy density $\rho_{i}$ and an EoS parameter $w_{i}$. As long as there is no interaction between the different components, the fluid equation (\ref{eq:fluidequation}) must hold for each component separately. So
+\begin{equation}
+    \frac{\dot{\rho}_{i}}{\rho_{i}} = -3(1+w_{i})\frac{\dot{a}(t)}{a(t)}
+\end{equation}
+which can be immediately integrated. Behold:
+\begin{equation}
+    \boxed{
+    \rho_{i}(a) = \rho_{i,0}\left(\frac{a(t)}{a(t_{0})}\right)^{-3(1+w_{i})}
+    }
+    \label{eq:density_scalefactor}
+\end{equation}
+Equation (\ref{eq:density_scalefactor}) implies that for (non-relativistic) matter $\rho \propto a^{-3}$, while for radiation (or relativistic matter) $\rho\propto a^{-4}$. This fact has a simple explaination: The energy density of non-relativistic matter decreases as $a$ increases because of the expanding volume of the Universe, while relativistic matter also gets redshifted. This has also another striking consequence: There had been times when different components were equivalent!
+\begin{align*}
+    & \frac{\rho_{\Lambda}(a)}{\rho_{m}(a)}=1=\frac{\rho_{\Lambda,0}}{\rho_{m,0}}a^{3} \implies a_{\Lambda,m} = \left(\frac{\rho_{m,0}}{\rho_{\Lambda,0}}\right)^{1/3} \approx 0.766 \implies z_{\Lambda,m}= 0.31\\
+    & \frac{\rho_{m}(a)}{\rho_{r}(a)}=1=\frac{\rho_{m,0}}{\rho_{r,0}}a \; \implies a_{r,m} = \frac{\rho_{r,0}}{\rho_{m,0}} \approx 2.9\cdot 10^{-4} \implies z_{r,m}= 3400
+\end{align*}
+If the Universe contains different components with different values of $w$, in the limit $a\to 0$, the component with the largest value of $w$ is dominant.
+\par Now that we have a relation between $\rho$ and $a$ we can set to solve the Friedmann equation (\ref{eq:friedmann2}) in special case of a spatially flat ($k = 0$) and single-component Universe.
+Plugging in (\ref{eq:density_scalefactor}), we find 
+\begin{equation}
+    \dot{a}^{2} = \frac{8\pi G \rho_{0}}{c^{2}}\frac{a^{-(1+3w)}}{a_{0}^{-(1+3w)}}
+\end{equation}
+which can be solved explicitly
+\begin{equation}
+    \boxed{
+        a(t) = a_{0}\left(\frac{t}{t_{0}}\right)^{\frac{2}{3+3w}} \quad t_{0} = \frac{2}{3H_{0}(1+w)} \quad w \neq -1
+    }
+    \label{eq:scalefactor_ev}
+\end{equation}
+For $w = -1$, the equation is solved by
+\begin{equation}
+    \boxed{
+    a(t) = a_{0}e^{\pm H_{0}(t-t_{0})}
+    }
+    \label{eq:scalefactor_ev_cc}
+\end{equation}
+
+\subsubsection{A detour on conformal time}
+
+\par Let's now write Friedmann's equations using the conformal time $\diff{\eta} = \diff{t}/a$. Through a basic application of the chain rule
+\begin{equation}
+    \der{a}{t} = \der{a}{\eta}\der{\eta}{t} = a' \frac{1}{a}
+\end{equation}
+where with the superscript we're indicating derivatives with respect to the conformal time. In short
+\begin{equation}
+    a' = \dot{a}a \quad a'' = a(a\ddot{a}+\dot{a}a') \quad \mathcal{H} = \frac{a'}{a} = \dot{a} \quad \mathcal{H}' = a\ddot{a}
+\end{equation}
+With these new variables, Friedmann's equation become
+\begin{align}
+    \label{eq:f2_conf}
+    \mathcal{H}^{2} &= \frac{8\pi G}{3}a^{2}\rho - k\\
+    \mathcal{H}' &= -\frac{4\pi G}{3}a^{2}(\rho + 3p)
+    \label{eq:f1_conf}
+\end{align}
+while the conformal fluid equation is
+\begin{equation}
+    \rho' + 3\mathcal{H}(p+\rho) = 0
+    \label{eq:fluideq_conf}
+\end{equation}

@@ -101,17 +101,17 @@ The effective temperature of a source $T_{eff}$ is derived from the total amount
 
 \par For a symmetric, metric-compatible covariant derivative $\nabla_{\mu}$, the Christoffel symbols are given by
 \begin{equation}
-    \Gamma_{\mu\;\,\nu}^{\;\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
+    \christoffel{\mu}{\nu}{\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
 \end{equation}
 \par For the FLWR metric (\ref{eq:FRW}), the Christoffel symbols are given by
 \begin{align*}
-    & \Gamma_{1\;\,1}^{\;0} = \frac{a\dot{a}}{1-kr^{2}} &\Gamma_{1\;\,1}^{\;1} = \frac{kr}{1-kr^{2}} \\
-    & \Gamma_{2\;\,2}^{\;0} = a\dot{a}r^{2} &\Gamma_{3\;\,3}^{\;0} = a\dot{a}r^{2}\sin^{2}\theta \\
-    & \Gamma_{0\;\,j}^{\;i} = \frac{\dot{a}}{a}\delta^{i}_{j}=H\delta^{i}_{j} & \Gamma_{0\;\,1}^{\;1} = \frac{\dot{a}}{a} = H \\
-    & \Gamma_{2\;\,2}^{\;1} = -r(1-kr^{2}) &\Gamma_{3\;\,3}^{\;1} = -r(1-kr^{2})\sin^{2}\theta \\
-    & \Gamma_{1\;\,2}^{\;2} = \Gamma_{1\;\,3}^{\;3} = \frac{1}{r} \quad & \Gamma_{3\;\,3}^{\;2} = -\sin\theta\cos\theta\\
-    &\Gamma_{2\;\,3}^{\;3} = \cot\theta  & \Gamma_{0\;\,0}^{\;i} = 0\\
-    & \Gamma_{0\;\,0}^{\;0} = 0 &\Gamma_{i\;\,0}^{\;0} = 0\\
+    & \christoffel{1}{1}{0} = \frac{a\dot{a}}{1-kr^{2}} & \christoffel{1}{1}{1} = \frac{kr}{1-kr^{2}} \\
+    & \christoffel{2}{2}{0} = a\dot{a}r^{2} & \christoffel{3}{3}{0} = a\dot{a}r^{2}\sin^{2}\theta \\
+    & \christoffel{0}{j}{i} = \frac{\dot{a}}{a}\delta^{i}_{j}=H\delta^{i}_{j} & \christoffel{0}{1}{1} = \frac{\dot{a}}{a} = H \\
+    & \christoffel{2}{2}{1} = -r(1-kr^{2}) &\christoffel{3}{3}{1} = -r(1-kr^{2})\sin^{2}\theta \\
+    & \christoffel{1}{2}{2} = \christoffel{1}{3}{3} = \frac{1}{r} \quad & \christoffel{3}{3}{2} = -\sin\theta\cos\theta\\
+    & \christoffel{2}{3}{3} = \cot\theta  & \christoffel{0}{0}{i} = 0\\
+    & \christoffel{0}{0}{0} = 0 & \christoffel{i}{0}{0} = 0\\
 \end{align*}
 or related to this by symmetry. The non-zero components of the Ricci tensor are
 \begin{align*}
@@ -143,8 +143,8 @@ satisfies $\nabla_{(\sigma}K_{\mu\nu)} = 0$.
 since $u_{\nu}u^{\nu} = -1$. This means that we can define $h_{\mu\nu} = g_{\mu\nu}+u_{\mu\nu}$ so that $K_{\mu\nu} = a^{2}h_{\mu\nu}$. Note that $h_{\mu\nu}$ coincides with the spatial sections of the FLRW metric.
 \par Before calculating the covariant derivative of the alleged Killing tensor, let's first check
 \begin{align*}
-    \nabla_{\mu}u_{\nu} &= \partial_{\mu}u_{\nu} - \Gamma_{\mu\;\,\nu}^{\;\lambda}u_{\lambda}\\
-    &= +\Gamma_{\mu\;\,\nu}^{\;0} = \frac{1}{2}g^{00}\partial_{0}g_{\mu\nu}\\
+    \nabla_{\mu}u_{\nu} &= \partial_{\mu}u_{\nu} - \christoffel{\mu}{\nu}{\lambda}u_{\lambda}\\
+    &= +\christoffel{\mu}{\nu}{0} = \frac{1}{2}g^{00}\partial_{0}g_{\mu\nu}\\
     &= -\frac{1}{2}\partial_{0}(h_{\mu\nu}-u_{\mu}u_{\nu})\\
     &= -\frac{1}{2}\partial_{0}h_{\mu\nu} = -\frac{1}{2}\partial_{0}(a^{2}\tilde{h}_{\mu\nu}) = -a\dot{a}\tilde{h}_{\mu\nu} = -Hh_{\mu\nu}
 \end{align*}

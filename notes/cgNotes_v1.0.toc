@@ -10,8 +10,13 @@
 \contentsline {section}{\numberline {4.2}{Friedmann-Robertson-Walker Metrics}}{14}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}{Geodesics}}{15}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}{A short detour on redshift}}{17}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}{Hubble-Le Maître's Law}}{18}{subsection.4.2.3}%
-\contentsline {part}{\numberline {i}{Appendix}}{19}{part.1}%
-\contentsline {chapter}{\numberline {5}{Appendix}}{21}{chapter.5}%
-\contentsline {chapter}{Bibliography}{29}{section*.5}%
+\contentsline {subsection}{\numberline {4.2.3}{Hubble-Le Maître's Law}}{19}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}{The road to Friedmann's Equations}}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}{Energy-Momentum Tensor and Its Conservation}}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}{Ricci Tensor in a FLRW Metric}}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}{Friedmann's Equation}}{22}{subsection.4.3.3}%
+\contentsline {subsubsection}{{A detour on conformal time}}{24}{subsubsection*.3}%
+\contentsline {part}{\numberline {i}{Appendix}}{25}{part.1}%
+\contentsline {chapter}{\numberline {5}{Appendix}}{27}{chapter.5}%
+\contentsline {chapter}{Bibliography}{35}{section*.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
