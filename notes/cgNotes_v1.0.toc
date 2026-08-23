@@ -24,7 +24,17 @@
 \contentsline {section}{\numberline {4.4}{Dynamic Age of the Universe}}{29}{section.4.4}%
 \contentsline {section}{\numberline {4.5}{Inflation}}{30}{section.4.5}%
 \contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{31}{chapter.5}%
-\contentsline {part}{\numberline {i}{Appendix}}{33}{part.1}%
-\contentsline {chapter}{\numberline {6}{Appendix}}{35}{chapter.6}%
-\contentsline {chapter}{Bibliography}{43}{section*.10}%
+\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{31}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{33}{subsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{34}{subsection.5.0.3}%
+\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{37}{section.5.2}%
+\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{38}{subsubsection*.9}%
+\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{39}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{40}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}{Dark Matter}}{41}{section.5.4}%
+\contentsline {part}{\numberline {i}{Appendix}}{43}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{45}{chapter.6}%
+\contentsline {chapter}{Bibliography}{53}{section*.14}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

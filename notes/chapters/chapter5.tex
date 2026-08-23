@@ -2,4 +2,378 @@
 
 \chapter{Thermal History of the Universe} \label{ch:v}
 
-Coming tomorrow.
+For a significant part of this chapter, I'll be mainly following \cite{Baumann_2022}. Please note that for some reason I cannot fathom, Baumann is using the metric signature $(+,-,-,-)$, which is the exact opposite of what we've been using in the previous chapters.
+\par The key to understanding the thermal history of the Universe is the comparison between the rate of interactions $\Gamma$ and the rate of expansion $H$. When $\Gamma \gg H$, then the time scale of particle interactions is much smaller than the characteristic expansion time scale
+\begin{equation}
+    t_{c} = \frac{1}{\Gamma} \ll t_{H} = \frac{1}{H}
+\end{equation}
+and Local Thermal Equilibrium (LTE) is reached before the effect of the expansion becomes relevant. As theUUniverse cools, the rate of interactions may decrease faster than the expansion rate. At $t_{c} \sim t_{H}$, the particles decouple from the thermal bath. Different particle species may have different interaction rates and so may decouple at different times.
+\par The reactions we'll be interested in looking into are those of the likes 
+\begin{align*}
+    x + y &\leftrightharpoons x + y \quad (\text{scattering})\\
+    y + \bar{y} &\leftrightharpoons \gamma + \gamma \quad (\text{pair production})
+\end{align*}
+\par We mark the beginning of the thermal history of the Universe at $(k)T \sim 1\unit{MeV}$, which roughly corresponds to $1\unit{s}$ after the Big Bang. So we'll implicitly assume that quarks are already confined within hadrons, which are already slowed to a non-relativistic regime (while photons, electrons, and neutrinos have not).
+
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Baryon to Photon Ratio,
+  boxed title style={size=small,colframe=blue!50!black}]
+  For future reference, let's define now the \emph{Baryon to Photon ratio} $\eta$.
+  \par Provided that photons are not created or destroyed, but merely redshifted, $n_{\gamma} \propto a^{-3}$. Similarly, if baryons are not destroyed during the evolution of the Universe (that is, they are stable and do not annihilate), their number density merely gets diluted $n_{\text{Baryon}} \propto a^{-3}$. Therefore $$\eta = n_{\text{Baryon}}/n_{\gamma}$$ is constant and approximately equal to $\eta \approx 6.1 \cdot 10^{-10}$.
+\end{tcolorbox}
+
+\subsection{Statistical Properties}
+
+Before getting knee-deep into calculations, let's take a moment to recall some statistical properties and properties in general which we'll be using extensively in the following.
+\par First of all, recall the Bose-Einstein/Fermi-Dirac distribution function ($c=\hbar = 1$)
+\begin{equation}
+    f(p,T) = \frac{1}{\exp\left(\frac{E(p)-\mu}{kT}\right) \pm 1}
+    \label{eq:fd-be}
+\end{equation}
+where the $+$ identifies the Fermi-Dirac distribution, and the $-$ the Bose-Einstein distribution. We'll be always working under conditions for which $\mu \ll kT$, so we can drop it from (\ref{eq:fd-be}). That being the case, we can define the particle numeric density
+\begin{equation}
+    n = \frac{g}{h^{3}} \int \text{d}^{3}p f(p,T)
+    \label{eq:particledensity}
+\end{equation}
+and the associated energy density
+\begin{equation}
+    \rho(T) = \frac{g}{h^{3}}\int \text{d}^{3}p E(p)f(p,T)
+    \label{eq:energydensity-stat}
+\end{equation}
+We can assume an isotropic distribution for the momentum $\text{d}^{3}p = 4\pi p^{2}\diff{p}$, and define $m = xT$ and $p = \xi T$, so that the integrals in (\ref{eq:particledensity}) and (\ref{eq:energydensity-stat}) can be expressed as \marginpar{As often happens, what's really important for you to remember it's not the whole expression, but rather the characteristic scaling of quantities. In this particular case, you should commit to memory $n\propto T^{3}$ and $\rho \propto T^{4}$.}
+\begin{equation}
+    n(T) = \frac{g}{h}T^{3}I_{\pm} \quad \rho(T) = \frac{g}{h}T^{4}J_{\pm}
+\end{equation}
+where $I_{\pm}$ and $J_{\pm}$ are the two integral functions reported below
+\begin{equation}
+    I_{\pm} = \int_{0}^{\infty} \diff{\xi} \frac{\xi^{2}}{\exp\left(\sqrt{x^{2}+\xi^{2}}\right)\pm 1} \quad J_{\pm} = \int_{0}^{\infty} \diff{\xi} \frac{\xi^{2}\sqrt{x^{2}+\xi^{2}}}{\exp\left(\sqrt{x^{2}+\xi^{2}}\right)\pm 1}
+\end{equation}
+\par In the relativistic limit ($x \to 0$, $m \ll (k)T$) the equation for $I_{\pm}$ can be solved explicitly
+\begin{align*}
+    I_{\pm}(x=0) &= \int_{0}^{\infty} \frac{\xi^{2}}{\exp\left(\xi\right)\pm 1}\diff{\xi} \\
+    &= \sum_{j=1}^{\infty} (\mp 1)^{j-1}\int_{0}^{\infty}\xi^{2}e^{-j\xi}\diff{\xi} =
+    \left\{
+        \begin{array}{ll}
+            2\zeta(3) & (-)\\
+            \frac{3}{2}\zeta(3) & (+)
+        \end{array}
+    \right.
+\end{align*}
+where $\zeta(x)$ is the Riemann $\zeta$-function. Hence we get for the particle density
+\begin{equation}
+    \boxed{
+        \frac{\zeta(3)}{\pi^{2}}gT^{3} \left\{
+            \begin{array}{ll}
+                1 & \text{bosons}\\
+                \frac{3}{4} & \text{fermions}
+            \end{array}
+        \right.
+    }
+    \label{eq:pd-ultrarel}
+\end{equation}
+
+\par A similar computation for the energy density gives
+\begin{equation}
+    \boxed{
+        \frac{\pi^{2}}{30}gT^{4} \left\{
+            \begin{array}{ll}
+                1 & \text{bosons}\\
+                \frac{7}{8} & \text{fermions}
+            \end{array}
+        \right.
+    }
+    \label{eq:ed-ultrarel}
+\end{equation}
+In the non-relativistic limit, on the other hand, we have $x \gg 1$, and the integral is the same for both bosons and fermions
+\begin{equation}
+    I_{\pm}(x) = J_{\pm} \approx \int_{0}^{\infty} \frac{\xi^{2}}{\exp\left(\sqrt{\xi^{2}+x^{2}}\right)}\diff{\xi}
+\end{equation}
+Most of the contribution to the integral comes from $\xi \ll x$. After Taylor-expanding the square root in the exponential to lowest order in $\xi$, we obtain
+\begin{equation}
+    I_{\pm}(x) = \sqrt{\frac{\pi}{2}} x^{3/2}e^{-x}
+\end{equation}
+which introduces a Boltmann-like soppression \marginpar{Note that in the expression for the energy density, the bulk of the contribution comes from the term $mn$.}
+\begin{equation}
+    n(T) = g\left(\frac{mT}{2\pi}\right)^{3/2}e^{-m/T} \quad \rho(T) = mn + \frac{3}{2}nT
+\end{equation}
+As expected, massive particles are exponentially rare at low temperatures, $(k)T \ll m$.
+
+\subsection{Effective Number of Relativistic Species}
+
+Let $T$ be the temperature of the photon gas. The total radiation density is the sum over the energy densities of all relativistic species
+
+\begin{equation}
+    \rho_{r} = \sum_{i}\frac{g_{i}}{2\pi^{2}}T_{i}^{4}J_{\pm}(x_{i}=\frac{m_{i}}{T_{i}}) := \frac{\pi^{2}}{30}g_{\star}T_{\gamma}^{4}
+\end{equation}
+where $g_{\star}$ is the \emph{effective number of relativistic degrees of freedom} at the temperature $T$, assumed identical for all the different relativistic species. The definition for the effective number of relativistic degrees of freedom is the following
+\begin{equation}
+    \boxed{
+        g_{\star} = \sum_{i}g_{i}\left(\frac{T_{i}}{T_{\gamma}}\right)^{4}\frac{J_{\pm}(x_{i})}{J_{-}(0)}
+    }
+\end{equation}
+It might be useful to differentiate the relativistic species in thermal equilibrium with the photons \marginpar{When the temperature drops below the mass mi of a particle species, it becomes non-relativistic and is removed from the sum. Away from mass thresholds, the thermal contribution is independent of temperature.}
+\begin{equation}
+    g_{\star}^{\text{th}} = \sum_{i=b}g_{i}+ \frac{7}{8}\sum_{i=f}g_{i}
+\end{equation}
+from the relativistic species that are \emph{not} in thermal equilibrium with the photons
+\begin{equation}
+    g_{\star}^{\text{dec}} = \sum_{i=b}g_{i}\left(\frac{T_{i}}{T_{\gamma}}\right)^{4} + \frac{7}{8}\sum_{i=f}\left(\frac{T_{i}}{T_{\gamma}}\right)^{4}g_{i}
+\end{equation}
+\par The evolution of $g_{\star}$ assuming the Standard Model particle content is better represented with a plot, that is often clearer than dozens of lines of calculations. You can find this plot in Fig.\ref{fgr:effdegrees}.
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Counting DoFs,
+  boxed title style={size=small,colframe=blue!50!black}]
+  As I mentioned in some earlier chapter, I know pretty much nothing about QFT and stuff. But since I think it is at least interesting to see how the computation is done, I'll rely on someone who knows better than me, namely Mr. Baumann.
+  \par At $(k)T \gtrsim 100 \unit{GeV}$, all particles of the Standard Model are relativistic. Adding up their internal degrees of freedom we get
+  \begin{itemize}
+    \item $g_{b} = 28$: Photons (2),$W^{\pm}$ and $Z^{0}$ ($3\cdot3$), gluons ($8\cdot2$),and Higgs (1);
+    \item $g_{f} = 90$: Quarks ($6\cdot12$), charged leptons ($3\cdot4$),and neutrinos ($3\cdot2$).
+  \end{itemize}
+  hence $g_{\star} = g_{b} + 7g_{f}/8 = 106.75$. As the temperature drops, various particle species become non-relativistic and annihilate. To estimate $g_{\star}$ at a temperature $T$ you simply add up the contributions from all relativistic degrees of freedom and discard the rest.
+\end{tcolorbox}
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.9\textwidth]{img/effdeg.png}
+    \caption{Evolution of relativistic degrees of freedom $g_{\star}(T)$ assuming the Standard Model particle content. The dotted line stands for the number of effective degrees of freedom in entropy $g_{\star S}(T)$. Credits: \cite{Baumann_2022}.}
+    \label{fgr:effdegrees}
+\end{figure}
+
+\subsection{Conservation of Entropy}
+
+In the field of cosmology, entropy is often more informative than energy. According to the second law of thermodynamics, the total entropy of the Universe only increases or stays constant. Since there are far more photons than baryons in the Universe, the entropy of the Universe is dominated by the entropy of the photon bath (at least as long as the Universe is sufficiently uniform). Any entropy production from non-equilibrium processes is therefore total insignificant relative to the total entropy. 
+\par To a good approximation we can therefore treat the expansion of the Universe as \emph{adiabatic}, so that the total entropy stays constant even beyond equilibrium.
+\par Consider
+\begin{equation}
+    T\diff{S} = \diff{U} + p\diff{V}
+\end{equation}
+and define the entropy and energy density respectively as $s = S/V$ and $\rho = U/V$. The equation above thus becomes
+\begin{equation}
+    T\diff{(sV)} = \diff{(\rho V)} + p\diff{V}
+\end{equation}
+whence 
+\begin{equation}
+    (Ts - \rho - p)\diff{V} + V\left(T\der{s}{T}-\der{\rho}{T}\right)\diff{T} = 0
+\end{equation}
+So that the identity can be verified it's necessary that 
+\begin{equation}
+    s = \frac{p+\rho}{T}
+\end{equation}
+from which 
+\begin{equation}
+    \der{s}{T} = \frac{1}{T}\der{\rho}{T} \to \der{s}{t} = \frac{1}{T}\der{\rho}{t}
+\end{equation}
+Recall the continuity equation stemming from the FRLW metric (\ref{eq:fluidequation})
+\begin{equation}
+    \dot{\rho} = -3(p+\rho)H = -3HsT
+\end{equation}
+We're thus able to conclude by simple substitution that
+\begin{equation}
+    \boxed{
+    \frac{\text{d}}{\text{d}t}(sa^{3}) = 0
+    }
+    \label{eq:entropy_cons}
+\end{equation}
+\par It is also possible to show that the entropy density is related to temperature and to the degrees of freedom of the Universal bath by means of 
+\begin{equation}
+    s = \frac{2\pi^{2}}{45}g_{\star}^{s}(T)T^{3}
+    \label{eq:entropydensity}
+\end{equation}
+where we've defined the \emph{effective number of degrees of freedom in entropy}
+\begin{equation}
+    g_{\star}^{s} = \sum_{i=b}g_{i}\left(\frac{T_{i}}{T}\right)^{3} + \frac{7}{8}\sum_{i=f}g_{i}\left(\frac{T_{i}}{T}\right)^{3}
+    \label{eq:effdegrees_ent}
+\end{equation}
+\par Note that for species in thermal equilibrium $g_{\star S}^{\text{th}}(T) = g_{\star}^{\text{th}}(T)$. However, given that $s_{i} \propto T_{i}^{3}$, only for decoupled species we get (\ref{eq:effdegrees_ent}). Hence, $g_{\star S}$ is equal to $g_{\star}$ only when all the relativistic species are in equilibrium at the same temperature.
+\par Substituting (\ref{eq:entropydensity}) into (\ref{eq:entropy_cons})
+\begin{equation}
+    \frac{\text{d}}{\text{d}t}(g_{\star S}a^{3}T^{3}) = 0
+\end{equation}
+which gives us an expression for the Universe's cooling law! In fact, assuming $g_{\star S} \approx \text{const.}$ (reasonable for temperatures away from particle mass thresholds), we get 
+\begin{equation}
+    \boxed{
+    T \propto \frac{1}{a} \propto 1+z
+    }
+\end{equation}
+Such scaling relation is surely valid after the last scattering epoch (which we'll be shortly introducing), though it's worth pointing out that this conservation law doesn't include the hyperfine details of irreversible reactions on the smaller scales.
+\par Substituting $T \propto g_{\star S}^{-1/3}a^{-1}$ into Friedmann's equation we find \marginpar{Note that we're implicitly assuming $k\sim 0$ (flat Universe), so that $\Omega_{0} = 0$. We're also using the Planck mass $M_{Pl} = \sqrt{\hbar c / 8\pi G}$.}
+\begin{equation}
+    H = \frac{\dot{a}}{a} \approx \left(\frac{\rho_{r}}{3M_{Pl}^{2}}\right)^{1/2} \approx \frac{\pi}{3}\left(\frac{g_{\star}}{10}\right)^{1/2}\frac{T^{2}}{M_{Pl}}
+\end{equation}
+which for a RD Universe reproduces the usual result $a\propto t^{1/2}$, except that there is a change in the scaling every time $g_{\star S}$ changes. For $T \propto t^{-1/2}$ (as follows from $H = 1/2t$) we can integrate the Friedmann equation and get the temperature as a function of time
+\begin{equation}
+    \left(\frac{T}{\unit{MeV}}\right) \approx 1.5g_{\star}^{-1/4}\left(\frac{1\unit{s}}{t}\right)^{1/2}
+\end{equation}
+
+\section{Neutrino Decoupling}
+
+Neutrinos are coupled to the thermal bath via weak interaction processes like
+\begin{align*}
+    e^{-} + \nu_{e} &\leftrightharpoons e^{-} + \nu_{e} \quad (\text{electron scattering})\\
+    e^{-} + e^{+} &\leftrightharpoons \nu_{e} + \bar{\nu}_{e} \quad (\text{pair production})
+\end{align*}
+\par Consider the production rate $\Gamma = n\sigma v \approx H$ (at decoupling). We know that during RD, the Hubble constant was approximately equal to 
+\begin{equation}
+    H^{2} = \frac{\pi^{2}}{90}g_{\star}\frac{T^{4}}{M_{Pl}^{2}}
+\end{equation}
+Moreover, relativistic neutrinos have a particle density given by the fermionic version of (\ref{eq:pd-ultrarel}), and their decoupling temperature is significantly lower than the electroweak mass-scale $m_{\omega}$, which means that the cross-section for the interaction is given by $\sigma = G_{F}^{2}T^{2}$.
+\par Putting everything together we find out that the interaction rate $\Gamma \propto T^{5}$, while the Hubble constant $H \propto T^{2}$, which means that equivalence can be reached! And indeed we can quickly produce a temperature at neutrinos decoupling \marginpar{Watch out! This is a typical question that is asked during the oral exam!}
+\begin{equation}
+    \boxed{
+    T_{d} \sim \left(\frac{1}{M_{Pl}G_{F}^{2}}\right)^{1/3} \sim \unit{MeV}
+    }
+    \label{eq:neutrino_dec}
+\end{equation}
+After decoupling, the neutrinos move freely along geodesics and preserve to an excellent approximate the relativistic Fermi-Dirac distribution (even after they become non-relativistic at later times).
+
+\section{Electron-Positron Annihilation}
+
+Shortly after the neutrinos decouple, the temperature drops below the electron mass and electron-positron annihilation occurs (along with Compton scattering that keeps electron coupled to photons)
+\begin{align*}
+    e^{-}e^{+} &\leftrightharpoons \gamma\gamma \\
+    e^{-}\gamma &\leftrightharpoons e^{-}\gamma
+\end{align*}
+This, however, is not a decoupling! As temperature decreases, the equilibrium position of the annihilation reaction moves towards the photons, due to the decreasing energy to support the pair production. The energy density and entropy of the electrons and positrons are transferred to the photons, but not to the decoupled neutrinos. The photons are thus “heated” (the photon temperature does not decrease as much) relative to the neutrinos.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.9\textwidth]{img/eeannihilation.png}
+    \caption{Thermal history through electron-positron annihilation. Neutrinos are decoupled and their temperature redshifts simply as $T_{\nu}\propto a^{-1}$. The energy density of the electron-positron pairs is transferred to the photon gas whose temperature therefore redshifts more slowly, $T_{\gamma} \propto g_{\star S}^{-1/3}a^{-1}$. Credits: \cite{Baumann_2022}.}
+\end{figure}
+\par Let's do a quick entropic balance, assuming $T_{\gamma}^{I} = T_{\nu}^{I}$, which along with $a^{3}T_{\gamma}^{3}g_{\star} = \text{const.}$, allows us to compute it separately for both coupled and uncoupled species.
+\par Fix the scale parameter $a$ and assume an adiabatic process, and if we neglect neutrinos and other decoupled species, we get
+\begin{equation}
+    g_{\star S}^{th} = \left\{
+    \begin{array}{ll}
+        2 + \frac{7}{8}\cdot 4 = \frac{11}{2} & (k)T \gtrsim m \quad (\gamma,\,e^{-},\,e^{+} \text{with their spins})\\
+        2 & (k)T \lesssim m \quad (\gamma \text{ and their polarizations})
+    \end{array}
+    \right.
+\end{equation}
+This means that the temperature of photons before and after annihilation is in the ratio
+\begin{equation}
+    \frac{T_{\gamma}^{I}}{T_{\gamma}^{F}} = \left(\frac{4}{11}\right)^{1/3} \approx 0.7
+\end{equation}
+This also means that the temperature of neutrinos is slightly lower than the photon temperature after $e^{+}e^{-}$ annihilation
+\begin{equation}
+    \boxed{
+        \frac{T_{\nu}^{F}}{T_{\gamma}^{F}} = \left(\frac{4}{11}\right)^{1/3}
+    }
+\end{equation}
+This is because, in equilibrium, $g_{\star S}^{th}(aT_{\gamma})^{3}$ remains constant, and we later find that $aT_{\gamma}$ increases after electron-positron annihilation, $(k)T < m_{e}$, by a factor $(11/4)^{1/3}$, while $aT_{\nu}$ remains the same since neutrinos are decoupled.
+\par The present-time temperature of photons is measured from the CMB, $T_{\gamma}(t_{0}) = 2.7\unit{K}$, while the predicted neutrino temperature for a C$\nu$B (\emph{cosmic neutrino background}) is $T_{\nu}(t_{0}) = 1.95\unit{K}$ (yet to be confirmed experimentally). The associated particle densities are quickly found 
+\begin{equation}
+    n_{\gamma} \sim g_{\gamma}T_{\gamma}^{3} \quad n_{\nu} \sim \frac{3}{4}g_{\nu}T_{\nu}^{3}
+\end{equation}
+We can write the latter in terms of the former using the temperature ratio we've previously found
+\begin{equation}
+    n_{\nu} = \frac{3}{4}\left(\frac{4}{11}n_{\gamma}\right) \approx 112 \unit{cm}^{-3} \;\; (\text{per flavour})
+\end{equation}
+At the predicted temperature for the C$\nu$B, two out of three neutrino flavours would be non-relativistic. But that's not a big problem since the scaling of density with temperature is already fixed (they've long since decoupled).
+
+\subsubsection{Cosmologic Bound to Neutrino Masses}
+
+Consider the density parameter $\Omega_{\nu}(t_{0})$ for neutrinos \marginpar{Achtung! Neutrinos, while the Universe expanded, have turned non-relativistic, that's why we're using $\rho \approx mn$.}
+\begin{equation}
+    \Omega_{\nu}(t_{0}) = \frac{\rho_{\nu}(t_{0})}{\rho_{c}} = \frac{\sum_{i} m_{\nu,i}n_{\nu,i}(t_{0})}{\rho_{c}}
+\end{equation}
+which yields
+\begin{equation}
+    \boxed{
+        \Omega_{\nu}(t_{0})h^{2} \approx \frac{\sum_{i} m_{\nu,i}}{94 \unit{eV}}
+    }
+\end{equation}
+where we've used $H_{0} = 100h \unit{km}\unit{s}^{-1}\unit{Mpc}$ and $h = 0.695$. By demanding that neutrinos don’t over close the universe, i.e. $\Omega_{\nu} < 1$, we can give a cosmological upper bound on the sum of the neutrino masses
+\begin{equation}
+    \sum_{i}m_{\nu,i} \leq 14-15\unit{eV}
+\end{equation}
+while from the combined effort of the Planck collaboration and analisys of BAO\footnote{Baryonic Acoustic Oscillations.} we get an ever more strict upper bound $ \sum_{i}m_{\nu,i} \leq 0.13\unit{eV}$. On the other hand, we also have a lower bound given by neutrinos oscillations 
+\begin{align*}
+    \sum_{i}m_{\nu,i} &\geq 0.06\unit{eV} \quad \text{(normal ordering)}\\
+    \sum_{i}m_{\nu,i} &\geq 0.1\unit{eV} \quad \text{(inverted ordering)}
+\end{align*}
+
+\section{Photon Recombination and Decoupling}
+
+An important event in the history of the early Universe is the formation of the first atoms. At temperatures above about $1 \unit{eV}$, the Universe still consisted of a plasma of free electrons and nuclei. Photons were tightly coupled to the electrons via Compton scattering, which in turn strongly interacted with protons via Coulomb scattering. There was very little neutral hydrogen. When the temperature became low enough, the electrons and nuclei combined to form neutral atoms (\emph{recombination}), and the density of free electrons fell sharply.
+
+\subsection{Hydrogen recombination}
+
+\par What we're going to look into now is the recombination reaction of Hydrogen\footnote{Technically speaking, we should also consider the recombination reaction for Helium.}
+\begin{equation*}
+    e^{-} + p^{+} \leftrightharpoons \text{H} + \gamma \quad (\chi = 13.6\unit{eV})
+\end{equation*}
+Clearly, the electrons participating in such reaction are those that had survived annihilation. We can write a chemical balance for the species involved \marginpar{In the prefactor, we can use $m_{\text{H}} \approx m_{p}$, but in the exponential the small difference between $m_{\text{H}}$ and $m_{p} + m_{e}$ is crucial.}
+\begin{equation}
+    \frac{n_{\text{H}}}{n_{e}n_{p}} = \frac{g_{\text{H}}}{g_{e}g_{p}}\left(\frac{m_{\text{H}}}{m_{e}m_{p}}\frac{2\pi}{T}\right)^{3/2}\exp\left(\frac{m_{p}+m_{e}-m_{\text{H}}}{(k)T}\right)\exp\left(\frac{\mu_{p}+\mu_{e}-\mu_{\text{H}}}{(k)T}\right)
+    \label{eq:chembal}
+\end{equation}
+but both the ratio of the state degeneracies $g$ and the exponential of the chemical potentials are equal to 1 at equilibrium. If the Universe is globally neutral, then $n_{e} = n_{p}$. Also, we can introduce the \emph{free electron fraction}
+\begin{equation}
+    X_{e}= \frac{n_{e}}{n_{e}+n_{\text{H}}} = \frac{n_{e}}{n_{p}+n_{\text{H}}} = \frac{n_{e}}{n_{b}} = \frac{n_{e}}{\eta n_{\gamma}}
+    \label{eq:fef}
+\end{equation}
+where in the last equality we have introduced the baryon to photon ratio $\eta$. To simplify the discussion, let us ignore all nuclei other than protons (over 90\% (by number) of the nuclei are protons). The total baryon number density can then be approximated as $n_{b} \approx n_{p} + n_{\text{H}} = n_{e} + n_{\text{H}}$ and hence
+\begin{equation}
+    \frac{1-X_{e}}{X_{e}^{2}} = \frac{n_{b}n_{\text{H}}}{n_{e}^{2}}
+\end{equation}
+which, plugged in the equation for chemical balance (\ref{eq:chembal}), yields the celebrated \emph{Saha equation}
+\begin{equation}
+    \boxed{
+    \left(\frac{1-X_{e}}{X_{e}^{2}}\right)_{\text{eq}} = \frac{2\eta\zeta(3)}{\pi^{2}}T^{3}\left(\frac{2\pi}{m_{e}kT}\right)^{3/2}\exp\left(\frac{m_{p}+m_{e}-m_{\text{H}}}{(k)T}\right)
+    }
+    \label{eq:sahaequation}
+\end{equation}
+\par As a matter of fact, at times Saha's equation is written simply as 
+\begin{equation}
+    1-X_{e}(T) = f(t)X_{e}^{2}(T)
+\end{equation}
+From here we can essentially choose an arbitrary threshold for when we can consider the Universe "recombined." Some choose the moment at which $X_{e} \leq 0.5$, while others choose $X_{e} \leq 0.1$; you choose, the resulting difference is minimal. Following Baumann, we find a recombination temperature
+\begin{equation}
+    T_{\text{rec}} = 0.3\unit{eV} \approx 3600\unit{K}
+    \label{eq:rectemp}
+\end{equation}
+Please notice that $T_{\text{rec}} < \chi = 13.6\unit{eV}$, since there are very many photons for each Hydrogen atom and the high-energy tail of the photon distribution contains photons with energy larger the ionization threshold, allowing Hydrogen ionization.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.9\textwidth]{img/freeel.png}
+    \caption{Free electron fraction as a function of redshift. The horizontal axis is reversed to replicate the natural flow of time from left to right. Credits: \cite{Baumann_2022}.}
+\end{figure}
+
+\par Using $T_{\text{rex}} = T_{0}(1 + z_{\text{rec}})$, with $T_{0} = 2.7 K$, gives the redshift of recombination
+\begin{equation}
+    z_{\text{rec}} \approx 1320
+\end{equation}
+Since matter-radiation equality is at $z_{\text{eq}} \approx 3500$, we conclude that recombination occurred in the matter-dominated era.
+\par On an ending note, notice how thanks to Boltmann's contribution in the non-relativistic regime the ionization fraction never reaches zero. The period during which the Universe is mostly neutral is often called \emph{Dark Ages}.
+\par At a much later time ($z \sim 6-8$), the Universe will eventually be reionized thanks to the formation of the first massive O-class stars\footnote{You can check my Extragalactic Astrophysics Notes if you're interested.}.
+
+\subsection{Photon Decoupling}
+
+Photons are most strongly coupled to the primordial plasma through their interactions with electrons
+\begin{equation*}
+    e^{-} + \gamma \leftrightharpoons e^{-} + \gamma
+\end{equation*}
+with an interaction rate given, as usual, by $\Gamma = n_{e}\sigma c$. Here the interaction cross section is that of Thomson scattering $\sigma_{T} \approx 2\power{10}{-3}\unit{MeV}^{-2}$. Photons and electrons decouple roughly when the interaction rate becomes smaller than the expansion rate
+\begin{equation}
+    \Gamma_{\gamma}(T_{\text{dec}}) \sim H(T_{\text{dec}})
+\end{equation}
+Writing \marginpar{Recall that both recombination and decoupling both occur after matter-radiation equality, hence the Universe is roughly matter dominated.}
+\begin{align*}
+    \Gamma_{\gamma}(T_{\text{dec}}) &= n_{b}X_{e}(T_{\text{dec}})\sigma_{T} = \frac{2\zeta(3)}{\pi^{2}}\eta\sigma_{T}X_{e}(T_{\text{dec}})T_{\text{dec}}^{3}\\
+    H(T_{\text{dec}}) &= H_{0}\sqrt{\Omega_{m}}\left(\frac{T_{\text{dec}}}{T_{0}}\right)^{3/2}
+\end{align*}
+we get\footnote{To be less hand-waving $H^{2}H_{0}^{-2} = \Omega_{m,0}(1+z)^{3}+\Omega_{r,0}(1+z)^{4}+\Omega_{\Lambda}+\Omega_{0}(1+z)^{2} \approx \Omega_{m,0}(1+z)^{3}$}
+\begin{equation}
+    X_{e}(T_{\text{dec}})T_{\text{dec}}^{3/2} \sim \frac{\pi^{2}}{2\zeta(3)}\frac{H_{0}\sqrt{\Omega_{m}}}{\eta\sigma_{T}T_{0}^{3/2}}
+\end{equation}
+Thanks to Saha's equation we finally find 
+\begin{equation}
+    T_{\text{dec}} \sim 0.27 \unit{eV}
+\end{equation}
+Notice that although $T_{\text{dec}}$ isn’t far from $T_{\text{rec}}$, the ionization fraction decreases significantly between recombination and decoupling $$X_{e}(T_{\text{rec}}) \approx 0.1 \to X_{e}(T_{\text{dec}}) \approx 0.01$$ This shows that a large degree of neutrality is necessary for the universe to become transparent to photon propagation.
+\par The redshift and time of decoupling are, respectively, $z \approx 1090$, and $t \approx 370,000\unit{yr}$.
+
+\section{Dark Matter}
+
+Coming soon.
