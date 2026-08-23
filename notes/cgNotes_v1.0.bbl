@@ -1,14 +1,23 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Baumann_2022}
 Daniel {Baumann}.
 \newblock {\em Cosmology}.
 \newblock Cambridge University Press, 2022.
 
+\bibitem{1978PhDT.......195B}
+A.~{Bosma}.
+\newblock {\em {The distribution and kinematics of neutral hydrogen in spiral galaxies of various morphological types}}.
+\newblock PhD thesis, University of Groningen, Netherlands, March 1978.
+
 \bibitem{carroll}
 Sean~M. Carroll.
 \newblock {\em Spacetime and Geometry: An Introduction to General Relativity}.
 \newblock Cambridge University Press, 2019.
+
+\bibitem{cirelli2025darkmatter}
+Marco Cirelli, Alessandro Strumia, and Jure Zupan.
+\newblock Dark matter, 2025.
 
 \bibitem{1917SPAW.......142E}
 Albert {Einstein}.
@@ -20,10 +29,19 @@ Edwin. {Hubble}.
 \newblock {No. 324. Extra-galactic nebulae.}
 \newblock {\em Contributions from the Mount Wilson Observatory / Carnegie Institution of Washington}, 324:1--49, January 1926.
 
+\bibitem{profumo2013tasi2012lecturesastrophysical}
+Stefano Profumo.
+\newblock Tasi 2012 lectures on astrophysical probes of dark matter, 2013.
+
 \bibitem{Riess_2022}
 Adam~G. Riess, Wenlong Yuan, Lucas~M. Macri, Dan Scolnic, Dillon Brout, Stefano Casertano, David~O. Jones, Yukei Murakami, Gagandeep~S. Anand, Louise Breuval, Thomas~G. Brink, Alexei~V. Filippenko, Samantha Hoffmann, Saurabh~W. Jha, W.~D’arcy~Kenworthy, John Mackenty, Benjamin~E. Stahl, and WeiKang Zheng.
 \newblock A comprehensive measurement of the local value of the hubble constant with $1\unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}$ uncertainty from the hubble space telescope and the sh0es team.
 \newblock {\em The Astrophysical Journal Letters}, 934(1), July 2022.
+
+\bibitem{1978ApJ...225L.107R}
+V.~C. {Rubin}, W.~K. {Ford}, Jr., and N.~{Thonnard}.
+\newblock {Extended rotation curves of high-luminosity spiral galaxies. IV. Systematic dynamical properties, Sa -> Sc.}
+\newblock {\em \apjl}, 225:L107--L111, November 1978.
 
 \bibitem{1986rpa..book.....R}
 George~B. {Rybicki} and Alan~P. {Lightman}.

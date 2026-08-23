@@ -363,7 +363,7 @@ Writing \marginpar{Recall that both recombination and decoupling both occur afte
     \Gamma_{\gamma}(T_{\text{dec}}) &= n_{b}X_{e}(T_{\text{dec}})\sigma_{T} = \frac{2\zeta(3)}{\pi^{2}}\eta\sigma_{T}X_{e}(T_{\text{dec}})T_{\text{dec}}^{3}\\
     H(T_{\text{dec}}) &= H_{0}\sqrt{\Omega_{m}}\left(\frac{T_{\text{dec}}}{T_{0}}\right)^{3/2}
 \end{align*}
-we get\footnote{To be less hand-waving $H^{2}H_{0}^{-2} = \Omega_{m,0}(1+z)^{3}+\Omega_{r,0}(1+z)^{4}+\Omega_{\Lambda}+\Omega_{0}(1+z)^{2} \approx \Omega_{m,0}(1+z)^{3}$}
+we get
 \begin{equation}
     X_{e}(T_{\text{dec}})T_{\text{dec}}^{3/2} \sim \frac{\pi^{2}}{2\zeta(3)}\frac{H_{0}\sqrt{\Omega_{m}}}{\eta\sigma_{T}T_{0}^{3/2}}
 \end{equation}
@@ -375,5 +375,232 @@ Notice that although $T_{\text{dec}}$ isn’t far from $T_{\text{rec}}$, the ion
 \par The redshift and time of decoupling are, respectively, $z \approx 1090$, and $t \approx 370,000\unit{yr}$.
 
 \section{Dark Matter}
+
+Dark matter is a...thorny subject: At the same time we know little to nothing about it, and yet know plenty. We know that it must be abundant, much more abundant than standard baryonic matter, and must not interact with electromagnetic radiation. That, incidentally, also means that we can't see it, hence the name.
+\par So how do we know that it must exist? To put it simply, we have several astrophysical evidences, gravitational in nature, that suggest the presence of this exotic type of matter.
+\par To name a few, you might know that galactic rotation curves would look rather different if DM halos didn't exist: The first discrepancies between the expected and the observed rotation curves were investigated as early as the 1970s \cite{1978PhDT.......195B}, \cite{1978ApJ...225L.107R} bringing the astronophysicists of the time to speculate the existence of something they couldn't see but that had to have a density $\rho \propto r^{-2}$ so that rotation curves could be flat as they looked like.
+\par Another evidence came from structure formation theory. If DM didn't exist, there wouldn't have been enough time for standard baryonic matter to collapse and produce structures much denser than the average background of the Universe like galaxies or clusters.
+
+\subsubsection{MOND: Modified Newtonian Dynamics}
+
+At the time, not everyone was buying the thing about dark matter.
+\par It felt...convenient, too convenient. So of course they produced another extremely convenient theory, which is that of \emph{Modified Newtonian Dynamics}. Essentially MOND's stans claimed (and apparently some still claim) that Newton's celebrated 2nd law of dynamics $\vec{F} = m\vec{a}$ didn't hold equally for all acceleration scales, but rather had to be modified introducing an acceleration-dependent function $\mu(a/a_{0})$, with $a_{0}\sim 10^{-10}\unit{m}\unit{s}^{-2}$.
+  \par Newton's second law would then look like 
+  \begin{equation}
+    \vec{F}_{N} = m\vec{a}\cdot \left\{
+        \begin{array}{ll}
+            1 & a/a_{0} \gg 1 \\
+            a/a_{0} & a/a_{0} \ll 1
+        \end{array}
+    \right.
+  \end{equation}
+  Applying this to an object of mass $m$ in circular orbit around a point mass $M$ yields
+\begin{equation*}
+    m\left(\frac{a^{2}}{a_{0}}\right) = \frac{GMm}{r^{2}}
+\end{equation*}
+In the deep MOND regime, the true acceleration of a test particle on a circular orbit is still the centripetal acceleration, so
+\begin{equation*}
+    \left(\frac{v_{c}^{2}}{r}\right)^{2} = \frac{GMa_{0}}{r^{2}}
+\end{equation*}
+which is none other than the Baryonic Tully-Fisher relation
+\begin{equation}
+    v_{c}^{4} = GMa_{0}
+    \label{eq:MOND_TF}
+\end{equation}
+This would be great if (a) the BTFR scaled exactly with $v^{4}$ (obviously it doesn't), (b) didn't exist the bullet-cluster proof: It proved that during the collision of two clusters of galaxies, the gravitational lensing is centered on the gas-stripped clusters (where the DM would be) rather than on the stripped gas as MOND would predict.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.45\textwidth]{img/collisionlessdm.png}
+    \includegraphics[width=0.45\textwidth]{img/monddm.png}
+    \caption{The two different scenarios that were surmised when the bullet cluster was first discovered.}
+    \label{fgr:bulletcluster}
+\end{figure}
+\par Unfortunately for MOND, the scenario of collisionless DM prevailed, as shown by Fig.\ref{fgr:collisionlessevidence}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/collisionlessevidence.png}
+    \caption{The so-called bullet cluster evidence. Three colliding galaxy clusters and one colliding group (at the lower-left), showing the separation between X-rays (pink) and gravitation (blue), indicative of dark matter.}
+    \label{fgr:collisionlessevidence}
+\end{figure}
+
+\subsection{Galaxy Clusters}
+
+Galaxy clusters, as the name suggests, are systems comprising of multiple galaxies. They were already object of studies back in the 1930s.
+\par One cool thing about them is that they verify the \emph{virial theorem}
+\begin{equation}
+    2\langle T \rangle_{\text{trasl.}} = -\sum_{k} \langle \vec{F}_{k}\cdot \vec{r}_{k} \rangle_{\text{trasl.}}
+\end{equation}
+which under the assumption of a conservative force associated to a central potential $U(r)\propto r^{-n}$ translates into the equation the theorem is most known with
+\begin{equation}
+     2\langle T \rangle_{\text{trasl.}} = -n\langle U \rangle
+\end{equation}
+Assuming gravitational potential, the virial theorem allows us to predict the total mass of a cluster by making a simple assumption about its symmetry (spherical, of course) and through measurement of the velocity dispersion of the galaxies within
+\begin{equation}
+    M_{\text{tot}} = \frac{5R\langle v^{2}\rangle}{3G}
+\end{equation}
+\marginpar{Cluster trivia. Did you know that the mass of a cluster is composed by:
+    \begin{itemize}
+        \item 1\% stars;
+        \item 9\% Intracluster Medium;
+        \item 90\% Dark Matter.
+    \end{itemize}
+}
+which, for example, for the Coma Cluster predicts a mass $M_{\text{tot}} \approx 2\power{10}{15}M_{\odot}$. For such a cluster, the mass-to-light ratio $M/L$ would be roughly equal to $250M_{\odot}/L_{\odot}$. Even carrying out the due computations with some more care, you don't manage to bring it below $\sim 10-20M_{\odot}/L_{\odot}$, which is not good since the expected mass-to-light ratio is of order $2-3M_{\odot}/L_{\odot}$.
+\par Moreover, as was ascertained from the aforementioned interaction between clusters, DM is also barely interacting with itself, let alone matter or radiation. One of the few viable ways we can detect its presence and its effects is gravitational lensing.
+\par Research in the cosmological field mainly focuses on two major events: The BBN and the CMB, both of which allows us to measure $\Omega_{m}$ and $\Omega_{b}$. Clearly, if we assume only DM and baryonic matter to contribute to $\Omega_{m}$, a simple subtraction makes us able to give an estimate to DM's density parameter.
+\par The current values give 
+\begin{equation}
+    \Omega_{m}\approx 0.3 \quad \Omega_{b} \approx 0.0486 \implies \Omega_{DM} = 0.2589
+\end{equation}
+so most of the matter contribution comes from DM.
+\par What if we wanted to use the values of $\Omega_{b}$ and $\Omega_{DM}$ to put constrains on the mass our hypothetical DM particle should have? Would that be of any help? Present estimates constrain DM mass in the range
+\begin{equation}
+    10^{-22}\unit{eV} \lesssim m_{DM} \lesssim m_{PBH}\approx 10^{70}\unit{eV} \approx 10^{4}-10^{5}M_{\odot}
+\end{equation}
+corresponding to scales of order 
+\begin{equation}
+    \lambda \sim (2\unit{kpc})\left(\frac{10^{-22}\unit{eV}}{m}\right)\left(\frac{10\unit{km}\unit{s}}{v}\right)
+\end{equation}
+\par With only this information at hand, the only candidate within the current Standard Model is the neutrino: It does not emit light, it's barely interacting with other stuff, it's non-baryonic, and it's stable on cosmological scales. However structure-formation theory has long discarded neutrinos as viable candidates for DM: To put it simply, neutrinos would be too "hot" (read: relativistic for far too long after their decoupling), and their free-streaming would smear out density fluctuations on scales of order
+\begin{align}
+    d_{\text{min}} &\approx ct_{h}\approx 13\,\text{kpc}\left(\frac{m_{h}c^{2}}{3\,\text{eV}}\right)^{-2}\\
+    r_{\text{min}} &=\frac{d_{\text{min}}}{a(t_{h})}\approx 55\,\text{Mpc}\,\left(\frac{m_{h}c^{2}}{3\,\text{eV}}\right)^{-1}
+    \label{eq:nrdimensions}
+\end{align}
+where the latter is the scale in comoving units (i.e., the size of the region \emph{today}) below which fluctuations are erased.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.6\textwidth]{img/dmstructureform.png}
+    \caption{Top row: Simulations of what structure in Hot (left), Warm (middle), and Cold (Right) dark matter Universes would look like at high redshift (early times). Bottom row: same as top row, except now as they would look at the present time ($z=0$). Credits: ITC\@ University of Zurich.}
+\end{figure}
+\par Even considering the current estimated range for the mass of the neutrino, no mass in that range would allow us to observe \emph{now} structures that have already collapsed and fragmented.
+\par The only possibility for that to happen is that DM must be \emph{cold} (i.e. non-relativistic) at decoupling. Technically speaking we cannot fully exclude the possibility of other candidates for DM like particles yet to be discovered or primordial black holes.
+
+\subsection{WIMPS}
+
+In the last section we've listed quite a few properties we're requiring DM to have. Let's briefly recall them:
+\begin{enumerate}
+    \item Negligible light emission;
+    \item Weakly interacting;
+    \item Non-baryonic;
+    \item Cold (non-relativistic at decoupling);
+    \item Either stable or with $\tau_{1/2} \gg \tau_{\text{Universe}}$.
+\end{enumerate}
+A possible class of candidates that meets all these requirements is that of the WIMPS\footnote{Currently, WIMPS are beginning to pop out in scenarios of beyond-SM physics, such as in supersymmetric theories.} (\emph{Weakly Interacting Massive Particles}). The expected mass for the WIMPS would be in the range $1\unit{GeV} \lesssim m_{\text{WIMPS}} \lesssim \unit{TeV}$.
+
+\subsubsection{Thermal Decoupling: Freeze-Out}
+
+The interested reader might refer also to \cite{cirelli2025darkmatter} and \cite{profumo2013tasi2012lecturesastrophysical} for a more comprehensive and extensive discussion on the subject.
+\par As a matter of fact, the WIMPS decoupling is the non-relativistic version of neutrinos' decoupling. We start by calculating the freeze-out temperature
+\begin{equation}
+    \Gamma \sim H \to n\sigma v \sim \frac{T_{FO}^{2}}{M_{Pl}}
+\end{equation}
+We can define $x_{FO} = m_{\chi}/T_{FO}$ (with $\chi$ we're referring to WIMPS) so that 
+\begin{equation}
+    (m_{\chi}T_{FO})^{3/2}\exp\left(m_{\chi}/T_{FO}\right)\sigma v \sim \frac{T_{FO}^{2}}{M_{Pl}}
+\end{equation}
+which we can promptly rewrite as 
+\begin{equation}
+    \boxed{
+        x_{FO}^{1/2}\exp(-x_{FO}) \sim \frac{1}{m_{\chi}M_{Pl}\sigma v} := C
+    }
+\end{equation}
+Let's throw in some numbers by setting a benchmark Model: $m_{\chi} \sim 100\unit{GeV}$ (electroweak scale), $M_{Pl}\sim 10^{19}\unit{GeV}$, $\sigma \sim 10^{-6}\unit{GeV}^{-2}$, and $v \sim \text{o}(1)$, which all reflect into
+\begin{equation}
+    C = 10^{-15} \quad x_{FO} \approx 36
+\end{equation}
+Spanning through the whole WIMPS admitted range of masses bounds $x_{FO}\in [20,40]$. We can also use the equipartition theorem
+\begin{equation}
+    \frac{3}{2}kT_{FO} \sim \frac{1}{2}mv^{2}\to v \sim \frac{1}{3}
+\end{equation}
+
+\subsubsection{WIMPS Miracle}
+
+It just remains to relate the freeze-out abundance of dark matter relics to the dark matter density today
+\begin{equation}
+    \Omega_{\chi,0} = \frac{\rho_{\chi,0}}{\rho_{c}} = \frac{m_{\chi}n_{\chi,0}}{\rho_{c}} = \frac{m_{\chi}n_{\chi,0}T_{0}^{3}}{\rho_{c}T_{0}^{3}}
+\end{equation}
+Since $n\propto a^{-3}$ and $a\propto T^{-1}$, $n/T^{3}\sim \text{const.}$ This we can use to rewrite the expression for $\Omega_{\chi,0}$ as 
+\begin{equation}
+    \Omega_{\chi,0} = \frac{m_{\chi}T_{0}^{3}}{\rho_{c}}\left(\frac{n_{\chi,0}}{T_{0}^{3}}\right) = \frac{T_{0}^{3}}{\rho_{c}}x_{FO}\left(\frac{n_{\chi,0}}{T_{0}^{2}}\right)
+\end{equation}
+but we also have the decoupling condition 
+\begin{equation}
+    n_{FO}\sigma v \sim \frac{T_{FO}^{2}}{M_{Pl}}
+\end{equation}
+Putting everything together yields
+\begin{equation}
+    \Omega_{\chi,0} = \left(\frac{T_{0}^{3}}{\rho_{c}M_{Pl}}\right)x_{FO}\frac{1}{\langle \sigma v \rangle}
+\end{equation}
+or we can put some numbers in 
+\begin{equation}
+    \boxed{
+        \left(\frac{\Omega_{\chi,0}h^{2}}{0.2}\right) \approx \left(\frac{x_{FO}}{20}\right)\left(\frac{10^{-8}\unit{GeV}^{-2}}{\langle \sigma v \rangle}\right)
+    }
+    \label{eq:wimpsmiracle}
+\end{equation}
+This reproduces the observed dark matter density if
+\begin{equation}
+    \sqrt{\langle \sigma v \rangle} \sim 10^{-4}\unit{GeV}^{-1} \sim 0.1 \sqrt{G_{F}}
+\end{equation}
+The fact that a thermal relic with a cross section characteristic of the weak interaction gives the right dark matter abundance is called the WIMP miracle.
+
+\subsubsection{Boltmann Equation}
+
+Technically speaking, the formal tool to describe the evolution beyond equilibrium is the Boltzmann equation. Assume we want to study the interaction process reported below with cross section $\sigma$
+\begin{equation}
+    1 + 2 \leftrightharpoons 3 + 4
+\end{equation}
+each species with a given numeric density $n_{i}$. In the absence of interactions, the number density of a particle species $i$ evolves as
+\begin{equation}
+    \dot{n}_{i} + 3\frac{\dot{a}}{a}n_{i} = 0 \iff \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{i}a^{3}) = 0
+\end{equation}
+This is simply a reflection of the fact that the number of particles in a fixed physical volume is conserved, so that the density dilutes with the expanding volume. To include the effects of interactions we add a collision term to the right-hand side
+\begin{equation}
+    \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{i}a^{3}) = C_{i}[\{n_{j}\}]
+\end{equation}
+This is the Boltzmann equation. The form of the collision term depends on the specific interactions under consideration. Suppose we are interested in tracking the number density $n_{1}$ of species 1. Obviously, the rate of change in the abundance of species 1 is given by the difference between the rates for producing and eliminating the species. The Boltzmann equation simply formalises this statement
+\begin{equation}
+    \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{1}a^{3}) = -\alpha n_{1}n_{2} + \beta n_{3}n_{4}
+\end{equation}
+The first term, $-\alpha n_{1}n_{2}$, describes the destruction of particles 1, while that second term, $\beta n_{3}n_{4}$, describes the creation of particles 3-4. The parameter $\alpha = \langle \sigma v \rangle$ is the \emph{thermally averaged cross section}. The second parameter $\beta$ can be related to $\alpha$ by noting that the collision term has to vanish in (chemical) equilibrium
+\begin{equation}
+    \beta = \left(\frac{n_{1}n_{2}}{n_{3}n_{4}}\right)_{\text{eq}}\alpha
+\end{equation}
+where the densities $n_{i}$ are the ones at equilibrium. We therefore find
+\begin{equation}
+    \boxed{
+    \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{1}a^{3}) = -\langle \sigma v \rangle\left[n_{1}n_{2}-\left(\frac{n_{1}n_{2}}{n_{3}n_{4}}\right)_{\text{eq}}n_{3}n_{4}\right]
+    }
+    \label{eq:Boltmann-eq}
+\end{equation}
+It is instructive to write this in terms of the number of particles in a comoving volume $N_{i} = n_{i}a^{3}$. Since 
+\begin{equation}
+    \diff{(\ln a)} = \frac{\diff{a}}{a} \implies \der{(\ln N_{i})}{(\ln a)} = \frac{a\diff{(\ln(n_{i}a^{3}))}}{\diff{a}} = \frac{1}{H}\frac{1}{n_{i}a^{3}}\frac{\text{d}}{\text{d}t}(n_{i}a^{3})
+\end{equation}
+we can rewrite (\ref{eq:Boltmann-eq}) as
+\begin{equation}
+    \der{(\ln N_{i})}{(\ln a)} = - \frac{n_{2}\langle \sigma v \rangle}{H}\left[1-\left(\frac{n_{1}n_{2}}{n_{3}n_{4}}\right)_{\text{eq}}\frac{n_{3}n_{4}}{n_{1}n_{2}}\right] = -\frac{\Gamma}{H}\left[1-\left(\frac{n_{1}n_{2}}{n_{3}n_{4}}\right)_{\text{eq}}\frac{n_{3}n_{4}}{n_{1}n_{2}}\right]
+\end{equation}
+The right-hand side of last equation contains a factor describing the interaction efficiency, $\Gamma/H $, and a factor characterizing the deviation from equilibrium, the one within parentheses. We can define two regimes:
+\begin{enumerate}
+    \item $\Gamma/H \gg 1$: The system is always driven towards its equilibrium configuration. As long as the interaction rates are large, the system quickly relaxes to a steady state where the r.h.s. vanishes and the particles assume their equilibrium abundances;
+    \item $\Gamma/H \ll 1$: The r.h.s. gets suppressed and the comoving density of particles approaches a constant relic density (\emph{freeze-out}).
+\end{enumerate}
+Both scenarios are pictorially represented in Fig.\ref{fgr:freezeout}.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.8\textwidth]{img/freezeout.png}
+    \caption{A schematic illustration of particle freeze-out. At high temperatures, $T \gg m$, the particle abundance tracks its equilibrium value. At low temperatures, $T \ll m$, the particles freeze out and maintain a density that is much larger than the Boltzmann-suppressed equilibrium abundance. Credits: \cite{Baumann_2022}.}
+    \label{fgr:freezeout}
+\end{figure}
+\par Another possibility is the "hot-decoupling," like that of neutrinos, that produces a hot relic. With reference to Fig.\ref{fgr:freezeout}, you might imagine it as though the curve never drops for a broad range of values for $x$.
+\par For neutrinos we can define a free-streaming length \marginpar{In the integral, $t_\text{s. f.}$ stands for some time associated to structure formation.}
+\begin{equation}
+    \lambda_{FS} = \int_{t_{\text{dec}}}^{t_\text{s. f.}} \frac{v(t)\diff{t}}{a(t)} \sim 1\unit{Mpc}\left(\frac{1\unit{eV}}{m_{\nu}}\right)
+\end{equation}
+which is what allows us to say that if DM were made of hot neutrinos, we wouldn't have structures below the Mpc-scale.
+
+\section{Big Bang Nucleosynthesis}
 
 Coming soon.
