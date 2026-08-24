@@ -883,7 +883,7 @@ where the quantity within parentheses is usually called \emph{curvature perturba
 \begin{equation}
     \der{p^{\mu}}{\lambda} = -\christoffel{\alpha}{\beta}{\mu}p^{\alpha}p^{\beta}
 \end{equation}
-which gives \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
+which gives \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where the derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
 \begin{equation}
     \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H}-\phi' -\hat{p}_{i}\partial_{i}\psi
 \end{equation}
@@ -895,7 +895,7 @@ which is essentially a composition of the standard cosmological redshift (the Hu
 \end{equation}
 Consider 
 \begin{equation}
-    \int_{\eta_{LS}}^{\eta_{0}}\der{\ln(aE_{\gamma})}{\eta}\diff{\eta} = -\int_{\eta_{LS}}^{\eta_{0}}\left(der{\psi}{\eta} - \phi'-\psi'\right)\diff{\eta}
+    \int_{\eta_{LS}}^{\eta_{0}}\der{\ln(aE_{\gamma})}{\eta}\diff{\eta} = -\int_{\eta_{LS}}^{\eta_{0}}\left(\der{\psi}{\eta} - \phi'-\psi'\right)\diff{\eta}
 \end{equation}
 which is immediately integrated 
 \begin{equation}
@@ -905,7 +905,7 @@ This equation essentially describes how the energy of a photon has changed along
 \par On the other hand, the integral term describes the behavior of fluctuations in the cosmological fluid based on how they're interacting with the photons. This is called \emph{Integrated Sachs-Wolfe effect} \cite{1967ApJ...147...73S}: It regulates how photons are acquiring/losing energy while passing through spatially and temporally changing gravitational potentials, thus introducing a secondary anisotropy in the CMB spectrum.
 \par Since 
 \begin{equation}
-    aE \propto aT \propto a(\bar{t}+\delta T) \propto a\bar{T}\left(1+\frac{\delta T}{\bar{T}}\right)
+    aE \propto aT \propto a(\bar{T}+\delta T) \propto a\bar{T}\left(1+\frac{\delta T}{\bar{T}}\right)
 \end{equation}
 and 
 \begin{equation}
@@ -920,6 +920,7 @@ where the last term $\hat{n}\cdot\vec{v}$ takes into account the small oscillati
     \boxed{
      \left(\frac{\delta T}{T}\right)_{0} = \left[\frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS}\right] + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
     }
+    \label{eq:temperaturecontrast-sw}
 \end{equation}
 The term within square parentheses is the \emph{Sachs-Wolfe effect}, which captures the effects stemming from photons falling into gravitational potentials at last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. 
 \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
@@ -928,3 +929,169 @@ The term within square parentheses is the \emph{Sachs-Wolfe effect}, which captu
   boxed title style={size=small,colframe=blue!50!black}]
   Note that necessarily $$ \left(\frac{\delta\rho}{\rho}\right)_{LS}\cdot \psi_{LS} < 0$$ and you can also prove that cold patches in the CMB are associated to the overdensities, thus producing the following relation $$ \frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS} = \frac{\psi_{LS}}{3}$$
 \end{tcolorbox}
+\par We can swtich to the FT of $\Theta_{0} = \delta T/T$
+\begin{equation}
+    \left(\frac{\delta T}{T}\right)_{\eta = \eta_{0}} = \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\vec{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
+\end{equation}
+where we've defined \marginpar{Note that we're neglecting the integrated Sachs-Wolfe effect.}
+\begin{equation}
+    F_{LS} = \frac{\left[\frac{1}{4}\widehat{\left(\frac{\delta\rho}{\rho}\right)}(\eta_{LS}, \vec{k}) + \hat{\psi}_{LS}(\eta_{LS}, \vec{k})\right]}{R_{i}(k)} \quad G_{LS} = \frac{\hat{v}_{b}}{R_{i}(k)}
+\end{equation}
+which are (almost) the transfer functions we were talking about at the beginning of our discussion. The quantity $R_{i}(k)$ contains the initial conditions in terms of the scalar curvature, while $\chi_{LS}$ is the comoving distance of the last scattering horizon.
+\par From this we want to compute the 2-point correlation function and project it on the Legendre polynomials to obtain the power spectrum $C_{l}$.
+For this purpose we can exploit one of the properties of the spherical Bessel functions $j_{l}$
+\begin{equation}
+    \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right) = \sum_{l}i^{l}(2l+1)j_{l}(k\chi_{LS})P_{l}(\vec{k}\cdot\hat{n}) = \sum_{l}i^{l}(2l+1)j_{l}'(k\chi_{LS})P_{l}(\vec{k}\cdot\hat{n})
+\end{equation}
+so that putting it in the FT of $\Theta_{0}$ yields
+\begin{equation}
+    \Theta(\hat{n}) = \sum_{l}i^{l}(2l+1)\int \Theta_{l}(k)R_{i} i(\vec{k}\cdot\hat{n})\exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)
+\end{equation}
+where 
+\begin{equation}
+    \Theta_{l}(k) = F_{LS}(k)j_{l}(k\chi_{LS})-G_{LS}j_{l}'
+\end{equation}
+The correlation function will then be
+\begin{equation}
+    C(\theta) = \sum_{l}\frac{2l+1}{4\pi}\left\{4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k) \right\}P_{l}(\hat{n}\cdot \hat{n}')
+\end{equation}
+where we recognize the power spectrum 
+\begin{equation}
+    \boxed{
+    C_{l} = 4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k)
+    }
+    \label{eq:powerspectrumcmb}
+\end{equation}
+where $\Delta_{\mathcal{R}}^{2}$ is the post-inflation power spectrum and $\Theta_{l}$ is
+\begin{equation}
+    \Theta_{l} = \frac{\frac{1}{4}\widehat{\left(\frac{\delta\rho}{\rho}\right)}(\eta_{LS}, \vec{k}) + \hat{\psi}_{LS}(\eta_{LS}, \vec{k})}{R_{i}(k)}j_{l}(k\chi_{LS})-\frac{\hat{v}_{b}}{R_{i}(k)}j_{l}'(k\chi_{LS})
+\end{equation}
+Also, note that we've used the following property of Legendre polynomials
+\begin{equation}
+    \int \text{d}^{3}k P_{l}(\hat{k}\cdot\hat{n})P_{l'}(\hat{k}\cdot\hat{n}') = \frac{4\pi}{2l+1}P_{l}(\hat{n}\cdot\hat{n}')\delta_{ll'}
+\end{equation}
+Before moving over, let's consider the transmission probability for photons 
+\begin{equation}
+    P_{t} = \exp\left(-\tau(z_{0}, z_{1})\right)
+\end{equation}
+where the optical depth $\tau$ is defined as 
+\begin{equation}
+    \tau = \int \diff{t}\sigma_{T}n_{e} = \int \frac{\diff{z}}{H(z)(1+z)}\sigma_{T}n_{b}X_{e}(z)
+\end{equation}
+Sometimes we might also define a \emph{visibility function} $g(z) = \derinline{\tau}{z}$, but at the end of the day what both are telling us is that there exists a residual probability of scattering also at small redshift.
+\par Note that there is also a dipole anisotropy ($l=1$) of significant amplitude $\delta T/T \sim 10^{-3}$ which is usually interpreted as a Doppler effect caused by the relative motion of the observer (us) with respect to the frame in which the CMB is isotropic\footnote{Essentially, the dipole anisotropy is a combination of peculiar velocities: Earth wrt Sun, Sun wrt MW, MW wrt M31, Local Group wrt Virgo cluster etc.}. Such velocity turns out to be of order $v \sim 396 \unit{km}\unit{s}^{-1}$, and the value is corrected annually.
+\par Well now, recall the definition of $\Delta_{\mathcal{R}}$
+\begin{equation}
+    \Delta_{\mathcal{R}}^{2}(k) = \frac{k^{3}P_{\mathcal{R}}(k)}{2\pi^{2}} \propto k^{n_{s}-1}
+\end{equation}
+with $n_{s} \approx 0.965$ for a Harrison-Zeldovič spectrum, which means that the initial (adimensional) spectrum is (almost) scale invariant. If you recall, it enters in the expression for the FT of the temperature contrast \marginpar{In the sake of simplicity, we're working in the approximation of \textbf{instantaneous decoupling} $g(z) = \delta(z-z_{LS})$. A much more elegant discussion would consider how the solutions to the Boltmann equation are distributed in $l$.}
+\begin{equation}
+    \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\vec{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
+\end{equation}
+when calculating the correlation function and power spectrum (\ref{eq:powerspectrumcmb}). If we approximate the Bessel function to a $\delta$-function 
+\begin{equation}
+    j_{l}(k\chi_{LS}) \approx \delta(l-k\chi_{LS})
+\end{equation}
+the power spectrum is significantly simplified 
+\begin{equation}
+    C_{l}^{SW} \propto F_{LS}^{2}(k)\Delta_{\mathcal{R}}^{2}(k)|_{k = l/\chi_{LS}}
+\end{equation}
+
+\subsection{Photon-Baryon Fluid Oscillations}
+
+The oscillations we're going to investigate shortly in this section exist only on the smaller $l$ scales, which are those within the sound horizon at last scattering 
+\begin{equation}
+    d < r_{\text{sound}}(t_{LS}) = \int_{0}^{\eta_{LS}} \diff{\eta} c_{s}(\eta) \approx 145\unit{Mpc} \;\;(\text{comoving})
+\end{equation}
+which is the maximum scale at which coherent oscillations can exist. We thus expect to see these oscillations on scales $\theta \sim 1$° or, equivalently, $l \approx 100$. \marginpar{At high values of $l$, so smaller angular scales, we observe an effect called silk damping, which is caused by diffusive effects of photons from hot to cold regions
+$$ r^{2}_{\text{diff}} = \int_{0}^{\eta_{LS}} l_{\gamma}\diff{\eta} $$ where $l_{\gamma}$ is the mean free path of photons. The integral above evaluates to roughly $49\unit{Mpc}^{2}$.}
+
+\subsubsection{Temporal evolution}
+
+In the non-relativistic limit, we can consider small perturbations on the continuity and Euler equations. We thus linearize the equations and assume a barotropic equation of state $p(\rho)$, which leads us to the following equation
+\begin{equation}
+    \partial_{t}^{2}\delta\rho = \nabla^{2}\delta p \to (\partial_{t}^{2}-c_{s}^{2})\delta\rho = 0
+\end{equation}
+\par This is all nice and dandy, but we're not considering two major points: (a) we should add the contribution of (self)gravity in Euler equation and thus introduce Poisson's equation
+\begin{equation}
+    \nabla^{2}\phi = 4\pi G\rho
+    \label{eq:poisson-eq}
+\end{equation}
+and (b) we should also take into account the expansion of the Universe. This can be easily done switching to comoving coordinates $\vec{r}_{ph.} = a(t)\vec{x}_{c}$ and defining the velocity $\vec{v} = H\vec{r} + a\dot{\vec{x}}$, where the latter contribution is the comoving (or peculiar) velocity. In the Newtonian limit, the cosmological equation for the evolution of the density contrast $\delta = \delta\rho/\rho$ is 
+\begin{equation}
+    \ddot{\delta} + 2H\dot{\delta} - \left(\frac{c_{s}^{2}}{a^{2}}+4\pi G \bar{\rho}\right)\delta = 0
+\end{equation}
+which represents a damped (Hubble friction) harmonic oscillator with a driving (gravity and pressure). We can also produce a more relativistically-acceptable equation 
+\begin{equation}
+    \boxed{
+    \delta'' + \frac{R'}{1+R}\delta' - \frac{1}{3(1+R)}\nabla^{2}\delta = \frac{4}{3}\nabla^{2}\psi + 4\phi'' + \frac{4R^{2}}{1+R}\phi'
+    }
+    \label{eq:bpfluid-eq}
+\end{equation}
+where $\phi,\psi$ are the Bardeen potentials we've introduced earlier and $R$ is the \emph{baryon loading}
+\begin{equation}
+    R = \frac{3}{4}\frac{\rho_{b}}{\rho_{\gamma}} = 0.6\left(\frac{\Omega_{b}}{0.02}\right)\left(\frac{a}{10^{-3}}\right)
+\end{equation}
+Note that the sound speed is 
+\begin{equation}
+    c_{s} = \sqrt{\frac{1}{3(1+R)}}(c)
+\end{equation}
+which tends to $c/\sqrt{3}$ in RD ($R\to 0$) and in much smaller in MD.
+\par The objective here is to find some solution to the relativistic equation above and then investigate the transfer function that descends from there, namely $F_{LS}(k)$. If you were to do so (we won't), you'd find 
+\begin{equation}
+    F_{LS}(k) = \frac{1}{5}\left[\frac{S(k)}{(1+R_{LS})^{1/4}}\cos(kr_{S}^{LS}+\theta(k))-3R_{LS}T(k)\right]
+\end{equation}
+with $S,\,\theta,\,T$ fitting functions popping out the numerical solution. The important part however is all in the phase of the cosine 
+\begin{equation}
+    kr_{S}^{LS}+\theta(k)
+\end{equation}
+which tells us that peaks in the oscillations are found for values of $k$
+\begin{equation}
+    k_{n} \approx \frac{n\pi}{r_{s}(\eta_{LS})}
+\end{equation}
+where the presence of the fitting function introduces only a small displacement from the reported value. We can also calculate \marginpar{Remarkably, the position of the 1st peak is influenced by the curvature of the Universe, while the height-ratio between different peaks depends on the density parameter of the various components involved via Bardeen potentials.}
+\begin{equation}
+    l_{n} = k_{n}\chi_{LS} \approx \frac{n\pi\chi_{LS}}{r_{S}(\eta_{LS})} \approx 302n
+\end{equation}
+In reality the first peak in the oscillations is found at $l\approx 220$ and not at $l \approx 302$ because of the shift introduced by $\theta$.
+
+\section{Extra: Indirect Observations of DM}
+
+How can we do so? For example we can assume that DM is weakly coupled with particles of the Standard Model and there exist interactions like 
+\begin{align*}
+    \chi + \chi &\to \text{SM} + \text{SM} \\
+    \chi &\to \text{SM} + \text{SM}
+\end{align*}
+where SM refers to some particle in the Standard Model. In particular the latter reaction, a decay, would eventually produce a small flux of photons $\phi_{\gamma}$. In principle we can expect to measure 
+\begin{equation}
+    \frac{\text{\# events}}{T mc A} = \frac{M}{m_{\chi}}\Gamma\frac{1}{4\pi r^{2}}
+\end{equation}
+Are there any numbers we can throw in there to even begin to hope we could observe something?
+\par Take for example the Virgo cluster $R \approx 16\unit{Mpc}$, $M\approx 10^{19}M_{\odot}$, and suppose someone has given you for your birthday a detector that is most sensitive in the GeV-TeV range. With these numbers, if you wanted to measure (say) 100 events in a whole year, the interaction rate would be $\Gamma \approx 10^{-29}-10^{-26}\unit{s}^{-1}$, which would correspond to timescales $\tau = \Gamma^{-1}$ much larger than the age of the Universe!
+\par If DM were to annihilate somehow, to produce the correct $\Omega_{\text{CDM}}$ we would need $\langle \sigma v \rangle \approx 3\power{10}{-26}\unit{cm}^{3}\unit{s}^{-1}$, and so 
+\begin{equation}
+    \Gamma = n_{\text{DM}}\langle \sigma v \rangle = \frac{\rho_{\text{DM}}\langle \sigma v \rangle}{m_{\text{DM}}}
+\end{equation}
+The inferred density of DM in the Milky Way is $\rho_{\text{DM}} \approx 0.3\unit{GeV}\unit{cm}^{-3}$, producing an interaction rate
+\begin{equation}
+    \Gamma \approx \frac{10^{-26}\unit{s}^{-1}}{\left(m_{\text{DM}/\unit{GeV}}\right)}
+\end{equation}
+Even in this case there would be little hope for detection. But the morale behind all this is that if you're able to aim an appropriate experiment towards a significantly large astronomical object, then you might hope to observe anomalous fluxes in the GeV-TeV range. This has the nice effect to produce bounds for $\langle \sigma v \rangle$.
+
+\subsection{Indirect Cosmological DM Detection}
+
+Consider now the number of annihilations per comoving volume that might have occurred in a Hubble time 
+\begin{equation}
+    \frac{\text{\# events}}{V_{c}t_{H}} \approx \frac{n_{\text{phy}}^{2}a^{3}\langle \sigma v \rangle}{2H}
+\end{equation}
+which implies that the annihilation rate 
+\begin{equation}
+    \mathcal{A} \propto a^{-3}H^{-1}\langle \sigma v \rangle
+\end{equation}
+In RD it would be $\mathcal{A} \propto a^{-1}$, in MD $\mathcal{A}\propto a^{-3/2}$, so in any case it is decreasing. Let's compute it at freeze-out and at the eV scale. 
+\par At freeze-out $\Gamma = \mathcal{A}\sim H$, so the fraction of annihilating particles would be of order 1! At the intermediate scales of the CMB, on the other hand, that fraction would have dropped below $f\sim 10^{-9}$. That is good, because we don't want DM to disappear in bulk.
+\par What happens is that DM would be injecting about $1\unit{eV}-1\unit{GeV}$ per annihilation, which is not that far away from what's needed to reionize the Universe. This, however, would produce an increase in the ionization fraction and would change significantly the visibility function, introducing an asymmetry. This would create a deviation from the approximation of instantaneous scattering which would suppress the peaks in the CMB spectrum and move the 1st peak as well. As a consequence recombination and last scattering would also have to be postponed.
+\par But worry not. Such deviation from expectations has never been observed (yet), further constraining the interaction cross section of DM.
+\begin{flushright}
+    \emph{The End.}
+\end{flushright}

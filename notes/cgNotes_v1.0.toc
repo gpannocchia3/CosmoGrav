@@ -44,7 +44,11 @@
 \contentsline {subsubsection}{{Light Elements Synthesis}}{52}{subsubsection*.20}%
 \contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{53}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{55}{subsection.5.6.1}%
-\contentsline {part}{\numberline {i}{Appendix}}{59}{part.1}%
-\contentsline {chapter}{\numberline {6}{Appendix}}{61}{chapter.6}%
-\contentsline {chapter}{Bibliography}{69}{section*.27}%
+\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{60}{subsection.5.6.2}%
+\contentsline {subsubsection}{{Temporal evolution}}{60}{subsubsection*.24}%
+\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{61}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{62}{subsection.5.7.1}%
+\contentsline {part}{\numberline {i}{Appendix}}{63}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{65}{chapter.6}%
+\contentsline {chapter}{Bibliography}{73}{section*.28}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
