@@ -19,6 +19,11 @@ Sean~M. Carroll.
 Marco Cirelli, Alessandro Strumia, and Jure Zupan.
 \newblock Dark matter, 2025.
 
+\bibitem{2020moco.book.....D}
+Scott {Dodelson} and Fabian {Schmidt}.
+\newblock {\em {Modern Cosmology}}.
+\newblock 2020.
+
 \bibitem{1917SPAW.......142E}
 Albert {Einstein}.
 \newblock {Kosmologische Betrachtungen zur allgemeinen Relativit{\"a}tstheorie}.
@@ -28,6 +33,11 @@ Albert {Einstein}.
 Edwin. {Hubble}.
 \newblock {No. 324. Extra-galactic nebulae.}
 \newblock {\em Contributions from the Mount Wilson Observatory / Carnegie Institution of Washington}, 324:1--49, January 1926.
+
+\bibitem{ParticleDataGroup:2024cfk}
+S.~Navas et~al.
+\newblock {Review of particle physics}.
+\newblock {\em Phys. Rev. D}, 110(3):030001, 2024.
 
 \bibitem{profumo2013tasi2012lecturesastrophysical}
 Stefano Profumo.
@@ -47,5 +57,10 @@ V.~C. {Rubin}, W.~K. {Ford}, Jr., and N.~{Thonnard}.
 George~B. {Rybicki} and Alan~P. {Lightman}.
 \newblock {\em {Radiative Processes in Astrophysics}}.
 \newblock 1986.
+
+\bibitem{1967ApJ...147...73S}
+R.~K. {Sachs} and A.~M. {Wolfe}.
+\newblock {Perturbations of a Cosmological Model and Angular Variations of the Microwave Background}.
+\newblock {\em \apj}, 147:73, January 1967.
 
 \end{thebibliography}

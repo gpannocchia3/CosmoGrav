@@ -603,4 +603,328 @@ which is what allows us to say that if DM were made of hot neutrinos, we wouldn'
 
 \section{Big Bang Nucleosynthesis}
 
-Coming soon.
+Let us return to $T \sim 1 \unit{MeV}$. Photons, electron and positrons are in equilibrium. Neutrinos are about to decouple. Baryons are non-relativistic and therefore much fewer in number than the relativistic species. Nevertheless, we now want to study what happened to these trace amounts of baryonic matter. The total number of nucleons stays constant due to baryon number conservation. This baryon number can be in the form of protons and neutrons or heavier nuclei. Weak nuclear reactions may convert neutrons and protons into each other and strong nuclear reactions may build nuclei from them.
+\par The purpose of this section will be reaching the understanding of a single number
+\begin{equation}
+    Y = \frac{4n_{\text{He}}}{n_{\text{H}}} \approx 0.25
+\end{equation}
+namely, the abundance of primordial Helium. The steps we're going to take to reach our final destination are pictorially summarized in Fig.\ref{fgr:bbn}.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.9\textwidth]{img/bbn.png}
+    \caption{Numerical results for Helium production in the early Universe. Credits: \cite{Baumann_2022}.}
+    \label{fgr:bbn}
+\end{figure}
+\par So, we're starting from the MeV scale with free protons and free neutrons, which are in equilibrium through the following reactions
+\begin{align*}
+    n + \nu_{e} &\leftrightharpoons p^{+} + e^{-}\\
+    n + e^{+} &\leftrightharpoons p^{+} + \bar{\nu}_{e}
+\end{align*}
+with a $Q$-value of order $Q\approx 1.3\unit{MeV}$. As temperature changes, assuming the reactions doesn't drop out of equilibrium, the reactions will be leaning towards the production of protons 
+\begin{equation}
+    \left(\frac{n_{n}}{n_{p}}\right)_{\text{eq}} = \left(\frac{m_{n}}{m_{p}}\right)^{3/2}\exp\left(-\frac{m_{n}-m_{p}}{(k)T}\right)
+\end{equation}
+We can define the neutronization ratio
+\begin{equation}
+    X_{n} = \frac{n_{n}}{n_{n}+n_{p}}
+    \label{eq:neutronization}
+\end{equation}
+so that, at equilibrium, the fractional abundance of neutron is given by 
+\begin{equation}
+    X_{n}^{\text{eq}}(T) = \frac{\exp(-Q/T)}{1+\exp(-Q/T)}
+\end{equation}
+which is vanishing for either $T\to 0$ or $t\to\infty$. Neutrons would disappear on a timescale of about $\sim 1\unit{s}$, when the Universe has cooled to about $\sim 1.3\unit{MeV}$. This is somewhat...unhandy, considering that a second there's not much time to do any nucleosynthesis.
+\par What's the solution? Easy: The reactions quickly drop out of equilibrium, and neutrons freeze-out. This means that as soon as the Universe drops below the MeV scale, neutrons freeze-out allows them to keep existing with a significant abundance.
+\par To go any further than this, we have to recall Boltmann's equation (\ref{eq:Boltmann-eq}). If we consider a reaction like 
+\begin{equation}
+    n + \text{lept}_{1} \leftrightharpoons p + \text{lept}_{2}
+\end{equation}
+then the associated Boltmann equation is 
+\begin{equation}
+    \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{n}a^{3}) = -\Gamma\left(n_{n}-\left(\frac{n_{n}}{n_{p}}\right)_{\text{eq}}n_{p}\right) \quad \Gamma = n_{e}^{\text{eq}}\langle \sigma v \rangle
+\end{equation}
+Since $n_{b} = n_{p}+n_{n}$, the neutronization factor (\ref{eq:neutronization}) is 
+\begin{equation}
+    X_{n} = \frac{X_{n}n_{b}}{(1-X_{n}n_{b})}
+\end{equation}
+which allows us to rewrite Boltmann's equation 
+\begin{equation}
+    \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(X_{n}n_{b}a^{3}) = -\Gamma \left[X_{n}n_{b} - (1-X_{n})n_{b}\exp\left(-Q/T\right)\right]
+\end{equation}
+hence 
+\begin{equation}
+    \der{X_{n}}{t} = -\Gamma\left[X_{n}-(1-X_{n})\exp\left(-Q/T\right)\right]
+\end{equation}
+We can define a new variable $x = Q/T$, so that 
+\begin{equation}
+    \boxed{
+    \der{X_{n}}{x} = \frac{\Gamma(x)}{xH(x)}\left(e^{-x}-X_{n}(1-e^{-x})\right)
+    }
+    \label{eq:neutronfo}
+\end{equation}
+where we have used 
+\begin{equation}
+    \der{x}{t} = -\frac{Q}{T^{2}}\der{T}{t} = xH
+\end{equation}
+since $T \propto a^{-1}$. During BBN we have 
+\begin{equation}
+    H = \sqrt{\frac{\rho}{3M_{Pl}^{2}}} = \frac{\pi}{3}\sqrt{\frac{g_{\star}}{10}}\frac{Q^{2}}{M_{Pl}}\frac{1}{x^{2}} = \frac{H_{1}}{x^{2}}
+\end{equation}
+Solving (\ref{eq:neutronfo}) numerically, we find
+\begin{equation}
+    X_{n}^{\infty} = X_{n}(\infty) = 0.15
+\end{equation}
+\par Finally, we need an expression for the neutron-proton conversion rate, $\Gamma$, which we'll here pretend it has been revealed from God, your favorite deity, or \cite{2020moco.book.....D}
+\begin{equation}
+    \Gamma = \frac{255}{\tau_{n}}\frac{12+6x+x^{2}}{x^{5}} \unit{s}^{-1}
+\end{equation}
+where $\tau_{n} = 878.4 \pm 0.5 \unit{s}$ \cite{ParticleDataGroup:2024cfk}. It is interesting to point out that the conversion time $\Gamma^{-1}$ is comparable to the age of the Universe at the considered energy-scale, while at later times $T\propto t^{-1/2}$, and $\Gamma \propto T^{3}$. The neutron-proton conversion time becomes longer than the age of the Universe. Therefore we get freeze-out.
+\par For temperatures below $0.2\unit{MeV}$ the finite lifetime of the neutron becomes important. To include neutron decay in our computation we simply multiply the freeze-out abundance by an exponential decay factor
+\begin{equation}
+    X_{n}(t) = X_{n}^{\infty}e^{-t/\tau_{n}}
+\end{equation}
+which motivates the abrupt drop in the low temperature regions of Fig.\ref{fgr:bbn}.
+\par Through freeze-out we've managed to extend a neutron's lifespan from less than a second to a little shy of $1000\unit{s}$. However, we're yet not finished. In fact, if things were exactly as we've described them so far, and nothing else occurred, all neutrons would vanish after some integer multiple of $\tau_{n}$, which would kinda suck for the purpose of forming heavier elements.
+\par How can we then prevent the natural and inevitable demise of free neutrons? You bound them into heavier nuclei \marginpar{Note that during the BBN there's no formation of elements with $A=5$ or $A=8$ because of $\alpha$-instability. You'll have to wait until the 1st generation of stars ignites Helium through the $3\alpha$ reaction to breach through this gate and produce heavier elements.}
+\begin{align*}
+    \element{n}{1}{0} + \element{p}{1}{1} &\to \element{D}{2}{1} + \gamma \\
+    \element{D}{2}{1} + \element{p}{1}{1} &\to \element{He}{3}{2} + \gamma \\
+    \element{D}{2}{1} + \element{D}{2}{1} &\to \element{He}{3}{2} + \element{p}{1}{1} \\
+    &\to \element{He}{3}{2} + \element{n}{1}{0} \\
+    \element{He}{3}{2} + \element{D}{2}{1} &\to \element{He}{4}{2} + \element{p}{1}{1} \\
+    \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Be}{7}{4} + \gamma \\
+    \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Li}{7}{3} + \gamma
+\end{align*}
+but essentially is the very first reaction that determines the timescale of this whole machination we have just penned. Incidentally, this is also a quite significant problem. Since Deuterium is formed directly from neutrons and protons, it can follow its equilibrium abundance as long as enough free neutrons are available. However, since the Deuterium binding energy is rather small, the Deuterium abundance becomes large rather late (at $T < 100 \unit{keV}$) because it is very prone to being photodisintegrated.
+\par So, although heavier nuclei have larger binding energies and hence would have larger equilibrium abundances, they cannot be formed until sufficient Deuterium has become available. This is the \emph{Deuterium bottleneck}. Only when there is enough Deuterium, can helium be produced.
+\par Consider now the chemical balance equation at equilibrium 
+\begin{equation}
+    \left(\frac{n_{\text{D}}}{n_{n}n_{o}}\right)_{\text{eq}} = \frac{3}{4}\left(\frac{m_{\text{D}}}{m_{p}m_{n}}\frac{2\pi}{T}\right)^{3/2}\exp(B_{\text{D}}/T)
+\end{equation}
+where $B_{\text{D}}$ is Deuterium's binding energy $B_{\text{D}} = m_{n}+m_{p}-m_{\text{D}} = 2.22\unit{MeV}$.
+\par We then use $n_{n} = X_{n}n_{b}$ which, thanks to the baryon to photon ratio, is also equal to
+\begin{equation}
+    n_{n} = X_{n}n_{b} = X_{n}\eta \frac{2\zeta(3)}{\pi^{2}}T_{\gamma}^{3}
+\end{equation}
+Hence, approximating $m_{\text{D}}\approx 2m_{p}\approx 2m_{n}$, we conclude 
+\begin{equation}
+    \left(\frac{n_{\text{D}}}{n_{p}}\right)_{\text{eq}} = \frac{3}{4}X_{n}^{\text{eq}}\eta \frac{2\zeta(3)}{\pi^{2}}T_{\gamma}^{3} \left(\frac{4\pi}{m_{p}T}\right)^{3/2}\exp(B_{\text{D}}/T)
+\end{equation}
+The Deuterium bottleneck is overcome when $(n_{\text{D}}/n_{p})_{\text{eq}}\sim 1$, which means that we have to wait until $T \sim 70 \unit{keV}$, so that 
+\begin{equation}
+    \eta\exp(B_{\text{D}}/T) \sim 1
+\end{equation}
+If we transpose the temperature to a time, we find that the Deuterium bottleneck is breached past at $t_{\text{nuc}} \approx 250\unit{s}$ which is less than the neutron half-life time!
+\par At this temperature, the neutronization rate is 
+\begin{equation}
+    \frac{n_{n}}{n_{b}} = \frac{n_{n}}{n_{p}+n_{n}} = X_{n} \approx 0.11
+\end{equation}
+Since the binding energy of Helium is larger than that of Deuterium, the Boltzmann factor $\exp(B/T)$ favours Helium over Deuterium. Indeed, in Fig.\ref{fgr:bbn} we see that Helium is produced almost immediately after Deuterium. Virtually all remaining neutrons at $t \sim t_{\text{nuc}}\approx 250\unit{s}$ then are processed into $\element{He}{4}{}$. Since two neutrons go into one nucleus of $\element{He}{4}{}$, the final $\element{He}{4}{}$ abundance is equal to half of the neutron abundance at $t_{\text{nuc}}$, so $n_{\text{He}} = n_{n}/2$. The fractional abundance of Helium will thus be 
+\begin{equation}
+    Y_{p} = \frac{4n_{\text{He}}}{n_{\text{H}}} = \frac{2n_{n}}{n_{\text{H}}} = \frac{2X_{n}(t_{\text{nuc}})}{1-X_{n}(t_{\text{nuc}})} \approx 0.25
+\end{equation}
+This is of course a very simplified version of the much more complex calculation. From the primordial Helium abundance we can, in principle, infer a value for the baryon-to-photon ratio 
+\begin{equation}
+    Y_{p} = 0.2262 + 0.0135\ln\left(\frac{\eta}{10^{-10}}\right)
+\end{equation}
+
+\subsubsection{Light Elements Synthesis}
+
+To determine the abundances of other light elements, the coupled Boltzmann equations have to be solved numerically, and actually theoretical predictions for the light element abundances as a function of $\eta$ (or $\Omega_{b}$) are found to match reasonably well with observations.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.8\textwidth]{img/lightelements.png}
+    \caption{Numerical results for the evolution of light element abundances. Credits: \cite{Baumann_2022}.}
+    \label{fgr:lightelements}
+\end{figure}
+\par The only element that has created a little trouble (and still does) is Lithium, which presents an anomalous behavior.
+
+\section{Cosmic Microwave Background}
+
+When we refer to the CMB (Cosmic Microwave Background), we're referring to a diffused cosmic background of photons, what remains of the photon fluid after the time of decoupling. \marginpar{The CMB has quite a few interesting properties:
+\begin{itemize}
+    \item Almost perfect blackbody behavior (check Appendix B if you're not familiar);
+    \item A temperature of $T \approx 2.72\unit{K}$ and minimal fluctuations;
+    \item $E \sim 10^{-4}\unit{eV}$ ($160\unit{GHz}$).
+\end{itemize}
+}
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{img/cmb.jpg}
+    \caption{Behold! The Cosmic Microwave Background.}
+    \label{fgr:cmb}
+\end{figure}
+\par All the useful information about the CMB is hidden and preserved into its microscopic fluctuations
+\begin{equation}
+    \der{\Delta T}{T} \sim 10^{-5}
+\end{equation}
+so all we have to do is to construct a formalism able to extract such information from the temperature contrast
+\begin{equation}
+    \Theta(\hat{n}) = \frac{T(\hat{n})-\langle T(\hat{n})\rangle}{\langle T(\hat{n})\rangle}
+    \label{eq:temperaturecontrast}
+\end{equation}
+from which we can define the angular power spectrum and 2-point correlation function as such 
+\begin{equation}
+    C(\theta) = \langle \Theta(\hat{n}) \Theta(\hat{n}') \rangle \quad \hat{n}\cdot \hat{n}' = \cos\theta
+    \label{eq:correlationfunction}
+\end{equation}
+At this point it's particularly useful to expand the temperature contrast with spherical harmonics, which means assigning a weight to angular patches that are able to capture finer and finer details. We'll use
+\begin{equation}
+    \Theta(\hat{n}) = \sum_{l}\sum_{m = -l}^{l}a_{lm}Y_{lm}(\theta,\phi)
+\end{equation}
+where 
+\begin{equation}
+    Y_{lm} = (-1)^{m}\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}}P_{l}^{m}(\cos\theta)e^{im\phi} \quad P_{l}^{m}(x) = (1-x^{2})^{m/2}\frac{\text{d}^{m}P_{l}}{\text{d}x^{m}}
+    \label{eq:sphericalharmonics}
+\end{equation}
+where $P_{l}$ are Legendre's polynomials. If the function to be expanded is real, then
+\begin{equation}
+    Y_{lm}^{*} = (-1)^{m}Y_{l-m} \quad a_{lm}^{*} = (-1)^{m}a_{l-m}
+\end{equation}
+where the former actually holds even for a complex function. With these conventions, the 2-point correlation function becomes
+\begin{equation}
+    C(\theta) = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}\rangle Y_{lm}Y_{l'm'} = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}^{*}\rangle Y_{lm}Y_{l'm'}^{*}
+\end{equation}
+If we assume isotropy (hence invariance under angular traslations), patterns associated to different $l$ are independent, hence
+\begin{equation}
+    \langle a_{lm}a_{l'm'}^{*}\rangle = C_{l}\delta_{ll'}\delta_{mm'}
+\end{equation}
+so 
+\begin{equation}
+    C(\theta) = \sum_{l}C_{l}\sum_{m=-l}^{+l}Y_{lm}Y_{lm}^{*}
+\end{equation}
+\par Let's now use the property 
+\begin{equation}
+    P_{\cos\theta} = \frac{4\pi}{2l+1}\sum_{m}Y_{lm}Y_{lm}^{*}
+\end{equation}
+which allows us to conclude \marginpar{Usually, you also end up exploiting Wiener-Chinčin theorem to define a power spectrum as the FT of the correlation function.}
+\begin{equation}
+    \boxed{
+        C(\theta) = \sum_{l}\frac{(2l+1)}{4\pi}P_{l}(\cos\theta)C_{l}
+    }
+    \label{eq:correlationcmb}
+\end{equation}
+Here $C_{l}$ is the factor that quantifies how much correlated is the CMB on the angular scale $l$. However, what you will usually find in plots is actually
+\begin{equation}
+    \Delta_{T}^{2} = \Theta^{2} = \frac{l(l+1)}{2\pi}C_{l}T_{0}^{2}
+\end{equation}
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{img/cmbtempcont.png}
+    \caption{Temperature fluctuations $\Delta_{T}$ of the CMB as observed by the Planck collaboration, expressed as a function of the multipole $l$. The vertical dotted line shows $l_{\text{Hor}}$, the multipole corresponding to the horizon size at the epoch of last scattering.}
+    \label{fgr:cmbtempcont}
+\end{figure}
+\par The higher spread of the measurement on the larger scales (smaller $l$) is caused by the presence of only one CMB and progressively less patches to average on, reflecting in a higher variance (\emph{cosmic variance}).
+\par Our purpose now would be that to study the small perturbations of the cosmological fluid, to which is associated an initial power spectrum coming from the residuals of the inflationary period \marginpar{Here $\mathcal{R}$ refers to the spatial curvature. The spectrum $P_{\mathcal{R}}(k)$ is sometimes known as Harrison-Zeldovič spectrum.}
+\begin{equation}
+    \Delta_{\mathcal{R}}^{2}(k) = \frac{k^{3}P_{\mathcal{R}}(k)}{2\pi^{2}} \propto k^{n_{s}-1}
+    \label{eq:primordialps}
+\end{equation}
+from which a temporal evolution will be brought about. After the last scattering epoch, fluctuations will be free-streaming, even though they will be weakly interacting with structures on the larger scales. But regardless, the idea is to write 
+\begin{equation}
+    C_{l} = \int \diff{\ln(k)} \Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k)
+\end{equation}
+where $\Theta_{l}^{2}(k)$ is a transfer function containing the temporal details and projections on the power spectrum.
+
+\subsection{Perturbation Theory}
+
+Let's start from the conformal FLRW metric (\ref{eq:FRW_conf})
+\begin{equation}
+    \diff{s^{2}} = a^{2}(\eta)\left[-\diff{\eta^{2}} + \delta_{ij}\diff{x^{i}}\diff{x^{j}}\right]
+\end{equation}
+The more general way to add a perturbation to the metric is the following 
+\begin{align*}
+    \diff{s^{2}} = a^{2}(\eta)\Big[ & -(1+2A(x^{\mu}))\diff{\eta^{2}} + 2B_{i}(x^{\mu})\diff{\eta}\diff{x^{i}} + \\
+    & + C\delta_{ij}\diff{x^{i}}\diff{x^{j}} + 2E_{ij}(x^{\mu})\diff{x^{i}}\diff{x^{j}} \Big]
+\end{align*}
+It will be extremely useful to perform a scalar-vector-tensor (SVT) decomposition of the perturbations. For 3-vectors, this should be familiar. It simply means that we can split any 3-vector into the gradient of a scalar and a divergenceless vector
+\begin{equation}
+    B_{i} = \partial_{i}B + \hat{B}_{i} \quad \partial^{i}\hat{B}_{i} = 0
+\end{equation}
+Similarly, any rank-2 symmetric tensor can be written
+\begin{equation}
+    E_{ij} = C\delta_{ij} + \partial_{\langle i}\partial_{j \rangle}E + \partial_{( i}\hat{E}_{j)} + 2\hat{E}_{ij}
+\end{equation}
+where 
+\begin{align*}
+    \partial_{\langle i}\partial_{j \rangle}E & = \left(\partial_{i}\partial_{j} -\frac{\delta_{ij}}{3}\nabla^{2}\right)E\\
+    \partial_{( i}\hat{E}_{j)} & = \frac{1}{2}\left(\partial_{i}\hat{E}_{j} + \partial_{j}\hat{E}_{i}\right)
+\end{align*}
+As before, the hatted quantities are divergenceless, and the tensor perturbation is traceless, $E^{i}_{\; i} = 0$. The 10 degrees of freedom of the metric have thus been decomposed into 4 + 4 + 2 SVT degrees of freedom.
+\par What makes the SVT-decomposition so powerful is the fact that the Einstein equations for scalars, vectors and tensors don’t mix at linear order and can therefore be treated separately. In the following, we'll only be interested in scalar fluctuations and the associated density perturbations (under the assumption of adiabatic processes). Vector perturbations aren’t produced by inflation and even if they were, they would decay quickly with the expansion of the universe. Tensor perturbations are an important prediction of inflation but we won't deal with them\footnote{We would if I had followed the 9 credits course rather than the 6 one. But since I didn't, there's no need to go that far.}.
+\par Before we continue, we should, in principle, address an important subtlety. The metric perturbations we've introduced aren’t uniquely defined, but are gauge dependent. It is possible to show (we won't) that one way to avoid the gauge problems is to define special combinations of metric perturbations that do not transform under a change of coordinates. Meet the \emph{Bardeen variables} \marginpar{You should recall from Chapter \ref{ch:iv} that $\mathcal{H} = a'/a$ is the Hubble parameter in conformal time, and with the superscript we're referring to derivatives with respect to conformal time.}
+\begin{align}
+    \psi(x^{\mu}) &= A + \mathcal{H}(B-E') + (B-E')' \\
+    \phi(x^{\mu}) &= -C + \frac{1}{3}\nabla^{2}E -\mathcal{H}(B-E')
+    \label{eq:bardeenvariables}
+\end{align}
+Technically speaking, also
+\begin{equation}
+    \hat{\Phi}_{i} = \hat{E}_{i} - \hat{B}_{i} \quad \hat{E}_{ij}
+\end{equation}
+are gauge invariant quantities. With significant effort, you might also find the three-dimensional Ricci scalar associated with the spatial part of the perturbed metric
+\begin{equation}
+    a^{2}R_{(3)} = -4\nabla^{2}\left(C-\frac{1}{3}\nabla^{2}E\right)
+\end{equation}
+where the quantity within parentheses is usually called \emph{curvature perturbation}. On the other hand, the \emph{comoving curvature perturbation} $\mathcal{R}$ is the curvature perturbation evaluated in the comoving gauge ($B_{i} = 0$). It will prove convenient to have a gauge-invariant expression for $\mathcal{R}$, so that we can evaluate it from the perturbations in any gauge (for example, in Newtonian gauge). Since $B$ and $v$\footnote{The scalar $v$ is defined through the 3-dimensional velocity $v_{i} = \partial_{i}v$.} vanish in the comoving gauge, we can always add linear combinations of these to curvature perturbation to form a gauge-invariant combination that equals $\mathcal{R}$. The correct gauge-invariant expression for the comoving curvature perturbation is
+\begin{equation}
+    \mathcal{R} = C-\frac{1}{3}\nabla^{2}E +\mathcal{H}(B+v)
+    \label{eq:comovingcurvature}
+\end{equation}
+\par At any rate, these gauge-invariant variables can be considered as the "real" spacetime perturbations since they cannot be removed by a gauge transformation.
+\par We'll work in Newton's gauge $B=E=0$, which implies $\psi = A$ and $\phi = -C$, thus producing the metric
+\begin{equation}
+    \diff{s^{2}} = a^{2}(\eta)\left[-(1+2\psi)\diff{\eta^{2}} + (1-2\phi)\delta_{ij}\diff{x^{i}}\diff{x^{j}}\right]
+    \label{eq:gauge-inv-fix-FLRW}
+\end{equation}
+\par For perturbations that decay at spatial infinity, the Newtonian gauge is unique (i.e. the gauge is fixed completely). In this gauge, the physics appears rather simple since the hypersurfaces of constant time are orthogonal to the worldlines of observers at rest in the coordinates (since $B = 0$) and the induced geometry of the constant-time hypersurfaces is isotropic (since $E = 0$).
+\par In the absence of anisotropic stress, $\psi = \phi$. Note the similarity of the metric to the usual weak-field limit of GR about Minkowski space; we shall see that $\psi$ plays the role of the gravitational potential.
+\par Let's see how a photon moves in the perturbed metric, that is, let's check how its geodesics respond to the perturbation
+\begin{equation}
+    \der{p^{\mu}}{\lambda} = -\christoffel{\alpha}{\beta}{\mu}p^{\alpha}p^{\beta}
+\end{equation}
+which gives \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
+\begin{equation}
+    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H}-\phi' -\hat{p}_{i}\partial_{i}\psi
+\end{equation}
+which is essentially a composition of the standard cosmological redshift (the Hubble term), a small perturbation on the redshift ($\phi'$), and the gravitational redshift. Ultimately we find 
+\begin{equation}
+    \boxed{
+        \der{\ln(aE_{\gamma})}{\eta} = -\der{\psi}{\eta} + \phi'+\psi'
+    }
+\end{equation}
+Consider 
+\begin{equation}
+    \int_{\eta_{LS}}^{\eta_{0}}\der{\ln(aE_{\gamma})}{\eta}\diff{\eta} = -\int_{\eta_{LS}}^{\eta_{0}}\left(der{\psi}{\eta} - \phi'-\psi'\right)\diff{\eta}
+\end{equation}
+which is immediately integrated 
+\begin{equation}
+    \ln\left(\frac{(aE_{\gamma})_{0}}{(aE_{\gamma})_{LS}}\right) = -(\psi_{0}+\psi_{LS}) + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta}
+\end{equation}
+This equation essentially describes how the energy of a photon has changed along a geodesic from the last scattering up until today. We arbitrarily set the potential $\psi_{0} = 0$, while $\psi_{LS}$ represents the overdensities of the oscillating fluid at last scattering.
+\par On the other hand, the integral term describes the behavior of fluctuations in the cosmological fluid based on how they're interacting with the photons. This is called \emph{Integrated Sachs-Wolfe effect} \cite{1967ApJ...147...73S}: It regulates how photons are acquiring/losing energy while passing through spatially and temporally changing gravitational potentials, thus introducing a secondary anisotropy in the CMB spectrum.
+\par Since 
+\begin{equation}
+    aE \propto aT \propto a(\bar{t}+\delta T) \propto a\bar{T}\left(1+\frac{\delta T}{\bar{T}}\right)
+\end{equation}
+and 
+\begin{equation}
+    \ln\left(1+\frac{\delta T}{\bar{T}}\right) \sim \frac{\delta T}{\bar{T}}
+\end{equation}
+we thus obtain an expression for the temperature constant in the CMB at present time 
+\begin{equation}
+    \left(\frac{\delta T}{T}\right)_{0}(\hat{n}) = \left(\frac{\delta T}{T}\right)_{LS}(\hat{n}) + \psi_{LS} + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
+\end{equation}
+where the last term $\hat{n}\cdot\vec{v}$ takes into account the small oscillations in the baryon-photon fluid. Alternatively, we can further expand the temperature contrast at LS 
+\begin{equation}
+    \boxed{
+     \left(\frac{\delta T}{T}\right)_{0} = \left[\frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS}\right] + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
+    }
+\end{equation}
+The term within square parentheses is the \emph{Sachs-Wolfe effect}, which captures the effects stemming from photons falling into gravitational potentials at last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. 
+\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
+  title=Sachs-Wolfe Effect,
+  boxed title style={size=small,colframe=blue!50!black}]
+  Note that necessarily $$ \left(\frac{\delta\rho}{\rho}\right)_{LS}\cdot \psi_{LS} < 0$$ and you can also prove that cold patches in the CMB are associated to the overdensities, thus producing the following relation $$ \frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS} = \frac{\psi_{LS}}{3}$$
+\end{tcolorbox}

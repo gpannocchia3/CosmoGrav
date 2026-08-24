@@ -41,7 +41,10 @@
 \contentsline {subsubsection}{{WIMPS Miracle}}{46}{subsubsection*.16}%
 \contentsline {subsubsection}{{Boltmann Equation}}{46}{subsubsection*.17}%
 \contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{48}{section.5.5}%
-\contentsline {part}{\numberline {i}{Appendix}}{49}{part.1}%
-\contentsline {chapter}{\numberline {6}{Appendix}}{51}{chapter.6}%
-\contentsline {chapter}{Bibliography}{59}{section*.22}%
+\contentsline {subsubsection}{{Light Elements Synthesis}}{52}{subsubsection*.20}%
+\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{53}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{55}{subsection.5.6.1}%
+\contentsline {part}{\numberline {i}{Appendix}}{59}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{61}{chapter.6}%
+\contentsline {chapter}{Bibliography}{69}{section*.27}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
