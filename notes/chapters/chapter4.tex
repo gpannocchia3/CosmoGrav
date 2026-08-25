@@ -38,7 +38,7 @@ which is actually perfectly valid, even from a theoretical point of view\footnot
 \par In 1918, Erwin Schrödinger suggested that the Cosmological Constant was equivalent to the energy-momentum tensor of a fluid with negative pressure, and could thus be included in the right-hand side term of the equation.
 \par But, as you perhaps know, even Einstein was prone to errors like any other human being. In 1917, Vesto Slipher observed a discrepancy in the observed emission lines of some galaxies (with respect to the expected frequencies). He, however, failed to correlate such discrepancy to the distance of the aforementioned galaxies.
 \par It was only when Hubble measured their distance \cite{1926CMWCI.324....1H} through the Cepheid-variables method that cosmologists started to realize that the Universe was expanding rather than being static; the expansion law of the Universe still carries Hubble's name, who was the first to suggest such correlation.
-\par Another viable model to describe the Universe is the so-called "Einstein-De Sitter" Universe. This model essentially assumes the Universe to be akin to a non-relativistic fluid for the sake of computing the resulting metric and the properties stemming from it. This model was however abandoned because it produced errors in the estimation of the age of the Universe\footnote{It turned out that some white dwarves, low mass stars that had reached the end of their evolution cycle, would be older than the Universe. I hope you'll agree with me that it would be at least a bit odd.}.
+\par Another viable model to describe the Universe is the so-called "Einstein-de Sitter" Universe. This model essentially assumes the Universe to be akin to a non-relativistic fluid for the sake of computing the resulting metric and the properties stemming from it. This model was however abandoned because it produced errors in the estimation of the age of the Universe\footnote{It turned out that some white dwarves, low mass stars that had reached the end of their evolution cycle, would be older than the Universe. I hope you'll agree with me that it would be at least a bit odd.}.
 
 \subsection*{Thermodynamical Considerations on the Big Bang}
 
@@ -748,7 +748,7 @@ so that we could write in principle $\rho_{M} \to \rho_{M} + \Delta\rho_{M}$ wit
 \end{equation}
 meaning that such a Universe is unstable!
 
-\subsubsection{Einstein-De Sitter Universe}
+\subsubsection{Einstein-de Sitter Universe}
 
 Let's try this one more time. Recall Friedmann's second equation (\ref{eq:friedmann2}) and consider a flat Universe with only the Cosmological Constant in it
 \begin{equation}
@@ -830,9 +830,9 @@ or, equivalently, we can plug in the critical density and density parameter to f
 which can be studied for all the various components our Universe could feature
 \begin{itemize}
     \item $w < -1/3 \implies q < 0$ and hence the Universe accelerates;
-    \item $w=0 \implies q = \Omega_{M}/2 > 0$ and hence it decelerates. This was actually the underlying assumption in the Einstein-De Sitter Universe model;
+    \item $w=0 \implies q = \Omega_{M}/2 > 0$ and hence it decelerates. This was actually the underlying assumption in the Einstein-de Sitter Universe model;
     \item $w = 1/3 \implies q \approx \Omega_{r} >0$;
-    \item $w = -1 \implies q = -\Omega_{\Lambda} < 0$ and hence the Universe accelerates. This is what a De Sitter Universe would predict.
+    \item $w = -1 \implies q = -\Omega_{\Lambda} < 0$ and hence the Universe accelerates. This is what a de Sitter Universe would predict.
 \end{itemize}
 
 \subsubsection{Vacuum Energy}
@@ -915,7 +915,7 @@ which represents the \emph{dynamical age of the Universe}. Sometimes it might be
 \begin{equation}
     t(z) = \frac{1}{H_{0}}\int_{z}^{\infty} \frac{\diff{z'}}{(1+z')E(z')}
 \end{equation}
-\par For the Einstein-De Sitter Universe ($k=0$, $\Omega_{m,0}=1$), the dynamical time evaluates to 
+\par For the Einstein-de Sitter Universe ($k=0$, $\Omega_{m,0}=1$), the dynamical time evaluates to 
 \begin{equation}
     t_{0}^{E-dS} = \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x\cdot x^{-3/2}} = \frac{2}{3H_{0}} \approx 7.0h^{-1}\unit{Gyr}
 \end{equation}
@@ -1166,6 +1166,216 @@ For example, if the EoS has $w>-1/3$, $r_{\star}\to \infty$ and the horizon is n
 
 \subsection{Flatness Problem}
 
-Coming soon.
+Consider a Universe with vanishing Cosmological Constant $\Lambda = 0$ which is also such that Einstein's equation is \emph{always} valid, also at $t=0$. If we define
+\begin{equation}
+    \Omega_{k} = \Omega_{0} = 1-\Omega = \frac{\rho_{c}-\rho}{\rho_{c}} = -\frac{k}{a^{2}H^{2}}
+\end{equation}
+Now assume that $k\neq 0$ and $\Omega_{0}$ can evolve independently from the dominant contribution to the cosmological fluid. If
+\begin{itemize}
+    \item MDU: $a(t)\propto t^{2/3}$ and $H \propto a^{-3/2} \implies \Omega_{0}\sim a \sim t^{2/3}\sim \Gamma^{-1}$;
+    \item RDU: $a(t)\propto t^{1/2}$ and $H \propto a^{-2} \implies \Omega_{0}\sim a^{2} \sim t \sim \Gamma^{-2}$.
+\end{itemize}
+Going back in time has the effect of decreasing the value of $\Omega_{0}$. Through studies of the CMB (see Chapter \ref{ch:v} for more), the Planck collaboration constrained the value of $\Omega_{0}$, which was found to be
+\begin{equation}
+    |\Omega_{0}(t_{0})| < 0.05
+\end{equation}
+At the time of matter-radiation equality, the spatial density parameter was 
+\begin{equation}
+    \Big| \frac{\Omega_{0}(t_{eq})}{\Omega_{0}(t_{0})}\Big|^{-1} = \frac{T_{eq}}{T_{0}} \sim 10^{4} \implies |\Omega_{0}(t_{eq})| < 10^{-4}
+\end{equation}
+Similarly, if we extrapolate backward to the time of Big Bang nucleosynthesis, at $a_{BBN} \approx 3.6\cdot 10^{-9}$
+\begin{equation*}
+    |1-\Omega_{BBN}|<7\cdot10^{-16}
+\end{equation*}
+and the distance from unity would only decrease if we went even further back in time. Setting then those orders of magnitude as initial conditions imply a \emph{huge fine-tuning problem}.
+\par There is no known reason for the density of the Universe to be so close to the critical density, and this appears to be an unacceptably strange coincidence in the view of most astronomers. This is the so called \emph{Flatness problem}.
+\par Let us define 
+\begin{equation}
+    x = \log\left(\frac{a}{a_{0}}\right) \implies H = \der{\ln(a)}{t} \implies \diff{t} = \frac{1}{H}\diff{\ln(a)} = \frac{1}{H}\diff{x}
+\end{equation}
+and recall Friedmann equation (\ref{eq:friedmann1}) for a perfect fluid
+\begin{equation}
+    \frac{\ddot{a}}{a} = \frac{4\pi G}{3}\rho (1+3w) \implies 2q = (1+3w)\Omega(t)
+\end{equation}
+and 
+\begin{equation}
+    \frac{\dot{H}}{H^{2}} = -(1+q)
+\end{equation}
+Putting all of this to work, we gather 
+\begin{equation}
+    \der{\Omega_{0}}{t} = \frac{k}{a^{3}}\frac{2\dot{H}}{H^{3}} + \frac{k}{H^{2}}\frac{2\dot{a}}{a^{3}} = -2\Omega_{0}H\left(1+\frac{\dot{H}}{H^{2}}\right) = -2\Omega_{0}H(1-(1+q))
+\end{equation}
+If we want the final result to be independent from the particular cosmology that we've chosen \marginpar{Just in case you have forgotten, with the superscript we're referring to the derivative with respect to the conformal time.}
+\begin{align}
+    & 2\Omega_{0}' = 2\Omega_{0}q \\
+    & 2q = (1+3w)\Omega = (1+3w)(1-\Omega_{0})
+\end{align}
+which means 
+\begin{equation}
+    \boxed{
+        \Omega_{0}' = (1+3w)(1-\Omega_{0})\Omega_{0}
+    }
+\end{equation}
+This tells us that if $\Omega_{0}\approx 0$, the stationary point is unstable if $1+3w > 0$! Similarly, $\Omega_{0}\approx 0$ is a stable attractor if $1+3w < 0$, which means $w < -1/3$.
+\par The flatness problem is thus resolved if we postulate a Universe that accelerates for enough time. Such period of time is called \emph{inflationary epoch} or just \emph{inflation}.
+\par If during the inflation $H \sim \text{const.}$ then 
+\begin{equation}
+    \Omega_{k} \approx -\frac{k}{a^{2}H^{2}}
+\end{equation}
+Let $t_{i}$ be inflation's starting time and $t_{f}$ the ending time
+\begin{equation}
+    \frac{\Omega_{0}(t_{f})}{\Omega_{0}(t_{i})} = \left(\frac{a_{f}}{a_{i}}\right)^{2} = e^{-2N}
+\end{equation}
+where we defined $N = \ln(a_{f}/a_{i})$ the number of $e$-folds of the inflationary epoch. We want that at the end of inflation $|\Omega_{0}(t_{f})|\sim 10^{-61}$, while we assume a strongly non-flat Universe at the beginning of inflation $|\Omega_{0}(t_{i})|\sim 1$. For our requirements to be met, the Universe should expand a number of $e$-folds such that
+\begin{equation}
+    e^{-2N} \approx 10^{-60} \implies N \geq 60
+\end{equation}
+During inflation, then, the comoving Hubble radius is decreasing 
+\begin{equation}
+    \boxed{
+    \frac{1}{aH} \downarrow \implies |\Omega_{0}| = \frac{|k|}{a^{2}H^{2}}\downarrow
+    }
+    \label{eq:solvedfp}
+\end{equation}
+thus resulting in a quasi-de Sitter Universe with $p=-\rho$ and $H \sim \text{const.}$
 
 \subsection{Horizon Problem}
+
+Another problem remains to be addressed. We know (and we'll see) that photons decouple from ordinary matter at $z\approx 1100$ (decoupling/last scattering). Currently, within our particle horizon, we observe a roughly homogeneous temperature distribution, which is that of the CMB. So far so good.
+\par From last scattering until present day, the Universe was dominated from non-relativistic matter, hence 
+\begin{equation}
+    R_{H}(t_{LS})\approx H_{LS}^{-1} = H_{0}^{-1}\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}\approx R_{H}(t_{0})\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}
+\end{equation}
+But here comes the problem. Since 
+\begin{quote}
+    "\emph{Scales scale with the scale factor}"
+\end{quote}
+\marginpar{This is essentially the corresponding particle wavelength at last scattering.}
+\begin{equation} 
+    \lambda_{H_{0}}(t_{LS}) = \frac{R_{H}(t_{0})}{1+z_{LS}}
+\end{equation}
+we get a gargantuan problem $R_{H}(t_{LS}) \ll \lambda_{H_{0}}(t_{LS})$, which can be rewritten in a perhaps clearer form 
+\begin{equation}
+    \left(\frac{\lambda_{H_{0}}(t_{LS})}{R_{H}(t_{LS})}\right)^{3} = \left(\frac{a_{LS}}{a_{0}}\right)^{-3/2} \approx 10^{5}
+\end{equation}
+which means that $10^{5}$ volumes are \emph{not} in causal connection!
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/hp.png}
+    \caption{The horizon problem in the conventional Big Bang model. All events that we currently observe are on our past light cone. The intersection of our past light cone with the spacelike slice labelled CMB corresponds to two opposite points in the observed CMB. Their past light cones don’t overlap before they hit the singularity, $a = 0$, so the points appear never to have been in causal contact. The same applies to any two points in the CMB that are separated by more than 1 degree on the sky. Credits: \cite{Baumann_2022}.}
+    \label{fgr:hp}
+\end{figure}
+\par This is a huge problem in order to find a sensible explanation for the impressive homogeneity of the CMB (since after decoupling photons are no longer interacting with matter).
+\par Perhaps you won't be surprised when I say that inflation comes to the rescue this time as well.
+\par During inflation $H_{i}^{-1}\approx \text{const}$ while structures would continue to grow until they would eventually cross the horizon. If we assume a large enough inflationary period, the scales within which we observe the current homogeneity could be able to enter once more into the horizon because they're exponentially suppressed.
+\par At the end of an à la de Sitter inflation (but French-sounding) the particle horizon was 
+\begin{equation}
+    R_{H} = a_{f}\int_{t_{i}}^{t_{f}}\frac{\diff{t}}{a(t)}
+\end{equation}
+with 
+\begin{equation}
+    a(t) = a(t_{i})\exp(H_{i}(t-t_{i}))
+\end{equation}
+meaning that 
+\begin{equation}
+    \frac{a_{f}}{a_{i}} = \frac{a(t_{f})}{a(t_{i})} = \exp(H_{i}(t_{f}-t_{i}))
+\end{equation}
+We can also invert the expression
+\begin{equation}
+    a(t_{i}) = a(t_{f})\exp(-H_{i}(t_{f}-t_{i}))
+\end{equation}
+and define the number of $e$-folds like we've done earlier $N = H_{i}(t_{f}-t_{i})$. This allows us to write 
+\begin{equation}
+    R_{H}(t_{f}) = a(t_{f})\int_{t_{i}}^{t_{f}} \frac{\diff{t}}{a(t_{f})}\exp(H_{i}(t_{f}-t))
+\end{equation}
+If we assume that the particle horizon at last scattering is such that 
+\begin{equation}
+    R_{H}(t_{LS}) = a(t_{LS})\int_{t_{i}}^{t_{LS}}\frac{\diff{t}}{a(t)} \approx a(t_{LS})\int_{t_{i}}^{t_{f}}\frac{\diff{t}}{a(t)}\exp(H_{i}(t_{f}-t))
+\end{equation}
+we conclude 
+\begin{equation}
+    \boxed{
+        R_{H}(t_{LS}) = \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}\left[\exp(H_{i}(t_{f}-t_{i}))-1\right] = \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}(e^{N}-1)
+    }
+\end{equation}
+\par Our problem is solved if $R_{H}(t_{LS}) > \lambda_{H_{0}}(t_{LS})$
+\begin{equation}
+    \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}(e^{N}-1) > \frac{1}{H_{0}(1+z_{LS})} = \frac{a_{LS}}{a_{0}H_{0}}
+\end{equation}
+hence if
+\begin{equation}
+    \boxed{
+        e^{N} \gtrsim \frac{a(t_{f})H_{i}}{a(t_{0})H_{0}}
+    }
+    \label{eq:solvedhp}
+\end{equation}
+How do we interpret this last result? All scales we observe today had always been causally connected during the whole expansion of the Universe.
+\par For the sake of completeness, let's prove that the conditions to solve both the flatness and horizon problems are the same.
+\begin{equation}
+    |\Omega_{0}(t_{0})| = \frac{|k|}{a^{2}H_{0}^{2}} \quad |\Omega_{0}(t_{f})| = \frac{|k|}{a_{f}^{2}H^{2}(t_{f})}
+\end{equation}
+This implies \marginpar{Recall that during inflation the Hubble constant is not changing.}
+\begin{equation}
+    |\Omega_{0}(t_{0})|a^{2}H_{0}^{2} = |\Omega_{0}(t_{f})|a_{f}^{2}H^{2}(t_{f}) = |\Omega_{0}(t_{f})|a_{f}^{2}H_{i}^{2}
+\end{equation}
+but 
+\begin{equation}
+    \Big|\frac{\Omega_{0}(t_{f})}{\Omega_{0}(t_{i})}\Big| = e^{-2N} \implies |\Omega_{0}(t_{0})| = e^{-2N}|\Omega_{0}(t_{i})|\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right)
+\end{equation}
+If we set $|\Omega_{0}(t_{i})| \approx 1$ \marginpar{The request $|\Omega_{0}(t_{0})| < 1$ purely relies on observational evidence.}
+\begin{equation}
+    |\Omega_{0}(t_{0})|\approx e^{-2N}\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right) < 1 \iff e^{N} > \frac{a(t_{f})H_{i}}{a_{0}H_{0}}
+\end{equation}
+which is the condition that solves the horizon problem.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.8\textwidth]{img/hpinflation.png}
+    \caption{Inflationary solution to the horizon problem. The comoving Hubble sphere shrinks during inflation and expands during the conventional Big Bang evolution (at least until dark energy takes over at $a \approx 0.5$). Conformal time during inflation is negative. The spacelike singularity of the standard Big Bang is replaced by the reheating surface, i.e. rather than marking the beginning of time it now corresponds simply to the transition from inflation to the standard Big Bang evolution. All points in the CMB have overlapping past light cones and therefore originated from a causally connected region of space. Credits: \cite{Baumann_2022}.}
+    \label{fgr:hpinflation}
+\end{figure}
+
+\subsection{Hubble Radius}
+
+The Hubble radius we've defined as $R_{H}\sim H^{-1}$ for both MDU and RDU is different from that we have in an accelerated Universe. The Hubble radius at a given time $t$ is roughly equal to the distance travelled by a photon during an "expansion time," (the time needed for the scale parameter to double) starting from said time $t$.
+\par As a consequence, two particles that are separated by $\lambda > H^{-1}(t_{0})$ will also be causally connected if the distance that separated them at some earlier time was $\lambda(t) < H^{-1}(t)$
+\par Say that $\tilde{R}_{H}(t_{0})$ is the distance crossed by a photon in $t \to t_{\star}$ so that $a(t_{\star}) = 2a(t)$ (so, an expansion time). By virtue of its own definition
+\begin{equation}
+    \tilde{R}_{H}(t) = a(t_{\star})\int_{t}^{t_{\star}} \frac{\diff{t}}{a(t)} = a(t_{\star})\int_{a(t)}^{a(t_{\star})}\frac{\diff{a}}{a^{2}H} = a(t_{\star})\int_{a(t)}^{2a(t)}\frac{\diff{a}}{a^{2}H}
+\end{equation}
+\par Consider a small expansion time (respect to the age of the Universe) so that approximately $H(t)\sim\text{const.}$ Then
+\begin{equation}
+    \tilde{R}_{H}(t) = \frac{1}{H(t)}
+\end{equation}
+but if now $\lambda < H_{0}^{-1}$, while $\lambda > H(t_{LS})^{-1}$ at an earlier time, then there must necessarily exist an epoch during which $\lambda$ is growing faster than $H^{-1}$
+\begin{equation}
+    \frac{\text{d}}{\text{d}t}\left(\frac{\lambda}{H^{-1}}\right) > 0
+\end{equation}
+but if $\lambda \sim a$, this implies $\ddot{a} > 0$, hence the Universe must be accelerating, hence the necessity of inflation.
+\par What we surmise, then, is that the comoving Hubble radius $(aH)^{-1}$ mush be increasing right after the BBN, but for earlier times it must be decreasing, as pictorially shown in Fig.\ref{fgr:inflation}.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.75\textwidth]{img/inflationscales.png}
+    \caption{Scales of cosmological interest were larger than the Hubble radius until $a \approx 10^{-5}$ (where today is at $a(t_{0}) = 1$). However, at very early times, before inflation operated, all scales of interest were smaller than the Hubble radius and therefore susceptible to microphysical processing. Notice the symmetry of the inflationary solution. Scales just entering the horizon today, 60 $e$-folds after the end of inflation, left the horizon 60 $e$-folds before the end of inflation. Credits: \cite{Baumann_2022}.}
+    \label{fgr:inflation}
+\end{figure}
+\par The existence of an epoch of accelerated expansion corresponds to having $p < -\rho/3$ and violates the \emph{strong energy condition}.
+\par Several cosmologists began to postulate the necessity of an inflationary period starting from the end of 1970s. Remarkably, Starobinski{\v{i}} \cite{1979JETPL..30..682S} noted that quantum corrections to GR should be important for the early Universe. The solution to the Einstein field equations in the presence of curvature squared terms, when the curvatures are large, leads to an effective cosmological constant. Therefore, he proposed that the early universe went through an inflationary de Sitter era, but never mentioned that such inflationary epoch could solve the problems intrinsic of the standard hBBN model.
+\par Only two years later, Guth \cite{1981PhRvD..23..347G}, and the following month still Guth and Weinberg \cite{1981PhRvD..23..876G}, showed that the horizon and flatness problems could be solved if we allowed the existence of an extraordinary supercooling in the early history of the Universe to temperatures 28 or more orders of magnitude below the critical temperature for some phase transition. But "Unfortunately, the scenario seems to lead to some unacceptable consequences, so modifications must be sought."
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{img/guthinflation.jpg}
+    \caption{In simple inflationary models, the Universe at early times is dominated by the potential energy density of a scalar field, $\phi$. Red arrows show the classical motion of $\phi$. When $\phi$ is near region (a), the energy density will remain nearly constant, $\rho\approx \rho_{f}$, even as the Universe expands. Moreover, cosmic expansion acts like a frictional drag, slowing the motion of $\phi$: Even near regions (b) and (d), $\phi$ behaves more like a marble moving in a bowl of molasses, slowly creeping down the side of its potential, rather than like a marble sliding down the inside of a polished bowl. During this period of "slow roll," $\rho$ remains nearly constant. Only after $\phi$ has slid most of the way down its potential will it begin to oscillate around its minimum, as in region (c), ending inflation. Credits: \href{https://ned.ipac.caltech.edu/level5/March05/Guth/Guth1.html}{this website}.}
+\end{figure}
+\par In short, they were postulating the existence of a scalar field $\phi$. The associated potential $U(\phi)$ had to present a local maximum where the phase transition occurred (so at the beginning of inflation), and a local minimum for $\phi$ where $U(\phi)\approx \text{const.} = \Lambda$, hence a metastable de Sitter phase during which tunnel effect occurred towards true vacuum. This was the so-called \emph{old inflation}.
+\par What had gone wrong with Guth's and Weinberg's model was solved only one year later by Andrej Dmitrievič Linde \cite{1982PhLB..108..389L}, \cite{1982PhLB..116..335L} and independently by Andreas Albrecht and Paul Steinhardt \cite{1982PhRvL..48.1220A} in a model named \emph{new inflation} or \emph{slow-roll inflation}.
+\par In this model, instead of tunneling out of a false vacuum state, inflation occurred by a scalar field rolling down a potential energy hill. When the field rolls very slowly compared to the expansion of the Universe, inflation occurs. However, when the hill becomes steeper, inflation ends and reheating can occur.
+\begin{figure}[h!]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{img/slowroll.png}
+    \caption{Example of a slow-roll potential as postulated by Linde, Albrecht, and Steinhardt. Inflation occurs in the shaded parts of the potential. Credits: \cite{Baumann_2022}.}
+    \label{fgr:slowroll}
+\end{figure}
+
+\subsection{Slow-roll Inflation}
+
+Coming soon.

@@ -12,45 +12,45 @@ The style file: plain.bst
 Database file #1: ref.bib
 Warning--empty publisher in 2020moco.book.....D
 Warning--empty publisher in 1986rpa..book.....R
-You've used 13 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            583 strings with 6475 characters,
-and the built_in function-call counts, 3951 in all, are:
-= -- 355
-> -- 223
+            627 strings with 7567 characters,
+and the built_in function-call counts, 5731 in all, are:
+= -- 532
+> -- 277
 < -- 1
-+ -- 90
-- -- 76
-* -- 271
-:= -- 694
-add.period$ -- 37
-call.type$ -- 13
-change.case$ -- 71
++ -- 112
+- -- 92
+* -- 412
+:= -- 992
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 97
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 145
-empty$ -- 295
-format.name$ -- 76
-if$ -- 802
+cite$ -- 21
+duplicate$ -- 211
+empty$ -- 454
+format.name$ -- 92
+if$ -- 1175
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 14
-newline$ -- 66
-num.names$ -- 26
-pop$ -- 93
+int.to.str$ -- 19
+missing$ -- 20
+newline$ -- 96
+num.names$ -- 38
+pop$ -- 107
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 83
 quote$ -- 0
-skip$ -- 105
+skip$ -- 149
 stack$ -- 0
-substring$ -- 157
-swap$ -- 22
+substring$ -- 307
+swap$ -- 28
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 68
 warning$ -- 2
-while$ -- 32
-width$ -- 15
-write$ -- 133
+while$ -- 50
+width$ -- 21
+write$ -- 199
 (There were 2 warnings)

@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {4.3.3}{Friedmann's Equation}}{22}{subsection.4.3.3}%
 \contentsline {subsubsection}{{A detour on conformal time}}{24}{subsubsection*.3}%
 \contentsline {subsection}{\numberline {4.3.4}{Einstein Universe}}{24}{subsection.4.3.4}%
-\contentsline {subsubsection}{{Einstein-De Sitter Universe}}{26}{subsubsection*.4}%
+\contentsline {subsubsection}{{Einstein-de Sitter Universe}}{26}{subsubsection*.4}%
 \contentsline {subsection}{\numberline {4.3.5}{Critical Density}}{26}{subsection.4.3.5}%
 \contentsline {subsubsection}{{Acceleration Parameter}}{27}{subsubsection*.5}%
 \contentsline {subsubsection}{{Vacuum Energy}}{28}{subsubsection*.6}%
@@ -29,33 +29,35 @@
 \contentsline {subsection}{\numberline {4.5.4}{Particle Horizon}}{35}{subsection.4.5.4}%
 \contentsline {subsubsection}{{Event Horizon}}{36}{subsubsection*.8}%
 \contentsline {subsection}{\numberline {4.5.5}{Flatness Problem}}{36}{subsection.4.5.5}%
-\contentsline {subsection}{\numberline {4.5.6}{Horizon Problem}}{36}{subsection.4.5.6}%
-\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{37}{chapter.5}%
-\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{37}{subsection.5.0.1}%
-\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{39}{subsection.5.0.2}%
-\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{40}{subsection.5.0.3}%
-\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{42}{section.5.1}%
-\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{43}{section.5.2}%
-\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{44}{subsubsection*.11}%
-\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{45}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{45}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{46}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}{Dark Matter}}{47}{section.5.4}%
-\contentsline {subsubsection}{{MOND: Modified Newtonian Dynamics}}{48}{subsubsection*.13}%
-\contentsline {subsection}{\numberline {5.4.1}{Galaxy Clusters}}{49}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}{WIMPS}}{51}{subsection.5.4.2}%
-\contentsline {subsubsection}{{Thermal Decoupling: Freeze-Out}}{51}{subsubsection*.17}%
-\contentsline {subsubsection}{{WIMPS Miracle}}{52}{subsubsection*.18}%
-\contentsline {subsubsection}{{Boltmann Equation}}{52}{subsubsection*.19}%
-\contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{54}{section.5.5}%
-\contentsline {subsubsection}{{Light Elements Synthesis}}{58}{subsubsection*.22}%
-\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{59}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{61}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{66}{subsection.5.6.2}%
-\contentsline {subsubsection}{{Temporal evolution}}{66}{subsubsection*.26}%
-\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{67}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{68}{subsection.5.7.1}%
-\contentsline {part}{\numberline {i}{Appendix}}{69}{part.1}%
-\contentsline {chapter}{\numberline {6}{Appendix}}{71}{chapter.6}%
-\contentsline {chapter}{Bibliography}{79}{section*.30}%
+\contentsline {subsection}{\numberline {4.5.6}{Horizon Problem}}{38}{subsection.4.5.6}%
+\contentsline {subsection}{\numberline {4.5.7}{Hubble Radius}}{41}{subsection.4.5.7}%
+\contentsline {subsection}{\numberline {4.5.8}{Slow-roll Inflation}}{43}{subsection.4.5.8}%
+\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{45}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{45}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{47}{subsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{48}{subsection.5.0.3}%
+\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{51}{section.5.2}%
+\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{52}{subsubsection*.16}%
+\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{53}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{53}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{54}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}{Dark Matter}}{55}{section.5.4}%
+\contentsline {subsubsection}{{MOND: Modified Newtonian Dynamics}}{56}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {5.4.1}{Galaxy Clusters}}{57}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}{WIMPS}}{59}{subsection.5.4.2}%
+\contentsline {subsubsection}{{Thermal Decoupling: Freeze-Out}}{59}{subsubsection*.22}%
+\contentsline {subsubsection}{{WIMPS Miracle}}{60}{subsubsection*.23}%
+\contentsline {subsubsection}{{Boltmann Equation}}{60}{subsubsection*.24}%
+\contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{62}{section.5.5}%
+\contentsline {subsubsection}{{Light Elements Synthesis}}{66}{subsubsection*.27}%
+\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{67}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{69}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{74}{subsection.5.6.2}%
+\contentsline {subsubsection}{{Temporal evolution}}{74}{subsubsection*.31}%
+\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{75}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{76}{subsection.5.7.1}%
+\contentsline {part}{\numberline {i}{Appendix}}{77}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{79}{chapter.6}%
+\contentsline {chapter}{Bibliography}{87}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
