@@ -1,0 +1,63 @@
+\vspace {-\cftbeforepartskip }
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}{Basis of Differential Geometry}}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}{Hamiltonian Approach}}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}{Black Holes}}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {4}{Cosmology}}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}{Maximally Symmetric Universes}}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}{Isometries and Killing Vectors}}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}{The Bare Minimum to Begin}}{10}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}{Friedmann-Robertson-Walker Metrics}}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}{Geodesics}}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}{A short detour on redshift}}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}{Hubble-Le Maître's Law}}{19}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}{The road to Friedmann's Equations}}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}{Energy-Momentum Tensor and Its Conservation}}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}{Ricci Tensor in a FLRW Metric}}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}{Friedmann's Equation}}{22}{subsection.4.3.3}%
+\contentsline {subsubsection}{{A detour on conformal time}}{24}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {4.3.4}{Einstein Universe}}{24}{subsection.4.3.4}%
+\contentsline {subsubsection}{{Einstein-de Sitter Universe}}{26}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {4.3.5}{Critical Density}}{26}{subsection.4.3.5}%
+\contentsline {subsubsection}{{Acceleration Parameter}}{27}{subsubsection*.5}%
+\contentsline {subsubsection}{{Vacuum Energy}}{28}{subsubsection*.6}%
+\contentsline {section}{\numberline {4.4}{Dynamic Age of the Universe}}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.5}{Inflation}}{30}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}{Luminosity Distance}}{30}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}{Second Order Hubble Law}}{33}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}{Angular diameter distance}}{34}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}{Particle Horizon}}{35}{subsection.4.5.4}%
+\contentsline {subsubsection}{{Event Horizon}}{36}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {4.5.5}{Flatness Problem}}{36}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}{Horizon Problem}}{38}{subsection.4.5.6}%
+\contentsline {subsection}{\numberline {4.5.7}{Hubble Radius}}{41}{subsection.4.5.7}%
+\contentsline {subsection}{\numberline {4.5.8}{Slow-roll Inflation}}{43}{subsection.4.5.8}%
+\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{49}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{49}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{51}{subsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{52}{subsection.5.0.3}%
+\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{55}{section.5.2}%
+\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{56}{subsubsection*.16}%
+\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{57}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{58}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}{Dark Matter}}{59}{section.5.4}%
+\contentsline {subsubsection}{{MOND: Modified Newtonian Dynamics}}{60}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {5.4.1}{Galaxy Clusters}}{61}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}{WIMPS}}{63}{subsection.5.4.2}%
+\contentsline {subsubsection}{{Thermal Decoupling: Freeze-Out}}{63}{subsubsection*.22}%
+\contentsline {subsubsection}{{WIMPS Miracle}}{64}{subsubsection*.23}%
+\contentsline {subsubsection}{{Boltmann Equation}}{64}{subsubsection*.24}%
+\contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{66}{section.5.5}%
+\contentsline {subsubsection}{{Light Elements Synthesis}}{70}{subsubsection*.27}%
+\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{71}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{73}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{78}{subsection.5.6.2}%
+\contentsline {subsubsection}{{Temporal evolution}}{78}{subsubsection*.31}%
+\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{79}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{80}{subsection.5.7.1}%
+\contentsline {part}{\numberline {i}{Appendix}}{81}{part.1}%
+\contentsline {chapter}{\numberline {6}{Appendix}}{83}{chapter.6}%
+\contentsline {chapter}{Bibliography}{91}{section*.35}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
