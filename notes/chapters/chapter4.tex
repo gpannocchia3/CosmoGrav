@@ -1378,4 +1378,222 @@ but if $\lambda \sim a$, this implies $\ddot{a} > 0$, hence the Universe must be
 
 \subsection{Slow-roll Inflation}
 
-Coming soon.
+Let's consider an inflationary model as brought about by a scalar field $\varphi$ we will call, in a very witty fashion, \emph{inflaton}. To the scalar field $\varphi$ is associated an action $S$
+\begin{equation}
+    S = \int \text{d}^{4}x \sqrt{-g}\mathcal{L} = \int \text{d}^{4}x \sqrt{-g}\left[\frac{1}{2}g^{\mu\nu}\partial_{\mu}\varphi\partial_{\nu}\varphi + V(\varphi)\right]
+    \label{eq:inflatonaction}
+\end{equation}
+where $\sqrt{-g} = a^{3}$ for the FLRW metric (\ref{eq:FRW}). We can calculate Euler-Lagrange equations
+\begin{equation}
+    \partial^{\mu}\frac{\delta(\sqrt{-g}\mathcal{L})}{\delta(\partial^{\mu}\varphi)} - \frac{\delta(\sqrt{-g}\mathcal{L})}{\delta\varphi} = 0
+\end{equation}
+which yield \marginpar{Note the presence of a Hubble-friction term $3H\dot{\varphi}$ that we wouldn't have in a static Universe.}
+\begin{equation}
+    \ddot{\varphi} + 3H\dot{\varphi} - \frac{\nabla^{2}\varphi}{a^{2}}+V'(\varphi) = 0 \quad V'(\varphi) = \der{V(\varphi)}{\varphi}
+\end{equation}
+Consider also the energy-momentum tensor associated to the action $S$ (\ref{eq:inflatonaction}), which we can obtain simply variating the action with respect to the metric 
+\begin{equation}
+    T_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\delta(\sqrt{-g}\mathcal{L})}{\delta g_{\mu\nu}}
+    \label{eq:generalemtensor}
+\end{equation}
+obtaining
+\begin{equation}
+    T_{\mu\nu} = = \partial_{\mu}\varphi\partial_{\nu}\varphi -g_{\mu\nu}\mathcal{L}
+\end{equation}
+We can give a little twist to this last expression so that it looks like the energy-momentum tensor of a perfect fluid 
+\begin{equation}
+    T^{\mu\nu} = p_{\varphi}g^{\mu\nu} + (p_{\varphi}+\rho_{\varphi})u^{\mu}u^{\nu}
+\end{equation}
+where $\rho_{\varphi}$ and $p_{\varphi}$ are respectively
+\begin{align}
+    \rho_{\varphi} &= T^{00} = \frac{\dot{\varphi}^{2}}{2} + V(\varphi) + \frac{(\nabla\varphi)^{2}}{2a^{2}}\\
+    p_{\varphi} &= \frac{T^{ii}}{3} = \frac{\dot{\varphi}^{2}}{2}-V(\varphi)-\frac{(\nabla\varphi)^{2}}{6a^{2}}
+\end{align}
+\par If the field is strongly dishomogeneous and, as a consequence, $|\nabla\varphi|$ is large
+\begin{align}
+    \rho_{\varphi} &\approx + \frac{(\nabla\varphi)^{2}}{2a^{2}}\\
+    p_{\varphi} &\approx -\frac{(\nabla\varphi)^{2}}{6a^{2}}
+\end{align}
+which means 
+\begin{equation}
+    p_{\varphi} \approx - \frac{1}{3}\rho_{\varphi}
+\end{equation}
+and hence $w = -1/3$. However, a Universe so dishomogeneous cannot give raise to an inflationary epoch. So let's consider instead a scalar field that is decomposed as 
+\begin{equation}
+    \varphi(\vec{x},t) = \varphi_{0}(t) + \delta\varphi(\vec{x},t)
+\end{equation}
+where the former term is that associated to a "classical" field ($\lambda \to \infty$), while the latter is associated to quantum fluctuations. If we assume the quantum fluctuations to be negligible respect to the classical field $\delta\varphi \ll \varphi_{0}$, we can neglect the contribution brought by $\delta\varphi$ to the evolution (\emph{back-reaction}). Hence
+\begin{align}
+    T^{00} &= \rho_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} + V(\varphi_{0})\\
+    \frac{T^{ii}}{3} &= p_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} - V(\varphi_{0})
+\end{align}
+which grants $p_{\varphi} \approx - \rho_{\varphi}$, thus producing a pseudo-de Sitter evolution. The equation of motion then turns into
+\begin{equation}
+    \boxed{
+        \ddot{\varphi}_{0} +3H\dot{\varphi}_{0} + V'(\varphi_{0}) = 0
+    }
+    \label{eq:inflatoneom}
+\end{equation}
+which is the Klein-Gordon equation for the inflaton. In the limit $V(\varphi_{0}) \gg \dot{\varphi}_{0}^{2}/2$, the scalar field is "slowly-rolling" in the potential. And this is all thanks to the friction term!
+\par The 2nd Friedmann equation (\ref{eq:friedmann2}) for the background density is 
+\begin{equation}
+    H^{2} = \frac{8\pi G}{3}\left(\frac{1}{2}\dot{\varphi}^{2}+V(\varphi)\right)
+\end{equation}
+which we can differentiate with respect to time to yield 
+\begin{equation}
+    2H\dot{H} = \frac{8\pi G}{3}\left(\dot{\varphi}\ddot{\varphi}+\der{V}{\varphi}\dot{\varphi}\right) = -8\pi G H \dot{\varphi}^{2}
+\end{equation}
+ultimately leading to 
+\begin{equation}
+    \boxed{
+        \dot{H} = -4\pi G \dot{\varphi}^{2}
+    }
+\end{equation}
+\par From the first Friedmann equation, on the other hand, we have 
+\begin{align*}
+    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) &= -\frac{4\pi G}{3}(2\dot{\varphi}^{2}-2V(\varphi)) \\
+    &= -\frac{4\pi G}{3}(3\dot{\varphi}^{2} + (-\dot{\varphi}^{2}+V(\varphi)))
+\end{align*}
+so that if we use the equations we've obtained earlier 
+\begin{equation}
+    \frac{\ddot{a}}{a} = \dot{H} + H^{2}
+\end{equation}
+and we can define the 1st slow-roll parameter $\varepsilon$
+\begin{equation}
+    \boxed{
+        \varepsilon = -\frac{\dot{H}}{H^{2}}
+    }
+    \label{eq:slowroll1}
+\end{equation}
+so that \marginpar{Note that more than one slow-roll parameter exist, but only the first, $\varepsilon$, determines the inflation.}
+\begin{equation}
+    \frac{\ddot{a}}{a} = (1-\varepsilon)H^{2}
+\end{equation}
+and the Universe is accelerating only if $\varepsilon < 1$. If we now request the Universe to be (ideally) a pseudo-de Sitter with $H\approx \text{const}$, we can consider the relative variation $\dot{H}/H$ over an Hubble time ($H^{-1}$) and require 
+\begin{equation}
+    \Big|\frac{\dot{H}}{H}\frac{1}{H}\Big| \ll 1 \implies |\varepsilon|\ll 1
+\end{equation}
+In terms of the number of $e$-folds from the beginning of inflation up to time $t$ we can also write
+\begin{equation}
+    \varepsilon = -\der{\ln (H)}{N} \quad N = \log\left(\frac{a(t)}{a_{i}}\right)
+\end{equation}
+which also means $\diff{N} = H\diff{t}$ and 
+\begin{equation}
+    -\frac{\dot{H}^{2}}{H^{2}} = -\der{\ln(H)}{N}
+\end{equation}
+The 1st slow-roll parameter $\varepsilon$ thus describes, in some sense, the displacement from a purely de Sitter Universe.
+\par Let's now show that $\varepsilon \ll 1 \iff V(\varphi) \gg \dot{\varphi}^{2}/2$
+\begin{align*}
+    (\implies) \quad -\dot{H} = 4\pi G \dot{\varphi}^{2} \ll H^{2} &= \frac{8\pi G}{3}\left(\frac{1}{2}\dot{\varphi}^{2}+V(\varphi)\right) \\
+    & \implies \dot{\varphi}^{2}\ll V(\varphi)
+\end{align*}
+which is the first direction of the implication. Let's now prove that the reverse holds as well
+\begin{equation}
+    (\impliedby) \quad p\approx -\rho \to
+    \left\{
+        \begin{array}{ll}
+            \dot{\rho} +3H(p+\rho) = 0 & \implies \dot{\rho}\approx 0\\
+            H^{2} \approx \frac{8\pi G}{3}\rho & \implies H^{2} \approx \text{const.}
+        \end{array}
+    \right.
+\end{equation}
+and at this point concluding is trivial $H^{2} \approx \text{const.} \implies H \approx \text{const} \implies \varepsilon \ll 1$.
+\par Let's define the \emph{second slow-roll parameter} $\delta$ (dimensionless acceleration per Hubble time)
+\begin{equation}
+    \boxed{
+        \delta = -\frac{\ddot{\varphi}}{H\dot{\varphi}}
+    }
+    \label{eq:slowroll2}
+\end{equation}
+and require it to be $\delta \ll 1$. This is because the variation of $\varepsilon$ during an $e$-fold must be small, and so 
+\begin{equation}
+    \der{\varepsilon}{N} = \frac{1}{H}\der{\varepsilon}{t} = \frac{1}{H}\left(-\frac{\ddot{H}}{H^{2}}+\frac{2\dot{H}^{2}}{H^{3}}\right) = -\frac{\dot{H}}{H^{2}}\left(\frac{\ddot{H}}{H\dot{H}}-2\frac{\dot{H}}{H^{2}}\right)
+\end{equation}
+which implies \marginpar{You can prove the last equality directly substituting from $-\dot{H} = 4\pi G \dot{\varphi}^{2}$}
+\begin{equation}
+    \frac{1}{\varepsilon}\der{\varepsilon}{N} = \left(\frac{\ddot{H}}{H\dot{H}}-2\frac{\dot{H}}{H^{2}}\right) \implies \frac{\ddot{\varphi}}{H\dot{\varphi}} = |\delta| \ll 1
+\end{equation}
+\par So far, no approximations have been made. We simply noted that in a regime where $\{\varepsilon, |\delta|\} \ll 1$, inflation occurs and persists. We now use these conditions to simplify the equations of motion. This is called the slow-roll approximation. The condition $\varepsilon \ll 1$ implies $V(\varphi) \gg \dot{\varphi}^{2}/2$ and hence leads to the following simplification of the Friedmann Equation
+\begin{equation}
+    \boxed{
+    H^{2} \approx \frac{8\pi G}{3}V(\varphi)
+    }
+    \label{eq:slowrollfriedmann}
+\end{equation}
+In the slow-roll approximation, the Hubble expansion is determined completely by the potential energy. The condition $|\delta| \ll 1$ then simplifies the Klein-Gordon equation (\ref{eq:inflatoneom}) to
+\begin{equation}
+    \dot{\varphi} \approx -\frac{V'(\varphi)}{3H} \textoversymbol{=}{\varepsilon \ll 1} -V'\left[24\pi G V(\varphi)\right]^{-1/2}
+\end{equation}
+This provides a simple relationship between the gradient of the potential and the speed of the inflaton. This is the so-called $\alpha$-\emph{relation}
+\begin{equation}
+    \boxed{
+    \dot{\varphi} \approx -\frac{V'}{\sqrt{24 \pi G V(\varphi)}}
+    }
+    \label{eq:alpharel}
+\end{equation}
+Moreover, if $\epsilon,\,\delta \ll 1$
+\begin{equation}
+    \epsilon = -\frac{\dot{H}}{H^{2}} = \frac{4\pi G \dot{\varphi}^{2}}{\frac{8\pi G}{3}V(\varphi)} \approx \frac{1}{16\pi G}\left(\frac{V'(\varphi)}{V(\varphi)}\right)
+\end{equation}
+where we've introduced the $\alpha$-relation in the last equality. This leads to the \emph{first flatness condition}
+\begin{equation}
+    \boxed{
+    \Big|\frac{V'(\varphi)}{V(\varphi)}\Big| \ll \sqrt{16\pi G}
+    }
+    \label{eq:flatness1}
+\end{equation}
+Consider now 
+\begin{equation}
+    \ddot{\varphi} = -\frac{\text{d}}{\text{d}t}\left(\frac{V'}{3H}\right) \implies \ddot{\varphi} = -\frac{V''\dot{\varphi}}{H} + \frac{V'\dot{H}}{3H^{2}}
+\end{equation}
+which, requiring $\epsilon,\,\delta \ll 1$, yields
+\begin{equation}
+   \ddot{\varphi} = -\frac{V''}{3H}\left(-\frac{V'}{3H}\right) + \frac{V'}{3}\left(\frac{1}{16\pi G}\frac{V'^{2}}{V^{2}}\right) \quad \frac{V'}{3}\left(\frac{1}{16\pi G}\frac{V'^{2}}{V^{2}}\right) \ll \frac{V'}{3}
+\end{equation}
+Hence, since 
+\begin{equation}
+    |\ddot{\varphi}| = |H\dot{\varphi}| = \frac{1}{3}|V'(\varphi)|
+\end{equation}
+we conclude 
+\begin{equation}
+    \Big|\frac{V''}{3H}\Big|\cdot \Big|\frac{V'}{3H}\Big| \ll \frac{V'}{3}
+\end{equation}
+which also means $|V''|\ll 3H^{2}$, thus leading us to the \emph{second flatness condition}
+\begin{equation}
+    \boxed{
+    \Big|\frac{V''(\varphi)}{V(\varphi)}\Big| \ll 8\pi G
+    }
+    \label{eq:flatness2}
+\end{equation}
+When both flatness conditions hold, the expansion of the Universe is exponential (pseudo-de Sitter) and is also exponentially long. The inflation epoch will end only when, at a certain time $t_{f}$, the first slow-roll parameter is $\varepsilon = 1$
+\begin{equation}
+    N(\varphi) = \ln\left(\frac{a(t_{f})}{a(t)}\right) = \int_{t}^{t_{f}}H\diff{t} = \int_{\varphi}^{\varphi_{f}}\frac{H}{\dot{\varphi}}\diff{\varphi}
+\end{equation}
+which, after requiring $\epsilon,\,\delta \ll 1$, turns into 
+\begin{equation}
+     N(\varphi) \approx \int_{\varphi}^{\varphi_{f}}\left[\frac{8\pi G V}{3}\frac{24\pi G V}{V'^{2}}\right]^{1/2}\diff{\varphi}
+\end{equation}
+The number of $e$-folds from the end of inflation starting from an arbitrary time $t$ is then 
+\begin{equation}
+    \boxed{
+    N(\varphi) = 8\pi G \int_{\varphi}^{\varphi_{f}}\frac{V}{V'}\diff{\varphi}
+    }
+    \label{eq:efolds}
+\end{equation}
+\par The first flatness condition told us that 
+\begin{equation}
+    \Big|\frac{V}{V'}\Big| \gg (16\pi G)^{-1/2}
+\end{equation}
+which allows us to constrain (\ref{eq:efolds})
+\begin{equation}
+    N(\varphi) = 8\pi G \int_{\varphi}^{\varphi_{f}}\frac{V}{V'}\diff{\varphi} \gg \sqrt{4\pi G}|\varphi_{f}-\varphi|
+\end{equation}
+Hence the number of $e$-folds for our inflationary model will always be
+\begin{equation}
+    N \gg \sqrt{4\pi G}|\varphi_{f}-\varphi_{i}|
+\end{equation}
+which, in principle, we can invert to find the range spanned by the scalar field $\varphi$
+\begin{equation}
+    \Delta\varphi \ll \frac{N}{\sqrt{4\pi G}}
+\end{equation}
+with the minimum number of $e$-folds necessary to replicate the current Universe ($N_{\text{min}} \approx 60$), the estimated upper bound for the field variation is $\Delta\varphi \ll 10^{20}\unit{GeV}$.
