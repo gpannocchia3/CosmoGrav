@@ -4,7 +4,7 @@
 \section*{Pre-Relativistic Cosmology and Its Problems}
 
 Long before GR as we know it today was a thing, Cosmology was already an open field of study. Of course, in this first age of Cosmology, studies were based on Newtonian mechanics and the Newtonian theory of gravity.
-\par Newtonian Cosmology assumed an infinite, homogeneous, and static Universe, which was also eternal and responded to Euclidean geometry. Not surprisingly, under this set of un-reasonable hypothesis\footnote{The only reasonable assumption was for the Universe to be homogeneous and, only at times, static. The rest of the hypothesis were arguable at best.}, problems began to sprout overnight.
+\par Newtonian Cosmology assumed an infinite, homogeneous, and static Universe, which was also eternal and responded to Euclidean geometry. Not surprisingly, under this set of un-reasonable hypothesis\footnote{The only reasonable assumption was for the Universe to be homogeneous and, only at times, static. The rest of the hypothesis were arguable at best.} (as an old professor of mine would say), problems began to sprout overnight.
 \par Consider for example the so called \href{https://en.wikipedia.org/wiki/Olbers%27_paradox}{Olber's paradox} (1826). Under the assumptions of Newtonian Cosmology, Olber's paradox would implicate an always-bright sky, while we have empirical evidence it isn't. In fact, the total luminosity of a set of stars with solar luminosity $L_{\odot}$ within a sphere of radius $R$
 \begin{equation*}
     \phi_{s} = \int_{0}^{R} \frac{L_{\odot}}{4\pi r^{2}}n_{s}4\pi r^{2}\diff{r}
@@ -25,10 +25,10 @@ where the exponential term is an absorption/shielding factor. This correction wi
 Much expectedly, quite a lot changed since 1917, when relativistic cosmology was officially born \cite{1917SPAW.......142E}. Einstein's GR was based on three main principles:
 \begin{enumerate}
     \item (Weak) Equivalence Principle: Inertial acceleration and gravitational acceleration are proportional to each other. Hence all free-falling systems are locally equivalent to an inertial system;
-    \item General Covariance Principle: When written in covariant form, the laws of Physics are the same in all reference frame;
-    \item Mach's Principle\footnote{This one is a bit "philosophical", but it's interesteing to at least mention it.} The momentum of all bodies is determined by all the masses in the Universe. Alternatively, the only things with physical sense are those that are measurable.
+    \item General Covariance Principle: When written in covariant form, the laws of Physics are the same in all reference frames;
+    \item Mach's Principle\footnote{This one is a bit "philosophical", but it's interesteing to at least mention it.}: The momentum of all bodies is determined by all the masses in the Universe. Alternatively, the only things with physical sense are those that are measurable.
 \end{enumerate}
-Only a year prior to Einstein's 1917 article, Schwarzschild had already found a solution to Einstein's celebrated equation under the assumption of a single spherical body in an otherwise empty space. Such solution, that is nowadays known as Schwarzschild's metric, has to the perk to come down to the standard spacetime Minkowski's metric at infinite distance from the object. This, of course, felt like a big problem for Mach's philosophical principle.
+Only a year prior to Einstein's 1917 article, Schwarzschild had already found a solution to Einstein's celebrated equation under the assumption of a single spherical body in an otherwise empty space. Such solution, that is nowadays known as Schwarzschild's metric, has to the perk to degenerate into the standard spacetime's Minkowskian metric at infinite distance from the object. This, of course, felt like a big problem for Mach's philosophical principle.
 \par Einstein, perhaps conditioned from the beliefs of his time, twisted his theory so to produce a closed, static Universe. To do so, he only had to add a single term to his equation, the Cosmological Constant
 \begin{equation}
     G_{\mu\nu} - \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}
@@ -37,8 +37,8 @@ Only a year prior to Einstein's 1917 article, Schwarzschild had already found a 
 which is actually perfectly valid, even from a theoretical point of view\footnote{I assume the four readers of these notes to be at least familiar with the terms and symbols used. If not, I suggest reading \cite{carroll} or any graduate/postgraduate textbook about GR.}. That said, the interpretation of the $\Lambda$ term was somewhat...elusive.
 \par In 1918, Erwin Schrödinger suggested that the Cosmological Constant was equivalent to the energy-momentum tensor of a fluid with negative pressure, and could thus be included in the right-hand side term of the equation.
 \par But, as you perhaps know, even Einstein was prone to errors like any other human being. In 1917, Vesto Slipher observed a discrepancy in the observed emission lines of some galaxies (with respect to the expected frequencies). He, however, failed to correlate such discrepancy to the distance of the aforementioned galaxies.
-\par It was only when Hubble measured their distance \cite{1926CMWCI.324....1H} through the Cepheid-variables method that cosmologists started to realize that the Universe was expanding rather than being static; the expansion law of the Universe still carries Hubble's name, who was the first to suggest such correlation.
-\par Another viable model to describe the Universe is the so-called "Einstein-de Sitter" Universe. This model essentially assumes the Universe to be akin to a non-relativistic fluid for the sake of computing the resulting metric and the properties stemming from it. This model was however abandoned because it produced errors in the estimation of the age of the Universe\footnote{It turned out that some white dwarves, low mass stars that had reached the end of their evolution cycle, would be older than the Universe. I hope you'll agree with me that it would be at least a bit odd.}.
+\par Only when Hubble measured their distance \cite{1926CMWCI.324....1H} through the lightcurve of Cepheid variables did cosmologists start to realize that the Universe was expanding rather than being static; the expansion law of the Universe still carries Hubble's name, who was the first to suggest such correlation.
+\par Another viable model to describe the Universe is the so-called "Einstein-de Sitter" Universe. This model essentially assumes the Universe to be akin to a non-relativistic fluid for the sake of computing the resulting metric and the properties stemming from it. This model was however abandoned because it produced errors in the estimation of the age of the Universe\footnote{It turned out that some white dwarves, low mass stars that had reached the end of their evolution cycle, would be older than the Universe itself.}.
 
 \subsection*{Thermodynamical Considerations on the Big Bang}
 
@@ -51,7 +51,7 @@ The Laws of Thermodynamics speak rather clearly: Energy is (globally) conserved,
 
 \subsection{Isometries and Killing Vectors}
 
-Consider a metric $g_{\mu\nu}$ and a given map of coordinates $x_{\mu}$ (which roughly translates into choosing a given reference frame). The metric will thus transform according to the standard tensor tranformation rule
+Consider a metric $g_{\mu\nu}$ and a given map of coordinates $x_{\mu}$ (which roughly translates into choosing a reference frame). The metric tensor will thus transform according to the standard tensor tranformation rule
 \begin{equation}
     g_{\mu\nu}'(x') = \parder{x^{\rho}}{x'^{\mu}}\parder{x^{\sigma}}{x'^{\nu}}g_{\rho\sigma}(x)
 \end{equation}
@@ -65,11 +65,11 @@ We'll say that a particular transformation $x \to x'$ is an \emph{isometry} if
 \end{equation}
 with $|\epsilon| \ll 1$, we can substitute directly into the transformation equation for the metric. Under the request of the transformation being an isometry, we'll obtain
 \begin{equation}
-    \partial_{\rho}\xi^{\mu}g_{\mu\sigma} \partial_{\sigma}\xi^{\nu}g_{\rho\nu} + \xi^{\mu}\partial_{\mu}g_{\rho\sigma} = 0
+    \partial_{\rho}\xi^{\mu}g_{\mu\sigma} + \partial_{\sigma}\xi^{\nu}g_{\rho\nu} + \xi^{\mu}\partial_{\mu}g_{\rho\sigma} = 0
 \end{equation}
 We can then introduce Christoffel's symbols to cast the equation in an equivalent form
 \begin{equation}
-    \partial_{\rho}\xi_{\sigma} + \partial_{\sigma}\xi_{\rho} - 2\xi_{\mu}\Gamma_{\rho\;\;\;\sigma}^{\;\;\mu} = 0
+    \partial_{\rho}\xi_{\sigma} + \partial_{\sigma}\xi_{\rho} - 2\xi_{\mu}\christoffel{\rho}{\sigma}{\mu} = 0
 \end{equation}
 The vector $\xi^{\mu}$ will be a \emph{Killing vector} if it satisfies Killing's equation
 \begin{equation}
@@ -79,14 +79,14 @@ The vector $\xi^{\mu}$ will be a \emph{Killing vector} if it satisfies Killing's
 
 \subsection{The Bare Minimum to Begin}
 
-Contemporary cosmological models are based on the idea the the Universe is pretty much the same everywhere, a stance sometimes known as the \emph{Copernican Principle} or \emph{Cosmological principle}. If we take it at face value, such a claim seems crazy, if at all logical: There's little resemblance, say, between the center of the Sun (which is kinda hot) and the desolate cold of the ISM. The Cosmological Principle starts to make a little more sense if we take it to apply only on the very largest scales, where local variations in density are averaged over and magically disappear.
+Contemporary cosmological models are based on the idea that the Universe is pretty much the same everywhere, a stance sometimes known as \emph{Copernican Principle} or \emph{Cosmological principle}. If we take it at face value, such a claim seems crazy, if at all logical: There's little resemblance, say, between the center of the Sun (which is kinda hot) and the desolate cold of the ISM. The Cosmological Principle starts to make a little more sense if we take it to apply only on the very largest scales, where local variations in density are averaged over and magically disappear.
 \begin{figure}[h!]
     \centering 
     \includegraphics[width=0.5\textwidth]{img/isotropyhomogeneity.png}
-    \caption{The Cosmological Prinicple automatically translates in two very specific requests: Homogeneity and Isotropy.}
+    \caption{The Cosmological Principle automatically translates in two very specific requests: Homogeneity and Isotropy.}
     \label{fgr:homoiso}
 \end{figure}
-\par The Cosmological principle is related to two more mathematically precise properties that we can request our space-time manifold to have: \emph{Isotropy} and \emph{Homogeneity}, which are given a pictorial representation in Fig.\ref{fgr:homoiso}.
+\par The Cosmological principle is related to two more mathematically precise properties that we can request our spacetime manifold to have: \emph{Isotropy} and \emph{Homogeneity}, which are given a pictorial representation in Fig.\ref{fgr:homoiso}.
 \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Homogeneity,
@@ -101,7 +101,7 @@ Contemporary cosmological models are based on the idea the the Universe is prett
   A manifold $M$ is isotropic around a point $p$ if, for any two vectors $V$ and $W$ in the tangent space of $M$ to the point $p$ $T_{p}M$, there is an isometry (symmetry) of $M$ such that the \emph{pushforward} of $W$ under the isometry is parallel with $V$ (not pushed forward). See \cite{carroll}.
 \end{tcolorbox}
 \par Isotropy, instead, states that space looks exactly the same around a given point, no matter in what direction you're looking.
-\par It turns out that a manifold that is simultaneously homogeneous and isotropic is also maximally symmetric! In fact the transformations associated to isotropy are the rotations 
+\par It turns out that a manifold that is simultaneously homogeneous and isotropic is also maximally symmetric! The transformations associated to isotropy are the rotations 
 \begin{equation}
     x'^{\mu} = R^{\mu}_{\;\;\nu}x^{\nu}
     \label{eq:rotations}
@@ -115,7 +115,7 @@ which generate $n$ Killing vectors. The total number of Killing vector is, as ex
 \begin{equation}
     \diff{s^{2}} = g_{\mu\nu}\diff{x^{\mu}}\diff{x^{\nu}}
 \end{equation}
-Clearly, off-diagonal terms like $g_{0i}$ must be vanishing $g_{0i} = 0$, or the request of an isotropic manifold wouldn't be met. This already leaves us with a metric with the following expression
+Clearly, off-diagonal terms like $g_{0i}$ must be vanishing $g_{0i} = 0$, or the request of an isotropic manifold wouldn't be met. This already leaves us with a metric with the following expression \marginpar{Note that we'll be using a metric with Pseudo-Riemannian signature $(-,+,+,+)$, which might be different from that used in other courses.}
 \begin{equation}
     \diff{s^{2}} = -(u_{\mu}\diff{x^{\mu}})^{2} + g_{ij}(t)\diff{x^{i}}\diff{x^{j}}
 \end{equation}
@@ -161,7 +161,7 @@ We can define a vector $\vec{x} = (x_{1}, x_{2})$, so that the line element can 
   The case of a flat space with vanishing curvature can be dealt with starting from the metric induced on the sphere, simply imposing $a\to \infty$. Not surprisingly, the resulting metric will be
   $$ \diff{l^{2}} = \diff{\vec{x}^{\,2}} $$
 \end{tcolorbox}
-Similarly, we can also calculate the induced metric on a 2-dimension hyperbola
+Similarly, we can also calculate the induced metric on a 2-dimension hyperboloid
 \begin{equation}
     a^{2} = x_{1}^{2}+x_{2}^{2}-x_{3}^{2}
 \end{equation}
@@ -169,7 +169,7 @@ The passages are essentially identical to those for the sphere, and the resultin
 \begin{equation}
     \diff{l^{2}} = \diff{\vec{x}^{\,2}} - \frac{(\vec{x}\cdot\diff{\vec{x}})^{2}}{a^{2}+\vec{x}^{\,2}}
 \end{equation}
-For our future discussions it will be really useful to define a scaled-down $x$ vector $\tilde{x} = \vec{x}/a$, so that the expression for the line element can be conveniently expressed as
+For our future discussions it will be useful to define a scaled-down $x$ vector $\tilde{x} = \vec{x}/a$, so that the expression for the line element can be conveniently expressed as
 \begin{equation}
     \diff{l^{2}} = a^{2}\left(\diff{\tilde{x}^{\,2}} + k \frac{(\tilde{x}\cdot\diff{\tilde{x}})^{2}}{1-k\tilde{x}^{2}}\right)
     \label{eq:usefulcompact}
@@ -185,7 +185,7 @@ With this new set of coordinates, the line element of the 2-dimensional sphere b
 \begin{equation}
     \diff{l^{2}} = \diff{r'^{2}} + r'^{2}\diff{\theta^{2}} + \frac{(r'\diff{r'})^{2}}{a^{2}-r'^{2}} = a^{2}\left(\frac{\diff{r^{2}}}{1-r^{2}} + r^{2}\diff{\theta^{2}}\right)
 \end{equation}
-where we've also introduced the adimensional radius $r = r'/a$, which lives in the interval $r \in [0,1]$. We can repeat the calculations for the hyperbola and the flat space in a similar fashion. The final result for the three scenarios we've considered can be once again expressed in a single expression thanks to the $k$ parameter
+where we've also introduced the adimensional radius $r = r'/a$, which lives in the interval $r \in [0,1]$. We can repeat the calculations for the hyperboloid and the flat space in a similar fashion. The final result for the three scenarios we've considered can be once again expressed in a single expression thanks to the $k$ parameter
 \begin{equation}
     \diff{l^{2}} = a^{2}\left(\frac{\diff{r}^{2}}{1-kr^{2}}+r^{2}\diff{\theta^{2}}\right)
 \end{equation}
@@ -209,7 +209,7 @@ Performing the due substitutions you'd obtain
 \begin{equation}
     \diff{l^{2}} = a^{2}(\diff{\chi^{2}}+\sin^{2}\chi\diff{\Omega_{(2)}^{2}})
 \end{equation}
-The metric induced on the hyperboloid is obtained replacing $\sin\chi$ with $\sinh\chi$. Note that the new radial coordinate $\chi$ is adimensional, is in the range $[0,\pi]$, and is defined through
+The metric induced on the hyperboloid is obtained replacing $\sin\chi$ with $\sinh\chi$. Note that the new radial coordinate $\chi$ is adimensional, in the range $[0,\pi]$, and defined through
 \begin{equation}
     \diff{\chi} = \frac{\diff{r}}{\sqrt{1-kr^{2}}}
 \end{equation}
@@ -271,7 +271,7 @@ Since $\diff{s^{2}} = g_{\mu\nu}\diff{x^{\mu}}\diff{x^{\nu}}$, the elements of t
 while $g_{0i}$ and off-diagonal terms of $g_{ij}$ are vanishing.
 \par From the coefficient of the metric, we can also compute Christoffel's symbols
 \begin{equation}
-    \Gamma_{\mu\;\,\nu}^{\;\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
+    \christoffel{\mu}{\nu}{\alpha} = \frac{1}{2}g^{\lambda\alpha}(\partial_{\mu}g_{\lambda\nu}+\partial_{\nu}g_{\mu\lambda}-\partial_{\lambda}g_{\mu\nu})
     \label{eq:christoffel}
 \end{equation}
 which have been reported in Appendix C.
@@ -300,10 +300,10 @@ Note that the quantity within parentheses is independent of the conformal time. 
 
 Consider a particle initially at rest in a FLRW metric (\ref{eq:FRW}). The geodesics equation for such a particle will be
 \begin{equation}
-    \dder{x^{i}}{\tau} = -\Gamma_{0\;\,0}^{\;i}\der{x^{0}}{\tau}\der{x^{0}}{\tau}
+    \dder{x^{i}}{\tau} = -\christoffel{0}{0}{i}\der{x^{0}}{\tau}\der{x^{0}}{\tau}
 \end{equation}
-since $\text{d}x^{i}/\text{d}\tau = 0$, where $\tau$ is the particle's proper time. However, since $\Gamma_{0\;\,0}^{\;i} = 0$, the particle isn't accelerated and its radial coordinate remains constant!
-\par Note that what remains constant is actually the particles \emph{comoving coordinate}, while its \emph{proper distance} calculated from some origin of the coordinate system changes because of the time-evolution of the scale factor $a$.
+since $\text{d}x^{i}/\text{d}\tau = 0$, where $\tau$ is the particle's proper time. However, since $\christoffel{0}{0}{i} = 0$, the particle isn't accelerated and its radial coordinate remains constant!
+\par Note that what remains constant is actually the particle's \emph{comoving coordinate}, while its \emph{proper distance} calculated from some origin of the coordinate system changes because of the time-evolution of the scale factor $a$.
 \par Once a system of axis is fixed so that a given point $P_{1} = (r_{1},0,0)$, we can define its proper distance as
 \begin{equation}
     d(r,t) = \int_{0}^{r_{1}} \diff{l(r)}
@@ -329,18 +329,18 @@ which is solved by
 Please note that unlike it's done by other textbooks, like \cite{carroll}, here the scale factor $a$ has the dimension of a length rather than being adimensional. You can think of it as the result of the product between an adimensional scale factor (which is the one really changing) and the curvature radius of the Universe at some time.
 \par Let us now consider a free particle with non-vanishing initial momentum. The general geodesics equation is
 \begin{equation}
-    \dder{x^{\sigma}}{\tau} = -\Gamma_{\mu\;\,\nu}^{\;\sigma}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau}
+    \dder{x^{\sigma}}{\tau} = -\christoffel{\mu}{\nu}{\sigma}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau}
     \label{eq:geodesicsequation}
 \end{equation}
 It's useful to remember the definition of the 4-momentum $p^{\mu} = mu^{\mu} = m\text{d}x^{\mu}/\text{d}\tau$ (valid for timelike paths, at least), from which we know that
 \begin{equation*}
     |\vec{p}|^{2} = m^{2}g_{ij}\der{x^{i}}{\tau}\der{x^{j}}{\tau}
 \end{equation*}
-If we consider a system of coordinates such that at the instant considered the particles is arbitrarily close to the center of the coordinate system, the metric can thus be approximated as $\tilde{g}_{ij} = \delta_{ij} + \text{o}(x^{2})$, where we're essentially neglecting the scalar product contribution to (\ref{eq:usefulcompact}).
-\par Then the Christoffel symbol $\Gamma_{j\;\,l}^{\;i} \propto \partial_{l}g^{i}_{\;j} \propto \text{o}(x)$ is negligible, since the space is always locally flat for each point we choose arbitrarily close to the origin.
+If we consider a system of coordinates such that at the instant considered the particle is arbitrarily close to the center of the coordinate system, the metric can be approximated as $\tilde{g}_{ij} = \delta_{ij} + \text{o}(x^{2})$, where we're essentially neglecting the scalar product contribution to (\ref{eq:usefulcompact}).
+\par Then the Christoffel symbol $\christoffel{j}{l}{i} \propto \partial_{l}g^{i}_{\;j} \propto \text{o}(x)$ is negligible, since the space is always locally flat for each point we choose arbitrarily close to the origin.
 \par The geodesics equation can be thus expanded 
 \begin{align*}
-    \dder{x^{i}}{\tau} = -\Gamma_{\mu\;\,\nu}^{\;i}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau} &= -2\Gamma_{0\;\,j}^{\;i}\der{x^{j}}{\tau}\der{x^{0}}{\tau}\\
+    \dder{x^{i}}{\tau} = -\christoffel{\mu}{\nu}{i}\der{x^{\mu}}{\tau}\der{x^{\nu}}{\tau} &= -2\christoffel{0}{j}{i}\der{x^{j}}{\tau}\der{x^{0}}{\tau}\\
     & = -2\frac{\dot{a}(t)}{a(t)}\delta^{i}_{\;j}\der{x^{j}}{\tau}\der{x^{0}}{\tau}
 \end{align*}
 At this point we can multiply both terms by $\derinline{\tau}{t}$
@@ -356,7 +356,7 @@ resulting in a first-order differential equation for $\derinline{x^{i}}{\tau}$
     \frac{\text{d}}{\text{d}t}\left(\der{x^{i}}{\tau}\right) = -2\frac{\dot{a}(t)}{a(t)}\der{x^{i}}{\tau}
 \end{equation}
 This equation yields as a solution $\derinline{x^{i}}{\tau} \propto a^{-2}$, which means that $|\vec{p}|^{2} \propto m^{2}a^{2}\cdot a^{-4} \propto a^{-2}$. This means that a massive particle "slows down" with respect to the comoving coordinates as the Universe expands!
-\par If we instead consider a null geodesic (massless particle), we would find out that
+\par If we instead consider a null geodesic (massless particle), we find out that
 \begin{equation}
     |\vec{p}| = p = \frac{\hbar}{\lambda} \implies \lambda \propto a(t)
 \end{equation}
@@ -370,7 +370,7 @@ which means that the wavelength of a photon changes depending on the time at whi
     K_{\mu\nu} = a^{2}(g_{\mu\nu}+U_{\mu}U_{\nu})
     \label{eq:killingtensor}
 \end{equation}
-that you can check\footnote{Perhaps it was trivial, but it took me a long while to figure out and convince myself of the proof, which you'll find in Appendix D.} that it satisfies $\nabla_{(\sigma}K_{\mu\nu)} = 0$ where $\nabla_{\sigma}$ is the covariant derivative. By definition of Killing vector (the generalization to a K. tensor is straightforward), the quantity 
+that you can check\footnote{Perhaps it was trivial, but it took me a long while to figure out and convince myself of the proof, which you'll find in Appendix D.} that it satisfies $\nabla_{(\sigma}K_{\mu\nu)} = 0$ where $\nabla_{\sigma}$ is the covariant derivative. As stems from the definition of Killing vector (the generalization to a Killing tensor is straightforward), the quantity 
 \begin{equation}
     K^{2} = K_{\mu\nu}V^{\mu}V^{\nu} = a^{2}\left[V_{\mu}V^{\mu}+(U_{\mu}V^{\mu})^{2}\right]
     \label{eq:conserved_killing}
@@ -396,10 +396,10 @@ To make things easier we then define a quantity called \emph{redshift} defined a
     z_{em} = \frac{\lambda_{obs}-\lambda_{em}}{\lambda_{em}}
     \label{eq:redshift_def}
 \end{equation}
-so that, if the observation takes place today ($a_{obs} = a_{0} = 1$), we can just write 
+so that, if the observation takes place today ($a_{obs} = a_{0}$), we can just write 
 \begin{equation}
     \boxed{
-    a_{em} = \frac{1}{1+z_{em}}
+    a_{em} = \frac{a_{0}}{1+z_{em}}
     }
     \label{eq:scalefactor_redshift}
 \end{equation}
@@ -410,8 +410,8 @@ and
     }
     \label{eq:cosmological_redshift}
 \end{equation}
-\par Let's give an example. If we observe, say, a galaxy with a redshift $z = 2$, we are observing it as it was when the Universe had a scale factor $a(t_{e}) = 1/3$.
-\par The redshift we observe for a distant object thus depends only on the relative scale factors at the time of emission and the time of observation. It doesn't depend on how the transition between $a(t_{e})$ and $a(t_{0})$ was made: All that matters is the scale factors at the time of emission and the time of observation.
+\par Let's give an example. If we observe, say, a galaxy with a redshift $z = 2$, we are observing it as it was when the Universe had a scale factor $a(t_{e}) = a_{0}/3$.
+\par The redshift we observe for a distant object thus depends only on the relative scale factors at the time of emission and the time of observation, it doesn't depend on how the transition between $a(t_{e})$ and $a(t_{0})$ was made.
 \par Calculating the redshift through spectroscopic observations, it was possible to correlate the recession velocity of objects in the Universe to their proper distance, obtaining the so called \emph{Hubble's law}
 \begin{equation}
     v = cz = H_{0}d_{P}
@@ -419,7 +419,7 @@ and
 \end{equation}
 Recent measurements \cite{Riess_2022} managed to estimate the present-day Hubble constant $H_{0}$ with great precision
 \begin{equation}
-    H_{0} = 72.53 \pm 0.99 \unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}
+    H_{0} = \frac{\dot{a}(t_{0})}{a_{0}} = 72.53 \pm 0.99 \unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}
     \label{eq:hubble_constant}
 \end{equation}
 from which we get an order-of-magnitude estimate of the age of the Universe
@@ -430,10 +430,10 @@ using $H_{0} = 100h\unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}$. We can also calculate
 \begin{equation}
     R_{H} = H_{0}^{-1}c = 3h^{-1}\unit{Gpc}
 \end{equation}
-The variable $h$ keeps track of the dispersion on the value of $H_{0}$ produced by the different measurement techique that was implemented.
+The variable $h$ keeps track of the dispersion on the value of $H_{0}$ produced by the different measurement technique that was implemented.
 \par Please note that Hubble's law is only valid on relatively large scales, where the peculiar velocity of objects become much smaller than the expansion velocity at a given distance.
 \par On a concluding note, please note that although it's a useful meter of comparison to understand what we're talking about, cosmological redshift has \emph{nothing to do} with a Doppler shift.
-\par In fact, even if the Universe was in an age in which $\dot{a} = 0$ and so that $H_{0} = 0$, you wouldn't be able to interpret the shift in frequency as the effect of a Doppler shift ($v = 0$ after all), yet you'd still observe the shift, since $a(t) \neq 0$.
+\par In fact, even if the Universe underwent an age in which $\dot{a} = 0$  (so $H_{0} = 0$), you wouldn't be able to interpret the shift in frequency as the effect of a Doppler shift ($v = 0$ after all), yet you'd still observe the shift, since $a(t) \neq 0$.
 
 \subsection{Hubble-Le Maître's Law}
 
@@ -451,13 +451,13 @@ The expansion won't be ill-defined only if $H_{0}^{-1} \gg (t-t_{0})$. We can no
     z \approx H_{0}(t_{0}-t) \implies z = \frac{H_{0}d}{c}
     \label{eq:hubblelemaitre}
 \end{equation}
-where $d = c(t_{0}-t)$ is the distance spanned by photons in the same time interval. Equation (\ref{eq:hubblelemaitre}) is the correct way to express Hubble-Le Maître's law for not too large distances. For larger distances we would have to take into account the modification brought about by the second order term in the expansion of $a$, forcing us to introduce an additional parameter, the \emph{acceleration parameter} $q$.
+where $d = c(t_{0}-t)$ is the distance crossed by photons in the same time interval. Equation (\ref{eq:hubblelemaitre}) is the correct way to express Hubble-Le Maître's law for not too large distances. For larger distances we would have to take into account the modification brought about by the second order term in the expansion of $a$, forcing us to introduce an additional parameter, the \emph{deceleration parameter} $q$.
 
 \section{The road to Friedmann's Equations}
 
 \subsection*{Conserved current for a non-collisional fluid}
 
-For the time being, let's consider a Universe completely filled with a fluid of cosmological relevance with negligible collision rate. The number of particles that make the fluid is conserved, and since the fluid must obey the Cosmological Principle, collective motion of the fluid can't have a privileged direction, hence $\langle v^{i} \rangle = 0$. We can thus define a 4-current vector $J^{\mu}$ that we will shortly prove to be conserved \marginpar{Please note that we're walking, as usual, with units in which $c=1$.}
+For the time being, let's consider a Universe completely filled with a fluid of cosmological relevance with negligible collision rate. The number of particles that make the fluid is conserved, and since the fluid must obey the Cosmological Principle, collective motion of the fluid can't have a privileged direction, hence $\langle v^{i} \rangle = 0$. We can thus define a 4-current vector $J^{\mu}$ that we will shortly prove to be conserved \marginpar{Please note that we're working, as usual, with units in which $c=1$.}
 \begin{equation}
     J^{\mu} = nu^{\mu} = n\der{x^{\mu}}{\tau} \quad u^{\mu} = (u^{0}, \gamma\vec{v})
 \end{equation}
@@ -465,7 +465,7 @@ where $n$ is the number density of particles. To see how the expansion of the Un
 \begin{equation}
     \nabla_{\mu}J^{\mu} = \partial_{\mu}J^{\mu} + \christoffel{\mu}{\nu}{\mu}J^{\nu}
 \end{equation}
-But since the metric is the FLRW, the covariant divergence of $J^{\mu}$ is vanishing. In fact, since $J^{i}$ is zero on average, the covariant divergence is reduced to simplu
+But since the metric is the FLRW, the covariant divergence of $J^{\mu}$ is vanishing. In fact, since $J^{i}$ is zero on average, the covariant divergence is reduced to simply
 \begin{equation}
     \partial_{0}J^{0} + \christoffel{i}{0}{i}J^{0} = 0 \quad \christoffel{i}{0}{i} = \frac{\dot{a}}{a}\delta^{i}_{\;\;i} = 3 \frac{\dot{a}}{a}
 \end{equation}
@@ -480,7 +480,7 @@ For the sake of simplicity, let's consider first the case of a flat-space. The e
 \begin{equation}
     \delta S = \delta \left[\int \diff{t}\diff{V}\mathcal{L}\left(q^{(a)}, \parder{q^{(a)}}{x^{\mu}}\right)\right] = 0
 \end{equation}
-where $\mathcal{L}$ is a lagrangian density. Computing the variation we obtain Euler-Lagrange equations
+where $\mathcal{L}$ is the lagrangian density associated with the field(s) we're considering. Computing the variation we obtain Euler-Lagrange equations
 \begin{equation}
     \partial^{\mu}\left(\parder{\mathcal{L}}{(\partial^{\mu}q)}\right) - \parder{\mathcal{L}}{q} = 0
     \label{eq:EL-eq}
@@ -521,21 +521,25 @@ What we'd like to show now is that the energy-momentum tensor (\ref{eq:energymom
 \end{equation}
 After exploiting metric compatibility, and expanding the covariant derivative, we can rewrite the previous expression as
 \begin{equation}
-    \partial_{\nu}(p+\rho)u^{\mu}u^{\nu} + \partial_{\nu}p g^{\mu\nu} + (p+\rho)\left[\christoffel{\nu}{\lambda}{\mu}u^{\lambda}u^{\nu}+\christoffel{\nu}{\lambda}{\nu}u^{\mu}u^{\lambda}\right]
+    \partial_{\nu}(p+\rho)u^{\mu}u^{\nu} + (\partial_{\nu}p) g^{\mu\nu} + (p+\rho)\left[\christoffel{\nu}{\lambda}{\mu}u^{\lambda}u^{\nu}+\christoffel{\nu}{\lambda}{\nu}u^{\mu}u^{\lambda}\right]
 \end{equation}
 At this point we can notice that, since the fluid is comoving, $u^{\mu} = (1,0,0,0)$, and thus
 \begin{equation}
     \christoffel{\nu}{\lambda}{\mu}u^{\lambda}u^{\nu} = \christoffel{0}{0}{\mu}u^{0}u^{0} \quad \christoffel{\nu}{\lambda}{\nu}u^{\mu}u^{\lambda} = \christoffel{\nu}{0}{\nu}u^{\mu}u^{0}
 \end{equation}
-But $\christoffel{0}{0}{\mu} = 0$ for all values of $\mu$ given the FLRW metric, while the second term can be simplified as
+But, given the FLRW metric, $\christoffel{0}{0}{\mu} = 0$ for all values of $\mu$, while the second term can be simplified as
 \begin{equation}
     \christoffel{\nu}{0}{\nu}u^{\mu}u^{0} = \frac{1}{2}g^{\nu i}\partial_{0}g_{\nu i}u^{\mu}
+\end{equation}
+\par Putting everything back together 
+\begin{equation}
+     \partial_{\nu}(p+\rho)u^{\mu}u^{\nu} + (\partial_{\nu}p) g^{\mu\nu} + (p+\rho)\frac{1}{2}g^{\nu i}\partial_{0}g_{\nu i}u^{\mu}
 \end{equation}
 \par Let's focus on the purely spatial component $\mu = j$, which ultimately simplifies to just $\partial_{i}p g^{ij}$, which is vanishing since the pressure has to be homogeneous because of the Cosmological Principle. The only non-trivial component is the temporal one $\mu = 0$, which yields
 \begin{equation}
     \partial_{0}(p+\rho)-\partial_{0}p +\frac{p+\rho}{2}g^{ij}\partial_{0}g_{ij}
 \end{equation}
-The last derivative can be hand-wavingly calculated expanding $g_{ij} = a^{2}\tilde{g}_{ij}$, where $\tilde{g}_{ij}$ is independent of time. This way, the temporal component ultimately yields
+The last derivative can be hand-wavingly calculated expanding $g_{ij} = a^{2}\tilde{g}_{ij}$, where $\tilde{g}_{ij}$ is independent of time. This way, the temporal component ultimately yields the so-called \emph{fluid equation}
 \begin{equation}
     \boxed{
     \partial_{0}\rho + 3(p+\rho)H(t) = 0
@@ -546,13 +550,13 @@ It might be worth pointing out that $\rho$ is here an energy density rather than
 
 \subsection{Ricci Tensor in a FLRW Metric}
 
-Honestly, I'm not in the mood to calculate all non-trivial components of the Riemann tensor first
+Honestly, I'm not in the mood to calculate all non-trivial components of the Riemann tensor
 \begin{equation}
     R^{\mu}_{\;\nu\alpha\beta} = \partial_{\alpha}\christoffel{\nu}{\beta}{\alpha} - \partial_{\beta}\christoffel{\nu}{\mu}{\alpha} + \christoffel{\sigma}{\alpha}{\mu}\christoffel{\nu}{\beta}{\sigma} - \christoffel{\sigma}{\beta}{\mu}\christoffel{\nu}{\alpha}{\sigma}
     \label{eq:riemann tensor}
 \end{equation}
 to then calculate Ricci's $R_{\nu\beta} =  R^{\alpha}_{\;\nu\alpha\beta}$. You can find all non-trivial components of the Ricci tensor in Appendix C. Without doing all the troublesome calculations, I'll just say that in principle the calculation is made a little easier if we consider small deviations from flat-space for the time independent metric $\tilde{g}_{ij} = g_{ij}/a^{2}$, which helps significantly to decrease the effort.
-\par It is worth mentioning, however, that we might as well expect the components $R_{0i}$ to be vanishing because of the request of homogeneity and isotropy. An elegant way of proving it without losing your wits in the process might be considering the "inverted" version of Einstein's equation
+\par It is worth mentioning, however, that we might as well expect the components $R_{0i}$ to be vanishing because of the request of homogeneity and isotropy. An elegant way of proving it without losing your wits in the process might be considering the non-canonical version of Einstein's equation
 \begin{equation}
     R_{\mu\nu} = 8\pi G \left(T_{\mu\nu} -\frac{1}{2}Tg_{\mu\nu}\right)
     \label{eq:einstein_inverted}
@@ -565,7 +569,7 @@ where $T$ is the trace of the energy-momentum tensor. From here is trivial to pr
 
 \subsection{Friedmann's Equation}
 
-Consider the non-canonical form of Einstein's equation (\ref{eq:einstein_inverted}). The trace of the energy momentum tensor is (\ref{eq:energymomentumtensor-cov}), and its trace is $T = 3p - \rho$, so it's immediate to solve Einstein's equation.
+Consider the non-canonical form of Einstein's equation (\ref{eq:einstein_inverted}). The energy momentum tensor is (\ref{eq:energymomentumtensor-cov}), and its trace is $T = 3p - \rho$, so it's immediate to solve Einstein's equation.
 \par The temporal component yields
 \begin{equation}
     \boxed{
@@ -593,7 +597,7 @@ where $w$ is a dimensionless number. The behaviors of our favorite sources are s
 \end{table}
 \par With our newly gained EoS in mind, we can rewrite Friedmann equation as
 \begin{equation}
-    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\rho (1+w)
+    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\rho (1+3w)
 \end{equation}
 which tells us that the Universe is accelerating if and only if
 \begin{equation}
@@ -614,7 +618,7 @@ where the common factor $\tilde{g}_{ij}$ was suppressed. It is customary however
 \begin{equation}
     \frac{\dot{\rho}_{i}}{\rho_{i}} = -3(1+w_{i})\frac{\dot{a}(t)}{a(t)}
 \end{equation}
-which can be immediately integrated. Behold:
+which can be immediately integrated. Behold
 \begin{equation}
     \boxed{
     \rho_{i}(a) = \rho_{i,0}\left(\frac{a(t)}{a(t_{0})}\right)^{-3(1+w_{i})}
@@ -626,13 +630,13 @@ Equation (\ref{eq:density_scalefactor}) implies that for (non-relativistic) matt
     & \frac{\rho_{\Lambda}(a)}{\rho_{m}(a)}=1=\frac{\rho_{\Lambda,0}}{\rho_{m,0}}a^{3} \implies a_{\Lambda,m} = \left(\frac{\rho_{m,0}}{\rho_{\Lambda,0}}\right)^{1/3} \approx 0.766 \implies z_{\Lambda,m}= 0.31\\
     & \frac{\rho_{m}(a)}{\rho_{r}(a)}=1=\frac{\rho_{m,0}}{\rho_{r,0}}a \; \implies a_{r,m} = \frac{\rho_{r,0}}{\rho_{m,0}} \approx 2.9\cdot 10^{-4} \implies z_{r,m}= 3400
 \end{align*}
-If the Universe contains different components with different values of $w$, in the limit $a\to 0$, the component with the largest value of $w$ is dominant.
-\par Now that we have a relation between $\rho$ and $a$ we can set to solve the Friedmann equation (\ref{eq:friedmann2}) in special case of a spatially flat ($k = 0$) and single-component Universe.
+If the Universe contains different components with different values of $w$, then in the limit $a\to 0$, the component with the largest value of $w$ is dominant.
+\par Now that we have a relation between $\rho$ and $a$ we can set to solve the Friedmann equation (\ref{eq:friedmann2}) in the special case of a spatially flat ($k = 0$) and single-component Universe.
 Plugging in (\ref{eq:density_scalefactor}), we find 
 \begin{equation}
     \dot{a}^{2} = \frac{8\pi G \rho_{0}}{c^{2}}\frac{a^{-(1+3w)}}{a_{0}^{-(1+3w)}}
 \end{equation}
-which can be solved explicitly \marginpar{Also note that $\dot{a} \propto (\rho a^{2})^{1/2}$ which is also proportional to $\propto a^{-(1+3w)/2}$.\\ Hence, a fluid with $w = -1/3$ would have constant expansion rate $\dot{a}$.}
+which can be solved explicitly \marginpar{Also note that $\dot{a} \propto (\rho a^{2})^{1/2}$ which is also proportional to $\propto a^{-(1+3w)/2}$.\\ Hence, a fluid with $w = -1/3$ has constant expansion rate $\dot{a}$.}
 \begin{equation}
     \boxed{
         a(t) = a_{0}\left(\frac{t}{t_{0}}\right)^{\frac{2}{3+3w}} \quad t_{0} = \frac{2}{3H_{0}(1+w)} \quad w \neq -1
@@ -657,7 +661,7 @@ where with the superscript we're indicating derivatives with respect to the conf
 \begin{equation}
     a' = \dot{a}a \quad a'' = a(a\ddot{a}+\dot{a}a') \quad \mathcal{H} = \frac{a'}{a} = \dot{a} \quad \mathcal{H}' = a\ddot{a}
 \end{equation}
-With these new variables, Friedmann's equation become
+With these new variables, Friedmann's equations become
 \begin{align}
     \label{eq:f2_conf}
     \mathcal{H}^{2} &= \frac{8\pi G}{3}a^{2}\rho - k\\
@@ -717,7 +721,7 @@ So the vacuum, or Cosmological Constant, would behave like a fluid with $w = -1$
     3\ddot{a} &= -4\pi Ga(\tilde{\rho}+3\tilde{p})\\
     a\ddot{a} + 2\dot{a}^{2} + 2k &= 4\pi G a^{2}(\tilde{\rho}-\tilde{p})
 \end{align*}
-which under Einstein's assumption of a static Universe ($\dot{a} = 0$ and $ \ddot{a} = 0$) imply 
+which under Einstein's assumption of a static Universe ($\dot{a} = 0$ and $ \ddot{a} = 0$) implies 
 \begin{equation}
     \tilde{\rho} = -3\tilde{p} \quad 2k = 4\pi G a^{2}(\tilde{\rho}-\tilde{p})
 \end{equation}
@@ -738,7 +742,7 @@ This means that the physical dimension of the Universe would be fixed and equal 
 \begin{equation}
     \tilde{\rho} = \rho_{M} + \rho_{\Lambda} \implies \rho_{M} = \frac{2\Lambda}{8\pi G}
 \end{equation}
-If we add a positive perturbation the scale factor $a = a_{E} + \Delta a$, then the matter energy density decreases
+If we add a positive perturbation to the scale factor $a = a_{E} + \Delta a$, then the matter energy density decreases
 \begin{equation}
     \rho_{M} = \frac{3k}{8\pi G a^{2}} - \frac{\Lambda}{8\pi G}
 \end{equation}
@@ -782,7 +786,7 @@ that univocally determinates the sign of $k$ depending on whether $\Omega$ is gr
     & \rho > \rho_{c} \iff \Omega > 1 \iff k > 0 \iff \text{closed} 
 \end{align*}
 The density parameter $\Omega$, then, tells us which of the three FLRW geometries describes our Universe. Since the right-hand side of (\ref{eq:densityparam_eq}) cannot change sign as the Universe expands, neither can the left-hand side. So, $\Omega$ will have the same sign \emph{at all times}.
-\par In a realistic case, we should consider a Universe with multiple components, although perhaps not interacting. We can then think of writing a total energy density
+\par In a realistic case, we should consider a Universe with multiple components, although for the sake of simplicity we choose them not to be interacting. We can then think of writing a total energy density
 \begin{equation}
     \rho = \sum_{i}\rho_{i} = \rho_{DM} + \rho_{B} + \rho_{r} + \rho_{\Lambda} + ... 
     \label{eq:totaldensity}
@@ -796,7 +800,7 @@ or, in terms of the density parameter(s), we could also write
     H^{2} = \frac{8\pi G}{3}\sum_{i(c)}\rho_{i}
     \label{eq:friedmann_alt}
 \end{equation}
-where the notation $\sum_{i(c)} = \Omega_{0} + \sum_{i}\Omega_{i}$ indicates that we sum not only over all the actual components of energy density $\rho_{i}$, but also on the contribution of spatial curvature, which we define as
+where the notation $\sum_{i(c)}$ indicates that we sum not only over all the actual components of energy density $\rho_{i}$, but also on the contribution of spatial curvature, which we define as
 \begin{equation}
     \Omega_{0} = -\frac{k}{a^{2}H^{2}}
     \label{eq:spatial_dp}
@@ -809,12 +813,12 @@ thus producing a consistency relation that must hold at \emph{any} time.
 
 \subsubsection{Acceleration Parameter}
 
-A few pages ago, back when we first proved Hubble-Le Maître's law, we've introduced, although barely, the \emph{acceleration parameter} $q$, which we now define as 
+A few pages ago, back when we first proved Hubble-Le Maître's law, we've introduced, although barely, the \emph{deceleration parameter} $q$, which we now define as 
 \begin{equation}
     q = -\frac{\ddot{a}a}{\dot{a}^{2}}
     \label{eq:decelerationparam}
 \end{equation}
-I don't think I will surprise any of you saying that if $q < 0$, then the Universe is accelerating, and if it's $q > 0$, then it is decelerating. Not being surprised was what people back then expected when they first defined this quantity. They were so sure of their results that they even named it \emph{deceleration parameter} rather than acceleration. Shortly after, they realized they should have probably changed its name.
+I don't think I will surprise any of you saying that if $q < 0$, then the Universe is accelerating, and if it's $q > 0$, then it is decelerating. Not being surprised was what people back then expected when they first defined this quantity. They were so sure of their results that they even named it \emph{deceleration parameter} rather than acceleration parameter. Shortly after, they realized they should have probably changed its name.
 \par Recall (\ref{eq:friedmann1}) with a perfect fluid EoS
 \begin{equation}
     \frac{\ddot{a}}{a} = -\frac{4\pi G}{3} \rho(1+3w)
@@ -837,9 +841,10 @@ which can be studied for all the various components our Universe could feature
 
 \subsubsection{Vacuum Energy}
 
-\textbf{Achtung!} I know nothing of quantum field theory nor have any competence or background knowledge to assure you that what you'll read in this section is ontologically correct. For this, I'm merely reporting what's written in my notes.
+\textbf{Achtung!} I know nothing of quantum field theory nor have any competence or background knowledge to assure you that what you'll read in this section is ontologically correct.
+\par For this, I'm merely reporting what's written in my notes.
 \vspace{0.3cm}
-\par It is the purpose of this section to briefly discuss as for why the Cosmological Constant can be considered as a vacuum energy. First of all, if we consider the Lorentz-invariant quantuum void, the energy density associated to the cosmological constant should be roughly equal to present day's critical density \marginpar{Any mismatch in units has to be attributed to the unspoken choice to use units in which $c=1$, $k_{B} = 1$, and either $h$ or $\hbar = 1$.}
+\par It is the purpose of this section to briefly discuss as for why the Cosmological Constant can be considered as a vacuum energy. First of all, if we consider the Lorentz-invariant quantuum void, the energy density associated to the Cosmological Constant should be roughly equal to present day's critical density \marginpar{Any mismatch in units has to be attributed to the unspoken choice to use units in which $c=1$, $k_{B} = 1$, and either $h$ or $\hbar = 1$.}
 \begin{equation}
     \rho_{\Lambda} \approx \rho_{C}(t_{0}) \approx 10^{-44}\unit{GeV}^{4}
 \end{equation}
@@ -848,7 +853,7 @@ This implies that $\rho_{\text{vac}} = \langle \rho \rangle$ and $p_{\text{vac}}
 \begin{equation}
     \langle \rho \rangle_{\text{vac}} = \int_{0}^{k_{\text{max}}} \frac{\text{d}^{3}k}{(2\pi)^{3}}\frac{1}{2}\sqrt{k^{2}+m^{2}} \approx \frac{k_{\text{max}}^{4}}{16\pi^{2}}
 \end{equation}
-where $k_{\text{max}}$ is an arbitrarily-high scale at which I assume my QFT to be valid. For the sake of simplicity we can assume a system composed by a set of harmonic oscillators\footnote{This is the only thing I can gather about all this.} with Hamiltonian
+where $k_{\text{max}}$ is an arbitrarily-high scale at which we can assume our QFT to be valid. For the sake of simplicity we can assume a system composed by a set of harmonic oscillators\footnote{This is the only thing I can gather about all this.} with Hamiltonian
 \begin{equation}
     H_{k} = \omega_{k}\left(n_{k}+\frac{1}{2}\right)
 \end{equation}
@@ -876,7 +881,7 @@ The actual model for the Universe, sometimes known as Benchmark model, is a $\La
 \begin{equation}
     \rho = \rho_{m} + \rho_{r} + \rho_{\Lambda}
 \end{equation}
-which all scale differently but according to (\ref{eq:density_scalefactor}). This is most useful, because it allows us to write the total energy density as a function of the present-day density parameters and their associates scaling with the scale factor
+which all scale differently but according to (\ref{eq:density_scalefactor}). This is most useful, because it allows us to write the total energy density as a function of the present-day density parameters and their associated scaling with the scale factor
 \begin{equation}
     \rho = \frac{3H_{0}^{2}}{8\pi G}\left(\Omega_{\Lambda,0} + \Omega_{r,0}\left(\frac{a_{0}}{a}\right)^{4} + \Omega_{m,0}\left(\frac{a_{0}}{a}\right)^{3}\right)
 \end{equation}
@@ -929,671 +934,3 @@ which yields
 \begin{equation}
     t_{0} = \frac{2}{3H_{0}}\frac{1}{\Omega_{\Lambda,0}^{1/2}}\ln\left[\frac{1+\Omega_{\Lambda,0}^{1/2}}{(1-\Omega_{\Lambda,0})^{1/2}}\right] \sim 14\unit{Gyr}
 \end{equation}
-
-\section{Inflation}
-
-\subsection{Luminosity Distance}
-
-If the redshift is not very small, we have to think more carefully about what we mean by "distance" in cosmology. The instantaneous physical distance (proper distance) is a convenient construct, but not itself observable, since observation always refer to our past light cone. In Euclidean space, there are a number of different ways to infer the distance of an object, for example comparing its apparent brightness to its intrinsic luminosity.
-\par In a Euclidean space, we could define the \emph{luminosity distance} as
-\begin{equation*}
-    d_{L} = \left(\frac{L}{4\pi F}\right)^{1/2}
-\end{equation*}
-with intrisic luminosity $L$ and $F$. But how does this change in a curved and expanding Universe, and why?
-\par For two reasons mainly:
-\begin{enumerate}
-    \item \emph{Geometry}: The space is no longer Euclidean, and the surface of the 2-sphere onto which the luminosity is diluted is $4\pi a_{0}^{2}\tilde{r}_{s}^{2} = 4\pi a_{0}^{2}f_{k}(\chi)^{2}$, where $f_{k}(\chi)$ is 
-    \begin{equation}
-        \chi = \int_{0}^{r_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = f_{k}^{-1}(r_{s}) = \left\{
-            \begin{array}{ll}
-                r_{s} & k=0\\
-                \arcsin(r_{s}) & k=1\\
-                \text{arcsinh}(r_{s}) & k=-1
-            \end{array}
-        \right.
-    \end{equation}
-    \item \emph{Correction to the concept of luminosity}: In an expanding Universe, we have to be a little more cautious, and the necessary steps to be taken are explained in detail in the following.
-\end{enumerate}
-\par Because of the expansion the wavelength of these photons will change according to (\ref{eq:redshift_def}). Therefore, the energy of a photon will decrease
-\begin{equation*}
-    E_{0} \sim \frac{c}{\lambda_{0}} = \frac{c}{(1+z)\lambda_{e}} \sim \frac{E_{e}}{1+z}
-\end{equation*}
-\par On top of that, two wavefronts separated by $\delta t_{e}$ will arrive with a delay $\delta t_{0} = \delta t_{e}(1+z)$, so the arrival rate will decrease of another $1+z$
-\begin{equation*}
-    L_{e} \sim \frac{E_{e}}{\delta t_{e}} = \frac{(1+z)^{2}E_{0}}{\delta t_{0}} = (1+z)^{2}L_{0}
-\end{equation*}
-\par Since the flux is equal to energy per unit time per unit area, we can write
-\begin{equation*}
-    F = \frac{L_{e}}{4\pi a_{0}^{2}\tilde{r}_{s}^{2}(1+z)^{2}} = \frac{L_{e}}{4\pi a_{0}^{2}f_{k}(\chi)^{2}(1+z)^{2}}
-\end{equation*}
-so that by direct comparison with out initial equation, we find that the \emph{luminosity distance} is
-\begin{equation}
-    d_{L} = a_{0}\tilde{r}_{s}(1+z) = (1+z)a_{0}f_{k}(\chi)
-    \label{eq:luminositydistance}
-\end{equation}
-\par The luminosity distance is something we might hope to measure, since there are some astrophysical sources whose absolute luminosity are known, but $\chi$ (and, for extension, the comoving distance $\tilde{r}_{s}$), is not directly observable, so we have to remove it from our equation. On a null radial geodesic (for convenience), we have
-\begin{equation*}
-    0 = \text{d}s^{2} = -\text{d}t^{2} + a^{2}\text{d}\chi^{2}
-\end{equation*}
-or more simply 
-\begin{equation*}
-    \chi = \int \frac{\text{d}t}{a} = \int \frac{\text{d}a}{a^{2}H(a)}
-\end{equation*}
-\par It is conventional to convert the scale factor to redshift using (\ref{eq:scalefactor_redshift}) $a = (1+z)^{-1}$, so we have
-\begin{equation*}
-    \chi(z) = \int_{0}^{z}\frac{\text{d}z'}{H(z')}
-\end{equation*}
-\par In order to evaluate the Hubble parameter in this integral we can use Friedmann equation (\ref{eq:friedmann_alt}), thus finding 
-\begin{equation*}
-    d_{L}(z) = (1+z)a_{0}f_{k}\left[H_{0}^{-1}\int_{0}^{z} \frac{\text{d}z'}{E(z')}\right]
-\end{equation*}
-where we've defined $E(z) = H(z)/H_{0}$. Still, it is more common to speak in terms of $\Omega_{c,0} = -k/H_{0}^{2}$, which can be measured. We can therefore write the luminosity in terms of measurable cosmological parameters as 
-\begin{equation}
-    \boxed{
-    d_{L}(z) = (1+z)\frac{H_{0}^{-1}}{\sqrt{|\Omega_{c,0}|}}f_{k}\left[\sqrt{|\Omega_{c,0}|}\int \frac{\text{d}z'}{E(z')}\right]
-    }
-    \label{eq:general_lumdist}
-\end{equation}
-\par Although it appears unwieldy (and it is), this equation is of central importance in cosmology. Given the observables $H_{0}$ and $\Omega_{i,0}$, we can straightforwardly calculate the luminosity distance to an object at any redshift $z$.
-\begin{figure}[h!]
-    \centering 
-    \includegraphics[width=0.8\textwidth]{img/lumdist.png}
-    \caption{Luminosity distance of a standard candle with observed redshift $z$, in units of the Hubble distance, $c/H_{0}$. The bold solid line gives the result for the Benchmark Model. For comparison, the dot-dash line indicates a flat, $\Lambda$-dominated Universe, and the dotted line a flat, matter-dominated Universe.}
-    \label{fgr:lumdist}
-\end{figure}
-\par Experimentally, it's more common to use a quantity known as \emph{distance module} to quantify distances. It is related to the luminosity distance through the definition of absolute magnitude
-\begin{equation}
-    \mu = 5\log_{10}\left(\frac{d_{L}}{10\unit{pc}}\right)
-    \label{eq:distancemodule}
-\end{equation}
-Remarkably, going back in time (so at higher redshift) we observe a change in the slope of the luminosity distance curve (or, equivalently, of the distance module) at roughly $z = 0.5$ caused by the change from an accelerating Universe ($\Lambda$DU) to a decelerating Universe (MDU).
-\par If we define $z_{\Lambda}$ the redshift at which there is equivalence between the $\Lambda$ and matter density parameters 
-\begin{equation}
-    \Omega_{\Lambda,0} = \Omega_{m,0}(1+z_{\Lambda})^{3} \implies z_{\Lambda} = \left(\frac{\Omega_{\Lambda,0}}{\Omega_{m,0}}\right)^{1/3}-1
-\end{equation}
-we find it to be $z_{\Lambda}\approx 0.44$, which is the exact cause of the \href{https://en.wikipedia.org/wiki/Cosmic_coincidence_problem}{\emph{cosmic coincidence problem}}, since it appears rather odd that the Cosmological Constant is dominating at a redshift so close to present time.
-
-\subsection{Second Order Hubble Law}
-
-If you recall, earlier we've defined Hubble-Le Maître's law (\ref{eq:hubblelaw}) at the linear order. It is the purpose of this section to stretch our approximation a bit further, including larger redshifts and, by extension, a second-order correction to the aforementioned law.
-\par Let us now approximate $a(t)$ in a neighborhood of today
-\begin{equation*}
-    a(t) = a(t_{0}) + \left(\parder{a}{t}\right)_{t_{0}}(t-t_{0}) + \frac{1}{2}\left(\parparder{a}{t}\right)_{t_{0}}(t-t_{0})^{2} + \text{o}\left((t-t_{0})^{3}\right)
-\end{equation*}
-so that (setting $a(t_{0}) = 1$)
-\begin{equation}
-    a(t) = a_{0}\left[1 + H_{0}(t-t_{0})-\frac{1}{2}q_{0}H_{0}^{2}(t-t_{0})^{2} + \text{o}\left((t-t_{0})^{3}\right)\right]
-    \label{eq:a_expansion-second}
-\end{equation}
-where we've defined 
-\begin{equation}
-    H_{0} = \left(\frac{\dot{a}(t)}{a(t)}\right)_{t_{0}} \quad q_{0} = -\left(\frac{\ddot{a}(t)a(t)}{\dot{a}^{2}(t)}\right)_{t_{0}}
-\end{equation}
-\par We also know that
-\begin{equation*}
-    z = \frac{a(t_{0})}{a(t_{e})}-1 = -1 + \frac{1}{1-H_{0}(t_{0}-t)-\frac{1}{2}H_{0}^{2}q_{0}(t_{0}-t)^{2}}
-\end{equation*}
-so we can find an approximate relation for the redshift Taylor expanding
-\begin{equation*}
-    z \approx H_{0}(t_{0}-t_{e})+\left(1+\frac{q_{0}}{2}\right)H_{0}^{2}(t_{0}-t_{e})^{2}
-\end{equation*}
-\par Remember that at first order we found the relation $z(t) = H_{0}(t_{0}-t_{e})$, which we can plug into last equation introducing corrections only to the third order
-\begin{equation}
-    H_{0}(t_{0}-t_{e}) \approx z(t) -\frac{1}{2}(q_{0}+2)z^{2} +\text{o}(z^{3})
-\end{equation}
-\par Now we'll turn to investigate how all of this enters into the definition of proper distance
-\begin{equation}
-    \tilde{r}_{s} =  \int_{0}^{r_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = \int_{t_{e}}^{t_{0}}\frac{\diff{t}}{a}
-\end{equation}
-where we're considering a null, radial geodesic for the FLRW metric (\ref{eq:FRW}). We can plug in the second order expansion for $a(t)$
-\begin{equation}
-    \tilde{r}_{s} = \frac{1}{a_{0}}\int_{t_{e}}^{t_{0}}\diff{t}\left[1+H_{0}(t_{0}-t)+\frac{1}{2}H_{0}^{2}q_{0}(t_{0}-t)^{2}\right]^{-1}
-\end{equation}
-We can neglect the third-order contribution brought by the third term in the right-hand side of the equation and expand once more 
-\begin{equation}
-    \tilde{r}_{s} \approx \frac{1}{a_{0}}\int_{t_{e}}^{t_{0}}\diff{t}\left[1-H_{0}(t_{0}-t)\right] = \frac{(t_{0}-t_{e})}{a_{0}} - \frac{H_{0}(t_{0}-t_{e})^{2}}{2a_{0}}
-\end{equation}
-which means that our proper distance is ($c=1$)
-\begin{equation}
-    \tilde{r}_{s} = \frac{1}{a_{0}}\left[(t_{0}-t_{e})+\frac{1}{2}H_{0}(t_{0}-t_{e})^{2}\right]
-\end{equation}
-or, in terms of the redshift
-\begin{equation}
-    \tilde{r}_{s}(t_{0}) = \frac{c}{H_{0}}z\left[1-\frac{(1+q_{0})}{2}z\right]
-    \label{eq:properdistance_rs_second}
-\end{equation}
-We can substitute the expression at second order for the proper distance in the definition of distance luminosity (\ref{eq:luminositydistance}) to find 
-\begin{equation}
-    d_{L}^{2} = \frac{1}{H_{0}^{2}}\left(z-\frac{1}{2}(q_{0}+2)z^{2}+\frac{z^{2}}{2}\right)^{2}(1+z)^{2}
-\end{equation}
-which we can expand to quadratic order 
-\begin{equation}
-    H_{0}d_{L} = -\left[z-\frac{1}{2}(q_{0}+1)z^{2}\right](1+z) = z+z^{2}-\frac{1}{2}(q_{0}+1)z^{2} + \text{o}(z^{3})
-\end{equation}
-which yields
-\begin{equation}
-    \boxed{
-    H_{0}d_{L} = z + \frac{1}{2}(1-q_{0})z^{2} + \text{o}(z^{3})
-    }
-\end{equation}
-
-\subsection{Angular diameter distance}
-
-\par Let's consider a curved, expanding Universe described by the FLRW metric and choose your comoving coordinate system so that the observer is at its origin.
-\par Consider a yardstick of constant proper length $l$ perpendicular to the line of sight and at a comoving coordinate distance $r_{e}$. At a time $t_{e}$, the yardstick emitted the light that you observe at time $t_{0}$. The comoving coordinates of the two ends of the yardstick, at the time the light was emitted, were $(r_{e},\theta_{1},\phi)$ and
-$(r_{e},\theta_{2},\phi)$.
-\par The distance $\text{d}s$ between the two ends of the yardstick, measured at the time $t_{e}$ when the light was emitted, can be found from the FLRW metric
-\begin{equation*}
-    \text{d}s = a(t_{e})f_{k}(\chi)\diff{\Omega} = a(t_{e})\tilde{r}_{s}\diff{\Omega}
-\end{equation*}
-where $a(t_{e})\tilde{r}_{s}$ is the physical (proper) distance of the emitter at the time of emission. We can set $\text{d}s = l$ and define
-\begin{equation}
-    d_{A} := \frac{\diff{s}}{\diff{\Omega}} = \tilde{r}_{s}\frac{a(t_{e})}{a_{0}}a_{0} = \frac{\tilde{r}_{s}a_{0}}{(1+z)}
-\end{equation}
-from which we conclude
-\begin{equation}
-    d_{A} = \frac{a_{0}f_{k}(\chi)}{1+z} = \frac{d_{L}}{(1+z)^{2}}
-    \label{eq:angulardistance}
-\end{equation}
-You can also show that 
-\begin{align*}
-    H_{0}d_{A} &= \left[z-\frac{1}{2}(1-q_{0})z^{2}+\text{o}(z^{3})\right](1-2z+\text{o}(z^{2}))\\
-    &= z-\frac{1}{2}(3+q_{0})z^{2}+\text{o}(z^{3})
-\end{align*}
-which is the Hubble law as a function of the angular distance.
-\par We can define the apparent brightness $B$ as 
-\begin{equation}
-    B = \frac{l}{\Omega} = \frac{L}{4\pi d_{L}^{2}}\frac{d_{A}^{2}}{S}
-    \label{eq:apparentbrightness}
-\end{equation}
-where $l$ is the apparent luminosity, $\Omega$ is the angular extension, and $S$ is the physical extension of the source. We can further manipulate the definition introducing the absolute luminosity per unit area, which depends only on the intrinsic characteristic of the source 
-\begin{equation}
-    B = \frac{\mathcal{L}}{4\pi}\left(\frac{d_{A}}{d_{L}}\right)^{2} = \frac{\mathcal{L}}{4\pi}(1+z)^{-4}
-\end{equation}
-Suppose that the redshift we observe were produced by some absorbing medium between us and the object. In an Euclidean Universe
-\begin{equation}
-    d_{L} = d(1+z)^{1/2}
-\end{equation}
-while $d_{A} = d$, and so 
-\begin{equation}
-    \frac{d_{A}}{d_{L}} = \frac{1}{(1+z)^{1/2}} \implies B \propto (1+z)^{-1}
-\end{equation}
-but unfortunately observations are telling us that $B \propto (1+z)^{-4}$, thus allowing us to discard the scenario in which the redshift is wholly produced by absorbing media (rather than an expanding Universe).
-
-\subsection{Particle Horizon}
-
-Consider a photon emitted by some source at time $t_{e}$, for a light path $\text{d}s = 0$. The maximum comoving distance the photon might have travelled to present day is
-\begin{equation}
-   a^{-1}(t)\diff{t} = \frac{\diff{r}}{\sqrt{1-kr^{2}}} \implies \int_{0}^{t_{0}}\frac{\diff{t}}{a(t)} = \int_{0}^{d_{H}}\frac{\diff{r}}{\sqrt{1-kr^{2}}}
-\end{equation}
-For a single component Universe, the expression for $a(t)$ is simple
-\begin{equation}
-    a(t) \propto t^{n} \quad n = \frac{2}{3(1+w)}
-\end{equation}
-and the integral is well defined provided that $w<-1/3$ in the EoS of the Cosmological fluid. The maximum (physical) distance travelled by a photon is then defined as 
-\begin{equation}
-    d_{\text{max}} = R_{H}(t_{0}) = a(t_{0})\int_{0}^{t_{0}}\frac{\diff{t}}{a(t)} = a(t_{0})\tilde{r}_{\text{max}}(t_{0})
-\end{equation}
-Such distance is commonly known as \emph{particle horizon} and represents the maximum distance from which we might have possibly received information from the past via electromagnetic waves. For a flat Universe ($k=0$)
-\begin{equation}
-    \diff{t} = \frac{\diff{x}}{H_{0}xE(x)} \implies d_{\text{max}}(t_{0}) = \int_{0}^{1}\frac{\diff{x}}{H_{0}xE(x)}
-\end{equation}
-while for a "standard" Universe
-\begin{equation}
-    R_{H}(t) = a(t)\int_{t_{i}}^{t}\frac{\diff{t'}}{a(t')} \quad a(t)\propto t^{n}
-\end{equation}
-which is also equal to 
-\begin{equation}
-    R_{H}(t) = t^{n}\left[\frac{1}{1-n}t^{1-n}\right]^{t}_{t_{i}} \approx \frac{t}{1-n}
-\end{equation}
-We might relate this last result to the Hubble radius $H^{-1}$, obtaining
-\begin{equation}
-    \frac{H^{-1}}{R_{H}} = \frac{1-n}{n}
-\end{equation}
-but please note that this last equation holds only for a simple cosmological model with a single dominating component.
-
-\subsubsection{Event Horizon}
-
-We define the \emph{event horizon} as the maximum distance at which an object can be so that a signal emitted by that same object reaches us at a future infinite. Fixed an emission time $t_{\star}$
-\begin{equation}
-    \int_{t_{\star}}^{\infty}\frac{\diff{t}}{a(t)} = \int_{0}^{r_{\star}}\frac{\diff{r}}{\sqrt{1-kr^{2}}}
-\end{equation}
-If $r_{s} > r_{\star}$, the event will never be observed, meaning there could be regions of spacetime that are impossible to "communicate" with. To see if the integral can actually be finite, you will usually check \marginpar{We're assuming a flat Universe $k=0$ for which $$ a(t) = A e^{Ht}$$}
-\begin{equation}
-    r_{\star} = -\frac{1}{AH}e^{-Ht}\Big|^{\infty}_{t_{\star}} < \infty
-\end{equation}
-For example, if the EoS has $w>-1/3$, $r_{\star}\to \infty$ and the horizon is not properly defined.
-
-\subsection{Flatness Problem}
-
-Consider a Universe with vanishing Cosmological Constant $\Lambda = 0$ which is also such that Einstein's equation is \emph{always} valid, also at $t=0$. If we define
-\begin{equation}
-    \Omega_{k} = \Omega_{0} = 1-\Omega = \frac{\rho_{c}-\rho}{\rho_{c}} = -\frac{k}{a^{2}H^{2}}
-\end{equation}
-Now assume that $k\neq 0$ and $\Omega_{0}$ can evolve independently from the dominant contribution to the cosmological fluid. If
-\begin{itemize}
-    \item MDU: $a(t)\propto t^{2/3}$ and $H \propto a^{-3/2} \implies \Omega_{0}\sim a \sim t^{2/3}\sim \Gamma^{-1}$;
-    \item RDU: $a(t)\propto t^{1/2}$ and $H \propto a^{-2} \implies \Omega_{0}\sim a^{2} \sim t \sim \Gamma^{-2}$.
-\end{itemize}
-Going back in time has the effect of decreasing the value of $\Omega_{0}$. Through studies of the CMB (see Chapter \ref{ch:v} for more), the Planck collaboration constrained the value of $\Omega_{0}$, which was found to be
-\begin{equation}
-    |\Omega_{0}(t_{0})| < 0.05
-\end{equation}
-At the time of matter-radiation equality, the spatial density parameter was 
-\begin{equation}
-    \Big| \frac{\Omega_{0}(t_{eq})}{\Omega_{0}(t_{0})}\Big|^{-1} = \frac{T_{eq}}{T_{0}} \sim 10^{4} \implies |\Omega_{0}(t_{eq})| < 10^{-4}
-\end{equation}
-Similarly, if we extrapolate backward to the time of Big Bang nucleosynthesis, at $a_{BBN} \approx 3.6\cdot 10^{-9}$
-\begin{equation*}
-    |1-\Omega_{BBN}|<7\cdot10^{-16}
-\end{equation*}
-and the distance from unity would only decrease if we went even further back in time. Setting then those orders of magnitude as initial conditions imply a \emph{huge fine-tuning problem}.
-\par There is no known reason for the density of the Universe to be so close to the critical density, and this appears to be an unacceptably strange coincidence in the view of most astronomers. This is the so called \emph{Flatness problem}.
-\par Let us define 
-\begin{equation}
-    x = \log\left(\frac{a}{a_{0}}\right) \implies H = \der{\ln(a)}{t} \implies \diff{t} = \frac{1}{H}\diff{\ln(a)} = \frac{1}{H}\diff{x}
-\end{equation}
-and recall Friedmann equation (\ref{eq:friedmann1}) for a perfect fluid
-\begin{equation}
-    \frac{\ddot{a}}{a} = \frac{4\pi G}{3}\rho (1+3w) \implies 2q = (1+3w)\Omega(t)
-\end{equation}
-and 
-\begin{equation}
-    \frac{\dot{H}}{H^{2}} = -(1+q)
-\end{equation}
-Putting all of this to work, we gather 
-\begin{equation}
-    \der{\Omega_{0}}{t} = \frac{k}{a^{3}}\frac{2\dot{H}}{H^{3}} + \frac{k}{H^{2}}\frac{2\dot{a}}{a^{3}} = -2\Omega_{0}H\left(1+\frac{\dot{H}}{H^{2}}\right) = -2\Omega_{0}H(1-(1+q))
-\end{equation}
-If we want the final result to be independent from the particular cosmology that we've chosen \marginpar{Just in case you have forgotten, with the superscript we're referring to the derivative with respect to the conformal time.}
-\begin{align}
-    & 2\Omega_{0}' = 2\Omega_{0}q \\
-    & 2q = (1+3w)\Omega = (1+3w)(1-\Omega_{0})
-\end{align}
-which means 
-\begin{equation}
-    \boxed{
-        \Omega_{0}' = (1+3w)(1-\Omega_{0})\Omega_{0}
-    }
-\end{equation}
-This tells us that if $\Omega_{0}\approx 0$, the stationary point is unstable if $1+3w > 0$! Similarly, $\Omega_{0}\approx 0$ is a stable attractor if $1+3w < 0$, which means $w < -1/3$.
-\par The flatness problem is thus resolved if we postulate a Universe that accelerates for enough time. Such period of time is called \emph{inflationary epoch} or just \emph{inflation}.
-\par If during the inflation $H \sim \text{const.}$ then 
-\begin{equation}
-    \Omega_{k} \approx -\frac{k}{a^{2}H^{2}}
-\end{equation}
-Let $t_{i}$ be inflation's starting time and $t_{f}$ the ending time
-\begin{equation}
-    \frac{\Omega_{0}(t_{f})}{\Omega_{0}(t_{i})} = \left(\frac{a_{f}}{a_{i}}\right)^{2} = e^{-2N}
-\end{equation}
-where we defined $N = \ln(a_{f}/a_{i})$ the number of $e$-folds of the inflationary epoch. We want that at the end of inflation $|\Omega_{0}(t_{f})|\sim 10^{-61}$, while we assume a strongly non-flat Universe at the beginning of inflation $|\Omega_{0}(t_{i})|\sim 1$. For our requirements to be met, the Universe should expand a number of $e$-folds such that
-\begin{equation}
-    e^{-2N} \approx 10^{-60} \implies N \geq 60
-\end{equation}
-During inflation, then, the comoving Hubble radius is decreasing 
-\begin{equation}
-    \boxed{
-    \frac{1}{aH} \downarrow \implies |\Omega_{0}| = \frac{|k|}{a^{2}H^{2}}\downarrow
-    }
-    \label{eq:solvedfp}
-\end{equation}
-thus resulting in a quasi-de Sitter Universe with $p=-\rho$ and $H \sim \text{const.}$
-
-\subsection{Horizon Problem}
-
-Another problem remains to be addressed. We know (and we'll see) that photons decouple from ordinary matter at $z\approx 1100$ (decoupling/last scattering). Currently, within our particle horizon, we observe a roughly homogeneous temperature distribution, which is that of the CMB. So far so good.
-\par From last scattering until present day, the Universe was dominated from non-relativistic matter, hence 
-\begin{equation}
-    R_{H}(t_{LS})\approx H_{LS}^{-1} = H_{0}^{-1}\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}\approx R_{H}(t_{0})\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}
-\end{equation}
-But here comes the problem. Since 
-\begin{quote}
-    "\emph{Scales scale with the scale factor}"
-\end{quote}
-\marginpar{This is essentially the corresponding particle wavelength at last scattering.}
-\begin{equation} 
-    \lambda_{H_{0}}(t_{LS}) = \frac{R_{H}(t_{0})}{1+z_{LS}}
-\end{equation}
-we get a gargantuan problem $R_{H}(t_{LS}) \ll \lambda_{H_{0}}(t_{LS})$, which can be rewritten in a perhaps clearer form 
-\begin{equation}
-    \left(\frac{\lambda_{H_{0}}(t_{LS})}{R_{H}(t_{LS})}\right)^{3} = \left(\frac{a_{LS}}{a_{0}}\right)^{-3/2} \approx 10^{5}
-\end{equation}
-which means that $10^{5}$ volumes are \emph{not} in causal connection!
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{img/hp.png}
-    \caption{The horizon problem in the conventional Big Bang model. All events that we currently observe are on our past light cone. The intersection of our past light cone with the spacelike slice labelled CMB corresponds to two opposite points in the observed CMB. Their past light cones don’t overlap before they hit the singularity, $a = 0$, so the points appear never to have been in causal contact. The same applies to any two points in the CMB that are separated by more than 1 degree on the sky. Credits: \cite{Baumann_2022}.}
-    \label{fgr:hp}
-\end{figure}
-\par This is a huge problem in order to find a sensible explanation for the impressive homogeneity of the CMB (since after decoupling photons are no longer interacting with matter).
-\par Perhaps you won't be surprised when I say that inflation comes to the rescue this time as well.
-\par During inflation $H_{i}^{-1}\approx \text{const}$ while structures would continue to grow until they would eventually cross the horizon. If we assume a large enough inflationary period, the scales within which we observe the current homogeneity could be able to enter once more into the horizon because they're exponentially suppressed.
-\par At the end of an à la de Sitter inflation (but French-sounding) the particle horizon was 
-\begin{equation}
-    R_{H} = a_{f}\int_{t_{i}}^{t_{f}}\frac{\diff{t}}{a(t)}
-\end{equation}
-with 
-\begin{equation}
-    a(t) = a(t_{i})\exp(H_{i}(t-t_{i}))
-\end{equation}
-meaning that 
-\begin{equation}
-    \frac{a_{f}}{a_{i}} = \frac{a(t_{f})}{a(t_{i})} = \exp(H_{i}(t_{f}-t_{i}))
-\end{equation}
-We can also invert the expression
-\begin{equation}
-    a(t_{i}) = a(t_{f})\exp(-H_{i}(t_{f}-t_{i}))
-\end{equation}
-and define the number of $e$-folds like we've done earlier $N = H_{i}(t_{f}-t_{i})$. This allows us to write 
-\begin{equation}
-    R_{H}(t_{f}) = a(t_{f})\int_{t_{i}}^{t_{f}} \frac{\diff{t}}{a(t_{f})}\exp(H_{i}(t_{f}-t))
-\end{equation}
-If we assume that the particle horizon at last scattering is such that 
-\begin{equation}
-    R_{H}(t_{LS}) = a(t_{LS})\int_{t_{i}}^{t_{LS}}\frac{\diff{t}}{a(t)} \approx a(t_{LS})\int_{t_{i}}^{t_{f}}\frac{\diff{t}}{a(t)}\exp(H_{i}(t_{f}-t))
-\end{equation}
-we conclude 
-\begin{equation}
-    \boxed{
-        R_{H}(t_{LS}) = \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}\left[\exp(H_{i}(t_{f}-t_{i}))-1\right] = \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}(e^{N}-1)
-    }
-\end{equation}
-\par Our problem is solved if $R_{H}(t_{LS}) > \lambda_{H_{0}}(t_{LS})$
-\begin{equation}
-    \frac{a_{LS}}{a(t_{f})}\frac{1}{H_{i}}(e^{N}-1) > \frac{1}{H_{0}(1+z_{LS})} = \frac{a_{LS}}{a_{0}H_{0}}
-\end{equation}
-hence if
-\begin{equation}
-    \boxed{
-        e^{N} \gtrsim \frac{a(t_{f})H_{i}}{a(t_{0})H_{0}}
-    }
-    \label{eq:solvedhp}
-\end{equation}
-How do we interpret this last result? All scales we observe today had always been causally connected during the whole expansion of the Universe.
-\par For the sake of completeness, let's prove that the conditions to solve both the flatness and horizon problems are the same.
-\begin{equation}
-    |\Omega_{0}(t_{0})| = \frac{|k|}{a^{2}H_{0}^{2}} \quad |\Omega_{0}(t_{f})| = \frac{|k|}{a_{f}^{2}H^{2}(t_{f})}
-\end{equation}
-This implies \marginpar{Recall that during inflation the Hubble constant is not changing.}
-\begin{equation}
-    |\Omega_{0}(t_{0})|a^{2}H_{0}^{2} = |\Omega_{0}(t_{f})|a_{f}^{2}H^{2}(t_{f}) = |\Omega_{0}(t_{f})|a_{f}^{2}H_{i}^{2}
-\end{equation}
-but 
-\begin{equation}
-    \Big|\frac{\Omega_{0}(t_{f})}{\Omega_{0}(t_{i})}\Big| = e^{-2N} \implies |\Omega_{0}(t_{0})| = e^{-2N}|\Omega_{0}(t_{i})|\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right)
-\end{equation}
-If we set $|\Omega_{0}(t_{i})| \approx 1$ \marginpar{The request $|\Omega_{0}(t_{0})| < 1$ purely relies on observational evidence.}
-\begin{equation}
-    |\Omega_{0}(t_{0})|\approx e^{-2N}\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right) < 1 \iff e^{N} > \frac{a(t_{f})H_{i}}{a_{0}H_{0}}
-\end{equation}
-which is the condition that solves the horizon problem.
-\begin{figure}[h!]
-    \centering 
-    \includegraphics[width=0.8\textwidth]{img/hpinflation.png}
-    \caption{Inflationary solution to the horizon problem. The comoving Hubble sphere shrinks during inflation and expands during the conventional Big Bang evolution (at least until dark energy takes over at $a \approx 0.5$). Conformal time during inflation is negative. The spacelike singularity of the standard Big Bang is replaced by the reheating surface, i.e. rather than marking the beginning of time it now corresponds simply to the transition from inflation to the standard Big Bang evolution. All points in the CMB have overlapping past light cones and therefore originated from a causally connected region of space. Credits: \cite{Baumann_2022}.}
-    \label{fgr:hpinflation}
-\end{figure}
-
-\subsection{Hubble Radius}
-
-The Hubble radius we've defined as $R_{H}\sim H^{-1}$ for both MDU and RDU is different from that we have in an accelerated Universe. The Hubble radius at a given time $t$ is roughly equal to the distance travelled by a photon during an "expansion time," (the time needed for the scale parameter to double) starting from said time $t$.
-\par As a consequence, two particles that are separated by $\lambda > H^{-1}(t_{0})$ will also be causally connected if the distance that separated them at some earlier time was $\lambda(t) < H^{-1}(t)$
-\par Say that $\tilde{R}_{H}(t_{0})$ is the distance crossed by a photon in $t \to t_{\star}$ so that $a(t_{\star}) = 2a(t)$ (so, an expansion time). By virtue of its own definition
-\begin{equation}
-    \tilde{R}_{H}(t) = a(t_{\star})\int_{t}^{t_{\star}} \frac{\diff{t}}{a(t)} = a(t_{\star})\int_{a(t)}^{a(t_{\star})}\frac{\diff{a}}{a^{2}H} = a(t_{\star})\int_{a(t)}^{2a(t)}\frac{\diff{a}}{a^{2}H}
-\end{equation}
-\par Consider a small expansion time (respect to the age of the Universe) so that approximately $H(t)\sim\text{const.}$ Then
-\begin{equation}
-    \tilde{R}_{H}(t) = \frac{1}{H(t)}
-\end{equation}
-but if now $\lambda < H_{0}^{-1}$, while $\lambda > H(t_{LS})^{-1}$ at an earlier time, then there must necessarily exist an epoch during which $\lambda$ is growing faster than $H^{-1}$
-\begin{equation}
-    \frac{\text{d}}{\text{d}t}\left(\frac{\lambda}{H^{-1}}\right) > 0
-\end{equation}
-but if $\lambda \sim a$, this implies $\ddot{a} > 0$, hence the Universe must be accelerating, hence the necessity of inflation.
-\par What we surmise, then, is that the comoving Hubble radius $(aH)^{-1}$ mush be increasing right after the BBN, but for earlier times it must be decreasing, as pictorially shown in Fig.\ref{fgr:inflation}.
-\begin{figure}[h!]
-    \centering 
-    \includegraphics[width=0.75\textwidth]{img/inflationscales.png}
-    \caption{Scales of cosmological interest were larger than the Hubble radius until $a \approx 10^{-5}$ (where today is at $a(t_{0}) = 1$). However, at very early times, before inflation operated, all scales of interest were smaller than the Hubble radius and therefore susceptible to microphysical processing. Notice the symmetry of the inflationary solution. Scales just entering the horizon today, 60 $e$-folds after the end of inflation, left the horizon 60 $e$-folds before the end of inflation. Credits: \cite{Baumann_2022}.}
-    \label{fgr:inflation}
-\end{figure}
-\par The existence of an epoch of accelerated expansion corresponds to having $p < -\rho/3$ and violates the \emph{strong energy condition}.
-\par Several cosmologists began to postulate the necessity of an inflationary period starting from the end of 1970s. Remarkably, Starobinski{\v{i}} \cite{1979JETPL..30..682S} noted that quantum corrections to GR should be important for the early Universe. The solution to the Einstein field equations in the presence of curvature squared terms, when the curvatures are large, leads to an effective cosmological constant. Therefore, he proposed that the early universe went through an inflationary de Sitter era, but never mentioned that such inflationary epoch could solve the problems intrinsic of the standard hBBN model.
-\par Only two years later, Guth \cite{1981PhRvD..23..347G}, and the following month still Guth and Weinberg \cite{1981PhRvD..23..876G}, showed that the horizon and flatness problems could be solved if we allowed the existence of an extraordinary supercooling in the early history of the Universe to temperatures 28 or more orders of magnitude below the critical temperature for some phase transition. But "Unfortunately, the scenario seems to lead to some unacceptable consequences, so modifications must be sought."
-\begin{figure}[h!]
-    \centering 
-    \includegraphics[width=0.7\textwidth]{img/guthinflation.jpg}
-    \caption{In simple inflationary models, the Universe at early times is dominated by the potential energy density of a scalar field, $\phi$. Red arrows show the classical motion of $\phi$. When $\phi$ is near region (a), the energy density will remain nearly constant, $\rho\approx \rho_{f}$, even as the Universe expands. Moreover, cosmic expansion acts like a frictional drag, slowing the motion of $\phi$: Even near regions (b) and (d), $\phi$ behaves more like a marble moving in a bowl of molasses, slowly creeping down the side of its potential, rather than like a marble sliding down the inside of a polished bowl. During this period of "slow roll," $\rho$ remains nearly constant. Only after $\phi$ has slid most of the way down its potential will it begin to oscillate around its minimum, as in region (c), ending inflation. Credits: \href{https://ned.ipac.caltech.edu/level5/March05/Guth/Guth1.html}{this website}.}
-\end{figure}
-\par In short, they were postulating the existence of a scalar field $\phi$. The associated potential $U(\phi)$ had to present a local maximum where the phase transition occurred (so at the beginning of inflation), and a local minimum for $\phi$ where $U(\phi)\approx \text{const.} = \Lambda$, hence a metastable de Sitter phase during which tunnel effect occurred towards true vacuum. This was the so-called \emph{old inflation}.
-\par What had gone wrong with Guth's and Weinberg's model was solved only one year later by Andrej Dmitrievič Linde \cite{1982PhLB..108..389L}, \cite{1982PhLB..116..335L} and independently by Andreas Albrecht and Paul Steinhardt \cite{1982PhRvL..48.1220A} in a model named \emph{new inflation} or \emph{slow-roll inflation}.
-\par In this model, instead of tunneling out of a false vacuum state, inflation occurred by a scalar field rolling down a potential energy hill. When the field rolls very slowly compared to the expansion of the Universe, inflation occurs. However, when the hill becomes steeper, inflation ends and reheating can occur.
-\begin{figure}[h!]
-    \centering 
-    \includegraphics[width=0.7\textwidth]{img/slowroll.png}
-    \caption{Example of a slow-roll potential as postulated by Linde, Albrecht, and Steinhardt. Inflation occurs in the shaded parts of the potential. Credits: \cite{Baumann_2022}.}
-    \label{fgr:slowroll}
-\end{figure}
-
-\subsection{Slow-roll Inflation}
-
-Let's consider an inflationary model as brought about by a scalar field $\varphi$ we will call, in a very witty fashion, \emph{inflaton}. To the scalar field $\varphi$ is associated an action $S$
-\begin{equation}
-    S = \int \text{d}^{4}x \sqrt{-g}\mathcal{L} = \int \text{d}^{4}x \sqrt{-g}\left[\frac{1}{2}g^{\mu\nu}\partial_{\mu}\varphi\partial_{\nu}\varphi + V(\varphi)\right]
-    \label{eq:inflatonaction}
-\end{equation}
-where $\sqrt{-g} = a^{3}$ for the FLRW metric (\ref{eq:FRW}). We can calculate Euler-Lagrange equations
-\begin{equation}
-    \partial^{\mu}\frac{\delta(\sqrt{-g}\mathcal{L})}{\delta(\partial^{\mu}\varphi)} - \frac{\delta(\sqrt{-g}\mathcal{L})}{\delta\varphi} = 0
-\end{equation}
-which yield \marginpar{Note the presence of a Hubble-friction term $3H\dot{\varphi}$ that we wouldn't have in a static Universe.}
-\begin{equation}
-    \ddot{\varphi} + 3H\dot{\varphi} - \frac{\nabla^{2}\varphi}{a^{2}}+V'(\varphi) = 0 \quad V'(\varphi) = \der{V(\varphi)}{\varphi}
-\end{equation}
-Consider also the energy-momentum tensor associated to the action $S$ (\ref{eq:inflatonaction}), which we can obtain simply variating the action with respect to the metric 
-\begin{equation}
-    T_{\mu\nu} = \frac{2}{\sqrt{-g}}\frac{\delta(\sqrt{-g}\mathcal{L})}{\delta g_{\mu\nu}}
-    \label{eq:generalemtensor}
-\end{equation}
-obtaining
-\begin{equation}
-    T_{\mu\nu} = = \partial_{\mu}\varphi\partial_{\nu}\varphi -g_{\mu\nu}\mathcal{L}
-\end{equation}
-We can give a little twist to this last expression so that it looks like the energy-momentum tensor of a perfect fluid 
-\begin{equation}
-    T^{\mu\nu} = p_{\varphi}g^{\mu\nu} + (p_{\varphi}+\rho_{\varphi})u^{\mu}u^{\nu}
-\end{equation}
-where $\rho_{\varphi}$ and $p_{\varphi}$ are respectively
-\begin{align}
-    \rho_{\varphi} &= T^{00} = \frac{\dot{\varphi}^{2}}{2} + V(\varphi) + \frac{(\nabla\varphi)^{2}}{2a^{2}}\\
-    p_{\varphi} &= \frac{T^{ii}}{3} = \frac{\dot{\varphi}^{2}}{2}-V(\varphi)-\frac{(\nabla\varphi)^{2}}{6a^{2}}
-\end{align}
-\par If the field is strongly dishomogeneous and, as a consequence, $|\nabla\varphi|$ is large
-\begin{align}
-    \rho_{\varphi} &\approx + \frac{(\nabla\varphi)^{2}}{2a^{2}}\\
-    p_{\varphi} &\approx -\frac{(\nabla\varphi)^{2}}{6a^{2}}
-\end{align}
-which means 
-\begin{equation}
-    p_{\varphi} \approx - \frac{1}{3}\rho_{\varphi}
-\end{equation}
-and hence $w = -1/3$. However, a Universe so dishomogeneous cannot give raise to an inflationary epoch. So let's consider instead a scalar field that is decomposed as 
-\begin{equation}
-    \varphi(\vec{x},t) = \varphi_{0}(t) + \delta\varphi(\vec{x},t)
-\end{equation}
-where the former term is that associated to a "classical" field ($\lambda \to \infty$), while the latter is associated to quantum fluctuations. If we assume the quantum fluctuations to be negligible respect to the classical field $\delta\varphi \ll \varphi_{0}$, we can neglect the contribution brought by $\delta\varphi$ to the evolution (\emph{back-reaction}). Hence
-\begin{align}
-    T^{00} &= \rho_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} + V(\varphi_{0})\\
-    \frac{T^{ii}}{3} &= p_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} - V(\varphi_{0})
-\end{align}
-which grants $p_{\varphi} \approx - \rho_{\varphi}$, thus producing a pseudo-de Sitter evolution. The equation of motion then turns into
-\begin{equation}
-    \boxed{
-        \ddot{\varphi}_{0} +3H\dot{\varphi}_{0} + V'(\varphi_{0}) = 0
-    }
-    \label{eq:inflatoneom}
-\end{equation}
-which is the Klein-Gordon equation for the inflaton. In the limit $V(\varphi_{0}) \gg \dot{\varphi}_{0}^{2}/2$, the scalar field is "slowly-rolling" in the potential. And this is all thanks to the friction term!
-\par The 2nd Friedmann equation (\ref{eq:friedmann2}) for the background density is 
-\begin{equation}
-    H^{2} = \frac{8\pi G}{3}\left(\frac{1}{2}\dot{\varphi}^{2}+V(\varphi)\right)
-\end{equation}
-which we can differentiate with respect to time to yield 
-\begin{equation}
-    2H\dot{H} = \frac{8\pi G}{3}\left(\dot{\varphi}\ddot{\varphi}+\der{V}{\varphi}\dot{\varphi}\right) = -8\pi G H \dot{\varphi}^{2}
-\end{equation}
-ultimately leading to 
-\begin{equation}
-    \boxed{
-        \dot{H} = -4\pi G \dot{\varphi}^{2}
-    }
-\end{equation}
-\par From the first Friedmann equation, on the other hand, we have 
-\begin{align*}
-    \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) &= -\frac{4\pi G}{3}(2\dot{\varphi}^{2}-2V(\varphi)) \\
-    &= -\frac{4\pi G}{3}(3\dot{\varphi}^{2} + (-\dot{\varphi}^{2}+V(\varphi)))
-\end{align*}
-so that if we use the equations we've obtained earlier 
-\begin{equation}
-    \frac{\ddot{a}}{a} = \dot{H} + H^{2}
-\end{equation}
-and we can define the 1st slow-roll parameter $\varepsilon$
-\begin{equation}
-    \boxed{
-        \varepsilon = -\frac{\dot{H}}{H^{2}}
-    }
-    \label{eq:slowroll1}
-\end{equation}
-so that \marginpar{Note that more than one slow-roll parameter exist, but only the first, $\varepsilon$, determines the inflation.}
-\begin{equation}
-    \frac{\ddot{a}}{a} = (1-\varepsilon)H^{2}
-\end{equation}
-and the Universe is accelerating only if $\varepsilon < 1$. If we now request the Universe to be (ideally) a pseudo-de Sitter with $H\approx \text{const}$, we can consider the relative variation $\dot{H}/H$ over an Hubble time ($H^{-1}$) and require 
-\begin{equation}
-    \Big|\frac{\dot{H}}{H}\frac{1}{H}\Big| \ll 1 \implies |\varepsilon|\ll 1
-\end{equation}
-In terms of the number of $e$-folds from the beginning of inflation up to time $t$ we can also write
-\begin{equation}
-    \varepsilon = -\der{\ln (H)}{N} \quad N = \log\left(\frac{a(t)}{a_{i}}\right)
-\end{equation}
-which also means $\diff{N} = H\diff{t}$ and 
-\begin{equation}
-    -\frac{\dot{H}^{2}}{H^{2}} = -\der{\ln(H)}{N}
-\end{equation}
-The 1st slow-roll parameter $\varepsilon$ thus describes, in some sense, the displacement from a purely de Sitter Universe.
-\par Let's now show that $\varepsilon \ll 1 \iff V(\varphi) \gg \dot{\varphi}^{2}/2$
-\begin{align*}
-    (\implies) \quad -\dot{H} = 4\pi G \dot{\varphi}^{2} \ll H^{2} &= \frac{8\pi G}{3}\left(\frac{1}{2}\dot{\varphi}^{2}+V(\varphi)\right) \\
-    & \implies \dot{\varphi}^{2}\ll V(\varphi)
-\end{align*}
-which is the first direction of the implication. Let's now prove that the reverse holds as well
-\begin{equation}
-    (\impliedby) \quad p\approx -\rho \to
-    \left\{
-        \begin{array}{ll}
-            \dot{\rho} +3H(p+\rho) = 0 & \implies \dot{\rho}\approx 0\\
-            H^{2} \approx \frac{8\pi G}{3}\rho & \implies H^{2} \approx \text{const.}
-        \end{array}
-    \right.
-\end{equation}
-and at this point concluding is trivial $H^{2} \approx \text{const.} \implies H \approx \text{const} \implies \varepsilon \ll 1$.
-\par Let's define the \emph{second slow-roll parameter} $\delta$ (dimensionless acceleration per Hubble time)
-\begin{equation}
-    \boxed{
-        \delta = -\frac{\ddot{\varphi}}{H\dot{\varphi}}
-    }
-    \label{eq:slowroll2}
-\end{equation}
-and require it to be $\delta \ll 1$. This is because the variation of $\varepsilon$ during an $e$-fold must be small, and so 
-\begin{equation}
-    \der{\varepsilon}{N} = \frac{1}{H}\der{\varepsilon}{t} = \frac{1}{H}\left(-\frac{\ddot{H}}{H^{2}}+\frac{2\dot{H}^{2}}{H^{3}}\right) = -\frac{\dot{H}}{H^{2}}\left(\frac{\ddot{H}}{H\dot{H}}-2\frac{\dot{H}}{H^{2}}\right)
-\end{equation}
-which implies \marginpar{You can prove the last equality directly substituting from $-\dot{H} = 4\pi G \dot{\varphi}^{2}$}
-\begin{equation}
-    \frac{1}{\varepsilon}\der{\varepsilon}{N} = \left(\frac{\ddot{H}}{H\dot{H}}-2\frac{\dot{H}}{H^{2}}\right) \implies \frac{\ddot{\varphi}}{H\dot{\varphi}} = |\delta| \ll 1
-\end{equation}
-\par So far, no approximations have been made. We simply noted that in a regime where $\{\varepsilon, |\delta|\} \ll 1$, inflation occurs and persists. We now use these conditions to simplify the equations of motion. This is called the slow-roll approximation. The condition $\varepsilon \ll 1$ implies $V(\varphi) \gg \dot{\varphi}^{2}/2$ and hence leads to the following simplification of the Friedmann Equation
-\begin{equation}
-    \boxed{
-    H^{2} \approx \frac{8\pi G}{3}V(\varphi)
-    }
-    \label{eq:slowrollfriedmann}
-\end{equation}
-In the slow-roll approximation, the Hubble expansion is determined completely by the potential energy. The condition $|\delta| \ll 1$ then simplifies the Klein-Gordon equation (\ref{eq:inflatoneom}) to
-\begin{equation}
-    \dot{\varphi} \approx -\frac{V'(\varphi)}{3H} \textoversymbol{=}{\varepsilon \ll 1} -V'\left[24\pi G V(\varphi)\right]^{-1/2}
-\end{equation}
-This provides a simple relationship between the gradient of the potential and the speed of the inflaton. This is the so-called $\alpha$-\emph{relation}
-\begin{equation}
-    \boxed{
-    \dot{\varphi} \approx -\frac{V'}{\sqrt{24 \pi G V(\varphi)}}
-    }
-    \label{eq:alpharel}
-\end{equation}
-Moreover, if $\epsilon,\,\delta \ll 1$
-\begin{equation}
-    \epsilon = -\frac{\dot{H}}{H^{2}} = \frac{4\pi G \dot{\varphi}^{2}}{\frac{8\pi G}{3}V(\varphi)} \approx \frac{1}{16\pi G}\left(\frac{V'(\varphi)}{V(\varphi)}\right)
-\end{equation}
-where we've introduced the $\alpha$-relation in the last equality. This leads to the \emph{first flatness condition}
-\begin{equation}
-    \boxed{
-    \Big|\frac{V'(\varphi)}{V(\varphi)}\Big| \ll \sqrt{16\pi G}
-    }
-    \label{eq:flatness1}
-\end{equation}
-Consider now 
-\begin{equation}
-    \ddot{\varphi} = -\frac{\text{d}}{\text{d}t}\left(\frac{V'}{3H}\right) \implies \ddot{\varphi} = -\frac{V''\dot{\varphi}}{H} + \frac{V'\dot{H}}{3H^{2}}
-\end{equation}
-which, requiring $\epsilon,\,\delta \ll 1$, yields
-\begin{equation}
-   \ddot{\varphi} = -\frac{V''}{3H}\left(-\frac{V'}{3H}\right) + \frac{V'}{3}\left(\frac{1}{16\pi G}\frac{V'^{2}}{V^{2}}\right) \quad \frac{V'}{3}\left(\frac{1}{16\pi G}\frac{V'^{2}}{V^{2}}\right) \ll \frac{V'}{3}
-\end{equation}
-Hence, since 
-\begin{equation}
-    |\ddot{\varphi}| = |H\dot{\varphi}| = \frac{1}{3}|V'(\varphi)|
-\end{equation}
-we conclude 
-\begin{equation}
-    \Big|\frac{V''}{3H}\Big|\cdot \Big|\frac{V'}{3H}\Big| \ll \frac{V'}{3}
-\end{equation}
-which also means $|V''|\ll 3H^{2}$, thus leading us to the \emph{second flatness condition}
-\begin{equation}
-    \boxed{
-    \Big|\frac{V''(\varphi)}{V(\varphi)}\Big| \ll 8\pi G
-    }
-    \label{eq:flatness2}
-\end{equation}
-When both flatness conditions hold, the expansion of the Universe is exponential (pseudo-de Sitter) and is also exponentially long. The inflation epoch will end only when, at a certain time $t_{f}$, the first slow-roll parameter is $\varepsilon = 1$
-\begin{equation}
-    N(\varphi) = \ln\left(\frac{a(t_{f})}{a(t)}\right) = \int_{t}^{t_{f}}H\diff{t} = \int_{\varphi}^{\varphi_{f}}\frac{H}{\dot{\varphi}}\diff{\varphi}
-\end{equation}
-which, after requiring $\epsilon,\,\delta \ll 1$, turns into 
-\begin{equation}
-     N(\varphi) \approx \int_{\varphi}^{\varphi_{f}}\left[\frac{8\pi G V}{3}\frac{24\pi G V}{V'^{2}}\right]^{1/2}\diff{\varphi}
-\end{equation}
-The number of $e$-folds from the end of inflation starting from an arbitrary time $t$ is then 
-\begin{equation}
-    \boxed{
-    N(\varphi) = 8\pi G \int_{\varphi}^{\varphi_{f}}\frac{V}{V'}\diff{\varphi}
-    }
-    \label{eq:efolds}
-\end{equation}
-\par The first flatness condition told us that 
-\begin{equation}
-    \Big|\frac{V}{V'}\Big| \gg (16\pi G)^{-1/2}
-\end{equation}
-which allows us to constrain (\ref{eq:efolds})
-\begin{equation}
-    N(\varphi) = 8\pi G \int_{\varphi}^{\varphi_{f}}\frac{V}{V'}\diff{\varphi} \gg \sqrt{4\pi G}|\varphi_{f}-\varphi|
-\end{equation}
-Hence the number of $e$-folds for our inflationary model will always be
-\begin{equation}
-    N \gg \sqrt{4\pi G}|\varphi_{f}-\varphi_{i}|
-\end{equation}
-which, in principle, we can invert to find the range spanned by the scalar field $\varphi$
-\begin{equation}
-    \Delta\varphi \ll \frac{N}{\sqrt{4\pi G}}
-\end{equation}
-with the minimum number of $e$-folds necessary to replicate the current Universe ($N_{\text{min}} \approx 60$), the estimated upper bound for the field variation is $\Delta\varphi \ll 10^{20}\unit{GeV}$.

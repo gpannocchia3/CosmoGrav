@@ -6,6 +6,7 @@ A level-1 auxiliary file: chapters/chapter2.aux
 A level-1 auxiliary file: chapters/chapter3.aux
 A level-1 auxiliary file: chapters/chapter4.aux
 A level-1 auxiliary file: chapters/chapter5.aux
+A level-1 auxiliary file: chapters/chapter6.aux
 A level-1 auxiliary file: chapters/appendix.aux
 A level-1 auxiliary file: chapters/about.aux
 The style file: plain.bst
@@ -14,7 +15,7 @@ Warning--empty publisher in 2020moco.book.....D
 Warning--empty publisher in 1986rpa..book.....R
 You've used 19 entries,
             2118 wiz_defined-function locations,
-            627 strings with 7567 characters,
+            628 strings with 7588 characters,
 and the built_in function-call counts, 5731 in all, are:
 = -- 532
 > -- 277

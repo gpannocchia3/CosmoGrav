@@ -22,42 +22,42 @@
 \contentsline {subsubsection}{{Acceleration Parameter}}{27}{subsubsection*.5}%
 \contentsline {subsubsection}{{Vacuum Energy}}{28}{subsubsection*.6}%
 \contentsline {section}{\numberline {4.4}{Dynamic Age of the Universe}}{29}{section.4.4}%
-\contentsline {section}{\numberline {4.5}{Inflation}}{30}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}{Luminosity Distance}}{30}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}{Second Order Hubble Law}}{33}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}{Angular diameter distance}}{34}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}{Particle Horizon}}{35}{subsection.4.5.4}%
-\contentsline {subsubsection}{{Event Horizon}}{36}{subsubsection*.8}%
-\contentsline {subsection}{\numberline {4.5.5}{Flatness Problem}}{36}{subsection.4.5.5}%
-\contentsline {subsection}{\numberline {4.5.6}{Horizon Problem}}{38}{subsection.4.5.6}%
-\contentsline {subsection}{\numberline {4.5.7}{Hubble Radius}}{41}{subsection.4.5.7}%
-\contentsline {subsection}{\numberline {4.5.8}{Slow-roll Inflation}}{43}{subsection.4.5.8}%
-\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{49}{chapter.5}%
-\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{49}{subsection.5.0.1}%
-\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{51}{subsection.5.0.2}%
-\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{52}{subsection.5.0.3}%
-\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{54}{section.5.1}%
-\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{55}{section.5.2}%
-\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{56}{subsubsection*.16}%
-\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{57}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{57}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{58}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}{Dark Matter}}{59}{section.5.4}%
-\contentsline {subsubsection}{{MOND: Modified Newtonian Dynamics}}{60}{subsubsection*.18}%
-\contentsline {subsection}{\numberline {5.4.1}{Galaxy Clusters}}{61}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}{WIMPS}}{63}{subsection.5.4.2}%
-\contentsline {subsubsection}{{Thermal Decoupling: Freeze-Out}}{63}{subsubsection*.22}%
-\contentsline {subsubsection}{{WIMPS Miracle}}{64}{subsubsection*.23}%
-\contentsline {subsubsection}{{Boltmann Equation}}{64}{subsubsection*.24}%
-\contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{66}{section.5.5}%
-\contentsline {subsubsection}{{Light Elements Synthesis}}{70}{subsubsection*.27}%
-\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{71}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{73}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{78}{subsection.5.6.2}%
-\contentsline {subsubsection}{{Temporal evolution}}{78}{subsubsection*.31}%
-\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{79}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{80}{subsection.5.7.1}%
+\contentsline {chapter}{\numberline {5}{Thermal History of the Universe}}{31}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}{Statistical Properties}}{31}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.2}{Effective Number of Relativistic Species}}{33}{subsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.0.3}{Conservation of Entropy}}{34}{subsection.5.0.3}%
+\contentsline {section}{\numberline {5.1}{Neutrino Decoupling}}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}{Electron-Positron Annihilation}}{37}{section.5.2}%
+\contentsline {subsubsection}{{Cosmologic Bound to Neutrino Masses}}{38}{subsubsection*.9}%
+\contentsline {section}{\numberline {5.3}{Photon Recombination and Decoupling}}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}{Hydrogen recombination}}{39}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}{Photon Decoupling}}{40}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}{Dark Matter}}{41}{section.5.4}%
+\contentsline {subsubsection}{{MOND: Modified Newtonian Dynamics}}{42}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {5.4.1}{Galaxy Clusters}}{43}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}{WIMPS}}{45}{subsection.5.4.2}%
+\contentsline {subsubsection}{{Thermal Decoupling: Freeze-Out}}{45}{subsubsection*.15}%
+\contentsline {subsubsection}{{WIMPS Miracle}}{46}{subsubsection*.16}%
+\contentsline {subsubsection}{{Boltmann Equation}}{46}{subsubsection*.17}%
+\contentsline {section}{\numberline {5.5}{Big Bang Nucleosynthesis}}{48}{section.5.5}%
+\contentsline {subsubsection}{{Light Elements Synthesis}}{52}{subsubsection*.20}%
+\contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{53}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{55}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{60}{subsection.5.6.2}%
+\contentsline {subsubsection}{{Temporal evolution}}{60}{subsubsection*.24}%
+\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{61}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{62}{subsection.5.7.1}%
+\contentsline {chapter}{\numberline {6}{Inflation}}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}{Luminosity Distance}}{63}{section.6.1}%
+\contentsline {section}{\numberline {6.2}{Second Order Hubble Law}}{65}{section.6.2}%
+\contentsline {section}{\numberline {6.3}{Angular diameter distance}}{66}{section.6.3}%
+\contentsline {section}{\numberline {6.4}{Particle Horizon}}{68}{section.6.4}%
+\contentsline {subsubsection}{{Event Horizon}}{68}{subsubsection*.26}%
+\contentsline {section}{\numberline {6.5}{Flatness Problem}}{69}{section.6.5}%
+\contentsline {section}{\numberline {6.6}{Horizon Problem}}{70}{section.6.6}%
+\contentsline {section}{\numberline {6.7}{Hubble Radius}}{73}{section.6.7}%
+\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{76}{section.6.8}%
 \contentsline {part}{\numberline {i}{Appendix}}{81}{part.1}%
-\contentsline {chapter}{\numberline {6}{Appendix}}{83}{chapter.6}%
+\contentsline {chapter}{\numberline {7}{Appendix}}{83}{chapter.7}%
 \contentsline {chapter}{Bibliography}{91}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
