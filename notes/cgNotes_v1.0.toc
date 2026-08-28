@@ -47,17 +47,17 @@
 \contentsline {subsubsection}{{Temporal evolution}}{60}{subsubsection*.24}%
 \contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{61}{section.5.7}%
 \contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{62}{subsection.5.7.1}%
-\contentsline {chapter}{\numberline {6}{Inflation}}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}{Luminosity Distance}}{63}{section.6.1}%
-\contentsline {section}{\numberline {6.2}{Second Order Hubble Law}}{65}{section.6.2}%
-\contentsline {section}{\numberline {6.3}{Angular diameter distance}}{66}{section.6.3}%
-\contentsline {section}{\numberline {6.4}{Particle Horizon}}{68}{section.6.4}%
-\contentsline {subsubsection}{{Event Horizon}}{68}{subsubsection*.26}%
-\contentsline {section}{\numberline {6.5}{Flatness Problem}}{69}{section.6.5}%
-\contentsline {section}{\numberline {6.6}{Horizon Problem}}{70}{section.6.6}%
-\contentsline {section}{\numberline {6.7}{Hubble Radius}}{73}{section.6.7}%
-\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{76}{section.6.8}%
-\contentsline {part}{\numberline {i}{Appendix}}{81}{part.1}%
-\contentsline {chapter}{\numberline {7}{Appendix}}{83}{chapter.7}%
-\contentsline {chapter}{Bibliography}{91}{section*.35}%
+\contentsline {chapter}{\numberline {6}{Inflation}}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}{Luminosity Distance}}{65}{section.6.1}%
+\contentsline {section}{\numberline {6.2}{Second Order Hubble Law}}{67}{section.6.2}%
+\contentsline {section}{\numberline {6.3}{Angular diameter distance}}{68}{section.6.3}%
+\contentsline {section}{\numberline {6.4}{Particle Horizon}}{70}{section.6.4}%
+\contentsline {subsubsection}{{Event Horizon}}{70}{subsubsection*.26}%
+\contentsline {section}{\numberline {6.5}{Flatness Problem}}{71}{section.6.5}%
+\contentsline {section}{\numberline {6.6}{Horizon Problem}}{72}{section.6.6}%
+\contentsline {section}{\numberline {6.7}{Hubble Radius}}{75}{section.6.7}%
+\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{78}{section.6.8}%
+\contentsline {part}{\numberline {i}{Appendix}}{83}{part.1}%
+\contentsline {chapter}{\numberline {7}{Appendix}}{85}{chapter.7}%
+\contentsline {chapter}{Bibliography}{93}{section*.35}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

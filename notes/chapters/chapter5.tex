@@ -112,7 +112,7 @@ where $g_{\star}$ is the \emph{effective number of relativistic degrees of freed
         g_{\star} = \sum_{i}g_{i}\left(\frac{T_{i}}{T_{\gamma}}\right)^{4}\frac{J_{\pm}(x_{i})}{J_{-}(0)}
     }
 \end{equation}
-It might be useful to differentiate the relativistic species in thermal equilibrium with the photons \marginpar{When the temperature drops below the mass mi of a particle species, it becomes non-relativistic and is removed from the sum. Away from mass thresholds, the thermal contribution is independent of temperature.}
+It might be useful to differentiate the relativistic species in thermal equilibrium with the photons \marginpar{When the temperature drops below the mass $m_{i}$ of a particle species, it becomes non-relativistic and is removed from the sum. Away from mass thresholds, the thermal contribution is independent of temperature.}
 \begin{equation}
     g_{\star}^{\text{th}} = \sum_{i=b}g_{i}+ \frac{7}{8}\sum_{i=f}g_{i}
 \end{equation}
@@ -128,8 +128,8 @@ from the relativistic species that are \emph{not} in thermal equilibrium with th
   As I mentioned in some earlier chapter, I know pretty much nothing about QFT and stuff. But since I think it is at least interesting to see how the computation is done, I'll rely on someone who knows better than me, namely Mr. Baumann.
   \par At $(k)T \gtrsim 100 \unit{GeV}$, all particles of the Standard Model are relativistic. Adding up their internal degrees of freedom we get
   \begin{itemize}
-    \item $g_{b} = 28$: Photons (2),$W^{\pm}$ and $Z^{0}$ ($3\cdot3$), gluons ($8\cdot2$),and Higgs (1);
-    \item $g_{f} = 90$: Quarks ($6\cdot12$), charged leptons ($3\cdot4$),and neutrinos ($3\cdot2$).
+    \item $g_{b} = 28$: Photons (2), $W^{\pm}$ and $Z^{0}$ ($3\cdot3$), gluons ($8\cdot2$), and Higgs (1);
+    \item $g_{f} = 90$: Quarks ($6\cdot12$), charged leptons ($3\cdot4$), and neutrinos ($3\cdot2$).
   \end{itemize}
   hence $g_{\star} = g_{b} + 7g_{f}/8 = 106.75$. As the temperature drops, various particle species become non-relativistic and annihilate. To estimate $g_{\star}$ at a temperature $T$ you simply add up the contributions from all relativistic degrees of freedom and discard the rest.
 \end{tcolorbox}
@@ -142,9 +142,8 @@ from the relativistic species that are \emph{not} in thermal equilibrium with th
 
 \subsection{Conservation of Entropy}
 
-In the field of cosmology, entropy is often more informative than energy. According to the second law of thermodynamics, the total entropy of the Universe only increases or stays constant. Since there are far more photons than baryons in the Universe, the entropy of the Universe is dominated by the entropy of the photon bath (at least as long as the Universe is sufficiently uniform). Any entropy production from non-equilibrium processes is therefore total insignificant relative to the total entropy. 
-\par To a good approximation we can therefore treat the expansion of the Universe as \emph{adiabatic}, so that the total entropy stays constant even beyond equilibrium.
-\par Consider
+In the field of cosmology, entropy is often more informative than energy. According to the second law of thermodynamics, the total entropy of the Universe only increases or stays constant. Since there are far more photons than baryons in the Universe, the entropy of the Universe is dominated by the entropy of the photon bath (at least as long as the Universe is sufficiently uniform). Any entropy production from non-equilibrium processes is therefore insignificant relative to the total entropy. 
+\par To a good approximation we can therefore treat the expansion of the Universe as \emph{adiabatic}, so that the total entropy stays constant even beyond equilibrium. Consider
 \begin{equation}
     T\diff{S} = \diff{U} + p\diff{V}
 \end{equation}
@@ -156,7 +155,7 @@ whence
 \begin{equation}
     (Ts - \rho - p)\diff{V} + V\left(T\der{s}{T}-\der{\rho}{T}\right)\diff{T} = 0
 \end{equation}
-So that the identity can be verified it's necessary that 
+For the identity to be verified it's necessary that 
 \begin{equation}
     s = \frac{p+\rho}{T}
 \end{equation}
@@ -177,12 +176,12 @@ We're thus able to conclude by simple substitution that
 \end{equation}
 \par It is also possible to show that the entropy density is related to temperature and to the degrees of freedom of the Universal bath by means of 
 \begin{equation}
-    s = \frac{2\pi^{2}}{45}g_{\star}^{s}(T)T^{3}
+    s = \frac{2\pi^{2}}{45}g_{\star S}(T)T^{3}
     \label{eq:entropydensity}
 \end{equation}
 where we've defined the \emph{effective number of degrees of freedom in entropy}
 \begin{equation}
-    g_{\star}^{s} = \sum_{i=b}g_{i}\left(\frac{T_{i}}{T}\right)^{3} + \frac{7}{8}\sum_{i=f}g_{i}\left(\frac{T_{i}}{T}\right)^{3}
+    g_{\star S} = \sum_{i=b}g_{i}\left(\frac{T_{i}}{T}\right)^{3} + \frac{7}{8}\sum_{i=f}g_{i}\left(\frac{T_{i}}{T}\right)^{3}
     \label{eq:effdegrees_ent}
 \end{equation}
 \par Note that for species in thermal equilibrium $g_{\star S}^{\text{th}}(T) = g_{\star}^{\text{th}}(T)$. However, given that $s_{i} \propto T_{i}^{3}$, only for decoupled species we get (\ref{eq:effdegrees_ent}). Hence, $g_{\star S}$ is equal to $g_{\star}$ only when all the relativistic species are in equilibrium at the same temperature.
@@ -225,7 +224,7 @@ Moreover, relativistic neutrinos have a particle density given by the fermionic 
     }
     \label{eq:neutrino_dec}
 \end{equation}
-After decoupling, the neutrinos move freely along geodesics and preserve to an excellent approximate the relativistic Fermi-Dirac distribution (even after they become non-relativistic at later times).
+After decoupling, neutrinos move freely along geodesics and preserve to an excellent approximation the relativistic Fermi-Dirac distribution (even after they become non-relativistic at later times).
 
 \section{Electron-Positron Annihilation}
 
@@ -234,14 +233,14 @@ Shortly after the neutrinos decouple, the temperature drops below the electron m
     e^{-}e^{+} &\leftrightharpoons \gamma\gamma \\
     e^{-}\gamma &\leftrightharpoons e^{-}\gamma
 \end{align*}
-This, however, is not a decoupling! As temperature decreases, the equilibrium position of the annihilation reaction moves towards the photons, due to the decreasing energy to support the pair production. The energy density and entropy of the electrons and positrons are transferred to the photons, but not to the decoupled neutrinos. The photons are thus “heated” (the photon temperature does not decrease as much) relative to the neutrinos.
+This, however, is not a decoupling! As temperature decreases, the equilibrium position of the annihilation reaction moves towards the photons, due to the decreasing energy to support pair production. The energy density and entropy of electrons and positrons are transferred to the photons, but not to the decoupled neutrinos. The photons are thus “heated” (the photon temperature does not decrease as much) relative to the neutrinos.
 \begin{figure}[h!]
     \centering 
     \includegraphics[width=0.9\textwidth]{img/eeannihilation.png}
     \caption{Thermal history through electron-positron annihilation. Neutrinos are decoupled and their temperature redshifts simply as $T_{\nu}\propto a^{-1}$. The energy density of the electron-positron pairs is transferred to the photon gas whose temperature therefore redshifts more slowly, $T_{\gamma} \propto g_{\star S}^{-1/3}a^{-1}$. Credits: \cite{Baumann_2022}.}
 \end{figure}
-\par Let's do a quick entropic balance, assuming $T_{\gamma}^{I} = T_{\nu}^{I}$, which along with $a^{3}T_{\gamma}^{3}g_{\star} = \text{const.}$, allows us to compute it separately for both coupled and uncoupled species.
-\par Fix the scale parameter $a$ and assume an adiabatic process, and if we neglect neutrinos and other decoupled species, we get
+\par Let's do a quick entropic balance, assuming $T_{\gamma}^{I} = T_{\nu}^{I}$, which along with $a^{3}T_{\gamma}^{3}g_{\star} = \text{const}$, allows us to compute it separately for both coupled and uncoupled species.
+\par Fix the scale parameter $a$ and assume an adiabatic process, so that if we neglect neutrinos and other decoupled species, we get
 \begin{equation}
     g_{\star S}^{th} = \left\{
     \begin{array}{ll}
@@ -260,7 +259,7 @@ This also means that the temperature of neutrinos is slightly lower than the pho
         \frac{T_{\nu}^{F}}{T_{\gamma}^{F}} = \left(\frac{4}{11}\right)^{1/3}
     }
 \end{equation}
-This is because, in equilibrium, $g_{\star S}^{th}(aT_{\gamma})^{3}$ remains constant, and we later find that $aT_{\gamma}$ increases after electron-positron annihilation, $(k)T < m_{e}$, by a factor $(11/4)^{1/3}$, while $aT_{\nu}$ remains the same since neutrinos are decoupled.
+This is because, at equilibrium, $g_{\star S}^{th}(aT_{\gamma})^{3}$ remains constant, and we later find that $aT_{\gamma}$ increases after electron-positron annihilation, $(k)T < m_{e}$, by a factor $(11/4)^{1/3}$, while $aT_{\nu}$ remains the same since neutrinos are decoupled.
 \par The present-time temperature of photons is measured from the CMB, $T_{\gamma}(t_{0}) = 2.7\unit{K}$, while the predicted neutrino temperature for a C$\nu$B (\emph{cosmic neutrino background}) is $T_{\nu}(t_{0}) = 1.95\unit{K}$ (yet to be confirmed experimentally). The associated particle densities are quickly found 
 \begin{equation}
     n_{\gamma} \sim g_{\gamma}T_{\gamma}^{3} \quad n_{\nu} \sim \frac{3}{4}g_{\nu}T_{\nu}^{3}
@@ -283,11 +282,11 @@ which yields
         \Omega_{\nu}(t_{0})h^{2} \approx \frac{\sum_{i} m_{\nu,i}}{94 \unit{eV}}
     }
 \end{equation}
-where we've used $H_{0} = 100h \unit{km}\unit{s}^{-1}\unit{Mpc}$ and $h = 0.695$. By demanding that neutrinos don’t over close the universe, i.e. $\Omega_{\nu} < 1$, we can give a cosmological upper bound on the sum of the neutrino masses
+where we've used $H_{0} = 100h \unit{km}\unit{s}^{-1}\unit{Mpc}$ and $h = 0.695$. By demanding that neutrinos don’t over close the Universe, i.e. $\Omega_{\nu} < 1$, we can give a cosmological upper bound on the sum of the neutrino masses
 \begin{equation}
     \sum_{i}m_{\nu,i} \leq 14-15\unit{eV}
 \end{equation}
-while from the combined effort of the Planck collaboration and analisys of BAO\footnote{Baryonic Acoustic Oscillations.} we get an ever more strict upper bound $ \sum_{i}m_{\nu,i} \leq 0.13\unit{eV}$. On the other hand, we also have a lower bound given by neutrinos oscillations 
+while from the combined effort of the Planck collaboration and analysis of BAO\footnote{Baryonic Acoustic Oscillations.} we get an even stricter upper bound $ \sum_{i}m_{\nu,i} \leq 0.13\unit{eV}$. On the other hand, we also have a lower bound given by neutrinos oscillations 
 \begin{align*}
     \sum_{i}m_{\nu,i} &\geq 0.06\unit{eV} \quad \text{(normal ordering)}\\
     \sum_{i}m_{\nu,i} &\geq 0.1\unit{eV} \quad \text{(inverted ordering)}
@@ -295,7 +294,7 @@ while from the combined effort of the Planck collaboration and analisys of BAO\f
 
 \section{Photon Recombination and Decoupling}
 
-An important event in the history of the early Universe is the formation of the first atoms. At temperatures above about $1 \unit{eV}$, the Universe still consisted of a plasma of free electrons and nuclei. Photons were tightly coupled to the electrons via Compton scattering, which in turn strongly interacted with protons via Coulomb scattering. There was very little neutral hydrogen. When the temperature became low enough, the electrons and nuclei combined to form neutral atoms (\emph{recombination}), and the density of free electrons fell sharply.
+An important event in the history of the early Universe is the formation of the first atoms. At temperatures above $\sim 1 \unit{eV}$, the Universe still consisted of a plasma of free electrons and nuclei. Photons were tightly coupled to the electrons via Compton scattering, which in turn strongly interacted with protons via Coulomb scattering. There was very little neutral Hydrogen. When the temperature became low enough, the electrons and nuclei combined to form neutral atoms (\emph{recombination}), and the density of free electrons fell sharply.
 
 \subsection{Hydrogen recombination}
 
@@ -328,7 +327,7 @@ which, plugged in the equation for chemical balance (\ref{eq:chembal}), yields t
 \begin{equation}
     1-X_{e}(T) = f(t)X_{e}^{2}(T)
 \end{equation}
-From here we can essentially choose an arbitrary threshold for when we can consider the Universe "recombined." Some choose the moment at which $X_{e} \leq 0.5$, while others choose $X_{e} \leq 0.1$; you choose, the resulting difference is minimal. Following Baumann, we find a recombination temperature
+From here we can choose an arbitrary threshold for when we can consider the Universe "recombined." Some choose the moment at which $X_{e} \leq 0.5$, while others choose $X_{e} \leq 0.1$; you choose, the resulting difference is minimal. Following Baumann, we find a recombination temperature
 \begin{equation}
     T_{\text{rec}} = 0.3\unit{eV} \approx 3600\unit{K}
     \label{eq:rectemp}
@@ -340,7 +339,7 @@ Please notice that $T_{\text{rec}} < \chi = 13.6\unit{eV}$, since there are very
     \caption{Free electron fraction as a function of redshift. The horizontal axis is reversed to replicate the natural flow of time from left to right. Credits: \cite{Baumann_2022}.}
 \end{figure}
 
-\par Using $T_{\text{rex}} = T_{0}(1 + z_{\text{rec}})$, with $T_{0} = 2.7 K$, gives the redshift of recombination
+\par Using $T_{\text{rec}} = T_{0}(1 + z_{\text{rec}})$, with $T_{0} = 2.7 K$, gives the redshift of recombination
 \begin{equation}
     z_{\text{rec}} \approx 1320
 \end{equation}
@@ -350,7 +349,7 @@ Since matter-radiation equality is at $z_{\text{eq}} \approx 3500$, we conclude 
 
 \subsection{Photon Decoupling}
 
-Photons are most strongly coupled to the primordial plasma through their interactions with electrons
+Photons are most strongly coupled to the primordial plasma through their interaction with electrons
 \begin{equation*}
     e^{-} + \gamma \leftrightharpoons e^{-} + \gamma
 \end{equation*}
@@ -367,18 +366,18 @@ we get
 \begin{equation}
     X_{e}(T_{\text{dec}})T_{\text{dec}}^{3/2} \sim \frac{\pi^{2}}{2\zeta(3)}\frac{H_{0}\sqrt{\Omega_{m}}}{\eta\sigma_{T}T_{0}^{3/2}}
 \end{equation}
-Thanks to Saha's equation we finally find 
+Thanks to Saha's equation we find 
 \begin{equation}
     T_{\text{dec}} \sim 0.27 \unit{eV}
 \end{equation}
-Notice that although $T_{\text{dec}}$ isn’t far from $T_{\text{rec}}$, the ionization fraction decreases significantly between recombination and decoupling $$X_{e}(T_{\text{rec}}) \approx 0.1 \to X_{e}(T_{\text{dec}}) \approx 0.01$$ This shows that a large degree of neutrality is necessary for the universe to become transparent to photon propagation.
+Notice that although $T_{\text{dec}}$ isn’t far from $T_{\text{rec}}$, the ionization fraction decreases significantly between recombination and decoupling $$X_{e}(T_{\text{rec}}) \approx 0.1 \to X_{e}(T_{\text{dec}}) \approx 0.01$$ This shows that a large degree of neutrality is necessary for the Universe to become transparent to photon propagation.
 \par The redshift and time of decoupling are, respectively, $z \approx 1090$, and $t \approx 370,000\unit{yr}$.
 
 \section{Dark Matter}
 
 Dark matter is a...thorny subject: At the same time we know little to nothing about it, and yet know plenty. We know that it must be abundant, much more abundant than standard baryonic matter, and must not interact with electromagnetic radiation. That, incidentally, also means that we can't see it, hence the name.
 \par So how do we know that it must exist? To put it simply, we have several astrophysical evidences, gravitational in nature, that suggest the presence of this exotic type of matter.
-\par To name a few, you might know that galactic rotation curves would look rather different if DM halos didn't exist: The first discrepancies between the expected and the observed rotation curves were investigated as early as the 1970s \cite{1978PhDT.......195B}, \cite{1978ApJ...225L.107R} bringing the astronophysicists of the time to speculate the existence of something they couldn't see but that had to have a density $\rho \propto r^{-2}$ so that rotation curves could be flat as they looked like.
+\par To name a few, you might know that galactic rotation curves would look rather different if DM halos didn't exist: The first discrepancies between the expected and the observed rotation curves were investigated as early as the 1970s \cite{1978PhDT.......195B}, \cite{1978ApJ...225L.107R} bringing the astrophysicists of the time to speculate the existence of something they couldn't see but that had to have a density $\rho \propto r^{-2}$ so that rotation curves could be as flat as they looked like.
 \par Another evidence came from structure formation theory. If DM didn't exist, there wouldn't have been enough time for standard baryonic matter to collapse and produce structures much denser than the average background of the Universe like galaxies or clusters.
 
 \subsubsection{MOND: Modified Newtonian Dynamics}
@@ -447,13 +446,12 @@ Assuming gravitational potential, the virial theorem allows us to predict the to
 }
 which, for example, for the Coma Cluster predicts a mass $M_{\text{tot}} \approx 2\power{10}{15}M_{\odot}$. For such a cluster, the mass-to-light ratio $M/L$ would be roughly equal to $250M_{\odot}/L_{\odot}$. Even carrying out the due computations with some more care, you don't manage to bring it below $\sim 10-20M_{\odot}/L_{\odot}$, which is not good since the expected mass-to-light ratio is of order $2-3M_{\odot}/L_{\odot}$.
 \par Moreover, as was ascertained from the aforementioned interaction between clusters, DM is also barely interacting with itself, let alone matter or radiation. One of the few viable ways we can detect its presence and its effects is gravitational lensing.
-\par Research in the cosmological field mainly focuses on two major events: The BBN and the CMB, both of which allows us to measure $\Omega_{m}$ and $\Omega_{b}$. Clearly, if we assume only DM and baryonic matter to contribute to $\Omega_{m}$, a simple subtraction makes us able to give an estimate to DM's density parameter.
-\par The current values give 
+\par Research in the cosmological field mainly focuses on two major events: The BBN and the CMB, both of which allows us to measure $\Omega_{m}$ and $\Omega_{b}$. Clearly, if we assume only DM and baryonic matter to contribute to $\Omega_{m}$, a simple subtraction makes us able to give an estimate to DM's density parameter. The current values set 
 \begin{equation}
     \Omega_{m}\approx 0.3 \quad \Omega_{b} \approx 0.0486 \implies \Omega_{DM} = 0.2589
 \end{equation}
 so most of the matter contribution comes from DM.
-\par What if we wanted to use the values of $\Omega_{b}$ and $\Omega_{DM}$ to put constrains on the mass our hypothetical DM particle should have? Would that be of any help? Present estimates constrain DM mass in the range
+\par What if we wanted to use the values of $\Omega_{b}$ and $\Omega_{DM}$ to put constrains on the mass our hypothetical DM particle should have? Would that be of any help? Present estimates constrain DM mass in the range \marginpar{"PBH" stands for Primordial Black Holes, one of the exotic candidates for DM.}
 \begin{equation}
     10^{-22}\unit{eV} \lesssim m_{DM} \lesssim m_{PBH}\approx 10^{70}\unit{eV} \approx 10^{4}-10^{5}M_{\odot}
 \end{equation}
@@ -461,7 +459,7 @@ corresponding to scales of order
 \begin{equation}
     \lambda \sim (2\unit{kpc})\left(\frac{10^{-22}\unit{eV}}{m}\right)\left(\frac{10\unit{km}\unit{s}}{v}\right)
 \end{equation}
-\par With only this information at hand, the only candidate within the current Standard Model is the neutrino: It does not emit light, it's barely interacting with other stuff, it's non-baryonic, and it's stable on cosmological scales. However structure-formation theory has long discarded neutrinos as viable candidates for DM: To put it simply, neutrinos would be too "hot" (read: relativistic for far too long after their decoupling), and their free-streaming would smear out density fluctuations on scales of order
+\par With only this information at hand, the only candidate within the current Standard Model is the neutrino: It does not emit light, it's barely interacting with other stuff, it's non-baryonic, and it's stable on cosmological scales. However structure-formation theory has long discarded neutrinos as viable candidates for DM (they're not a major component, at least): To put it simply, neutrinos would be too "hot" (read: relativistic for far too long after their decoupling), and their free-streaming would smear out density fluctuations on scales of order
 \begin{align}
     d_{\text{min}} &\approx ct_{h}\approx 13\,\text{kpc}\left(\frac{m_{h}c^{2}}{3\,\text{eV}}\right)^{-2}\\
     r_{\text{min}} &=\frac{d_{\text{min}}}{a(t_{h})}\approx 55\,\text{Mpc}\,\left(\frac{m_{h}c^{2}}{3\,\text{eV}}\right)^{-1}
@@ -481,7 +479,7 @@ where the latter is the scale in comoving units (i.e., the size of the region \e
 In the last section we've listed quite a few properties we're requiring DM to have. Let's briefly recall them:
 \begin{enumerate}
     \item Negligible light emission;
-    \item Weakly interacting;
+    \item Weakly interacting with radiation, itself, and matter in general;
     \item Non-baryonic;
     \item Cold (non-relativistic at decoupling);
     \item Either stable or with $\tau_{1/2} \gg \tau_{\text{Universe}}$.
@@ -563,7 +561,7 @@ This is the Boltzmann equation. The form of the collision term depends on the sp
 \begin{equation}
     \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(n_{1}a^{3}) = -\alpha n_{1}n_{2} + \beta n_{3}n_{4}
 \end{equation}
-The first term, $-\alpha n_{1}n_{2}$, describes the destruction of particles 1, while that second term, $\beta n_{3}n_{4}$, describes the creation of particles 3-4. The parameter $\alpha = \langle \sigma v \rangle$ is the \emph{thermally averaged cross section}. The second parameter $\beta$ can be related to $\alpha$ by noting that the collision term has to vanish in (chemical) equilibrium
+The first term, $-\alpha n_{1}n_{2}$, describes the destruction of particles 1, while that second term, $\beta n_{3}n_{4}$, describes the interaction of particles 3-4. The parameter $\alpha = \langle \sigma v \rangle$ is the \emph{thermally averaged cross section}. The second parameter $\beta$ can be related to $\alpha$ by noting that the collision term has to vanish in (chemical) equilibrium
 \begin{equation}
     \beta = \left(\frac{n_{1}n_{2}}{n_{3}n_{4}}\right)_{\text{eq}}\alpha
 \end{equation}
@@ -603,16 +601,16 @@ which is what allows us to say that if DM were made of hot neutrinos, we wouldn'
 
 \section{Big Bang Nucleosynthesis}
 
-Let us return to $T \sim 1 \unit{MeV}$. Photons, electron and positrons are in equilibrium. Neutrinos are about to decouple. Baryons are non-relativistic and therefore much fewer in number than the relativistic species. Nevertheless, we now want to study what happened to these trace amounts of baryonic matter. The total number of nucleons stays constant due to baryon number conservation. This baryon number can be in the form of protons and neutrons or heavier nuclei. Weak nuclear reactions may convert neutrons and protons into each other and strong nuclear reactions may build nuclei from them.
+Let us return to $T \sim 1 \unit{MeV}$. Photons, electrons, and positrons are in equilibrium. Neutrinos are about to decouple. Baryons are non-relativistic and therefore much fewer in number than the relativistic species. Nevertheless, we now want to study what happened to these trace amounts of baryonic matter. The total number of nucleons stays constant due to baryon number conservation. This baryon number can be in the form of protons and neutrons or heavier nuclei. Weak nuclear reactions may convert neutrons and protons into each other and strong nuclear reactions may build nuclei from them.
 \par The purpose of this section will be reaching the understanding of a single number
 \begin{equation}
-    Y = \frac{4n_{\text{He}}}{n_{\text{H}}} \approx 0.25
+    Y_{p} = \frac{4n_{\text{He}}}{n_{\text{H}}} \approx 0.25
 \end{equation}
 namely, the abundance of primordial Helium. The steps we're going to take to reach our final destination are pictorially summarized in Fig.\ref{fgr:bbn}.
 \begin{figure}[h!]
     \centering 
     \includegraphics[width=0.9\textwidth]{img/bbn.png}
-    \caption{Numerical results for Helium production in the early Universe. Credits: \cite{Baumann_2022}.}
+    \caption{Numerical results for Helium production in the early Universe: Fractional abundance of neutrons as a function of temperature. Credits: \cite{Baumann_2022}.}
     \label{fgr:bbn}
 \end{figure}
 \par So, we're starting from the MeV scale with free protons and free neutrons, which are in equilibrium through the following reactions
@@ -620,7 +618,7 @@ namely, the abundance of primordial Helium. The steps we're going to take to rea
     n + \nu_{e} &\leftrightharpoons p^{+} + e^{-}\\
     n + e^{+} &\leftrightharpoons p^{+} + \bar{\nu}_{e}
 \end{align*}
-with a $Q$-value of order $Q\approx 1.3\unit{MeV}$. As temperature changes, assuming the reactions doesn't drop out of equilibrium, the reactions will be leaning towards the production of protons 
+with a $Q$-value of order $Q\approx 1.3\unit{MeV}$. As temperature changes, assuming the reactions don't drop out of equilibrium, the reactions will be leaning towards the production of protons 
 \begin{equation}
     \left(\frac{n_{n}}{n_{p}}\right)_{\text{eq}} = \left(\frac{m_{n}}{m_{p}}\right)^{3/2}\exp\left(-\frac{m_{n}-m_{p}}{(k)T}\right)
 \end{equation}
@@ -629,12 +627,12 @@ We can define the neutronization ratio
     X_{n} = \frac{n_{n}}{n_{n}+n_{p}}
     \label{eq:neutronization}
 \end{equation}
-so that, at equilibrium, the fractional abundance of neutron is given by 
+so that, at equilibrium, the fractional abundance of neutrons is given by 
 \begin{equation}
     X_{n}^{\text{eq}}(T) = \frac{\exp(-Q/T)}{1+\exp(-Q/T)}
 \end{equation}
-which is vanishing for either $T\to 0$ or $t\to\infty$. Neutrons would disappear on a timescale of about $\sim 1\unit{s}$, when the Universe has cooled to about $\sim 1.3\unit{MeV}$. This is somewhat...unhandy, considering that a second there's not much time to do any nucleosynthesis.
-\par What's the solution? Easy: The reactions quickly drop out of equilibrium, and neutrons freeze-out. This means that as soon as the Universe drops below the MeV scale, neutrons freeze-out allows them to keep existing with a significant abundance.
+which is vanishing for either $T\to 0$ or $t\to\infty$. Neutrons would disappear on a timescale of about $\sim 1\unit{s}$, when the Universe has cooled to about $\sim 1.3\unit{MeV}$. This is somewhat...unhandy, considering that in a second there's not much time to do any nucleosynthesis.
+\par What's the solution? Easy: The reactions quickly drop out of equilibrium, and neutrons freeze-out. This means that as soon as the Universe drops below the MeV scale, neutron freeze-out allows them to keep existing with a significant abundance.
 \par To go any further than this, we have to recall Boltmann's equation (\ref{eq:Boltmann-eq}). If we consider a reaction like 
 \begin{equation}
     n + \text{lept}_{1} \leftrightharpoons p + \text{lept}_{2}
@@ -645,9 +643,9 @@ then the associated Boltmann equation is
 \end{equation}
 Since $n_{b} = n_{p}+n_{n}$, the neutronization factor (\ref{eq:neutronization}) is 
 \begin{equation}
-    X_{n} = \frac{X_{n}n_{b}}{(1-X_{n}n_{b})}
+    X_{n} = \frac{n_{n}}{n_{n}+n_{p}} = \frac{X_{n}n_{b}}{X_{n}n_{b}+ (1-X_{n})n_{b}} \implies n_{n} = X_{n}n_{b} \quad n_{p} = (1-X_{n})n_{b}
 \end{equation}
-which allows us to rewrite Boltmann's equation 
+which allows us to rewrite Boltmann's equation \marginpar{Note that we've used the expression for $X_{n}$ to replace $n_{n}$ and $n_{p}$ with expressions dependent on $n_{b}$. Then, we exploited the fact that the product $n_{b}a^{3}$ is independent of time because of the scaling (\ref{eq:density_scalefactor}) for baryons.}
 \begin{equation}
     \frac{1}{a^{3}}\frac{\text{d}}{\text{d}t}(X_{n}n_{b}a^{3}) = -\Gamma \left[X_{n}n_{b} - (1-X_{n})n_{b}\exp\left(-Q/T\right)\right]
 \end{equation}
@@ -668,23 +666,23 @@ where we have used
 \end{equation}
 since $T \propto a^{-1}$. During BBN we have 
 \begin{equation}
-    H = \sqrt{\frac{\rho}{3M_{Pl}^{2}}} = \frac{\pi}{3}\sqrt{\frac{g_{\star}}{10}}\frac{Q^{2}}{M_{Pl}}\frac{1}{x^{2}} = \frac{H_{1}}{x^{2}}
+    H = \sqrt{\frac{\rho}{3M_{Pl}^{2}}} = \frac{\pi}{3}\sqrt{\frac{g_{\star}}{10}}\frac{Q^{2}}{M_{Pl}}\frac{1}{x^{2}} := \frac{H_{1}}{x^{2}}
 \end{equation}
 Solving (\ref{eq:neutronfo}) numerically, we find
 \begin{equation}
     X_{n}^{\infty} = X_{n}(\infty) = 0.15
 \end{equation}
-\par Finally, we need an expression for the neutron-proton conversion rate, $\Gamma$, which we'll here pretend it has been revealed from God, your favorite deity, or \cite{2020moco.book.....D}
+\par Finally, we need an expression for the neutron-proton conversion rate $\Gamma$, which we'll here pretend it has been revealed from God, your favorite deity, or \cite{2020moco.book.....D}
 \begin{equation}
     \Gamma = \frac{255}{\tau_{n}}\frac{12+6x+x^{2}}{x^{5}} \unit{s}^{-1}
 \end{equation}
-where $\tau_{n} = 878.4 \pm 0.5 \unit{s}$ \cite{ParticleDataGroup:2024cfk}. It is interesting to point out that the conversion time $\Gamma^{-1}$ is comparable to the age of the Universe at the considered energy-scale, while at later times $T\propto t^{-1/2}$, and $\Gamma \propto T^{3}$. The neutron-proton conversion time becomes longer than the age of the Universe. Therefore we get freeze-out.
+where $\tau_{n} = 878.4 \pm 0.5 \unit{s}$ \cite{ParticleDataGroup:2024cfk}. It is interesting to point out that the conversion time $\Gamma^{-1}$ is comparable to the age of the Universe at the considered energy-scale, while at later times $T\propto t^{-1/2}$, and $\Gamma \propto T^{3}$. The neutron-proton conversion time becomes longer than the age of the Universe. Therefore we get the freeze-out.
 \par For temperatures below $0.2\unit{MeV}$ the finite lifetime of the neutron becomes important. To include neutron decay in our computation we simply multiply the freeze-out abundance by an exponential decay factor
 \begin{equation}
     X_{n}(t) = X_{n}^{\infty}e^{-t/\tau_{n}}
 \end{equation}
 which motivates the abrupt drop in the low temperature regions of Fig.\ref{fgr:bbn}.
-\par Through freeze-out we've managed to extend a neutron's lifespan from less than a second to a little shy of $1000\unit{s}$. However, we're yet not finished. In fact, if things were exactly as we've described them so far, and nothing else occurred, all neutrons would vanish after some integer multiple of $\tau_{n}$, which would kinda suck for the purpose of forming heavier elements.
+\par Thanks to the freeze-out, we've managed to extend a neutron's lifespan from less than a second to a little shy of $1000\unit{s}$. However, we've yet not finished. In fact, if things were exactly as we've described so far, and nothing else occurred, all neutrons would vanish after some integer multiple of $\tau_{n}$, which would kinda suck for the purpose of forming heavier elements.
 \par How can we then prevent the natural and inevitable demise of free neutrons? You bound them into heavier nuclei \marginpar{Note that during the BBN there's no formation of elements with $A=5$ or $A=8$ because of $\alpha$-instability. You'll have to wait until the 1st generation of stars ignites Helium through the $3\alpha$ reaction to breach through this gate and produce heavier elements.}
 \begin{align*}
     \element{n}{1}{0} + \element{p}{1}{1} &\to \element{D}{2}{1} + \gamma \\
@@ -695,8 +693,8 @@ which motivates the abrupt drop in the low temperature regions of Fig.\ref{fgr:b
     \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Be}{7}{4} + \gamma \\
     \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Li}{7}{3} + \gamma
 \end{align*}
-but essentially is the very first reaction that determines the timescale of this whole machination we have just penned. Incidentally, this is also a quite significant problem. Since Deuterium is formed directly from neutrons and protons, it can follow its equilibrium abundance as long as enough free neutrons are available. However, since the Deuterium binding energy is rather small, the Deuterium abundance becomes large rather late (at $T < 100 \unit{keV}$) because it is very prone to being photodisintegrated.
-\par So, although heavier nuclei have larger binding energies and hence would have larger equilibrium abundances, they cannot be formed until sufficient Deuterium has become available. This is the \emph{Deuterium bottleneck}. Only when there is enough Deuterium, can helium be produced.
+but it's essentially the very first reaction that determines the timescale of this whole machination we have just penned. Incidentally, this is also a quite significant problem. Since Deuterium is formed directly from neutrons and protons, it can follow its equilibrium abundance as long as enough free neutrons are available. However, since the Deuterium binding energy is rather small, the Deuterium abundance becomes large rather late (at $T < 100 \unit{keV}$) because it is very prone to being photodisintegrated.
+\par So, although heavier nuclei have larger binding energies and hence would have larger equilibrium abundances, they cannot be formed until sufficient Deuterium has become available. This is the \emph{Deuterium bottleneck}. Only when there is enough Deuterium, can Helium be produced.
 \par Consider now the chemical balance equation at equilibrium 
 \begin{equation}
     \left(\frac{n_{\text{D}}}{n_{n}n_{o}}\right)_{\text{eq}} = \frac{3}{4}\left(\frac{m_{\text{D}}}{m_{p}m_{n}}\frac{2\pi}{T}\right)^{3/2}\exp(B_{\text{D}}/T)
@@ -704,7 +702,7 @@ but essentially is the very first reaction that determines the timescale of this
 where $B_{\text{D}}$ is Deuterium's binding energy $B_{\text{D}} = m_{n}+m_{p}-m_{\text{D}} = 2.22\unit{MeV}$.
 \par We then use $n_{n} = X_{n}n_{b}$ which, thanks to the baryon to photon ratio, is also equal to
 \begin{equation}
-    n_{n} = X_{n}n_{b} = X_{n}\eta \frac{2\zeta(3)}{\pi^{2}}T_{\gamma}^{3}
+    n_{n} = X_{n}n_{b} = X_{n}\eta n_{\gamma} = X_{n}\eta \frac{2\zeta(3)}{\pi^{2}}T_{\gamma}^{3}
 \end{equation}
 Hence, approximating $m_{\text{D}}\approx 2m_{p}\approx 2m_{n}$, we conclude 
 \begin{equation}
@@ -714,7 +712,7 @@ The Deuterium bottleneck is overcome when $(n_{\text{D}}/n_{p})_{\text{eq}}\sim 
 \begin{equation}
     \eta\exp(B_{\text{D}}/T) \sim 1
 \end{equation}
-If we transpose the temperature to a time, we find that the Deuterium bottleneck is breached past at $t_{\text{nuc}} \approx 250\unit{s}$ which is less than the neutron half-life time!
+If we turn the temperature into a time, we find that the Deuterium bottleneck is breached past at $t_{\text{nuc}} \approx 250\unit{s}$ which is less than the neutron half-life time!
 \par At this temperature, the neutronization rate is 
 \begin{equation}
     \frac{n_{n}}{n_{b}} = \frac{n_{n}}{n_{p}+n_{n}} = X_{n} \approx 0.11
@@ -756,7 +754,7 @@ When we refer to the CMB (Cosmic Microwave Background), we're referring to a dif
 \end{figure}
 \par All the useful information about the CMB is hidden and preserved into its microscopic fluctuations
 \begin{equation}
-    \der{\Delta T}{T} \sim 10^{-5}
+    \frac{\Delta T}{T} \sim 10^{-5}
 \end{equation}
 so all we have to do is to construct a formalism able to extract such information from the temperature contrast
 \begin{equation}
@@ -770,18 +768,19 @@ from which we can define the angular power spectrum and 2-point correlation func
 \end{equation}
 At this point it's particularly useful to expand the temperature contrast with spherical harmonics, which means assigning a weight to angular patches that are able to capture finer and finer details. We'll use
 \begin{equation}
-    \Theta(\hat{n}) = \sum_{l}\sum_{m = -l}^{l}a_{lm}Y_{lm}(\theta,\phi)
+    \Theta(\hat{n}) = \sum_{l=0}^{\infty}\sum_{m = -l}^{l}a_{lm}Y_{lm}(\theta,\phi)
 \end{equation}
 where 
-\begin{equation}
-    Y_{lm} = (-1)^{m}\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}}P_{l}^{m}(\cos\theta)e^{im\phi} \quad P_{l}^{m}(x) = (1-x^{2})^{m/2}\frac{\text{d}^{m}P_{l}}{\text{d}x^{m}}
+\begin{align}
+    & Y_{lm} = (-1)^{m}\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}}P_{l}^{m}(\cos\theta)e^{im\phi} \\
+    & P_{l}^{m}(x) = (1-x^{2})^{m/2}\frac{\text{d}^{m}P_{l}}{\text{d}x^{m}}
     \label{eq:sphericalharmonics}
-\end{equation}
+\end{align}
 where $P_{l}$ are Legendre's polynomials. If the function to be expanded is real, then
 \begin{equation}
-    Y_{lm}^{*} = (-1)^{m}Y_{l-m} \quad a_{lm}^{*} = (-1)^{m}a_{l-m}
+    Y_{lm}^{*} = (-1)^{m}Y_{l\;-m} \quad a_{lm}^{*} = (-1)^{m}a_{l\;-m}
 \end{equation}
-where the former actually holds even for a complex function. With these conventions, the 2-point correlation function becomes
+where the former relation holds also for a complex-valued function. With these conventions, the 2-point correlation function becomes
 \begin{equation}
     C(\theta) = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}\rangle Y_{lm}Y_{l'm'} = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}^{*}\rangle Y_{lm}Y_{l'm'}^{*}
 \end{equation}
@@ -795,7 +794,7 @@ so
 \end{equation}
 \par Let's now use the property 
 \begin{equation}
-    P_{\cos\theta} = \frac{4\pi}{2l+1}\sum_{m}Y_{lm}Y_{lm}^{*}
+    P_{l}(\cos\theta) = \frac{4\pi}{2l+1}\sum_{m}Y_{lm}Y_{lm}^{*}
 \end{equation}
 which allows us to conclude \marginpar{Usually, you also end up exploiting Wiener-Chinčin theorem to define a power spectrum as the FT of the correlation function.}
 \begin{equation}
@@ -841,7 +840,7 @@ It will be extremely useful to perform a scalar-vector-tensor (SVT) decompositio
 \begin{equation}
     B_{i} = \partial_{i}B + \hat{B}_{i} \quad \partial^{i}\hat{B}_{i} = 0
 \end{equation}
-Similarly, any rank-2 symmetric tensor can be written
+Similarly, any rank-2 symmetric tensor can be written as
 \begin{equation}
     E_{ij} = C\delta_{ij} + \partial_{\langle i}\partial_{j \rangle}E + \partial_{( i}\hat{E}_{j)} + 2\hat{E}_{ij}
 \end{equation}
@@ -851,8 +850,8 @@ where
     \partial_{( i}\hat{E}_{j)} & = \frac{1}{2}\left(\partial_{i}\hat{E}_{j} + \partial_{j}\hat{E}_{i}\right)
 \end{align*}
 As before, the hatted quantities are divergenceless, and the tensor perturbation is traceless, $E^{i}_{\; i} = 0$. The 10 degrees of freedom of the metric have thus been decomposed into 4 + 4 + 2 SVT degrees of freedom.
-\par What makes the SVT-decomposition so powerful is the fact that the Einstein equations for scalars, vectors and tensors don’t mix at linear order and can therefore be treated separately. In the following, we'll only be interested in scalar fluctuations and the associated density perturbations (under the assumption of adiabatic processes). Vector perturbations aren’t produced by inflation and even if they were, they would decay quickly with the expansion of the universe. Tensor perturbations are an important prediction of inflation but we won't deal with them\footnote{We would if I had followed the 9 credits course rather than the 6 one. But since I didn't, there's no need to go that far.}.
-\par Before we continue, we should, in principle, address an important subtlety. The metric perturbations we've introduced aren’t uniquely defined, but are gauge dependent. It is possible to show (we won't) that one way to avoid the gauge problems is to define special combinations of metric perturbations that do not transform under a change of coordinates. Meet the \emph{Bardeen variables} \marginpar{You should recall from Chapter \ref{ch:iv} that $\mathcal{H} = a'/a$ is the Hubble parameter in conformal time, and with the superscript we're referring to derivatives with respect to conformal time.}
+\par What makes the SVT-decomposition so powerful is the fact that the Einstein equations for scalars, vectors, and tensors don’t mix at linear order and can therefore be treated separately. In the following, we'll only be interested in scalar fluctuations and the associated density perturbations (under the assumption of adiabatic processes). Vector perturbations aren’t produced by inflation, but even if they were, they would decay quickly with the expansion of the Universe. Tensor perturbations are an important prediction of inflation but we won't deal with them\footnote{We would if I had followed the 9 credits course rather than the 6 one. But since I didn't, there's no need to go that far.}.
+\par Before we continue, we should, in principle, address an important subtlety. The metric perturbations we've introduced aren’t uniquely defined, but are gauge dependent. It is possible to show (we won't) that one way to avoid the gauge problems is to define special combinations of metric perturbations that do not transform under a change of coordinates. Meet the \emph{Bardeen variables} (or potentials) \marginpar{You should recall from Chapter \ref{ch:iv} that $\mathcal{H} = a'/a$ is the Hubble parameter in conformal time, and with the superscript we're referring to derivatives with respect to conformal time.}
 \begin{align}
     \psi(x^{\mu}) &= A + \mathcal{H}(B-E') + (B-E')' \\
     \phi(x^{\mu}) &= -C + \frac{1}{3}\nabla^{2}E -\mathcal{H}(B-E')
@@ -860,7 +859,7 @@ As before, the hatted quantities are divergenceless, and the tensor perturbation
 \end{align}
 Technically speaking, also
 \begin{equation}
-    \hat{\Phi}_{i} = \hat{E}_{i} - \hat{B}_{i} \quad \hat{E}_{ij}
+    \hat{\Phi}_{i} = \hat{E}_{i} - \hat{B}_{i} \quad \text{and}\quad \hat{E}_{ij}
 \end{equation}
 are gauge invariant quantities. With significant effort, you might also find the three-dimensional Ricci scalar associated with the spatial part of the perturbed metric
 \begin{equation}
@@ -899,7 +898,7 @@ Consider
 \end{equation}
 which is immediately integrated 
 \begin{equation}
-    \ln\left(\frac{(aE_{\gamma})_{0}}{(aE_{\gamma})_{LS}}\right) = -(\psi_{0}+\psi_{LS}) + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta}
+    \ln\left(\frac{(aE_{\gamma})_{0}}{(aE_{\gamma})_{LS}}\right) = -(\psi_{0}-\psi_{LS}) + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta}
 \end{equation}
 This equation essentially describes how the energy of a photon has changed along a geodesic from the last scattering up until today. We arbitrarily set the potential $\psi_{0} = 0$, while $\psi_{LS}$ represents the overdensities of the oscillating fluid at last scattering.
 \par On the other hand, the integral term describes the behavior of fluctuations in the cosmological fluid based on how they're interacting with the photons. This is called \emph{Integrated Sachs-Wolfe effect} \cite{1967ApJ...147...73S}: It regulates how photons are acquiring/losing energy while passing through spatially and temporally changing gravitational potentials, thus introducing a secondary anisotropy in the CMB spectrum.
@@ -927,31 +926,42 @@ The term within square parentheses is the \emph{Sachs-Wolfe effect}, which captu
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Sachs-Wolfe Effect,
   boxed title style={size=small,colframe=blue!50!black}]
-  Note that necessarily $$ \left(\frac{\delta\rho}{\rho}\right)_{LS}\cdot \psi_{LS} < 0$$ and you can also prove that cold patches in the CMB are associated to the overdensities, thus producing the following relation $$ \frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS} = \frac{\psi_{LS}}{3}$$
+  Note that necessarily $$ \left(\frac{\delta\rho}{\rho}\right)_{LS}\cdot \psi_{LS} < 0$$ and you can also prove that cold patches in the CMB are associated to the overdensities, producing the following relation $$ \frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS} = \frac{\psi_{LS}}{3}$$
 \end{tcolorbox}
-\par We can swtich to the FT of $\Theta_{0} = \delta T/T$
+\par We can swtich to the FT\footnote{For an alternative derivation, the interested reader can check either \href{https://cmb.wintherscoming.no/milestone4.php}{this website}, or \cite{callin2006}.} of $\Theta_{0} = \delta T/T$
 \begin{equation}
-    \left(\frac{\delta T}{T}\right)_{\eta = \eta_{0}} = \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\vec{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
+    \left(\frac{\delta T}{T}\right)_{\eta = \eta_{0}} = \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\hat{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
 \end{equation}
 where we've defined \marginpar{Note that we're neglecting the integrated Sachs-Wolfe effect.}
 \begin{equation}
     F_{LS} = \frac{\left[\frac{1}{4}\widehat{\left(\frac{\delta\rho}{\rho}\right)}(\eta_{LS}, \vec{k}) + \hat{\psi}_{LS}(\eta_{LS}, \vec{k})\right]}{R_{i}(k)} \quad G_{LS} = \frac{\hat{v}_{b}}{R_{i}(k)}
 \end{equation}
 which are (almost) the transfer functions we were talking about at the beginning of our discussion. The quantity $R_{i}(k)$ contains the initial conditions in terms of the scalar curvature, while $\chi_{LS}$ is the comoving distance of the last scattering horizon.
-\par From this we want to compute the 2-point correlation function and project it on the Legendre polynomials to obtain the power spectrum $C_{l}$.
-For this purpose we can exploit one of the properties of the spherical Bessel functions $j_{l}$
+\par From this we want to compute the 2-point correlation function and project it on the Legendre polynomials to obtain the power spectrum $C_{l}$. For this purpose we can exploit one of the properties of the spherical Bessel functions $j_{l}$
 \begin{equation}
-    \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right) = \sum_{l}i^{l}(2l+1)j_{l}(k\chi_{LS})P_{l}(\vec{k}\cdot\hat{n}) = \sum_{l}i^{l}(2l+1)j_{l}'(k\chi_{LS})P_{l}(\vec{k}\cdot\hat{n})
+    \exp\left(i\hat{k}\cdot\hat{n}k\chi_{LS}\right) = \sum_{l}i^{l}(2l+1)j_{l}(k\chi_{LS})P_{l}(\hat{k}\cdot\hat{n})
+\end{equation}
+then we use 
+\begin{equation}
+    \parder{\left[\exp\left({i\hat{k}\cdot\hat{n}k\chi_{LS}}\right)\right]}{(k\chi_{LS})} = i(\hat{k}\cdot\hat{n})\exp\left({i\hat{k}\cdot\hat{n}k\chi_{LS}}\right)
+\end{equation}
+hence
+\begin{equation}
+    -k\parder{\left[\exp\left({i\hat{k}\cdot\hat{n}k\chi_{LS}}\right)\right]}{(k\chi_{LS})} = -ik(\hat{k}\cdot\hat{n})\exp\left({i\hat{k}\cdot\hat{n}k\chi_{LS}}\right)
+\end{equation}
+Applying the derivative to the spherical-Bessel expansion gives
+\begin{equation}
+    -i(\hat{k}\cdot\hat{n})\exp\left({i\hat{k}\cdot\hat{n}k\chi_{LS}}\right) = -\sum_{l}i^{l}(2l+1)j'_{l}(k\chi_{LS})P_{l}(\vec{k}\cdot\hat{n})
 \end{equation}
 so that putting it in the FT of $\Theta_{0}$ yields
 \begin{equation}
-    \Theta(\hat{n}) = \sum_{l}i^{l}(2l+1)\int \Theta_{l}(k)R_{i} i(\vec{k}\cdot\hat{n})\exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)
+    \Theta(\hat{n}) = \sum_{l}i^{l}(2l+1)\int \Theta_{l}(k)R_{i} P_{l}(\hat{k}\cdot\hat{n})
 \end{equation}
 where 
 \begin{equation}
-    \Theta_{l}(k) = F_{LS}(k)j_{l}(k\chi_{LS})-G_{LS}j_{l}'
+    \Theta_{l}(k) = F_{LS}(k)j_{l}(k\chi_{LS})-G_{LS}(k)j_{l}'(k\chi_{LS})
 \end{equation}
-The correlation function will then be
+But we're not quite done yet: Even if we now know how to compute $\Theta_{l}$, we still need to go to actual $C_{l}$. This corresponds to (a) take the square of $\Theta_{l}$ (since $C_{l}$ is the square of the FT coefficients), (b) multiply this with the primordial power spectrum $\Delta_{\mathcal{R}}^{2}$ coming from inflation. The correlation function will then be
 \begin{equation}
     C(\theta) = \sum_{l}\frac{2l+1}{4\pi}\left\{4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k) \right\}P_{l}(\hat{n}\cdot \hat{n}')
 \end{equation}
@@ -984,9 +994,9 @@ Sometimes we might also define a \emph{visibility function} $g(z) = \derinline{\
 \begin{equation}
     \Delta_{\mathcal{R}}^{2}(k) = \frac{k^{3}P_{\mathcal{R}}(k)}{2\pi^{2}} \propto k^{n_{s}-1}
 \end{equation}
-with $n_{s} \approx 0.965$ for a Harrison-Zeldovič spectrum, which means that the initial (adimensional) spectrum is (almost) scale invariant. If you recall, it enters in the expression for the FT of the temperature contrast \marginpar{In the sake of simplicity, we're working in the approximation of \textbf{instantaneous decoupling} $g(z) = \delta(z-z_{LS})$. A much more elegant discussion would consider how the solutions to the Boltmann equation are distributed in $l$.}
+with $n_{s} \approx 0.965$ for a Harrison-Zeldovič spectrum, which means that the initial (adimensional) spectrum is (almost) scale invariant. If you recall, it enters in the expression for the FT of the temperature contrast \marginpar{For the sake of simplicity, we're working in the approximation of \textbf{instantaneous decoupling} $g(z) = \delta(z-z_{LS})$. A much more elegant discussion would consider how the solutions to the Boltmann equation are distributed in $l$.}
 \begin{equation}
-    \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\vec{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
+    \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\hat{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
 \end{equation}
 when calculating the correlation function and power spectrum (\ref{eq:powerspectrumcmb}). If we approximate the Bessel function to a $\delta$-function 
 \begin{equation}
@@ -1010,16 +1020,16 @@ $$ r^{2}_{\text{diff}} = \int_{0}^{\eta_{LS}} l_{\gamma}\diff{\eta} $$ where $l_
 
 In the non-relativistic limit, we can consider small perturbations on the continuity and Euler equations. We thus linearize the equations and assume a barotropic equation of state $p(\rho)$, which leads us to the following equation
 \begin{equation}
-    \partial_{t}^{2}\delta\rho = \nabla^{2}\delta p \to (\partial_{t}^{2}-c_{s}^{2})\delta\rho = 0
+    \partial_{t}^{2}\delta\rho = \nabla^{2}\delta p \to (\partial_{t}^{2}-c_{s}^{2}\nabla^{2})\delta\rho = 0
 \end{equation}
 \par This is all nice and dandy, but we're not considering two major points: (a) we should add the contribution of (self)gravity in Euler equation and thus introduce Poisson's equation
 \begin{equation}
     \nabla^{2}\phi = 4\pi G\rho
     \label{eq:poisson-eq}
 \end{equation}
-and (b) we should also take into account the expansion of the Universe. This can be easily done switching to comoving coordinates $\vec{r}_{ph.} = a(t)\vec{x}_{c}$ and defining the velocity $\vec{v} = H\vec{r} + a\dot{\vec{x}}$, where the latter contribution is the comoving (or peculiar) velocity. In the Newtonian limit, the cosmological equation for the evolution of the density contrast $\delta = \delta\rho/\rho$ is 
+and (b) we should also take into account the expansion of the Universe. This can be easily done switching to comoving coordinates $\vec{r}_{phy.} = a(t)\vec{x}_{c}$ and defining the velocity $\vec{v} = H\vec{r} + a\dot{\vec{x}}$, where the latter contribution is the comoving (or peculiar) velocity. In the Newtonian limit, the cosmological equation for the evolution of the density contrast $\delta = \delta\rho/\rho$ is 
 \begin{equation}
-    \ddot{\delta} + 2H\dot{\delta} - \left(\frac{c_{s}^{2}}{a^{2}}+4\pi G \bar{\rho}\right)\delta = 0
+    \ddot{\delta} + 2H\dot{\delta} - \left(\frac{c_{s}^{2}\nabla^{2}}{a^{2}}+4\pi G \bar{\rho}\right)\delta = 0
 \end{equation}
 which represents a damped (Hubble friction) harmonic oscillator with a driving (gravity and pressure). We can also produce a more relativistically-acceptable equation 
 \begin{equation}
@@ -1036,12 +1046,12 @@ Note that the sound speed is
 \begin{equation}
     c_{s} = \sqrt{\frac{1}{3(1+R)}}(c)
 \end{equation}
-which tends to $c/\sqrt{3}$ in RD ($R\to 0$) and in much smaller in MD.
+which tends to $c/\sqrt{3}$ in RD ($R\to 0$) and much smaller in MD.
 \par The objective here is to find some solution to the relativistic equation above and then investigate the transfer function that descends from there, namely $F_{LS}(k)$. If you were to do so (we won't), you'd find 
 \begin{equation}
     F_{LS}(k) = \frac{1}{5}\left[\frac{S(k)}{(1+R_{LS})^{1/4}}\cos(kr_{S}^{LS}+\theta(k))-3R_{LS}T(k)\right]
 \end{equation}
-with $S,\,\theta,\,T$ fitting functions popping out the numerical solution. The important part however is all in the phase of the cosine 
+with $S,\,\theta,\,T$ fitting functions popping out the numerical solution. The important part is all in the phase of the cosine 
 \begin{equation}
     kr_{S}^{LS}+\theta(k)
 \end{equation}
