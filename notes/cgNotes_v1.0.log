@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  29 AUG 2026 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  29 AUG 2026 18:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1691,31 +1691,35 @@ Package microtype Info: Character `029' is missing
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/iwona/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
- [9]
-<img/isotropyhomogeneity.png, id=240, 716.6775pt x 583.17876pt>
+<img/isotropyhomogeneity.png, id=229, 716.6775pt x 583.17876pt>
 File: img/isotropyhomogeneity.png Graphic file (type png)
 <use img/isotropyhomogeneity.png>
 Package pdftex.def Info: img/isotropyhomogeneity.png  used on input line 85.
 (pdftex.def)             Requested size: 185.0pt x 150.53728pt.
- [10 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/isotropyhomogeneity.png>]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/iwona/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [9] [10 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/isotropyhomogeneity.png>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 118.
+(Font)              scaled to size 9.37807pt on input line 119.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 118.
+(Font)              scaled to size 7.29405pt on input line 119.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 118.
+(Font)              scaled to size 5.21004pt on input line 119.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 118.
+(Font)              scaled to size 9.37807pt on input line 119.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 118.
+(Font)              scaled to size 7.29405pt on input line 119.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 118.
+(Font)              scaled to size 5.21004pt on input line 119.
  [11] [12] [13] [14] [15] [16] [17] [18] [19]
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 491--493
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 495--497
 \T1/pplj/m/n/10.95 The 4-momentum is thus sim-ply de-fined as the flux of the energy-momentum
+ []
+
+
+Overfull \hbox (10.86221pt too wide) in paragraph at lines 521--523
+\T1/pplj/m/n/10.95 What we'd like to show now is what the con-ser-va-tion of the energy-momentum
  []
 
 [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]) [30]
@@ -1730,7 +1734,7 @@ Chapter 5.
 
 
 ] [32]
-<img/effdeg.png, id=546, 764.8575pt x 472.26437pt>
+<img/effdeg.png, id=552, 764.8575pt x 472.26437pt>
 File: img/effdeg.png Graphic file (type png)
 <use img/effdeg.png>
 Package pdftex.def Info: img/effdeg.png  used on input line 138.
@@ -1751,29 +1755,29 @@ Overfull \hbox (0.37213pt too wide) in paragraph at lines 218--220
  []
 
 [36]
-<img/eeannihilation.png, id=594, 585.68813pt x 418.56375pt>
+<img/eeannihilation.png, id=600, 585.68813pt x 418.56375pt>
 File: img/eeannihilation.png Graphic file (type png)
 <use img/eeannihilation.png>
 Package pdftex.def Info: img/eeannihilation.png  used on input line 239.
 (pdftex.def)             Requested size: 332.99774pt x 237.98984pt.
  [37 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/eeannihilation.png>] [38]
-<img/freeel.png, id=617, 689.57625pt x 504.38437pt>
+<img/freeel.png, id=623, 689.57625pt x 504.38437pt>
 File: img/freeel.png Graphic file (type png)
 <use img/freeel.png>
 Package pdftex.def Info: img/freeel.png  used on input line 338.
 (pdftex.def)             Requested size: 332.99774pt x 243.57173pt.
  [39] [40 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/freeel.png>] [41]
-<img/collisionlessdm.png, id=650, 579.66562pt x 470.75874pt>
+<img/collisionlessdm.png, id=656, 579.66562pt x 470.75874pt>
 File: img/collisionlessdm.png Graphic file (type png)
 <use img/collisionlessdm.png>
 Package pdftex.def Info: img/collisionlessdm.png  used on input line 412.
 (pdftex.def)             Requested size: 166.49887pt x 135.21638pt.
-<img/monddm.png, id=651, 294.60063pt x 254.45062pt>
+<img/monddm.png, id=657, 294.60063pt x 254.45062pt>
 File: img/monddm.png Graphic file (type png)
 <use img/monddm.png>
 Package pdftex.def Info: img/monddm.png  used on input line 413.
 (pdftex.def)             Requested size: 166.49887pt x 143.80757pt.
-<img/collisionlessevidence.png, id=653, 621.82312pt x 500.87125pt>
+<img/collisionlessevidence.png, id=659, 621.82312pt x 500.87125pt>
 File: img/collisionlessevidence.png Graphic file (type png)
 <use img/collisionlessevidence.png>
 Package pdftex.def Info: img/collisionlessevidence.png  used on input line 420.
@@ -1788,13 +1792,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--446
  []
 
 [43 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/collisionlessevidence.png>]
-<img/dmstructureform.png, id=673, 596.72937pt x 411.5375pt>
+<img/dmstructureform.png, id=679, 596.72937pt x 411.5375pt>
 File: img/dmstructureform.png Graphic file (type png)
 <use img/dmstructureform.png>
 Package pdftex.def Info: img/dmstructureform.png  used on input line 471.
 (pdftex.def)             Requested size: 222.00226pt x 153.10167pt.
  [44 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/dmstructureform.png>] [45] [46]
-<img/freezeout.png, id=720, 619.81563pt x 418.06187pt>
+<img/freezeout.png, id=726, 619.81563pt x 418.06187pt>
 File: img/freezeout.png Graphic file (type png)
 <use img/freezeout.png>
 Package pdftex.def Info: img/freezeout.png  used on input line 591.
@@ -1804,7 +1808,7 @@ Package pdftex.def Info: img/freezeout.png  used on input line 591.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47]
-<img/bbn.png, id=738, 695.59875pt x 494.84875pt>
+<img/bbn.png, id=744, 695.59875pt x 494.84875pt>
 File: img/bbn.png Graphic file (type png)
 <use img/bbn.png>
 Package pdftex.def Info: img/bbn.png  used on input line 612.
@@ -1814,7 +1818,7 @@ Package pdftex.def Info: img/bbn.png  used on input line 612.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [48 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/freezeout.png>] [49 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/bbn.png>] [50] [51]
-<img/lightelements.png, id=793, 536.50438pt x 424.08438pt>
+<img/lightelements.png, id=799, 536.50438pt x 424.08438pt>
 File: img/lightelements.png Graphic file (type png)
 <use img/lightelements.png>
 Package pdftex.def Info: img/lightelements.png  used on input line 734.
@@ -1829,13 +1833,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []$\OML/zplm/m/it/9 E \OMS/zplm/m/n/9 ^^X \OT1/pplx/m/n/9 10[] []$
  []
 
-<img/cmb.jpg, id=796, 4111.36pt x 2055.68pt>
+<img/cmb.jpg, id=802, 4111.36pt x 2055.68pt>
 File: img/cmb.jpg Graphic file (type jpg)
 <use img/cmb.jpg>
 Package pdftex.def Info: img/cmb.jpg  used on input line 751.
 (pdftex.def)             Requested size: 258.99887pt x 129.48343pt.
 [52 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/lightelements.png>] [53 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/cmb.jpg>]
-<img/cmbtempcont.png, id=821, 612.2875pt x 441.65pt>
+<img/cmbtempcont.png, id=827, 612.2875pt x 441.65pt>
 File: img/cmbtempcont.png Graphic file (type png)
 <use img/cmbtempcont.png>
 Package pdftex.def Info: img/cmbtempcont.png  used on input line 812.
@@ -1856,7 +1860,7 @@ Chapter 6.
 
 
 ] [65]
-<img/lumdist.png, id=952, 419.06563pt x 315.1775pt>
+<img/lumdist.png, id=958, 419.06563pt x 315.1775pt>
 File: img/lumdist.png Graphic file (type png)
 <use img/lumdist.png>
 Package pdftex.def Info: img/lumdist.png  used on input line 70.
@@ -1866,13 +1870,13 @@ Package pdftex.def Info: img/lumdist.png  used on input line 70.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66] [67 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/lumdist.png>] [68] [69] [70] [71] [72]
-<img/hp.png, id=1038, 819.06pt x 416.05438pt>
+<img/hp.png, id=1044, 819.06pt x 416.05438pt>
 File: img/hp.png Graphic file (type png)
 <use img/hp.png>
 Package pdftex.def Info: img/hp.png  used on input line 337.
 (pdftex.def)             Requested size: 296.00113pt x 150.35716pt.
  [73 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/hp.png>]
-<img/hpinflation.png, id=1053, 605.26125pt x 479.29062pt>
+<img/hpinflation.png, id=1059, 605.26125pt x 479.29062pt>
 File: img/hpinflation.png Graphic file (type png)
 <use img/hpinflation.png>
 Package pdftex.def Info: img/hpinflation.png  used on input line 405.
@@ -1885,12 +1889,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
  [75 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/hpinflation.png>]
-<img/inflationscales.png, id=1080, 534.99875pt x 272.51813pt>
+<img/inflationscales.png, id=1086, 534.99875pt x 272.51813pt>
 File: img/inflationscales.png Graphic file (type png)
 <use img/inflationscales.png>
 Package pdftex.def Info: img/inflationscales.png  used on input line 430.
 (pdftex.def)             Requested size: 277.5pt x 141.35678pt.
-<img/guthinflation.jpg, id=1086, 709.65125pt x 406.51875pt>
+<img/guthinflation.jpg, id=1092, 709.65125pt x 406.51875pt>
 File: img/guthinflation.jpg Graphic file (type jpg)
 <use img/guthinflation.jpg>
 Package pdftex.def Info: img/guthinflation.jpg  used on input line 445.
@@ -1900,7 +1904,7 @@ Package pdftex.def Info: img/guthinflation.jpg  used on input line 445.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [76 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/inflationscales.png>]
-<img/slowroll.png, id=1102, 504.38437pt x 288.07625pt>
+<img/slowroll.png, id=1108, 504.38437pt x 288.07625pt>
 File: img/slowroll.png Graphic file (type png)
 <use img/slowroll.png>
 Package pdftex.def Info: img/slowroll.png  used on input line 453.
@@ -1927,7 +1931,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
  (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.tex
 Chapter 7.
-<img/blackbody.pdf, id=1200, 462.52798pt x 346.89601pt>
+<img/blackbody.pdf, id=1206, 462.52798pt x 346.89601pt>
 File: img/blackbody.pdf Graphic file (type pdf)
 <use img/blackbody.pdf>
 Package pdftex.def Info: img/blackbody.pdf  used on input line 38.
@@ -1943,12 +1947,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `chapters/about.aux'.
 
  (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.tex
-<img/privinsta.png, id=1266, 411.5375pt x 411.5375pt>
+<img/privinsta.png, id=1272, 411.5375pt x 411.5375pt>
 File: img/privinsta.png Graphic file (type png)
 <use img/privinsta.png>
 Package pdftex.def Info: img/privinsta.png  used on input line 8.
 (pdftex.def)             Requested size: 111.00113pt x 110.9973pt.
-<img/umbrasolisQR.png, id=1267, 411.5375pt x 411.5375pt>
+<img/umbrasolisQR.png, id=1273, 411.5375pt x 411.5375pt>
 File: img/umbrasolisQR.png Graphic file (type png)
 <use img/umbrasolisQR.png>
 Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
@@ -1971,18 +1975,18 @@ Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
 
 ]) [94] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux)) ) 
 Here is how much of TeX's memory you used:
- 56663 strings out of 476025
- 1311918 string characters out of 5790017
- 2035238 words of memory out of 5000000
- 75338 multiletter control sequences out of 15000+600000
- 663620 words of font info for 235 fonts, out of 8000000 for 9000
+ 56666 strings out of 476025
+ 1311962 string characters out of 5790017
+ 2035269 words of memory out of 5000000
+ 75340 multiletter control sequences out of 15000+600000
+ 665419 words of font info for 237 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,23n,121p,10679b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10323669 bytes).
+Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10325564 bytes).
 PDF statistics:
- 1655 PDF objects out of 1728 (max. 8388607)
- 1416 compressed objects within 15 object streams
+ 1661 PDF objects out of 1728 (max. 8388607)
+ 1422 compressed objects within 15 object streams
  648 named destinations out of 1000 (max. 500000)
- 30859 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 31371 words of extra memory for PDF output out of 35830 (max. 10000000)
 
