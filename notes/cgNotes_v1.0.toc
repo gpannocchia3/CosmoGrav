@@ -50,13 +50,13 @@
 \contentsline {chapter}{\numberline {6}{Inflation}}{65}{chapter.6}%
 \contentsline {section}{\numberline {6.1}{Luminosity Distance}}{65}{section.6.1}%
 \contentsline {section}{\numberline {6.2}{Second Order Hubble Law}}{67}{section.6.2}%
-\contentsline {section}{\numberline {6.3}{Angular diameter distance}}{68}{section.6.3}%
+\contentsline {section}{\numberline {6.3}{Angular diameter distance}}{69}{section.6.3}%
 \contentsline {section}{\numberline {6.4}{Particle Horizon}}{70}{section.6.4}%
 \contentsline {subsubsection}{{Event Horizon}}{70}{subsubsection*.26}%
 \contentsline {section}{\numberline {6.5}{Flatness Problem}}{71}{section.6.5}%
 \contentsline {section}{\numberline {6.6}{Horizon Problem}}{72}{section.6.6}%
 \contentsline {section}{\numberline {6.7}{Hubble Radius}}{75}{section.6.7}%
-\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{78}{section.6.8}%
+\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{77}{section.6.8}%
 \contentsline {part}{\numberline {i}{Appendix}}{83}{part.1}%
 \contentsline {chapter}{\numberline {7}{Appendix}}{85}{chapter.7}%
 \contentsline {chapter}{Bibliography}{93}{section*.35}%
