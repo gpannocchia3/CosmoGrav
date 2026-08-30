@@ -2,7 +2,7 @@
 
 \chapter{Thermal History of the Universe} \label{ch:v}
 
-For a significant part of this chapter, I'll be mainly following \cite{Baumann_2022}. Please note that for some reason I cannot fathom, Baumann is using the metric signature $(+,-,-,-)$, which is the exact opposite of what we've been using in the previous chapters.
+For a significant part of this chapter, I'll be following \cite{Baumann_2022}. Please note that for some reason I cannot fathom, Baumann is using the metric signature $(+,-,-,-)$, which is the exact opposite of what we've been using in the previous chapters.
 \par The key to understanding the thermal history of the Universe is the comparison between the rate of interactions $\Gamma$ and the rate of expansion $H$. When $\Gamma \gg H$, then the time scale of particle interactions is much smaller than the characteristic expansion time scale
 \begin{equation}
     t_{c} = \frac{1}{\Gamma} \ll t_{H} = \frac{1}{H}
@@ -104,7 +104,7 @@ As expected, massive particles are exponentially rare at low temperatures, $(k)T
 Let $T$ be the temperature of the photon gas. The total radiation density is the sum over the energy densities of all relativistic species
 
 \begin{equation}
-    \rho_{r} = \sum_{i}\frac{g_{i}}{2\pi^{2}}T_{i}^{4}J_{\pm}(x_{i}=\frac{m_{i}}{T_{i}}) := \frac{\pi^{2}}{30}g_{\star}T_{\gamma}^{4}
+    \rho_{r} = \sum_{i}\frac{g_{i}}{2\pi^{2}}T_{i}^{4}J_{\pm}\left(x_{i}=\frac{m_{i}}{T_{i}}\right) := \frac{\pi^{2}}{30}g_{\star}T_{\gamma}^{4}
 \end{equation}
 where $g_{\star}$ is the \emph{effective number of relativistic degrees of freedom} at the temperature $T$, assumed identical for all the different relativistic species. The definition for the effective number of relativistic degrees of freedom is the following
 \begin{equation}
@@ -143,7 +143,7 @@ from the relativistic species that are \emph{not} in thermal equilibrium with th
 \subsection{Conservation of Entropy}
 
 In the field of cosmology, entropy is often more informative than energy. According to the second law of thermodynamics, the total entropy of the Universe only increases or stays constant. Since there are far more photons than baryons in the Universe, the entropy of the Universe is dominated by the entropy of the photon bath (at least as long as the Universe is sufficiently uniform). Any entropy production from non-equilibrium processes is therefore insignificant relative to the total entropy. 
-\par To a good approximation we can therefore treat the expansion of the Universe as \emph{adiabatic}, so that the total entropy stays constant even beyond equilibrium. Consider
+\par To a good approximation we can treat the expansion of the Universe as \emph{adiabatic}, so that the total entropy stays constant even beyond equilibrium. Consider
 \begin{equation}
     T\diff{S} = \diff{U} + p\diff{V}
 \end{equation}
@@ -495,7 +495,7 @@ The interested reader might refer also to \cite{cirelli2025darkmatter} and \cite
 \end{equation}
 We can define $x_{FO} = m_{\chi}/T_{FO}$ (with $\chi$ we're referring to WIMPS) so that 
 \begin{equation}
-    (m_{\chi}T_{FO})^{3/2}\exp\left(m_{\chi}/T_{FO}\right)\sigma v \sim \frac{T_{FO}^{2}}{M_{Pl}}
+    (m_{\chi}T_{FO})^{3/2}\exp\left(-m_{\chi}/T_{FO}\right)\sigma v \sim \frac{T_{FO}^{2}}{M_{Pl}}
 \end{equation}
 which we can promptly rewrite as 
 \begin{equation}
@@ -582,8 +582,8 @@ we can rewrite (\ref{eq:Boltmann-eq}) as
 \end{equation}
 The right-hand side of last equation contains a factor describing the interaction efficiency, $\Gamma/H $, and a factor characterizing the deviation from equilibrium, the one within parentheses. We can define two regimes:
 \begin{enumerate}
-    \item $\Gamma/H \gg 1$: The system is always driven towards its equilibrium configuration. As long as the interaction rates are large, the system quickly relaxes to a steady state where the r.h.s. vanishes and the particles assume their equilibrium abundances;
-    \item $\Gamma/H \ll 1$: The r.h.s. gets suppressed and the comoving density of particles approaches a constant relic density (\emph{freeze-out}).
+    \item $\Gamma/H \gg 1$: The system is always driven towards its equilibrium configuration. As long as the interaction rates are large, the system quickly relaxes to a steady state where the right hand side vanishes and the particles assume their equilibrium abundances;
+    \item $\Gamma/H \ll 1$: The right hand side gets suppressed and the comoving density of particles approaches a constant relic density (\emph{freeze-out}).
 \end{enumerate}
 Both scenarios are pictorially represented in Fig.\ref{fgr:freezeout}.
 \begin{figure}[h!]
@@ -676,7 +676,7 @@ Solving (\ref{eq:neutronfo}) numerically, we find
 \begin{equation}
     \Gamma = \frac{255}{\tau_{n}}\frac{12+6x+x^{2}}{x^{5}} \unit{s}^{-1}
 \end{equation}
-where $\tau_{n} = 878.4 \pm 0.5 \unit{s}$ \cite{ParticleDataGroup:2024cfk}. It is interesting to point out that the conversion time $\Gamma^{-1}$ is comparable to the age of the Universe at the considered energy-scale, while at later times $T\propto t^{-1/2}$, and $\Gamma \propto T^{3}$. The neutron-proton conversion time becomes longer than the age of the Universe. Therefore we get the freeze-out.
+where $\tau_{n} = 878.4 \pm 0.5 \unit{s}$ \cite{ParticleDataGroup:2024cfk}. It is interesting to point out that the conversion time $\Gamma^{-1}$ is comparable to the age of the Universe at the considered energy-scale, while at later times $T\propto t^{-1/2}$, and $\Gamma \propto T^{3}$, and thus the neutron-proton conversion time becomes longer than the age of the Universe. Hence the freeze-out.
 \par For temperatures below $0.2\unit{MeV}$ the finite lifetime of the neutron becomes important. To include neutron decay in our computation we simply multiply the freeze-out abundance by an exponential decay factor
 \begin{equation}
     X_{n}(t) = X_{n}^{\infty}e^{-t/\tau_{n}}
@@ -693,11 +693,11 @@ which motivates the abrupt drop in the low temperature regions of Fig.\ref{fgr:b
     \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Be}{7}{4} + \gamma \\
     \element{He}{3}{2} + \element{He}{4}{2} &\to \element{Li}{7}{3} + \gamma
 \end{align*}
-but it's essentially the very first reaction that determines the timescale of this whole machination we have just penned. Incidentally, this is also a quite significant problem. Since Deuterium is formed directly from neutrons and protons, it can follow its equilibrium abundance as long as enough free neutrons are available. However, since the Deuterium binding energy is rather small, the Deuterium abundance becomes large rather late (at $T < 100 \unit{keV}$) because it is very prone to being photodisintegrated.
+but it's essentially the very first reaction that determines the timescale of this whole machination we have just penned. Incidentally, this is also a quite significant problem. Since Deuterium is formed directly from neutrons and protons, it can follow its equilibrium abundance as long as enough free neutrons are available. However, since Deuterium's binding energy is rather small, the Deuterium abundance becomes large rather late (at $T < 100 \unit{keV}$) because it is very prone to being photodisintegrated.
 \par So, although heavier nuclei have larger binding energies and hence would have larger equilibrium abundances, they cannot be formed until sufficient Deuterium has become available. This is the \emph{Deuterium bottleneck}. Only when there is enough Deuterium, can Helium be produced.
 \par Consider now the chemical balance equation at equilibrium 
 \begin{equation}
-    \left(\frac{n_{\text{D}}}{n_{n}n_{o}}\right)_{\text{eq}} = \frac{3}{4}\left(\frac{m_{\text{D}}}{m_{p}m_{n}}\frac{2\pi}{T}\right)^{3/2}\exp(B_{\text{D}}/T)
+    \left(\frac{n_{\text{D}}}{n_{n}n_{p}}\right)_{\text{eq}} = \frac{3}{4}\left(\frac{m_{\text{D}}}{m_{p}m_{n}}\frac{2\pi}{T}\right)^{3/2}\exp(B_{\text{D}}/T)
 \end{equation}
 where $B_{\text{D}}$ is Deuterium's binding energy $B_{\text{D}} = m_{n}+m_{p}-m_{\text{D}} = 2.22\unit{MeV}$.
 \par We then use $n_{n} = X_{n}n_{b}$ which, thanks to the baryon to photon ratio, is also equal to
@@ -717,7 +717,7 @@ If we turn the temperature into a time, we find that the Deuterium bottleneck is
 \begin{equation}
     \frac{n_{n}}{n_{b}} = \frac{n_{n}}{n_{p}+n_{n}} = X_{n} \approx 0.11
 \end{equation}
-Since the binding energy of Helium is larger than that of Deuterium, the Boltzmann factor $\exp(B/T)$ favours Helium over Deuterium. Indeed, in Fig.\ref{fgr:bbn} we see that Helium is produced almost immediately after Deuterium. Virtually all remaining neutrons at $t \sim t_{\text{nuc}}\approx 250\unit{s}$ then are processed into $\element{He}{4}{}$. Since two neutrons go into one nucleus of $\element{He}{4}{}$, the final $\element{He}{4}{}$ abundance is equal to half of the neutron abundance at $t_{\text{nuc}}$, so $n_{\text{He}} = n_{n}/2$. The fractional abundance of Helium will thus be 
+Since the binding energy of Helium is larger than that of Deuterium, the Boltzmann factor $\exp(B/T)$ favours Helium over Deuterium. Indeed, in Fig.\ref{fgr:bbn} we see that Helium is produced almost immediately after Deuterium. Virtually all remaining neutrons at $t \sim t_{\text{nuc}}\approx 250\unit{s}$ are processed into $\element{He}{4}{}$. Since two neutrons go into one nucleus of $\element{He}{4}{}$, the final $\element{He}{4}{}$ abundance is equal to half of the neutron abundance at $t_{\text{nuc}}$, so $n_{\text{He}} = n_{n}/2$. The fractional abundance of Helium will thus be 
 \begin{equation}
     Y_{p} = \frac{4n_{\text{He}}}{n_{\text{H}}} = \frac{2n_{n}}{n_{\text{H}}} = \frac{2X_{n}(t_{\text{nuc}})}{1-X_{n}(t_{\text{nuc}})} \approx 0.25
 \end{equation}
@@ -739,7 +739,7 @@ To determine the abundances of other light elements, the coupled Boltzmann equat
 
 \section{Cosmic Microwave Background}
 
-When we refer to the CMB (Cosmic Microwave Background), we're referring to a diffused cosmic background of photons, what remains of the photon fluid after the time of decoupling. \marginpar{The CMB has quite a few interesting properties:
+When we refer to the CMB (Cosmic Microwave Background), we're referring to a diffused cosmic background of photons, that is what remains of the photon fluid after the time of decoupling. \marginpar{The CMB has quite a few interesting properties:
 \begin{itemize}
     \item Almost perfect blackbody behavior (check Appendix B if you're not familiar);
     \item A temperature of $T \approx 2.72\unit{K}$ and minimal fluctuations;
@@ -784,7 +784,7 @@ where the former relation holds also for a complex-valued function. With these c
 \begin{equation}
     C(\theta) = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}\rangle Y_{lm}Y_{l'm'} = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}^{*}\rangle Y_{lm}Y_{l'm'}^{*}
 \end{equation}
-If we assume isotropy (hence invariance under angular traslations), patterns associated to different $l$ are independent, hence
+If we assume isotropy (hence invariance under angular traslations), patterns associated to different $l$ are uncorrelated, hence
 \begin{equation}
     \langle a_{lm}a_{l'm'}^{*}\rangle = C_{l}\delta_{ll'}\delta_{mm'}
 \end{equation}
@@ -805,7 +805,7 @@ which allows us to conclude \marginpar{Usually, you also end up exploiting Wiene
 \end{equation}
 Here $C_{l}$ is the factor that quantifies how much correlated is the CMB on the angular scale $l$. However, what you will usually find in plots is actually
 \begin{equation}
-    \Delta_{T}^{2} = \Theta^{2} = \frac{l(l+1)}{2\pi}C_{l}T_{0}^{2}
+    \Delta_{T}^{2} = \frac{l(l+1)}{2\pi}C_{l}
 \end{equation}
 \begin{figure}[h!]
     \centering 
@@ -878,15 +878,15 @@ where the quantity within parentheses is usually called \emph{curvature perturba
 \end{equation}
 \par For perturbations that decay at spatial infinity, the Newtonian gauge is unique (i.e. the gauge is fixed completely). In this gauge, the physics appears rather simple since the hypersurfaces of constant time are orthogonal to the worldlines of observers at rest in the coordinates (since $B = 0$) and the induced geometry of the constant-time hypersurfaces is isotropic (since $E = 0$).
 \par In the absence of anisotropic stress, $\psi = \phi$. Note the similarity of the metric to the usual weak-field limit of GR about Minkowski space; we shall see that $\psi$ plays the role of the gravitational potential.
-\par Let's see how a photon moves in the perturbed metric, that is, let's check how its geodesics respond to the perturbation
+\par Let's see how a photon moves in the perturbed metric, that is, let's check how its geodesics respond to the perturbation \marginpar{Recall that the energy of a photon can be expressed through $E_{\gamma} = -u_{\mu}p^{\mu}$, where $u_{\mu}$ is completely determined by the request $u_{\mu}u^{\mu} = -1$. It directly follows that $E_{\gamma}\approx a(1+\psi)p^{0}$.}
 \begin{equation}
     \der{p^{\mu}}{\lambda} = -\christoffel{\alpha}{\beta}{\mu}p^{\alpha}p^{\beta}
 \end{equation}
-which gives \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where the derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
+which gives
 \begin{equation}
-    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H}-\phi' -\hat{p}_{i}\partial_{i}\psi
+    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H} +\phi' -\hat{p}_{i}\partial_{i}\psi
 \end{equation}
-which is essentially a composition of the standard cosmological redshift (the Hubble term), a small perturbation on the redshift ($\phi'$), and the gravitational redshift. Ultimately we find 
+which is essentially a composition of the standard cosmological redshift (the Hubble term), a small perturbation on the redshift ($\phi'$), and the gravitational redshift. Ultimately we find \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where the derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
 \begin{equation}
     \boxed{
         \der{\ln(aE_{\gamma})}{\eta} = -\der{\psi}{\eta} + \phi'+\psi'
@@ -901,8 +901,7 @@ which is immediately integrated
     \ln\left(\frac{(aE_{\gamma})_{0}}{(aE_{\gamma})_{LS}}\right) = -(\psi_{0}-\psi_{LS}) + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta}
 \end{equation}
 This equation essentially describes how the energy of a photon has changed along a geodesic from the last scattering up until today. We arbitrarily set the potential $\psi_{0} = 0$, while $\psi_{LS}$ represents the overdensities of the oscillating fluid at last scattering.
-\par On the other hand, the integral term describes the behavior of fluctuations in the cosmological fluid based on how they're interacting with the photons. This is called \emph{Integrated Sachs-Wolfe effect} \cite{1967ApJ...147...73S}: It regulates how photons are acquiring/losing energy while passing through spatially and temporally changing gravitational potentials, thus introducing a secondary anisotropy in the CMB spectrum.
-\par Since 
+\par On the other hand, the integral term describes the behavior of fluctuations in the cosmological fluid based on how they're interacting with the photons. This is called \emph{Integrated Sachs-Wolfe effect} \cite{1967ApJ...147...73S}: It regulates how photons are acquiring/losing energy while passing through spatially and temporally changing gravitational potentials, thus introducing a secondary anisotropy in the CMB spectrum. Since 
 \begin{equation}
     aE \propto aT \propto a(\bar{T}+\delta T) \propto a\bar{T}\left(1+\frac{\delta T}{\bar{T}}\right)
 \end{equation}
@@ -921,7 +920,7 @@ where the last term $\hat{n}\cdot\vec{v}$ takes into account the small oscillati
     }
     \label{eq:temperaturecontrast-sw}
 \end{equation}
-The term within square parentheses is the \emph{Sachs-Wolfe effect}, which captures the effects stemming from photons falling into gravitational potentials at last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. 
+The term within square parentheses is the \emph{Sachs-Wolfe effect}, caused by gravitational redshift occurring at the surface of last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. The effect is not constant across the sky due to differences in the matter/energy density at the time of last scattering. 
 \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Sachs-Wolfe Effect,

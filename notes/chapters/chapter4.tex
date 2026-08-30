@@ -639,7 +639,7 @@ If the Universe contains different components with different values of $w$, then
 \par Now that we have a relation between $\rho$ and $a$ we can set to solve the Friedmann equation (\ref{eq:friedmann2}) in the special case of a spatially flat ($k = 0$) and single-component Universe.
 Plugging in (\ref{eq:density_scalefactor}), we find 
 \begin{equation}
-    \dot{a}^{2} = \frac{8\pi G \rho_{0}}{c^{2}}\frac{a^{-(1+3w)}}{a_{0}^{-(1+3w)}}
+    \dot{a}^{2} = \frac{8\pi G \rho_{0}}{3}\frac{a^{-(1+3w)}}{a_{0}^{-(1+3w)}}
 \end{equation}
 which can be solved explicitly \marginpar{Also note that $\dot{a} \propto (\rho a^{2})^{1/2}$ which is also proportional to $\propto a^{-(1+3w)/2}$.\\ Hence, a fluid with $w = -1/3$ has constant expansion rate $\dot{a}$.}
 \begin{equation}
@@ -721,7 +721,7 @@ and define the pressure for vacuum, which turns out to be
     p_{\Lambda} =  -\frac{\Lambda}{8\pi G} = -\rho_{\Lambda}
     \label{eq:vacuum_p}
 \end{equation}
-So the vacuum, or Cosmological Constant, would behave like a fluid with $w = -1$. We can see what that implies if we plug this last result into Freedman's equations
+So the vacuum, or Cosmological Constant, would behave like a fluid with $w = -1$. We can see what that implies if we plug this last result into Friedmann's equations
 \begin{align*}
     3\ddot{a} &= -4\pi Ga(\tilde{\rho}+3\tilde{p})\\
     a\ddot{a} + 2\dot{a}^{2} + 2k &= 4\pi G a^{2}(\tilde{\rho}-\tilde{p})
@@ -770,7 +770,7 @@ and so Hubble's constant $H = \sqrt{\Lambda/3}$. This implies
 
 \subsection{Critical Density}
 
-Let's write again Friendmann's second equation
+Let's write again Friedmann's second equation
 \begin{equation}
     \left(\frac{\dot{a}}{a}\right)^{2} = \frac{8\pi G}{3}\rho -\frac{k}{a^{2}}
 \end{equation}
@@ -781,7 +781,7 @@ and define the \emph{critical energy density} as the energy density the Universe
 \end{equation}
 \par This quantity, that will generally change with time, is called the critical density because the Friedmann equation (\ref{eq:friedmann2}) can be written as
 \begin{equation}
-    \Omega - 1 = \frac{k}{H^{2}a^{2}}
+    \Omega - 1 = \frac{k}{H^{2}a^{2}} \quad \Omega = \frac{\rho}{\rho_{c}}
     \label{eq:densityparam_eq}
 \end{equation}
 that univocally determinates the sign of $k$ depending on whether $\Omega$ is greater then, equal to, or less than one.
@@ -800,30 +800,30 @@ or, in terms of the density parameter(s), we could also write
 \begin{equation}
     \rho = \rho_{C}\sum_{i}\Omega_{i}
 \end{equation}
-\par In these variables, the Friedmann equation (\ref{eq:friedmann2}) can be written
+\par In these variables, the Friedmann equation (\ref{eq:friedmann2}) can be written as
 \begin{equation}
     H^{2} = \frac{8\pi G}{3}\sum_{i(c)}\rho_{i}
     \label{eq:friedmann_alt}
 \end{equation}
 where the notation $\sum_{i(c)}$ indicates that we sum not only over all the actual components of energy density $\rho_{i}$, but also on the contribution of spatial curvature, which we define as
 \begin{equation}
-    \Omega_{0} = -\frac{k}{a^{2}H^{2}}
+    \Omega_{k} = -\frac{k}{a^{2}H^{2}}
     \label{eq:spatial_dp}
 \end{equation}
 \par Dividing both sides by $H^{2}$ yields a shockingly simple equation
 \begin{equation}
-    1 = \sum_{i(c)}\Omega_{i} = \Omega_{0} + \sum_{i}\Omega_{i}
+    1 = \sum_{i(c)}\Omega_{i} = \Omega_{k} + \sum_{i}\Omega_{i}
 \end{equation}
 thus producing a consistency relation that must hold at \emph{any} time.
 
 \subsubsection{Acceleration Parameter}
 
-A few pages ago, back when we first proved Hubble-Le Maître's law, we've introduced, although barely, the \emph{deceleration parameter} $q$, which we now define as 
+A few pages ago, back when we first proved Hubble-Le Maître's law, we've introduced the \emph{deceleration parameter} $q$, which we now properly define 
 \begin{equation}
     q = -\frac{\ddot{a}a}{\dot{a}^{2}}
     \label{eq:decelerationparam}
 \end{equation}
-I don't think I will surprise any of you saying that if $q < 0$, then the Universe is accelerating, and if it's $q > 0$, then it is decelerating. Not being surprised was what people back then expected when they first defined this quantity. They were so sure of their results that they even named it \emph{deceleration parameter} rather than acceleration parameter. Shortly after, they realized they should have probably changed its name.
+I don't think I will surprise any of you saying that if $q < 0$, then the Universe is accelerating, and if it's $q > 0$, then it is decelerating. Not being surprised was what people back then expected when they first defined this quantity. They were so sure of their results that they even named it \emph{deceleration parameter} rather than acceleration parameter. Shortly after naming it, they realized they should have probably changed its name.
 \par Recall (\ref{eq:friedmann1}) with a perfect fluid EoS
 \begin{equation}
     \frac{\ddot{a}}{a} = -\frac{4\pi G}{3} \rho(1+3w)
@@ -834,7 +834,7 @@ This means that the "deceleration" parameter can be written as
 \end{equation}
 or, equivalently, we can plug in the critical density and density parameter to find 
 \begin{equation}
-    q = \frac{\Omega}{2}(1+3w) \implies q = \sum_{i}\frac{\Omega_{i}}{2}(1+3w_{i})
+    2q = \Omega(1+3w) \implies 2q = \sum_{i}\Omega_{i}(1+3w_{i})
 \end{equation}
 which can be studied for all the various components our Universe could feature
 \begin{itemize}
@@ -881,7 +881,7 @@ then the average energy density of the vacuum would be as high as $\langle \rho 
 
 \section{Dynamic Age of the Universe}
 
-The actual model for the Universe, sometimes known as Benchmark model, is a $\Lambda$CDM model, where the $\Lambda$ obviously stands for Cosmological Constant, while CDM stands for \emph{Cold Dark Matter}.
+The actual model for the Universe, sometimes known as Benchmark model, is a $\Lambda$CDM model, where the $\Lambda$ stands for the Cosmological Constant, while CDM stands for \emph{Cold Dark Matter}.
 \par We've already seen that we can write the total energy density as
 \begin{equation}
     \rho = \rho_{m} + \rho_{r} + \rho_{\Lambda}
@@ -929,7 +929,7 @@ which represents the \emph{dynamical age of the Universe}. Sometimes it might be
 \begin{equation}
     t_{0}^{E-dS} = \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x\cdot x^{-3/2}} = \frac{2}{3H_{0}} \approx 7.0h^{-1}\unit{Gyr}
 \end{equation}
-which is smaller than a Hubble time $H_{0}^{-1}$. The dynamical time produced by a E-dS Universe is way too short: It's in tension with the estimated age of some structures and/or unstable chemical elements which we can still observe (e.g., radionuclids with decay time of about $10-15\unit{Gyr}$). It is also in high tension with the estimated age of some old white dwarves and with the estimated age we've obtained from the temperature fluctuations of the CMB.
+which is smaller than a Hubble time $H_{0}^{-1}$. The dynamical time produced by a E-dS Universe is too short: It's in tension with the estimated age of some structures and/or unstable chemical elements which we can still observe (e.g., radionuclids with decay time of about $10-15\unit{Gyr}$). It is also in high tension with the estimated age of some old white dwarves and with the estimated age we've obtained from the temperature fluctuations of the CMB.
 \par For a realistic $\Lambda$CDM model ($k=0$, $\Omega_{r,0}\sim 0$, and $\Omega_{\Lambda,0}+\Omega_{m,0}\sim 1$), the dynamical time is evaluated to
 \begin{align*}
     t_{0} &\approx \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x(\Omega_{\Lambda,0}+\Omega_{m,0}x^{-3})^{1/2}}\\
