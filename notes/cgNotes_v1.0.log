@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  30 AUG 2026 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  31 AUG 2026 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1845,7 +1845,7 @@ File: img/cmbtempcont.png Graphic file (type png)
 Package pdftex.def Info: img/cmbtempcont.png  used on input line 812.
 (pdftex.def)             Requested size: 258.99887pt x 186.81932pt.
  [54 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/cmbtempcont.png>] [55] [56] [57] [58] [59]
-LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 1015.
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 1038.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ) [60] [61] [62]) [63]
@@ -1860,7 +1860,7 @@ Chapter 6.
 
 
 ] [65]
-<img/lumdist.png, id=958, 419.06563pt x 315.1775pt>
+<img/lumdist.png, id=965, 419.06563pt x 315.1775pt>
 File: img/lumdist.png Graphic file (type png)
 <use img/lumdist.png>
 Package pdftex.def Info: img/lumdist.png  used on input line 70.
@@ -1870,13 +1870,13 @@ Package pdftex.def Info: img/lumdist.png  used on input line 70.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66] [67 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/lumdist.png>] [68] [69] [70] [71] [72]
-<img/hp.png, id=1044, 819.06pt x 416.05438pt>
+<img/hp.png, id=1051, 819.06pt x 416.05438pt>
 File: img/hp.png Graphic file (type png)
 <use img/hp.png>
 Package pdftex.def Info: img/hp.png  used on input line 337.
 (pdftex.def)             Requested size: 296.00113pt x 150.35716pt.
  [73 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/hp.png>]
-<img/hpinflation.png, id=1059, 605.26125pt x 479.29062pt>
+<img/hpinflation.png, id=1066, 605.26125pt x 479.29062pt>
 File: img/hpinflation.png Graphic file (type png)
 <use img/hpinflation.png>
 Package pdftex.def Info: img/hpinflation.png  used on input line 405.
@@ -1889,12 +1889,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
  [75 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/hpinflation.png>]
-<img/inflationscales.png, id=1086, 534.99875pt x 272.51813pt>
+<img/inflationscales.png, id=1093, 534.99875pt x 272.51813pt>
 File: img/inflationscales.png Graphic file (type png)
 <use img/inflationscales.png>
 Package pdftex.def Info: img/inflationscales.png  used on input line 430.
 (pdftex.def)             Requested size: 277.5pt x 141.35678pt.
-<img/guthinflation.jpg, id=1092, 709.65125pt x 406.51875pt>
+<img/guthinflation.jpg, id=1099, 709.65125pt x 406.51875pt>
 File: img/guthinflation.jpg Graphic file (type jpg)
 <use img/guthinflation.jpg>
 Package pdftex.def Info: img/guthinflation.jpg  used on input line 445.
@@ -1904,7 +1904,7 @@ Package pdftex.def Info: img/guthinflation.jpg  used on input line 445.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [76 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/inflationscales.png>]
-<img/slowroll.png, id=1108, 504.38437pt x 288.07625pt>
+<img/slowroll.png, id=1115, 504.38437pt x 288.07625pt>
 File: img/slowroll.png Graphic file (type png)
 <use img/slowroll.png>
 Package pdftex.def Info: img/slowroll.png  used on input line 453.
@@ -1931,7 +1931,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
  (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.tex
 Chapter 7.
-<img/blackbody.pdf, id=1206, 462.52798pt x 346.89601pt>
+<img/blackbody.pdf, id=1213, 462.52798pt x 346.89601pt>
 File: img/blackbody.pdf Graphic file (type pdf)
 <use img/blackbody.pdf>
 Package pdftex.def Info: img/blackbody.pdf  used on input line 38.
@@ -1947,12 +1947,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `chapters/about.aux'.
 
  (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.tex
-<img/privinsta.png, id=1272, 411.5375pt x 411.5375pt>
+<img/privinsta.png, id=1279, 411.5375pt x 411.5375pt>
 File: img/privinsta.png Graphic file (type png)
 <use img/privinsta.png>
 Package pdftex.def Info: img/privinsta.png  used on input line 8.
 (pdftex.def)             Requested size: 111.00113pt x 110.9973pt.
-<img/umbrasolisQR.png, id=1273, 411.5375pt x 411.5375pt>
+<img/umbrasolisQR.png, id=1280, 411.5375pt x 411.5375pt>
 File: img/umbrasolisQR.png Graphic file (type png)
 <use img/umbrasolisQR.png>
 Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
@@ -1975,18 +1975,18 @@ Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
 
 ]) [94] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux)) ) 
 Here is how much of TeX's memory you used:
- 56666 strings out of 476025
- 1311962 string characters out of 5790017
- 2037269 words of memory out of 5000000
- 75340 multiletter control sequences out of 15000+600000
+ 56674 strings out of 476025
+ 1312081 string characters out of 5790017
+ 2037322 words of memory out of 5000000
+ 75341 multiletter control sequences out of 15000+600000
  665419 words of font info for 237 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,23n,121p,10679b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10325832 bytes).
+Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10328218 bytes).
 PDF statistics:
- 1661 PDF objects out of 1728 (max. 8388607)
- 1422 compressed objects within 15 object streams
- 648 named destinations out of 1000 (max. 500000)
+ 1672 PDF objects out of 1728 (max. 8388607)
+ 1433 compressed objects within 15 object streams
+ 655 named destinations out of 1000 (max. 500000)
  31371 words of extra memory for PDF output out of 35830 (max. 10000000)
 

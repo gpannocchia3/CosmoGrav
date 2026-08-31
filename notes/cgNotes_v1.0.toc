@@ -44,9 +44,9 @@
 \contentsline {section}{\numberline {5.6}{Cosmic Microwave Background}}{53}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}{Perturbation Theory}}{55}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}{Photon-Baryon Fluid Oscillations}}{60}{subsection.5.6.2}%
-\contentsline {subsubsection}{{Temporal evolution}}{60}{subsubsection*.24}%
-\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{61}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{62}{subsection.5.7.1}%
+\contentsline {subsubsection}{{Temporal evolution}}{61}{subsubsection*.24}%
+\contentsline {section}{\numberline {5.7}{Extra: Indirect Observations of DM}}{62}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}{Indirect Cosmological DM Detection}}{63}{subsection.5.7.1}%
 \contentsline {chapter}{\numberline {6}{Inflation}}{65}{chapter.6}%
 \contentsline {section}{\numberline {6.1}{Luminosity Distance}}{65}{section.6.1}%
 \contentsline {section}{\numberline {6.2}{Second Order Hubble Law}}{67}{section.6.2}%

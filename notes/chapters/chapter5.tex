@@ -927,7 +927,7 @@ The term within square parentheses is the \emph{Sachs-Wolfe effect}, caused by g
   boxed title style={size=small,colframe=blue!50!black}]
   Note that necessarily $$ \left(\frac{\delta\rho}{\rho}\right)_{LS}\cdot \psi_{LS} < 0$$ and you can also prove that cold patches in the CMB are associated to the overdensities, producing the following relation $$ \frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS} = \frac{\psi_{LS}}{3}$$
 \end{tcolorbox}
-\par We can swtich to the FT\footnote{For an alternative derivation, the interested reader can check either \href{https://cmb.wintherscoming.no/milestone4.php}{this website}, or \cite{callin2006}.} of $\Theta_{0} = \delta T/T$
+\par We can switch to the FT\footnote{For an alternative derivation, the interested reader can check either \href{https://cmb.wintherscoming.no/milestone4.php}{this website}, or \cite{callin2006}.} of $\Theta_{0} = \delta T/T$
 \begin{equation}
     \left(\frac{\delta T}{T}\right)_{\eta = \eta_{0}} = \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\hat{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
 \end{equation}
@@ -936,7 +936,7 @@ where we've defined \marginpar{Note that we're neglecting the integrated Sachs-W
     F_{LS} = \frac{\left[\frac{1}{4}\widehat{\left(\frac{\delta\rho}{\rho}\right)}(\eta_{LS}, \vec{k}) + \hat{\psi}_{LS}(\eta_{LS}, \vec{k})\right]}{R_{i}(k)} \quad G_{LS} = \frac{\hat{v}_{b}}{R_{i}(k)}
 \end{equation}
 which are (almost) the transfer functions we were talking about at the beginning of our discussion. The quantity $R_{i}(k)$ contains the initial conditions in terms of the scalar curvature, while $\chi_{LS}$ is the comoving distance of the last scattering horizon.
-\par From this we want to compute the 2-point correlation function and project it on the Legendre polynomials to obtain the power spectrum $C_{l}$. For this purpose we can exploit one of the properties of the spherical Bessel functions $j_{l}$
+\par From this we want to compute the 2-point correlation function and project it on the Legendre polynomials to obtain the power spectrum $C_{l}$. It's useful to exploit one of the properties of the spherical Bessel functions $j_{l}$
 \begin{equation}
     \exp\left(i\hat{k}\cdot\hat{n}k\chi_{LS}\right) = \sum_{l}i^{l}(2l+1)j_{l}(k\chi_{LS})P_{l}(\hat{k}\cdot\hat{n})
 \end{equation}
@@ -954,46 +954,68 @@ Applying the derivative to the spherical-Bessel expansion gives
 \end{equation}
 so that putting it in the FT of $\Theta_{0}$ yields
 \begin{equation}
-    \Theta(\hat{n}) = \sum_{l}i^{l}(2l+1)\int \Theta_{l}(k)R_{i} P_{l}(\hat{k}\cdot\hat{n})
+    \Theta(\hat{n}) = \sum_{l}i^{l}(2l+1)\int \Theta_{l}(k)R_{i} P_{l}(\hat{k}\cdot\hat{n})\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
 \end{equation}
 where 
 \begin{equation}
     \Theta_{l}(k) = F_{LS}(k)j_{l}(k\chi_{LS})-G_{LS}(k)j_{l}'(k\chi_{LS})
 \end{equation}
-But we're not quite done yet: Even if we now know how to compute $\Theta_{l}$, we still need to go to actual $C_{l}$. This corresponds to (a) take the square of $\Theta_{l}$ (since $C_{l}$ is the square of the FT coefficients), (b) multiply this with the primordial power spectrum $\Delta_{\mathcal{R}}^{2}$ coming from inflation. The correlation function will then be
+\par Recall the definition of $C(\hat{n}\cdot \hat{n}')$
 \begin{equation}
-    C(\theta) = \sum_{l}\frac{2l+1}{4\pi}\left\{4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k) \right\}P_{l}(\hat{n}\cdot \hat{n}')
+    C(\hat{n}\cdot \hat{n}') = \langle \Theta (\hat{n})\Theta(\hat{n}')\rangle
 \end{equation}
-where we recognize the power spectrum 
+where the average is over the ensemble. Now substitute the value for $\Theta(\hat{n})$ we've just found
+\begin{equation}
+    C(\hat{n}\cdot \hat{n}') = \sum_{ll'}i^{l}i^{l'}(2l+1)(2l'+1) \int\int \frac{\text{d}^{3}k}{(2\pi)^{3}} \frac{\text{d}^{3}k'}{(2\pi)^{3}}\,\mathcal{F}
+\end{equation}
+where the function $\mathcal{F}$ is defined as\footnote{Please note that nobody ever defines this function. I only defined it because the whole expression for $ C(\hat{n}\cdot \hat{n}')$ couldn't be written in a single line.}
+\begin{equation}
+    \mathcal{F} = \langle R_{i}(\vec{k})R_{i}(\vec{k}')\rangle \left[\Theta_{l}(k)\Theta_{l}(k')\right]\cdot \left[P_{l}(\hat{k}\cdot\hat{n})P_{l'}(\hat{k}'\cdot\hat{n}')\right]
+\end{equation}
+Now we exploit a useful property/definition
+\begin{equation}
+    \langle R_{i}(\vec{k})R_{i}(\vec{k}')\rangle = (2\pi)^{3}\delta^{(3)}(\vec{k}+\vec{k}')P_{\mathcal{R}}(k)
+\end{equation}
+which allows us to considerably simplify the integral above, especially once we recall that for real-valued functions $\Theta_{l'}(-k) = \Theta_{l'}^{*}(k)$ and that Legendre polynomials have the following properties
+\begin{align}
+    \int P_{l}(\hat{k}\cdot\hat{n})P_{l'}(\hat{k}\cdot\hat{n}')\diff{\Omega_{k}} &= \frac{4\pi}{2l+1}P_{l}(\hat{n}\cdot\hat{n}')\delta_{ll'} \\
+    P_{l'}(-\hat{k}\cdot\hat{n}') &= (-1)^{l'}P_{l}(\hat{k}\cdot\hat{n}')
+\end{align}
+which allows us to write
+\begin{equation}
+    C(\hat{n}\cdot \hat{n}') = \sum_{l}(2l+1)\frac{4\pi}{(2\pi)^{3}}P_{l}(\hat{n}\cdot\hat{n}') \int |\Theta_{l}(k)|^{2}P_{\mathcal{R}}\cdot k^{2}\diff{k}
+\end{equation}
+We can now introduce the post-inflation dimensionless power spectrum
+\begin{equation}
+    \Delta_{\mathcal{R}}^{2} = \frac{k^{3}}{2\pi^{2}}P_{\mathcal{R}}(k)
+    \label{eq:dimensionless-ps}
+\end{equation}
+which ultimately yields for the 2-point correlation function
+\begin{equation}
+    C(\hat{n}\cdot \hat{n}') = \sum_{l}\frac{2l+1}{4\pi}\left\{4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k) \right\}P_{l}(\hat{n}\cdot \hat{n}')
+\end{equation}
+where we have added the identity $4\pi / 4\pi$ so that it's easier to recognize the power spectrum 
 \begin{equation}
     \boxed{
     C_{l} = 4\pi \int \diff{\ln(k)}\Theta_{l}^{2}(k)\Delta_{\mathcal{R}}^{2}(k)
     }
     \label{eq:powerspectrumcmb}
 \end{equation}
-where $\Delta_{\mathcal{R}}^{2}$ is the post-inflation power spectrum and $\Theta_{l}$ is
-\begin{equation}
-    \Theta_{l} = \frac{\frac{1}{4}\widehat{\left(\frac{\delta\rho}{\rho}\right)}(\eta_{LS}, \vec{k}) + \hat{\psi}_{LS}(\eta_{LS}, \vec{k})}{R_{i}(k)}j_{l}(k\chi_{LS})-\frac{\hat{v}_{b}}{R_{i}(k)}j_{l}'(k\chi_{LS})
-\end{equation}
-Also, note that we've used the following property of Legendre polynomials
-\begin{equation}
-    \int \text{d}^{3}k P_{l}(\hat{k}\cdot\hat{n})P_{l'}(\hat{k}\cdot\hat{n}') = \frac{4\pi}{2l+1}P_{l}(\hat{n}\cdot\hat{n}')\delta_{ll'}
-\end{equation}
-Before moving over, let's consider the transmission probability for photons 
+\par Before moving over, let's consider the transmission probability for photons 
 \begin{equation}
     P_{t} = \exp\left(-\tau(z_{0}, z_{1})\right)
 \end{equation}
 where the optical depth $\tau$ is defined as 
 \begin{equation}
-    \tau = \int \diff{t}\sigma_{T}n_{e} = \int \frac{\diff{z}}{H(z)(1+z)}\sigma_{T}n_{b}X_{e}(z)
+    \tau = \int \Gamma \diff{t} = \int \sigma_{T}n_{e}\diff{t} = \int \frac{\diff{z}}{H(z)(1+z)}\sigma_{T}n_{b}X_{e}(z)
 \end{equation}
 Sometimes we might also define a \emph{visibility function} $g(z) = \derinline{\tau}{z}$, but at the end of the day what both are telling us is that there exists a residual probability of scattering also at small redshift.
 \par Note that there is also a dipole anisotropy ($l=1$) of significant amplitude $\delta T/T \sim 10^{-3}$ which is usually interpreted as a Doppler effect caused by the relative motion of the observer (us) with respect to the frame in which the CMB is isotropic\footnote{Essentially, the dipole anisotropy is a combination of peculiar velocities: Earth wrt Sun, Sun wrt MW, MW wrt M31, Local Group wrt Virgo cluster etc.}. Such velocity turns out to be of order $v \sim 396 \unit{km}\unit{s}^{-1}$, and the value is corrected annually.
-\par Well now, recall the definition of $\Delta_{\mathcal{R}}$
+\par Well now, recall the definition of $\Delta_{\mathcal{R}}^{2}$
 \begin{equation}
     \Delta_{\mathcal{R}}^{2}(k) = \frac{k^{3}P_{\mathcal{R}}(k)}{2\pi^{2}} \propto k^{n_{s}-1}
 \end{equation}
-with $n_{s} \approx 0.965$ for a Harrison-Zeldovič spectrum, which means that the initial (adimensional) spectrum is (almost) scale invariant. If you recall, it enters in the expression for the FT of the temperature contrast \marginpar{For the sake of simplicity, we're working in the approximation of \textbf{instantaneous decoupling} $g(z) = \delta(z-z_{LS})$. A much more elegant discussion would consider how the solutions to the Boltmann equation are distributed in $l$.}
+with $n_{s} \approx 0.965$ for a Harrison-Zeldovič spectrum, which means that the initial (adimensional) spectrum is (almost) scale invariant. If you recall, it enters in the expression for the FT of the temperature contrast through $R_{i}$ \marginpar{For the sake of simplicity, we're working in the approximation of \textbf{instantaneous decoupling} $g(z) = \delta(z-z_{LS})$. A much more elegant discussion would consider how the solutions to the Boltmann equation are distributed in $l$.}
 \begin{equation}
     \int \exp\left(i\vec{k}\cdot\hat{n}\chi_{LS}\right)\left[F_{LS}(k)-i(\hat{k}\cdot\hat{n})G_{LS}(k)\right]R_{i}(k)\,\frac{\text{d}^{3}k}{(2\pi)^{3}}
 \end{equation}
@@ -1008,16 +1030,25 @@ the power spectrum is significantly simplified
 
 \subsection{Photon-Baryon Fluid Oscillations}
 
-The oscillations we're going to investigate shortly in this section exist only on the smaller $l$ scales, which are those within the sound horizon at last scattering 
+\marginpar{At high values of $l$, so smaller angular scales, we observe an effect called silk damping, which is caused by diffusive effects of photons from hot to cold regions
+$$ r^{2}_{\text{diff}} = \int_{0}^{\eta_{LS}} l_{\gamma}\diff{\eta} $$ where $l_{\gamma}$ is the mean free path of photons. The integral above evaluates to $49\unit{Mpc}^{2}$.} The oscillations we're going to investigate shortly in this section exist only on the smaller $l$ scales, which are those within the sound horizon at last scattering 
 \begin{equation}
     d < r_{\text{sound}}(t_{LS}) = \int_{0}^{\eta_{LS}} \diff{\eta} c_{s}(\eta) \approx 145\unit{Mpc} \;\;(\text{comoving})
 \end{equation}
-which is the maximum scale at which coherent oscillations can exist. We thus expect to see these oscillations on scales $\theta \sim 1$° or, equivalently, $l \approx 100$. \marginpar{At high values of $l$, so smaller angular scales, we observe an effect called silk damping, which is caused by diffusive effects of photons from hot to cold regions
-$$ r^{2}_{\text{diff}} = \int_{0}^{\eta_{LS}} l_{\gamma}\diff{\eta} $$ where $l_{\gamma}$ is the mean free path of photons. The integral above evaluates to roughly $49\unit{Mpc}^{2}$.}
+which is the maximum scale at which coherent oscillations can exist. We thus expect to see these oscillations on scales $\theta \sim 1$° or, equivalently, $l \approx 100$.
 
 \subsubsection{Temporal evolution}
 
-In the non-relativistic limit, we can consider small perturbations on the continuity and Euler equations. We thus linearize the equations and assume a barotropic equation of state $p(\rho)$, which leads us to the following equation
+In the non-relativistic limit, we can consider small perturbations on the continuity and Euler equations
+\begin{equation}
+    \left\{
+    \begin{array}{ll}
+        \partial_{t}\rho + \nabla(\rho\vec{u}) = 0 & \\
+        \rho\left[\partial_{t}+\vec{u}\cdot\nabla\right]\vec{u} = -\nabla p
+    \end{array}
+    \right.
+\end{equation}
+We thus linearize the equations and assume a barotropic equation of state $p(\rho)$, which leads us to the following equation
 \begin{equation}
     \partial_{t}^{2}\delta\rho = \nabla^{2}\delta p \to (\partial_{t}^{2}-c_{s}^{2}\nabla^{2})\delta\rho = 0
 \end{equation}
