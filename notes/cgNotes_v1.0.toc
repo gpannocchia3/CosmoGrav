@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {6.5}{Flatness Problem}}{71}{section.6.5}%
 \contentsline {section}{\numberline {6.6}{Horizon Problem}}{72}{section.6.6}%
 \contentsline {section}{\numberline {6.7}{Hubble Radius}}{75}{section.6.7}%
-\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{77}{section.6.8}%
+\contentsline {section}{\numberline {6.8}{Slow-roll Inflation}}{78}{section.6.8}%
 \contentsline {part}{\numberline {i}{Appendix}}{83}{part.1}%
 \contentsline {chapter}{\numberline {7}{Appendix}}{85}{chapter.7}%
 \contentsline {chapter}{Bibliography}{93}{section*.35}%

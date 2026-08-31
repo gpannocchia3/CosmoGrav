@@ -14,15 +14,15 @@ with intrisic luminosity $L$ and measured flux $F$. But how does this change in 
 \begin{enumerate}
     \item \emph{Geometry}: The space is no longer Euclidean, and the surface of the 2-sphere onto which the luminosity is diluted is $4\pi a_{0}^{2}\tilde{r}_{s}^{2} = 4\pi a_{0}^{2}f_{k}(\chi)^{2}$, where $f_{k}(\chi)$ is 
     \begin{equation}
-        \chi = \int_{0}^{r_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = f_{k}^{-1}(r_{s}) = \left\{
+        \chi = \int_{0}^{\tilde{r}_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = f_{k}^{-1}(r_{s}) = \left\{
             \begin{array}{ll}
-                r_{s} & k=0\\
-                \arcsin(r_{s}) & k=1\\
-                \text{arcsinh}(r_{s}) & k=-1
+                \tilde{r}_{s} & k=0\\
+                \arcsin(\tilde{r}_{s}) & k=1\\
+                \text{arcsinh}(\tilde{r}_{s}) & k=-1
             \end{array}
         \right.
     \end{equation}
-    \item \emph{Correction to the concept of luminosity}: In an expanding Universe, we have to be a little more cautious, and the necessary steps to be taken are explained in detail in the following.
+    \item \emph{Correction to the concept of luminosity}: In an expanding Universe, we have to be a little more cautious with what we refer to as "intrinsic luminosity." The necessary steps to be taken are explained in detail in the following.
 \end{enumerate}
 \par Because of the expansion, the wavelength of these photons will change according to (\ref{eq:redshift_def}). Therefore, the energy of a photon will decrease
 \begin{equation*}
@@ -36,7 +36,7 @@ with intrisic luminosity $L$ and measured flux $F$. But how does this change in 
 \begin{equation*}
     F = \frac{L_{e}}{4\pi a_{0}^{2}\tilde{r}_{s}^{2}(1+z)^{2}} = \frac{L_{e}}{4\pi a_{0}^{2}f_{k}(\chi)^{2}(1+z)^{2}}
 \end{equation*}
-so that by direct comparison with out initial equation, we find that the \emph{luminosity distance} is
+so that by direct comparison with our initial equation, we find that the \emph{luminosity distance} is
 \begin{equation}
     d_{L} = a_{0}\tilde{r}_{s}(1+z) = (1+z)a_{0}f_{k}(\chi)
     \label{eq:luminositydistance}
@@ -138,7 +138,7 @@ We can substitute the expression at second order for the proper distance in the 
 \end{equation}
 which we can expand to quadratic order 
 \begin{equation}
-    H_{0}d_{L} = -\left[z-\frac{1}{2}(q_{0}+1)z^{2}\right](1+z) = z+z^{2}-\frac{1}{2}(q_{0}+1)z^{2} + \text{o}(z^{3})
+    H_{0}d_{L} = \left[z-\frac{1}{2}(q_{0}+1)z^{2}\right](1+z) = z+z^{2}-\frac{1}{2}(q_{0}+1)z^{2} + \text{o}(z^{3})
 \end{equation}
 which yields
 \begin{equation}
@@ -228,10 +228,10 @@ We define the \emph{event horizon} as the maximum distance at which an object ca
 \begin{equation}
     \int_{t_{\star}}^{\infty}\frac{\diff{t}}{a(t)} = \int_{0}^{r_{\star}}\frac{\diff{r}}{\sqrt{1-kr^{2}}}
 \end{equation}
-If $r_{s} < r_{\star}$, the event will never be observed, meaning there could be regions of spacetime that are impossible to "communicate" with. To see if the integral can actually be finite, you will usually check \marginpar{We're assuming a flat Universe $k=0$ for which $$ a(t) = A e^{Ht}$$}
+If $r_{s} < r_{\star}$, the event will never be observed, meaning there could be regions of spacetime that are impossible to "communicate" with. To see if the integral can actually be finite, you will usually check 
 \begin{equation}
     r_{\star} = -\frac{1}{AH}e^{-Ht}\Big|^{\infty}_{t_{\star}} < \infty
-\end{equation}
+\end{equation} \marginpar{We're assuming a flat Universe $k=0$ for which $$ a(t) = A e^{Ht}$$}
 For example, if the EoS has $w>-1/3$, $r_{\star}\to \infty$ and the horizon is not properly defined.
 
 \section{Flatness Problem}
@@ -275,7 +275,7 @@ Putting all of this to work, we gather
 \begin{equation}
     \der{\Omega_{k}}{t} = \frac{k}{a^{3}}\frac{2\dot{H}}{H^{3}} + \frac{k}{H^{2}}\frac{2\dot{a}}{a^{3}} = -2\Omega_{k}H\left(1+\frac{\dot{H}}{H^{2}}\right) = -2\Omega_{k}H(1-(1+q))
 \end{equation}
-If we want the final result to be independent from the particular cosmology that we've chosen \marginpar{Just in case you have forgotten, with the superscript we're referring to the derivative with respect to the conformal time.}
+If we want the final result to be independent from the particular cosmology that we've chosen \marginpar{Here the prime derivative is with respect to $x$, so $$ \diff{t} = \frac{1}{H}\diff{x} $$ and not conformal time.}
 \begin{align}
     & \Omega_{k}' = 2\Omega_{k}q \\
     & 2q = (1+3w)\Omega = (1+3w)(1-\Omega_{k})
@@ -287,8 +287,7 @@ which means
     }
 \end{equation}
 This tells us that if $\Omega_{k}\approx 0$, the stationary point is unstable if $1+3w > 0$! Similarly, $\Omega_{k}\approx 0$ is a stable attractor if $1+3w < 0$, which means $w < -1/3$.
-\par The flatness problem is thus resolved if we postulate a Universe that accelerates for enough time. Such period of time is called \emph{inflationary epoch} or just \emph{inflation}.
-\par If during the inflation $H \sim \text{const,}$ then 
+\par The flatness problem is thus resolved if we postulate a Universe that accelerates for enough time. Such period of time is called \emph{inflationary epoch} or just \emph{inflation}. If during the inflation $H \sim \text{const,}$ then 
 \begin{equation}
     \Omega_{k} \approx -\frac{k}{a^{2}H^{2}}
 \end{equation}
@@ -393,7 +392,7 @@ This implies \marginpar{Recall that during inflation the Hubble constant is not 
 \end{equation}
 but 
 \begin{equation}
-    \Big|\frac{\Omega_{k}(t_{f})}{\Omega_{k}(t_{i})}\Big| = e^{-2N} \implies |\Omega_{k}(t_{0})| = e^{-2N}|\Omega_{k}(t_{i})|\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right)
+    \Big|\frac{\Omega_{k}(t_{f})}{\Omega_{k}(t_{i})}\Big| = e^{-2N} \iff |\Omega_{k}(t_{0})| = e^{-2N}|\Omega_{k}(t_{i})|\left(\frac{a_{f}^{2}H_{i}^{2}}{a_{0}^{2}H_{0}^{2}}\right)
 \end{equation}
 If we set $|\Omega_{k}(t_{i})| \approx 1$ \marginpar{The request $|\Omega_{k}(t_{0})| < 1$ purely relies on observational evidence and on (\ref{eq:densityparam_eq}).}
 \begin{equation}
@@ -443,14 +442,14 @@ but if $\lambda \sim a$, this implies $\ddot{a} > 0$, hence the Universe must be
 \begin{figure}[h!]
     \centering 
     \includegraphics[width=0.7\textwidth]{img/guthinflation.jpg}
-    \caption{In simple inflationary models, the Universe at early times is dominated by the potential energy density of a scalar field, $\varphi$. Red arrows show the classical motion of $\varphi$. When $\varphi$ is near region (a), the energy density will remain nearly constant, $\rho\approx \rho_{f}$, even as the Universe expands. Moreover, cosmic expansion acts like a frictional drag, slowing the motion of $\varphi$: Even near regions (b) and (d), $\varphi$ behaves more like a marble moving in a bowl of molasses, slowly creeping down the side of its potential, rather than like a marble sliding down the inside of a polished bowl. During this period of "slow roll," $\rho$ remains nearly constant. Only after $\varphi$ has slid most of the way down its potential will it begin to oscillate around its minimum, as in region (c), ending inflation. Credits: \href{https://ned.ipac.caltech.edu/level5/March05/Guth/Guth1.html}{this website}.}
+    \caption{When the scalar field $\varphi$ is near region (a), the energy density will remain nearly constant, $\rho\approx \rho_{f}$, even as the Universe expands. Moreover, cosmic expansion acts like a frictional drag, slowing the motion of $\varphi$: Even near regions (b) and (d), $\varphi$ behaves more like a marble moving in a bowl of molasses, slowly creeping down the side of its potential, rather than like a marble sliding down the inside of a polished bowl. During this period of "slow roll," $\rho$ remains nearly constant. Only after $\varphi$ has slid most of the way down its potential will it begin to oscillate around its minimum, as in region (c), ending inflation. Credits: \href{https://ned.ipac.caltech.edu/level5/March05/Guth/Guth1.html}{this website}.}
 \end{figure}
-\par In short, they were postulating the existence of a scalar field $\varphi$. The associated potential $U(\varphi)$ had to present a local maximum where the phase transition occurred (so at the beginning of inflation), and a local minimum where $U(\varphi)\approx \text{const.} = \Lambda$, hence a metastable de Sitter phase during which tunnel effect occurred towards true vacuum. This was the so-called \emph{old inflation}.
+\par In short, they were postulating the existesnce of a scalar field $\varphi$. The associated potential $U(\varphi)$ had to present a local maximum where the phase transition occurred (so at the beginning of inflation), and a local minimum where $U(\varphi)\approx \text{const.} = \Lambda$, hence a metastable de Sitter phase during which tunnel effect occurred towards true vacuum. This was the so-called \emph{old inflation}.
 \par What had gone wrong with Guth's and Weinberg's model was solved only one year later by Andrej Dmitrievič Linde \cite{1982PhLB..108..389L}, \cite{1982PhLB..116..335L} and independently by Andreas Albrecht and Paul Steinhardt \cite{1982PhRvL..48.1220A} in a model named \emph{new inflation} or \emph{slow-roll inflation}.
 \par In this model, instead of tunneling out of a false vacuum state, inflation occurred by a scalar field rolling down a potential energy hill. When the field rolls very slowly compared to the expansion of the Universe, inflation occurs. However, when the hill becomes steeper, inflation ends and reheating can occur.
 \begin{figure}[h!]
     \centering 
-    \includegraphics[width=0.7\textwidth]{img/slowroll.png}
+    \includegraphics[width=0.75\textwidth]{img/slowroll.png}
     \caption{Example of a slow-roll potential as postulated by Linde, Albrecht, and Steinhardt. Inflation occurs in the shaded parts of the potential. Credits: \cite{Baumann_2022}.}
     \label{fgr:slowroll}
 \end{figure}
@@ -605,7 +604,7 @@ In the slow-roll approximation, the Hubble expansion is determined completely by
 \begin{equation}
     \dot{\varphi} \approx -\frac{V'(\varphi)}{3H} \textoversymbol{=}{\varepsilon \ll 1} -V'\left[24\pi G V(\varphi)\right]^{-1/2}
 \end{equation}
-This provides a simple relationship between the gradient of the potential and the speed of the inflaton. This is the so-called $\alpha$-\emph{relation}
+This provides a simple relationship between the gradient of the potential and the "speed" of the inflaton. This is the so-called $\alpha$-\emph{relation}
 \begin{equation}
     \boxed{
     \dot{\varphi} \approx -\frac{V'}{\sqrt{24 \pi G V(\varphi)}}
