@@ -193,7 +193,7 @@ where we've also introduced the adimensional radius $r = r'/a$, which lives in t
 
 \subsubsection*{4-Dimensional Space}
 
-Perhaps it might have occurred to you that we do not, in fact, live in a 3-dimensional space, but rather in a 4-dimensional one with 3-dimensional spatial sections. The purpose of this section is essentially to replicate the calculations we've already went through for the 3-dimensional space but with one more additional dimension to address.
+Perhaps it might have occurred to you that we do not, in fact, live in a 3-dimensional space, but rather in a 4-dimensional one with 3-dimensional spatial sections. The purpose of this section is essentially to replicate the calculations we've already gone through for the 3-dimensional space but with one more additional dimension to address.
 \par For this purpose, it comes somewhat in handy recalling (\ref{eq:usefulcompact}), which allows us to immediately find the expression for the line element induced on a 3-dimensional surface embedded in a 4-dimensional space. All we have to do is replacing the metric of the 1-sphere $S_{1}$ ($\diff{\theta^{2}}$), with that of the 2-sphere $S_{2}$, the solid angle $\diff{\Omega_{(2)}^{2}}$
 \begin{equation}
     \diff{l^{2}} = a^{2}\left(\diff{\tilde{x}^{\,2}} + k \frac{(\tilde{x}\cdot\diff{\tilde{x}})^{2}}{1-k\tilde{x}^{2}}\right) = a^{2}\left(\frac{\diff{r}^{2}}{1-kr^{2}}+r^{2}\diff{\Omega_{(2)}^{2}}\right)
@@ -215,7 +215,7 @@ The metric induced on the hyperboloid is obtained replacing $\sin\chi$ with $\si
     \diff{\chi} = \frac{\diff{r}}{\sqrt{1-kr^{2}}}
     \label{eq:angularradius}
 \end{equation}
-\par In the hyperboloid case, the radial coordinate $\chi$ will now be in the range $[0, \infty)$, and the associated Cartesian coordinates are
+\par In the hyperboloid case, the radial coordinate $\chi$ will be in the range $[0, \infty)$, and the associated Cartesian coordinates are
 \begin{align*}
     x_{1} &= a\sinh\chi\sin\theta\cos\phi\\
     x_{2} &= a\sinh\chi\sin\theta\sin\phi\\
@@ -224,7 +224,7 @@ The metric induced on the hyperboloid is obtained replacing $\sin\chi$ with $\si
 \end{align*}
 We can go through several boring substitutions to find the induced line element
 \begin{equation}
-    \diff{l^{2}} = a^{2}(\diff{\chi^{2}} + \sinh^{2}\chi\diff{\Omega_{(2)}^{2}})
+    \diff{l^{2}} = a^{2}\left(\diff{\chi^{2}} + \sinh^{2}\chi\diff{\Omega_{(2)}^{2}}\right)
 \end{equation}
 and the compact expression for the three surfaces we're considering is
 \begin{equation}
@@ -232,13 +232,13 @@ and the compact expression for the three surfaces we're considering is
         \diff{l^{2}} = a^{2}\left(\diff{\chi^{2}} + \frac{1}{k}\sin^{2}(\sqrt{k}\chi)\diff{\Omega_{(2)}^{2}}\right) \quad k=0,\pm 1
     }
 \end{equation}
-where we've made use of the fact that the line element can be conventiently expressed as
+where we've made use of the fact that the line element can be conveniently expressed as
 \begin{equation}
-    \diff{l^{2}} = a^{2}(\diff{\chi^{2}} + f_{k}^{2}(\chi)\diff{\Omega_{(2)}^{2}})
+    \diff{l^{2}} = a^{2}\left(\diff{\chi^{2}} + f_{k}^{2}(\chi)\diff{\Omega_{(2)}^{2}}\right)
 \end{equation}
 with $f_{k}(\chi)$ the solution of (\ref{eq:angularradius}), and thus given by
 \begin{equation}
-    f_{k}(\chi) = \left\{
+    r = f_{k}(\chi) = \left\{
     \begin{array}{ll}
         k^{-1/2}\sin(\sqrt{k}\chi) & k = 1\\
         \chi & k=0 \\
@@ -289,9 +289,9 @@ so that the metric is, guess what, conformal.
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Conformal Metric and Transformations,
   boxed title style={size=small,colframe=blue!50!black}]
-  A conformal transformation is essentially a local change in scale. Since distances are measured by the metric, such transformations are implemented by multiplying the metric by a spacetime-dependent (nonvanishing) function
+  A conformal transformation is essentially a local change in scale. Since distances are measured by the metric, such transformations are implemented by multiplying the metric by a spacetime-dependent (non-vanishing) function
   $$ \tilde{g}_{\mu\nu} = \omega^{2}(x)g_{\mu\nu} $$
-  for some nonvanishing function $\omega(x)$. Notably \emph{null curves are invariant under conformal transformations.}. See \cite{carroll}, Appendix G for more.
+  for some non-vanishing function $\omega(x)$. Notably \emph{null curves are invariant under conformal transformations.}. See \cite{carroll}, Appendix G for more.
 \end{tcolorbox}
 \par The scale factor $a$ is therefore factorized and (\ref{eq:FRW}) becomes
 \begin{equation}
@@ -484,7 +484,7 @@ For the sake of simplicity, let's consider first the case of a flat-space. The e
 \begin{equation}
     \delta S = \delta \left[\int \diff{t}\diff{V}\mathcal{L}\left(q^{(a)}, \parder{q^{(a)}}{x^{\mu}}\right)\right] = 0
 \end{equation}
-where $\mathcal{L}$ is the lagrangian density associated with the field(s) we're considering. Computing the variation we obtain Euler-Lagrange equations
+where $\mathcal{L}$ is the lagrangian density associated with the field(s) we're considering. Computing the variation, we obtain Euler-Lagrange equations
 \begin{equation}
     \partial^{\mu}\left(\parder{\mathcal{L}}{(\partial^{\mu}q)}\right) - \parder{\mathcal{L}}{q} = 0
     \label{eq:EL-eq}
@@ -539,10 +539,10 @@ But, given the FLRW metric, $\christoffel{0}{0}{\mu} = 0$ for all values of $\mu
 \begin{equation}
     \partial_{\nu}(p+\rho)u^{\mu}u^{\nu} + (\partial_{\nu}p) g^{\mu\nu} + (p+\rho)\frac{1}{2}g^{\nu i}\partial_{0}g_{\nu i}u^{\mu} = 0
 \end{equation}
-\par Let's focus on the purely spatial component $\mu = j$, which ultimately simplifies to just $\partial_{i}p g^{ij}$ being vanishing essentially because of the Cosmological Principle (homogeneous pressure). The only non-trivial component is the temporal one $\mu = 0$, which yields
+\par Let's focus on the purely spatial component $\mu = j$, which ultimately simplifies to just $\partial_{i}p g^{ij}$ being vanishing because of the Cosmological Principle (homogeneous pressure). The only non-trivial component is the temporal one $\mu = 0$, which yields
 \begin{equation}
     \partial_{0}(p+\rho)-\partial_{0}p +\frac{p+\rho}{2}g^{ij}\partial_{0}g_{ij} = 0
-\end{equation}
+\end{equation} \marginpar{Recall that $g_{ij}g^{ij} = 3$ (the "trace" of the metric) and do \textbf{not} mistake it for the definition of the inverse metric tensor $$ g^{\mu\rho}g_{\rho\nu} = \delta^{\mu}_{\;\nu} $$}
 The last derivative can be hand-wavingly calculated expanding $g_{ij} = a^{2}\tilde{g}_{ij}$, where $\tilde{g}_{ij}$ is independent of time. This way, we obtain the so-called \emph{fluid equation}
 \begin{equation}
     \boxed{
@@ -582,7 +582,7 @@ Consider the non-canonical form of Einstein's equation (\ref{eq:einstein_inverte
     }
     \label{eq:friedmann1}
 \end{equation}
-\par Since we have three independent variables and only two viable equations\footnote{The equations are actually 3: Two Friedmann equations and the equation coming from the conservation of the temporal component of the energy-momentum tensor. The three of them are not independent, since they're related through Bianchi's identity.}, we're in the need of introducing and equation of state (EoS) that relates the pressure to the energy density. Cosmology usually deals with dilute gases, for which the equation of state is simple.
+\par Since we have three independent variables and only two viable equations\footnote{The equations are actually 3: Two Friedmann equations and the equation coming from the conservation of the temporal component of the energy-momentum tensor. The three of them are not independent, since they're related through Bianchi's identity.}, we're in the need of introducing an equation of state (EoS) that relates the pressure to the energy density. Cosmology usually deals with dilute gases, for which the equation of state is simple.
 \par For substances of cosmological importance
 \begin{equation}
     p = w\rho
@@ -662,7 +662,7 @@ For $w = -1$, the equation is solved by
 \begin{equation}
     \der{a}{t} = \der{a}{\eta}\der{\eta}{t} = a' \frac{1}{a}
 \end{equation}
-where with the superscript we're indicating derivatives with respect to the conformal time. In short
+where with the prime we're indicating derivatives with respect to the conformal time. In short
 \begin{equation}
     a' = \dot{a}a \quad a'' = a(a\ddot{a}+\dot{a}a') \quad \mathcal{H} = \frac{a'}{a} = \dot{a} \quad \mathcal{H}' = a\ddot{a}
 \end{equation}
@@ -913,7 +913,7 @@ But since, by virtue of its own definition, we have
 This we can easily integrate from $x=0$ ($t=0$, which corresponds to the BBN in the standard model of the Hot Big Bang)
 \begin{equation}
     \boxed{
-    t(x) = \int_{0}^{x}\diff{t} = \int_{0}^{x} \frac{\diff{x'}}{x'H_{0}E(x')}
+    t(x) = \int_{0}^{t}\diff{t} = \int_{0}^{x} \frac{\diff{x'}}{x'H_{0}E(x')}
     }
     \label{eq:dynamicalage}
 \end{equation}
@@ -929,11 +929,11 @@ which represents the \emph{dynamical age of the Universe}. Sometimes it might be
 \begin{equation}
     t_{0}^{E-dS} = \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x\cdot x^{-3/2}} = \frac{2}{3H_{0}} \approx 7.0h^{-1}\unit{Gyr}
 \end{equation}
-which is smaller than a Hubble time $H_{0}^{-1}$. The dynamical time produced by a E-dS Universe is too short: It's in tension with the estimated age of some structures and/or unstable chemical elements which we can still observe (e.g., radionuclids with decay time of about $10-15\unit{Gyr}$). It is also in high tension with the estimated age of some old white dwarves and with the estimated age we've obtained from the temperature fluctuations of the CMB.
+which is smaller than a Hubble time $H_{0}^{-1}$. The dynamical time produced by a E-dS Universe is too short: It's in tension with the estimated age of some structures and/or unstable chemical elements which we can still observe (e.g. radionuclids with decay time of about $10-15\unit{Gyr}$). It is also in high tension with the estimated age of some old white dwarves and with the estimated age we've obtained from the temperature fluctuations of the CMB.
 \par For a realistic $\Lambda$CDM model ($k=0$, $\Omega_{r,0}\sim 0$, and $\Omega_{\Lambda,0}+\Omega_{m,0}\sim 1$), the dynamical time is evaluated to
 \begin{align*}
     t_{0} &\approx \frac{1}{H_{0}}\int_{0}^{1}\frac{\diff{x}}{x(\Omega_{\Lambda,0}+\Omega_{m,0}x^{-3})^{1/2}}\\
-    &= \frac{1}{H_{0}\Omega_{\Lambda,0}^{1/2}}\int_{0}^{1}\frac{\diff{x}}{x(1+\left(\frac{1}{\Omega_{\Lambda,0}}-1\right)x^{-3})^{1/2}}
+    &= \frac{1}{H_{0}\Omega_{\Lambda,0}^{1/2}}\int_{0}^{1}\frac{\diff{x}}{x \left(1+\left(\frac{1}{\Omega_{\Lambda,0}}-1\right)x^{-3}\right)^{1/2}}
 \end{align*}
 which yields
 \begin{equation}

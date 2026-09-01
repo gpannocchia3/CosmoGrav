@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  31 AUG 2026 18:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  1 SEP 2026 18:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1734,7 +1734,7 @@ Chapter 5.
 
 
 ] [32]
-<img/effdeg.png, id=552, 764.8575pt x 472.26437pt>
+<img/effdeg.png, id=553, 764.8575pt x 472.26437pt>
 File: img/effdeg.png Graphic file (type png)
 <use img/effdeg.png>
 Package pdftex.def Info: img/effdeg.png  used on input line 138.
@@ -1755,29 +1755,29 @@ Overfull \hbox (0.37213pt too wide) in paragraph at lines 218--220
  []
 
 [36]
-<img/eeannihilation.png, id=600, 585.68813pt x 418.56375pt>
+<img/eeannihilation.png, id=601, 585.68813pt x 418.56375pt>
 File: img/eeannihilation.png Graphic file (type png)
 <use img/eeannihilation.png>
 Package pdftex.def Info: img/eeannihilation.png  used on input line 239.
 (pdftex.def)             Requested size: 332.99774pt x 237.98984pt.
  [37 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/eeannihilation.png>] [38]
-<img/freeel.png, id=623, 689.57625pt x 504.38437pt>
+<img/freeel.png, id=624, 689.57625pt x 504.38437pt>
 File: img/freeel.png Graphic file (type png)
 <use img/freeel.png>
 Package pdftex.def Info: img/freeel.png  used on input line 338.
 (pdftex.def)             Requested size: 332.99774pt x 243.57173pt.
  [39] [40 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/freeel.png>] [41]
-<img/collisionlessdm.png, id=656, 579.66562pt x 470.75874pt>
+<img/collisionlessdm.png, id=657, 579.66562pt x 470.75874pt>
 File: img/collisionlessdm.png Graphic file (type png)
 <use img/collisionlessdm.png>
 Package pdftex.def Info: img/collisionlessdm.png  used on input line 412.
 (pdftex.def)             Requested size: 166.49887pt x 135.21638pt.
-<img/monddm.png, id=657, 294.60063pt x 254.45062pt>
+<img/monddm.png, id=658, 294.60063pt x 254.45062pt>
 File: img/monddm.png Graphic file (type png)
 <use img/monddm.png>
 Package pdftex.def Info: img/monddm.png  used on input line 413.
 (pdftex.def)             Requested size: 166.49887pt x 143.80757pt.
-<img/collisionlessevidence.png, id=659, 621.82312pt x 500.87125pt>
+<img/collisionlessevidence.png, id=660, 621.82312pt x 500.87125pt>
 File: img/collisionlessevidence.png Graphic file (type png)
 <use img/collisionlessevidence.png>
 Package pdftex.def Info: img/collisionlessevidence.png  used on input line 420.
@@ -1792,13 +1792,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--446
  []
 
 [43 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/collisionlessevidence.png>]
-<img/dmstructureform.png, id=679, 596.72937pt x 411.5375pt>
+<img/dmstructureform.png, id=680, 596.72937pt x 411.5375pt>
 File: img/dmstructureform.png Graphic file (type png)
 <use img/dmstructureform.png>
 Package pdftex.def Info: img/dmstructureform.png  used on input line 471.
 (pdftex.def)             Requested size: 222.00226pt x 153.10167pt.
  [44 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/dmstructureform.png>] [45] [46]
-<img/freezeout.png, id=726, 619.81563pt x 418.06187pt>
+<img/freezeout.png, id=727, 619.81563pt x 418.06187pt>
 File: img/freezeout.png Graphic file (type png)
 <use img/freezeout.png>
 Package pdftex.def Info: img/freezeout.png  used on input line 591.
@@ -1808,7 +1808,7 @@ Package pdftex.def Info: img/freezeout.png  used on input line 591.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47]
-<img/bbn.png, id=744, 695.59875pt x 494.84875pt>
+<img/bbn.png, id=745, 695.59875pt x 494.84875pt>
 File: img/bbn.png Graphic file (type png)
 <use img/bbn.png>
 Package pdftex.def Info: img/bbn.png  used on input line 612.
@@ -1818,7 +1818,7 @@ Package pdftex.def Info: img/bbn.png  used on input line 612.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [48 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/freezeout.png>] [49 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/bbn.png>] [50] [51]
-<img/lightelements.png, id=799, 536.50438pt x 424.08438pt>
+<img/lightelements.png, id=800, 536.50438pt x 424.08438pt>
 File: img/lightelements.png Graphic file (type png)
 <use img/lightelements.png>
 Package pdftex.def Info: img/lightelements.png  used on input line 734.
@@ -1833,13 +1833,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 748--748
 []$\OML/zplm/m/it/9 E \OMS/zplm/m/n/9 ^^X \OT1/pplx/m/n/9 10[] []$
  []
 
-<img/cmb.jpg, id=802, 4111.36pt x 2055.68pt>
+<img/cmb.jpg, id=803, 4111.36pt x 2055.68pt>
 File: img/cmb.jpg Graphic file (type jpg)
 <use img/cmb.jpg>
 Package pdftex.def Info: img/cmb.jpg  used on input line 751.
 (pdftex.def)             Requested size: 258.99887pt x 129.48343pt.
 [52 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/lightelements.png>] [53 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/cmb.jpg>]
-<img/cmbtempcont.png, id=827, 612.2875pt x 441.65pt>
+<img/cmbtempcont.png, id=828, 612.2875pt x 441.65pt>
 File: img/cmbtempcont.png Graphic file (type png)
 <use img/cmbtempcont.png>
 Package pdftex.def Info: img/cmbtempcont.png  used on input line 812.
@@ -1970,13 +1970,13 @@ Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
 Here is how much of TeX's memory you used:
  56674 strings out of 476025
  1312081 string characters out of 5790017
- 2037322 words of memory out of 5000000
+ 2037323 words of memory out of 5000000
  75341 multiletter control sequences out of 15000+600000
  665419 words of font info for 237 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,23n,121p,10679b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10327799 bytes).
+Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10327804 bytes).
 PDF statistics:
  1671 PDF objects out of 1728 (max. 8388607)
  1432 compressed objects within 15 object streams

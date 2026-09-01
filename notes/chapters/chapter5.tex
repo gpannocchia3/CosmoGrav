@@ -3,7 +3,7 @@
 \chapter{Thermal History of the Universe} \label{ch:v}
 
 For a significant part of this chapter, I'll be following \cite{Baumann_2022}. Please note that for some reason I cannot fathom, Baumann is using the metric signature $(+,-,-,-)$, which is the exact opposite of what we've been using in the previous chapters.
-\par The key to understanding the thermal history of the Universe is the comparison between the rate of interactions $\Gamma$ and the rate of expansion $H$. When $\Gamma \gg H$, then the time scale of particle interactions is much smaller than the characteristic expansion time scale
+\par The key to understanding the thermal history of the Universe is the comparison between the rate of interactions $\Gamma$ and the rate of expansion $H$. When $\Gamma \gg H$, then the timescale of particle interactions is much smaller than the characteristic expansion timescale
 \begin{equation}
     t_{c} = \frac{1}{\Gamma} \ll t_{H} = \frac{1}{H}
 \end{equation}
@@ -125,7 +125,7 @@ from the relativistic species that are \emph{not} in thermal equilibrium with th
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Counting DoFs,
   boxed title style={size=small,colframe=blue!50!black}]
-  As I mentioned in some earlier chapter, I know pretty much nothing about QFT and stuff. But since I think it is at least interesting to see how the computation is done, I'll rely on someone who knows better than me, namely Mr. Baumann.
+  As I mentioned in some earlier section, I know pretty much nothing about QFT and stuff. But since I think it is at least interesting to see how the computation is done, I'll rely on someone who knows better than me, namely Mr. Baumann.
   \par At $(k)T \gtrsim 100 \unit{GeV}$, all particles of the Standard Model are relativistic. Adding up their internal degrees of freedom we get
   \begin{itemize}
     \item $g_{b} = 28$: Photons (2), $W^{\pm}$ and $Z^{0}$ ($3\cdot3$), gluons ($8\cdot2$), and Higgs (1);
@@ -196,7 +196,7 @@ which gives us an expression for the Universe's cooling law! In fact, assuming $
     }
 \end{equation}
 Such scaling relation is surely valid after the last scattering epoch (which we'll be shortly introducing), though it's worth pointing out that this conservation law doesn't include the hyperfine details of irreversible reactions on the smaller scales.
-\par Substituting $T \propto g_{\star S}^{-1/3}a^{-1}$ into Friedmann's equation we find \marginpar{Note that we're implicitly assuming $k\sim 0$ (flat Universe), so that $\Omega_{0} = 0$. We're also using the Planck mass $M_{Pl} = \sqrt{\hbar c / 8\pi G}$.}
+\par Substituting $T \propto g_{\star S}^{-1/3}a^{-1}$ into Friedmann's equation we find \marginpar{Note that we're implicitly assuming $k\sim 0$ (flat Universe), so that $\Omega_{k} = 0$. We're also using the Planck mass $M_{Pl} = \sqrt{\hbar c / 8\pi G}$.}
 \begin{equation}
     H = \frac{\dot{a}}{a} \approx \left(\frac{\rho_{r}}{3M_{Pl}^{2}}\right)^{1/2} \approx \frac{\pi}{3}\left(\frac{g_{\star}}{10}\right)^{1/2}\frac{T^{2}}{M_{Pl}}
 \end{equation}
@@ -282,7 +282,7 @@ which yields
         \Omega_{\nu}(t_{0})h^{2} \approx \frac{\sum_{i} m_{\nu,i}}{94 \unit{eV}}
     }
 \end{equation}
-where we've used $H_{0} = 100h \unit{km}\unit{s}^{-1}\unit{Mpc}$ and $h = 0.695$. By demanding that neutrinos don’t over close the Universe, i.e. $\Omega_{\nu} < 1$, we can give a cosmological upper bound on the sum of the neutrino masses
+where we've used $H_{0} = 100h \unit{km}\unit{s}^{-1}\unit{Mpc}^{-1}$ and $h = 0.695$. By demanding that neutrinos don’t over close the Universe, i.e. $\Omega_{\nu} < 1$, we can give a cosmological upper bound on the sum of the neutrino masses
 \begin{equation}
     \sum_{i}m_{\nu,i} \leq 14-15\unit{eV}
 \end{equation}
@@ -312,7 +312,7 @@ but both the ratio of the state degeneracies $g$ and the exponential of the chem
     X_{e}= \frac{n_{e}}{n_{e}+n_{\text{H}}} = \frac{n_{e}}{n_{p}+n_{\text{H}}} = \frac{n_{e}}{n_{b}} = \frac{n_{e}}{\eta n_{\gamma}}
     \label{eq:fef}
 \end{equation}
-where in the last equality we have introduced the baryon to photon ratio $\eta$. To simplify the discussion, let us ignore all nuclei other than protons (over 90\% (by number) of the nuclei are protons). The total baryon number density can then be approximated as $n_{b} \approx n_{p} + n_{\text{H}} = n_{e} + n_{\text{H}}$ and hence
+where in the last equality we have introduced the baryon to photon ratio $\eta$. To simplify the discussion, let us ignore all nuclei other than protons (over 90\%, by number, of the nuclei are protons). The total baryon number density can then be approximated as $n_{b} \approx n_{p} + n_{\text{H}} = n_{e} + n_{\text{H}}$ and hence
 \begin{equation}
     \frac{1-X_{e}}{X_{e}^{2}} = \frac{n_{b}n_{\text{H}}}{n_{e}^{2}}
 \end{equation}
@@ -332,7 +332,7 @@ From here we can choose an arbitrary threshold for when we can consider the Univ
     T_{\text{rec}} = 0.3\unit{eV} \approx 3600\unit{K}
     \label{eq:rectemp}
 \end{equation}
-Please notice that $T_{\text{rec}} < \chi = 13.6\unit{eV}$, since there are very many photons for each Hydrogen atom and the high-energy tail of the photon distribution contains photons with energy larger the ionization threshold, allowing Hydrogen ionization.
+Please notice that $T_{\text{rec}} < \chi = 13.6\unit{eV}$, since there are many photons for each Hydrogen atom and the high-energy tail of the photon distribution contains photons with energy larger the ionization threshold, allowing Hydrogen ionization.
 \begin{figure}[h!]
     \centering 
     \includegraphics[width=0.9\textwidth]{img/freeel.png}
@@ -378,7 +378,7 @@ Notice that although $T_{\text{dec}}$ isn’t far from $T_{\text{rec}}$, the ion
 Dark matter is a...thorny subject: At the same time we know little to nothing about it, and yet know plenty. We know that it must be abundant, much more abundant than standard baryonic matter, and must not interact with electromagnetic radiation. That, incidentally, also means that we can't see it, hence the name.
 \par So how do we know that it must exist? To put it simply, we have several astrophysical evidences, gravitational in nature, that suggest the presence of this exotic type of matter.
 \par To name a few, you might know that galactic rotation curves would look rather different if DM halos didn't exist: The first discrepancies between the expected and the observed rotation curves were investigated as early as the 1970s \cite{1978PhDT.......195B}, \cite{1978ApJ...225L.107R} bringing the astrophysicists of the time to speculate the existence of something they couldn't see but that had to have a density $\rho \propto r^{-2}$ so that rotation curves could be as flat as they looked like.
-\par Another evidence came from structure formation theory. If DM didn't exist, there wouldn't have been enough time for standard baryonic matter to collapse and produce structures much denser than the average background of the Universe like galaxies or clusters.
+\par Another evidence came from structure formation theory. If DM didn't exist, there wouldn't have been enough time for standard baryonic matter to collapse and produce structures, like galaxies or clusters, that are much denser than the average background of the Universe.
 
 \subsubsection{MOND: Modified Newtonian Dynamics}
 
@@ -451,7 +451,7 @@ which, for example, for the Coma Cluster predicts a mass $M_{\text{tot}} \approx
     \Omega_{m}\approx 0.3 \quad \Omega_{b} \approx 0.0486 \implies \Omega_{DM} = 0.2589
 \end{equation}
 so most of the matter contribution comes from DM.
-\par What if we wanted to use the values of $\Omega_{b}$ and $\Omega_{DM}$ to put constrains on the mass our hypothetical DM particle should have? Would that be of any help? Present estimates constrain DM mass in the range \marginpar{"PBH" stands for Primordial Black Holes, one of the exotic candidates for DM.}
+\par What if we wanted to use the values of $\Omega_{b}$ and $\Omega_{DM}$ to put bounds on the mass our hypothetical DM particle should have? Would that be of any help? Present estimates constrain DM mass in the range \marginpar{"PBH" stands for Primordial Black Holes, one of the exotic candidates for DM.}
 \begin{equation}
     10^{-22}\unit{eV} \lesssim m_{DM} \lesssim m_{PBH}\approx 10^{70}\unit{eV} \approx 10^{4}-10^{5}M_{\odot}
 \end{equation}
