@@ -672,7 +672,7 @@ Solving (\ref{eq:neutronfo}) numerically, we find
 \begin{equation}
     X_{n}^{\infty} = X_{n}(\infty) = 0.15
 \end{equation}
-\par Finally, we need an expression for the neutron-proton conversion rate $\Gamma$, which we'll here pretend it has been revealed from God, your favorite deity, or \cite{2020moco.book.....D}
+\par Finally, we need an expression for the neutron-proton conversion rate $\Gamma$, which we'll here pretend it has been revealed from your deity of election, or \cite{2020moco.book.....D}
 \begin{equation}
     \Gamma = \frac{255}{\tau_{n}}\frac{12+6x+x^{2}}{x^{5}} \unit{s}^{-1}
 \end{equation}
@@ -784,7 +784,7 @@ where the former relation holds also for a complex-valued function. With these c
 \begin{equation}
     C(\theta) = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}\rangle Y_{lm}Y_{l'm'} = \sum_{l,m}\sum_{l',m'}\langle a_{lm}a_{l'm'}^{*}\rangle Y_{lm}Y_{l'm'}^{*}
 \end{equation}
-If we assume isotropy (hence invariance under angular traslations), patterns associated to different $l$ are uncorrelated, hence
+If we assume isotropy (hence invariance under rotations), patterns associated to different $l$ are uncorrelated, hence
 \begin{equation}
     \langle a_{lm}a_{l'm'}^{*}\rangle = C_{l}\delta_{ll'}\delta_{mm'}
 \end{equation}
@@ -865,7 +865,7 @@ are gauge invariant quantities. With significant effort, you might also find the
 \begin{equation}
     a^{2}R_{(3)} = -4\nabla^{2}\left(C-\frac{1}{3}\nabla^{2}E\right)
 \end{equation}
-where the quantity within parentheses is usually called \emph{curvature perturbation}. On the other hand, the \emph{comoving curvature perturbation} $\mathcal{R}$ is the curvature perturbation evaluated in the comoving gauge ($B_{i} = 0$). It will prove convenient to have a gauge-invariant expression for $\mathcal{R}$, so that we can evaluate it from the perturbations in any gauge (for example, in Newtonian gauge). Since $B$ and $v$\footnote{The scalar $v$ is defined through the 3-dimensional velocity $v_{i} = \partial_{i}v$.} vanish in the comoving gauge, we can always add linear combinations of these to curvature perturbation to form a gauge-invariant combination that equals $\mathcal{R}$. The correct gauge-invariant expression for the comoving curvature perturbation is
+where the quantity within parentheses is usually called \emph{curvature perturbation}. On the other hand, the \emph{comoving curvature perturbation} $\mathcal{R}$ is the curvature perturbation evaluated in the comoving gauge ($B_{i} = 0$). It will prove convenient to have a gauge-invariant expression for $\mathcal{R}$, so that we can evaluate it from the perturbations in any gauge (for example, in Newtonian gauge). Since $B$ and $v$ vanish\footnote{The scalar $v$ is defined through the 3-dimensional velocity $v_{i} = \partial_{i}v$.} in the comoving gauge, we can always add linear combinations of these to curvature perturbation to form a gauge-invariant combination that equals $\mathcal{R}$. The correct gauge-invariant expression for the comoving curvature perturbation is
 \begin{equation}
     \mathcal{R} = C-\frac{1}{3}\nabla^{2}E +\mathcal{H}(B+v)
     \label{eq:comovingcurvature}
@@ -878,19 +878,20 @@ where the quantity within parentheses is usually called \emph{curvature perturba
 \end{equation}
 \par For perturbations that decay at spatial infinity, the Newtonian gauge is unique (i.e. the gauge is fixed completely). In this gauge, the physics appears rather simple since the hypersurfaces of constant time are orthogonal to the worldlines of observers at rest in the coordinates (since $B = 0$) and the induced geometry of the constant-time hypersurfaces is isotropic (since $E = 0$).
 \par In the absence of anisotropic stress, $\psi = \phi$. Note the similarity of the metric to the usual weak-field limit of GR about Minkowski space; we shall see that $\psi$ plays the role of the gravitational potential.
-\par Let's see how a photon moves in the perturbed metric, that is, let's check how its geodesics respond to the perturbation \marginpar{Recall that the energy of a photon can be expressed through $E_{\gamma} = -u_{\mu}p^{\mu}$, where $u_{\mu}$ is completely determined by the request $u_{\mu}u^{\mu} = -1$. It directly follows that $E_{\gamma}\approx a(1+\psi)p^{0}$.}
+\par Let's see how a photon moves in the perturbed metric, that is, let's check how its geodesics respond to the perturbation\footnote{You can find the whole derivation in Appendix D.}
 \begin{equation}
     \der{p^{\mu}}{\lambda} = -\christoffel{\alpha}{\beta}{\mu}p^{\alpha}p^{\beta}
 \end{equation}
 which gives
 \begin{equation}
-    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H} +\phi' -\hat{p}_{i}\partial_{i}\psi
+    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = -\mathcal{H} +\phi' -\hat{p}^{i}\partial_{i}\psi
 \end{equation}
-which is essentially a composition of the standard cosmological redshift (the Hubble term), a small perturbation on the redshift ($\phi'$), and the gravitational redshift. Ultimately we find \marginpar{Note that $$ \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi$$ where the derivative of $x^{i}$ is essentially the unit vector tangent to the momentum.}
+which is essentially a composition of the standard cosmological redshift (the Hubble term), a small perturbation on the redshift ($\phi'$), and the gravitational redshift. Ultimately we find
 \begin{equation}
     \boxed{
         \der{\ln(aE_{\gamma})}{\eta} = -\der{\psi}{\eta} + \phi'+\psi'
     }
+    \label{eq:cmbgeodesics}
 \end{equation}
 Consider 
 \begin{equation}
@@ -909,18 +910,18 @@ and
 \begin{equation}
     \ln\left(1+\frac{\delta T}{\bar{T}}\right) \sim \frac{\delta T}{\bar{T}}
 \end{equation}
-we thus obtain an expression for the temperature constant in the CMB at present time 
+we thus obtain an expression for the temperature contrast in the CMB at present time 
 \begin{equation}
     \left(\frac{\delta T}{T}\right)_{0}(\hat{n}) = \left(\frac{\delta T}{T}\right)_{LS}(\hat{n}) + \psi_{LS} + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
 \end{equation}
 where the last term $\hat{n}\cdot\vec{v}$ takes into account the small oscillations in the baryon-photon fluid. Alternatively, we can further expand the temperature contrast at LS 
 \begin{equation}
     \boxed{
-     \left(\frac{\delta T}{T}\right)_{0} = \left[\frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS}\right] + \int_{LS}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
+     \left(\frac{\delta T}{T}\right)_{0} = \left[\frac{1}{4}\left(\frac{\delta\rho}{\rho}\right)_{LS}+\psi_{LS}\right] + \int_{\eta_{LS}}^{\eta_{0}}(\psi'+\phi')\diff{\eta} - \hat{n}\cdot\vec{v}
     }
     \label{eq:temperaturecontrast-sw}
 \end{equation}
-The term within square parentheses is the \emph{Sachs-Wolfe effect}, caused by gravitational redshift occurring at the surface of last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. The effect is not constant across the sky due to differences in the matter/energy density at the time of last scattering. 
+The term within square parentheses corresponds to the \emph{Sachs-Wolfe effect}, caused by gravitational redshift occurring at the surface of last scattering\footnote{Which is also the main difference from the ISW, which captures the effects stemming from photons falling into \emph{all} potentials from all structures from LS and beyond.}. The effect is not constant across the sky due to differences in the matter/energy density at the time of last scattering. 
 \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
   colback=blue!5!white,colframe=blue!75!black,colbacktitle=blue!80!black,
   title=Sachs-Wolfe Effect,
@@ -966,7 +967,7 @@ where
 \end{equation}
 where the average is over the ensemble. Now substitute the value for $\Theta(\hat{n})$ we've just found
 \begin{equation}
-    C(\hat{n}\cdot \hat{n}') = \sum_{ll'}i^{l}i^{l'}(2l+1)(2l'+1) \int\int \frac{\text{d}^{3}k}{(2\pi)^{3}} \frac{\text{d}^{3}k'}{(2\pi)^{3}}\,\mathcal{F}
+    C(\hat{n}\cdot \hat{n}') = \sum_{ll'}i^{l}i^{l'}(2l+1)(2l'+1) \iint \frac{\text{d}^{3}k}{(2\pi)^{3}} \frac{\text{d}^{3}k'}{(2\pi)^{3}}\,\mathcal{F}
 \end{equation}
 where the function $\mathcal{F}$ is defined as\footnote{Please note that nobody ever defines this function. I only defined it because the whole expression for $ C(\hat{n}\cdot \hat{n}')$ couldn't be written in a single line.}
 \begin{equation}

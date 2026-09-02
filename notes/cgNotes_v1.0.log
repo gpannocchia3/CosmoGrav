@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  1 SEP 2026 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.10)  2 SEP 2026 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1400,7 +1400,11 @@ Package babel Info: Importing font and identification data for english
 \ULC@box=\box159
 Package: ulem 2019/11/18
 \ULdepth=\dimen348
-)) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux))
+)) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux
+
+LaTeX Warning: Label `eq:gauge-inv-fix-FLRW' multiply defined.
+
+) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux))
 \openout1 = `cgNotes_v1.0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1845,7 +1849,7 @@ File: img/cmbtempcont.png Graphic file (type png)
 Package pdftex.def Info: img/cmbtempcont.png  used on input line 812.
 (pdftex.def)             Requested size: 258.99887pt x 186.81932pt.
  [54 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/cmbtempcont.png>] [55] [56] [57] [58] [59]
-LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 1038.
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 1039.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 ) [60] [61] [62]) [63]
@@ -1936,21 +1940,44 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-] [86 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/blackbody.pdf>] [87] [88] [89]) [90]
+] [86 </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/blackbody.pdf>] [87] [88] [89] [90]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 180.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 183.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 1.042pt on input line 183.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 0.79192pt on input line 183.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 0.6252pt on input line 183.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 1.042pt on input line 183.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 0.79192pt on input line 183.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 0.6252pt on input line 183.
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 198.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 208.
+
+[91]) [92]
 \openout2 = `chapters/about.aux'.
 
  (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.tex
-<img/privinsta.png, id=1278, 411.5375pt x 411.5375pt>
+<img/privinsta.png, id=1306, 411.5375pt x 411.5375pt>
 File: img/privinsta.png Graphic file (type png)
 <use img/privinsta.png>
 Package pdftex.def Info: img/privinsta.png  used on input line 8.
 (pdftex.def)             Requested size: 111.00113pt x 110.9973pt.
-<img/umbrasolisQR.png, id=1279, 411.5375pt x 411.5375pt>
+<img/umbrasolisQR.png, id=1307, 411.5375pt x 411.5375pt>
 File: img/umbrasolisQR.png Graphic file (type png)
 <use img/umbrasolisQR.png>
 Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
 (pdftex.def)             Requested size: 111.00113pt x 110.9973pt.
-) [91
+) [93
 
 
 
@@ -1958,28 +1985,32 @@ Package pdftex.def Info: img/umbrasolisQR.png  used on input line 9.
 
 
 
- </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/privinsta.png (PNG copy)> </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/umbrasolisQR.png (PNG copy)>] [92
+ </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/privinsta.png (PNG copy)> </Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/img/umbrasolisQR.png (PNG copy)>] [94
 
 
 
 
-] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.bbl [93
+] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.bbl [95
 
 
-]) [94] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux)) ) 
+]) [96] (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.aux (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter1.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter2.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter3.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter4.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter5.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/chapter6.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/appendix.aux) (/Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/chapters/about.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 56674 strings out of 476025
- 1312081 string characters out of 5790017
- 2037323 words of memory out of 5000000
- 75341 multiletter control sequences out of 15000+600000
- 665419 words of font info for 237 fonts, out of 8000000 for 9000
+ 56742 strings out of 476025
+ 1313195 string characters out of 5790017
+ 2035432 words of memory out of 5000000
+ 75388 multiletter control sequences out of 15000+600000
+ 673362 words of font info for 261 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,23n,121p,10679b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (102 pages, 10327804 bytes).
+Output written on /Users/giacomopannocchia/Desktop/Università/Magistrale/CosmoGrav/notes/cgNotes_v1.0.pdf (104 pages, 10334862 bytes).
 PDF statistics:
- 1671 PDF objects out of 1728 (max. 8388607)
- 1432 compressed objects within 15 object streams
- 655 named destinations out of 1000 (max. 500000)
- 31371 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1703 PDF objects out of 1728 (max. 8388607)
+ 1462 compressed objects within 15 object streams
+ 673 named destinations out of 1000 (max. 500000)
+ 34443 words of extra memory for PDF output out of 35830 (max. 10000000)
 

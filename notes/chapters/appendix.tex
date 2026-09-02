@@ -161,3 +161,83 @@ where we can now substitute $\nabla_{\mu}u_{\nu} = -Hh_{\mu\nu}$ to obtain
     &= 2a\dot{a}\left[u_{[\lambda}h_{\mu]\nu} +u_{[\lambda}h_{\nu]\mu} \right]
 \end{align*}
 \par At this point, we can easily see that the symmetrization $\nabla_{(\sigma}K_{\mu\nu)}$ of the previous expression yields zero, thus proving that $K_{\mu\nu}$ is indeed a Killing tensor.
+
+\subsection*{Geodesics on a perturbed FLRW metric}
+
+In Chapter \ref{ch:v} we presented the gauge-invariant version of the conformal, perturbed FLRW metric 
+\begin{equation}
+    \diff{s^{2}} = a^{2}(\eta)\left[-(1+2\psi)\diff{\eta^{2}} + (1-2\phi)\delta_{ij}\diff{x^{i}}\diff{x^{j}}\right]
+    \label{eq:gauge-inv-fix-FLRW}
+\end{equation}
+and obtained from there the geodesic equation and the resulting equation for the evolution of the photon energy in conformal time, which was crucial to obtain the CMB power spectrum. It is the purpose of this subsection to prove the result we have obtained (\ref{eq:cmbgeodesics}).
+\par First, you can easily compute the relevant Christoffel's symbols (the ones with a 0-upper index)
+\begin{equation}
+    \christoffel{0}{0}{0} = \mathcal{H} + \frac{\psi'}{1+2\psi} \quad \christoffel{0}{i}{0} = \frac{\partial_{i}}{1+2\psi} \quad \christoffel{i}{j}{0} = \frac{1}{1+2\psi}\left[\mathcal{H}(1-2\phi)-\phi'\right]\delta_{ij}
+\end{equation}
+Please note that we're working with coordinates $(\eta, x_{1}, x_{2}, x_{3})$, and that with the prime superscript we're referring to conformal-time (partial) derivatives.
+\par The geodesic equation is thus 
+\begin{equation}
+    \small{
+    \der{p^{0}}{\lambda} = -\left(\mathcal{H} + \frac{\psi'}{1+2\psi}\right)(p^{0})^{2}-2\frac{\partial_{i}}{1+2\psi}p^{0}p^{i}-\frac{1}{1+2\psi}\left[\mathcal{H}(1-2\phi)-\phi'\right]\delta_{ij}p^{i}p^{j}
+    }
+\end{equation}
+Now let's exploit the null-condition for photons 
+\begin{equation}
+    p_{\mu}p^{\mu} = g_{\mu\nu}p^{\mu}p^{\nu} = g_{00}(p^{0})^{2}+g_{ij}p^{i}p^{j}
+\end{equation}
+which after substituting the relevant components of the metric turns into 
+\begin{equation}
+    \delta_{ij}p^{i}p^{j} = \frac{1+2\psi}{1-2\phi}(p^{0})^{2}
+\end{equation}
+which we can use to write the spatial component of the momentum as 
+\begin{equation}
+    p^{i} = \sqrt{\frac{1+2\psi}{1-2\phi}}p^{0}\hat{p}^{i}
+\end{equation}
+This means that the geodesic equation is now
+\begin{equation}
+    \small{
+    \frac{1}{(p^{0})^{2}}\der{p^{0}}{\lambda} = -\left(\mathcal{H} + \frac{\psi'}{1+2\psi}\right)-2\frac{\partial_{i}\psi}{1+2\psi}\sqrt{\frac{1+2\psi}{1-2\phi}}\hat{p}^{i}-\frac{1}{1-2\phi}\left[\mathcal{H}(1-2\phi)-\phi'\right]
+    }
+\end{equation}
+But since 
+\begin{equation}
+    p^{\mu} = \der{x^{\mu}}{\lambda} \implies p^{0} = \der{\eta}{\lambda}
+\end{equation}
+hence
+\begin{equation}
+    \small{
+    \frac{1}{p^{0}}\der{p^{0}}{\eta} = -\left(\mathcal{H} + \frac{\psi'}{1+2\psi}\right)-2\frac{\partial_{i}\psi}{1+2\psi}\sqrt{\frac{1+2\psi}{1-2\phi}}\hat{p}^{i}-\frac{1}{1-2\phi}\left[\mathcal{H}(1-2\phi)-\phi'\right]
+    }
+\end{equation}
+The energy of the photon as measured along a geodesic from a comoving observer is just $E_{\gamma} = -u_{\mu}p^{\mu}$, where $u_{\mu}u^{\mu} = -1$. Expanding and choosing the negative sign\footnote{The choice of the sign was made so that to a positive $p^{0}$ corresponded a positive $E_{\gamma}$.} for $u_{0}$ we get 
+\begin{equation}
+    u_{0} = -a\sqrt{1+2\psi}
+\end{equation}
+and thus 
+\begin{equation}
+    E_{\gamma} = a\sqrt{1+2\psi}p^{0}
+\end{equation}
+We can take the logarithmic derivative of last equation to find
+\begin{equation}
+    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = \mathcal{H} + \frac{1}{p^{0}}\der{p^{0}}{\eta}+\frac{1}{1+2\psi}\der{\psi}{\eta}
+\end{equation}
+Substituting into the expanded geodesic equation we conclude
+\begin{equation}
+    \boxed{
+        \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = - \mathcal{H}+\frac{1}{1+2\psi}(\hat{p}^{i}\partial_{i})\psi\left[1-2\sqrt{\frac{1+2\psi}{1-2\phi}}\right] + \frac{\phi'}{1-2\phi}
+    }
+    \label{eq:energy-perturbedflrw}
+\end{equation}
+where we have exploited the chain-rule for the total derivative
+\begin{equation}
+    \der{\psi}{\eta} = \parder{\psi}{\eta} + \parder{x^{i}}{\eta}\partial_{i}\psi
+\end{equation}
+In principle, this last equation holds exactly, but we can exploit the underlying assumption that $\psi,\,\phi \ll 1$ (so that they are proper perturbations) and Taylor-expand (\ref{eq:energy-perturbedflrw}), neglecting second order terms. What we obtain is
+\begin{equation}
+    \frac{\phi'}{1-2\phi} \approx \phi' \quad \frac{1}{1+2\psi}\left[1-2\sqrt{\frac{1+2\psi}{1-2\phi}}\right] \approx -1 +\frac{2\phi}{1+2\psi} \approx 1
+\end{equation}
+and so we obtain 
+\begin{equation}
+    \frac{1}{E_{\gamma}}\der{E_{\gamma}}{\eta} = - \mathcal{H}-(\hat{p}^{i}\partial_{i})\psi + \phi'
+\end{equation}
+which is exactly the expression we've found in Chapter \ref{ch:v}.
