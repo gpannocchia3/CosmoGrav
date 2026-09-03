@@ -5,7 +5,7 @@ The first few sections of this chapter aren't directly related to inflation, but
 \section{Luminosity Distance}
 
 If the redshift is not very small, we have to think more carefully about what we mean by "distance" in cosmology. The instantaneous physical distance (proper distance) is a convenient construct, but not itself observable, since observation always refer to our past light cone. In Euclidean space, there are a number of different ways to infer the distance of an object, for example comparing its apparent brightness to its intrinsic luminosity.
-\par In a Euclidean space, we could define the \emph{luminosity distance} as
+\par In an Euclidean space, we could define the \emph{luminosity distance} as
 \begin{equation*}
     d_{L} = \left(\frac{L}{4\pi F}\right)^{1/2}
 \end{equation*}
@@ -14,7 +14,7 @@ with intrisic luminosity $L$ and measured flux $F$. But how does this change in 
 \begin{enumerate}
     \item \emph{Geometry}: The space is no longer Euclidean, and the surface of the 2-sphere onto which the luminosity is diluted is $4\pi a_{0}^{2}\tilde{r}_{s}^{2} = 4\pi a_{0}^{2}f_{k}(\chi)^{2}$, where $f_{k}(\chi)$ is 
     \begin{equation}
-        \chi = \int_{0}^{\tilde{r}_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = f_{k}^{-1}(r_{s}) = \left\{
+        \chi = \int_{0}^{\tilde{r}_{s}}\frac{\diff{r}}{\sqrt{1-kr^{2}}} = f_{k}^{-1}(\tilde{r}_{s}) = \left\{
             \begin{array}{ll}
                 \tilde{r}_{s} & k=0\\
                 \arcsin(\tilde{r}_{s}) & k=1\\
@@ -57,13 +57,13 @@ or more simply
 \begin{equation*}
     d_{L}(z) = (1+z)a_{0}f_{k}\left[a_{0}^{-1}H_{0}^{-1}\int_{0}^{z} \frac{\text{d}z'}{E(z')}\right]
 \end{equation*}
-where we've defined $E(z) = H(z)/H_{0}$. Still, it is more common to speak in terms of $\Omega_{c,0} = -k/a_{0}^{2}H_{0}^{2}$, which can be measured. We can therefore write the luminosity in terms of measurable cosmological parameters as 
+where we've defined $E(z) = H(z)/H_{0}$. Still, it is more common to speak in terms of $\Omega_{k,0} = -k/a_{0}^{2}H_{0}^{2}$, which can be measured. We can therefore write the luminosity in terms of measurable cosmological parameters as 
 \begin{equation}
     \boxed{
-    d_{L}(z) = (1+z)\frac{H_{0}^{-1}}{\sqrt{|\Omega_{c,0}|}}f_{k}\left[\sqrt{|\Omega_{c,0}|}\int \frac{\text{d}z'}{E(z')}\right]
+    d_{L}(z) = (1+z)\frac{H_{0}^{-1}}{\sqrt{|\Omega_{k,0}|}}f_{k}\left[\sqrt{|\Omega_{k,0}|}\int \frac{\text{d}z'}{E(z')}\right]
     }
     \label{eq:general_lumdist}
-\end{equation} \marginpar{Recall that the spatial density parameter $\Omega_{c,0}$ must abide the consistency relation $$ 1 = \sum_{i}\Omega_{i,0} + \Omega_{c,0} $$}
+\end{equation} \marginpar{Recall that the spatial density parameter $\Omega_{k,0}$ must abide the consistency relation $$ 1 = \sum_{i}\Omega_{i,0} + \Omega_{k,0} $$}
 \par Although it appears unwieldy (and it kinda is), this equation is of central importance in cosmology. Given the observables $H_{0}$ and $\Omega_{i,0}$, we can straightforwardly calculate the luminosity distance to an object at any redshift $z$.
 \begin{figure}[h!]
     \centering 
@@ -236,11 +236,11 @@ For example, if the EoS has $w>-1/3$, $r_{\star}\to \infty$ and the horizon is n
 
 \section{Flatness Problem}
 
-Consider a Universe with vanishing Cosmological Constant $\Lambda = 0$ which is also such that Einstein's equation is \emph{always} valid, also at $t=0$. If we define
+Consider a Universe with vanishing Cosmological Constant $\Lambda = 0$ which is also such that Einstein's equation is \emph{always} valid, also at $t=0$. We can define
 \begin{equation}
     \Omega_{k} = 1-\Omega = \frac{\rho_{c}-\rho}{\rho_{c}} = -\frac{k}{a^{2}H^{2}}
 \end{equation}
-Now assume that $k\neq 0$ and $\Omega_{k}$ can evolve independently from the dominant contribution to the cosmological fluid. If
+Now assume that $k\neq 0$ and $\Omega_{k}$ can evolve independently but along the dominant contribution to the cosmological fluid. If
 \begin{itemize}
     \item MDU: $a(t)\propto t^{2/3}$ and $H \propto a^{-3/2} \implies \Omega_{k}\sim a \sim t^{2/3}\sim \Gamma^{-1}$;
     \item RDU: $a(t)\propto t^{1/2}$ and $H \propto a^{-2} \implies \Omega_{k}\sim a^{2} \sim t \sim \Gamma^{-2}$.
@@ -257,7 +257,7 @@ Similarly, if we extrapolate backward to the time of Big Bang nucleosynthesis, a
 \begin{equation*}
     |1-\Omega_{BBN}|<7\cdot10^{-16}
 \end{equation*}
-and the distance from unity would only decrease if we went even further back in time. Setting then those orders of magnitude as initial conditions imply a \emph{huge fine-tuning problem}.
+and the distance from unity would only decrease if we went even further back in time. Setting then those orders of magnitude as initial conditions implies a \emph{huge fine-tuning problem}.
 \par There is no known reason for the density of the Universe to be so close to the critical density, and this appears to be an unacceptably strange coincidence in the view of most astronomers and cosmologists. This is the so called \emph{Flatness problem}.
 \par Let us define 
 \begin{equation}
@@ -310,13 +310,12 @@ thus resulting in a quasi-de Sitter Universe with $p=-\rho$ and $H \sim \text{co
 
 \section{Horizon Problem}
 
-Another problem remains to be addressed. We know that photons decouple from ordinary matter at $z\approx 1100$ (decoupling/last scattering). Currently, within our particle horizon, we observe a roughly homogeneous temperature distribution, which is that of the CMB. So far so good.
+Another problem remains to be addressed. We know that photons decouple from ordinary matter at $z\approx 1100$ (decoupling/last scattering). Currently, within our particle horizon, we observe a roughly homogeneous temperature distribution, which is that of the CMB.
 \par From last scattering until present day, the Universe was dominated by non-relativistic matter, hence 
 \begin{equation}
     R_{H}(t_{LS})\approx H_{LS}^{-1} = H_{0}^{-1}\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}\approx R_{H}(t_{0})\left(\frac{a_{LS}}{a_{0}}\right)^{3/2}
 \end{equation}
-But here comes the problem. 
-\par Since 
+But here comes the problem. Since 
 \begin{quote}
     \begin{center}
         "\emph{Scales scale with the scale factor}"
@@ -430,7 +429,7 @@ but if $\lambda \sim a$, this implies $\ddot{a} > 0$, hence the Universe must be
     \caption{Scales of cosmological interest were larger than the Hubble radius until $a \approx 10^{-5}$ (where today is at $a(t_{0}) = 1$). However, at very early times, before inflation operated, all scales of interest were smaller than the Hubble radius and therefore susceptible to microphysical processing. Notice the symmetry of the inflationary solution. Scales just entering the horizon today, 60 $e$-folds after the end of inflation, left the horizon 60 $e$-folds before the end of inflation. Credits: \cite{Baumann_2022}.}
     \label{fgr:inflation}
 \end{figure}
-\par The existence of an epoch of accelerated expansion corresponds to having $p < -\rho/3$ and violates the \emph{strong energy condition}.
+\par The existence of an epoch of accelerated expansion corresponds to having $p < -\rho/3$ and thus violates the \emph{strong energy condition}. \marginpar{Given a timelike vector $t^{\mu}$, the strong energy condition requires that $$ T_{\mu\nu}t^{\mu}t^{\nu} \geq \frac{1}{2}T^{\lambda}_{\;\lambda}t^{\sigma}t_{\sigma} $$ for all timelike vectors. Equivalently, it requires $p+\rho \geq 0$ and $\rho + 3p \geq 0$.}
 \par Several cosmologists began to postulate the necessity of an inflationary period starting from the end of 1970s. Remarkably, Starobinski{\v{i}} \cite{1979JETPL..30..682S} noted that quantum corrections to GR should be important for the early Universe.
 \par The solution to the Einstein field equations in the presence of curvature squared terms, when the curvatures are large, leads to an effective Cosmological Constant. Therefore, he proposed that the early Universe went through an inflationary de Sitter era, but never mentioned that such inflationary epoch could solve the problems intrinsic of the standard hBBN model.
 \par Only two years later, Guth \cite{1981PhRvD..23..347G}, and the following month still Guth and Weinberg \cite{1981PhRvD..23..876G}, showed that the horizon and flatness problems could be solved if we allowed the existence of an extraordinary supercooling in the early history of the Universe to temperatures 28 or more orders of magnitude below the critical temperature for some phase transition. But
@@ -485,7 +484,7 @@ We can give a little twist to this last expression so that it looks like the ene
 where $\rho_{\varphi}$ and $p_{\varphi}$ are respectively
 \begin{align}
     \rho_{\varphi} &= T^{00} = \frac{\dot{\varphi}^{2}}{2} + V(\varphi) + \frac{(\nabla\varphi)^{2}}{2a^{2}}\\
-    p_{\varphi} &= \frac{T^{ii}}{3} = \frac{\dot{\varphi}^{2}}{2}-V(\varphi)-\frac{(\nabla\varphi)^{2}}{6a^{2}}
+    p_{\varphi} &= \frac{T^{i}_{\;i}}{3} = \frac{\dot{\varphi}^{2}}{2}-V(\varphi)-\frac{(\nabla\varphi)^{2}}{6a^{2}}
 \end{align}
 \par If the field is strongly dishomogeneous and, as a consequence, $|\nabla\varphi|$ is large
 \begin{align}
@@ -503,7 +502,7 @@ and hence $w = -1/3$. However, a Universe so dishomogeneous cannot give raise to
 where the former term is that associated to a "classical" field ($\lambda \to \infty$), while the latter is associated to quantum fluctuations. If we assume the quantum fluctuations to be negligible respect to the classical field $\delta\varphi \ll \varphi_{0}$, we can neglect the contribution brought by $\delta\varphi$ to the evolution (\emph{back-reaction}). Hence
 \begin{align}
     T^{00} &= \rho_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} + V(\varphi_{0})\\
-    \frac{T^{ii}}{3} &= p_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} - V(\varphi_{0})
+    \frac{T^{i}_{\;i}}{3} &= p_{\varphi} = \frac{\dot{\varphi}_{0}^{2}}{2} - V(\varphi_{0})
 \end{align}
 which grants $p_{\varphi} \approx - \rho_{\varphi}$, thus producing a pseudo-de Sitter evolution. The equation of motion then turns into
 \begin{equation}
@@ -624,7 +623,7 @@ where we've introduced the $\alpha$-relation in the last equality. This leads to
 \end{equation}
 Consider now 
 \begin{equation}
-    \ddot{\varphi} = -\frac{\text{d}}{\text{d}t}\left(\frac{V'}{3H}\right) \implies \ddot{\varphi} = -\frac{V''\dot{\varphi}}{H} + \frac{V'\dot{H}}{3H^{2}}
+    \ddot{\varphi} = -\frac{\text{d}}{\text{d}t}\left(\frac{V'}{3H}\right) \implies \ddot{\varphi} = -\frac{V''\dot{\varphi}}{3H} + \frac{V'\dot{H}}{3H^{2}}
 \end{equation}
 which, requiring $\epsilon,\,\delta \ll 1$, yields
 \begin{equation}
